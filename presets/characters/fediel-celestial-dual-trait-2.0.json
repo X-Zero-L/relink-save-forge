@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "gameDataVersion": "Relink 2.0 extracted tables",
+  "character": {
+    "id": "PL2800",
+    "name": "Fediel"
+  },
+  "scope": [
+    "sigils",
+    "dual_traits"
+  ],
+  "sigils": [
+    { "slot": 1, "primary": { "id": "GEEN_320_24", "name": "Celestial Nyx V+" }, "secondary": { "id": "SKILL_321_00", "name": "Celestial Lumen" }, "level": 15 },
+    { "slot": 2, "primary": { "id": "GEEN_322_24", "name": "Celestial Terra V+" }, "secondary": { "id": "SKILL_323_00", "name": "Celestial Incendo" }, "level": 15 },
+    { "slot": 3, "primary": { "id": "GEEN_324_24", "name": "Celestial Aqua V+" }, "secondary": { "id": "SKILL_325_00", "name": "Fatebreaker" }, "level": 15 },
+    { "slot": 4, "primary": { "id": "GEEN_004_24", "name": "Stun Power V+" }, "secondary": { "id": "SKILL_020_00", "name": "Damage Cap" }, "level": 15 },
+    { "slot": 5, "primary": { "id": "GEEN_004_24", "name": "Stun Power V+" }, "secondary": { "id": "SKILL_151_00", "name": "Supplementary Damage" }, "level": 15 },
+    { "slot": 6, "primary": { "id": "GEEN_233_24", "name": "Berserker Echo V+" }, "secondary": { "id": "SKILL_069_00", "name": "Quick Cooldown" }, "level": 15 },
+    { "slot": 7, "primary": { "id": "GEEN_234_24", "name": "Spartan Echo V+" }, "secondary": { "id": "SKILL_070_00", "name": "Cascade" }, "level": 15 },
+    { "slot": 8, "primary": { "id": "GEEN_146_24", "name": "War Elemental+" }, "secondary": { "id": "SKILL_063_00", "name": "Improved Dodge" }, "level": 15 },
+    { "slot": 9, "primary": { "id": "GEEN_162_04", "name": "Gamma+" }, "secondary": { "id": "SKILL_020_00", "name": "Damage Cap" }, "level": 15 },
+    { "slot": 10, "primary": { "id": "GEEN_162_04", "name": "Gamma+" }, "secondary": { "id": "SKILL_020_00", "name": "Damage Cap" }, "level": 15 },
+    { "slot": 11, "primary": { "id": "GEEN_177_90", "name": "Fediel's Awakening" }, "secondary": { "id": "SKILL_073_00", "name": "Potion Hoarder" }, "level": 15 },
+    { "slot": 12, "primary": { "id": "GEEN_177_93", "name": "Fediel's Warpath" }, "secondary": { "id": "SKILL_068_00", "name": "Autorevive" }, "level": 15 }
+  ],
+  "evidence": [
+    "Primary GBIDs and second-trait Skill IDs were cross-checked against the extracted Relink 2.0 gem table.",
+    "Celestial and character-exclusive rows remain separately auditable in catalogs/sigils-2.0.json.",
+    "This preset intentionally covers sigils only; weapon, abilities, overmastery and wrightstone are outside its declared scope."
+  ]
+}
+

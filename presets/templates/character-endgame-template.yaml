@@ -1,0 +1,21 @@
+schemaVersion: 1
+gameDataVersion: "Relink 2.0 extracted tables"
+character:
+  id: "PL0000"
+  name: "Replace me"
+scope:
+  - sigils
+  - dual_traits
+sigils:
+  - slot: 1
+    primary:
+      id: "GEEN_000_24"
+      name: "Primary V+"
+    secondary:
+      id: "SKILL_000_00"
+      name: "Secondary trait"
+    level: 15
+    note: "Replace IDs only after checking catalogs and legal in-game combinations."
+evidence:
+  - "Describe the extracted database row, patch/version, and build rationale."
+

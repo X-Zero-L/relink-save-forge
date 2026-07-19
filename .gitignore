@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.db
+*.sqlite*
+*.dat
+*.sav
+*.bak
+*.zip
+*.exe
+*.dll
+local/
+backups/
+generated.tmp/
+

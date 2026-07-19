@@ -1,0 +1,23 @@
+{
+  "game_db_sha256": "7A721A9B1822C2C7660C71F653B2FA1B3BE2DAFC4049B6FD4178BA78E5E96789",
+  "items_db_sha256": "4AF30C37143AE15FEF4930A4C7D0FF06B2CC59B8F0EC5F8E17204DB12DFFB59A",
+  "game_table_counts": {
+    "chara": 41,
+    "chara_gem": 4,
+    "gem": 1034,
+    "weapon": 410,
+    "weapon_status": 2602,
+    "weapon_status_awake": 580
+  },
+  "items_table_counts": {
+    "item": 448,
+    "item_consume": 5,
+    "item_important": 36,
+    "item_material_list": 1089
+  },
+  "selection": {
+    "characters": "PL*, IsNPC=0, MaxLevelMaybe=100",
+    "weapons": "six database-backed base weapons per character; probe WEP_<character>_01..09",
+    "sigils_2_0": "Rarity=5 and family 173..178 or 320..327"
+  }
+}
