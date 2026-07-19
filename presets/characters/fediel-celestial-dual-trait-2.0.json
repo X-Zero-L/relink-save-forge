@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "gameDataVersion": "Relink 2.0 extracted tables",
   "character": {
-    "id": "PL2800",
+    "id": "PL2900",
     "name": "Fediel"
   },
   "scope": [
@@ -20,13 +20,13 @@
     { "slot": 8, "primary": { "id": "GEEN_146_24", "name": "War Elemental+" }, "secondary": { "id": "SKILL_063_00", "name": "Improved Dodge" }, "level": 15 },
     { "slot": 9, "primary": { "id": "GEEN_162_04", "name": "Gamma+" }, "secondary": { "id": "SKILL_020_00", "name": "Damage Cap" }, "level": 15 },
     { "slot": 10, "primary": { "id": "GEEN_162_04", "name": "Gamma+" }, "secondary": { "id": "SKILL_020_00", "name": "Damage Cap" }, "level": 15 },
-    { "slot": 11, "primary": { "id": "GEEN_177_90", "name": "Fediel's Awakening" }, "secondary": { "id": "SKILL_073_00", "name": "Potion Hoarder" }, "level": 15 },
-    { "slot": 12, "primary": { "id": "GEEN_177_93", "name": "Fediel's Warpath" }, "secondary": { "id": "SKILL_068_00", "name": "Autorevive" }, "level": 15 }
+    { "slot": 11, "primary": { "id": "GEEN_178_90", "name": "Fediel's Awakening" }, "secondary": { "id": "SKILL_073_00", "name": "Potion Hoarder" }, "level": 15 },
+    { "slot": 12, "primary": { "id": "GEEN_178_93", "name": "Fediel's Warpath" }, "secondary": { "id": "SKILL_068_00", "name": "Autorevive" }, "level": 15 }
   ],
   "evidence": [
+    "In-game UI and the matching save record identify Fediel as PL2900 with the GEEN_178 character-exclusive family.",
     "Primary GBIDs and second-trait Skill IDs were cross-checked against the extracted Relink 2.0 gem table.",
     "Celestial and character-exclusive rows remain separately auditable in catalogs/sigils-2.0.json.",
     "This preset intentionally covers sigils only; weapon, abilities, overmastery and wrightstone are outside its declared scope."
   ]
 }
-

@@ -37,7 +37,7 @@ KNOWN_CHARACTER_NAMES = {
     "PL2100": "Sandalphon",
     "PL2200": "Seofon",
     "PL2300": "Tweyen",
-    "PL2800": "Fediel",
+    "PL2900": "Fediel",
 }
 
 

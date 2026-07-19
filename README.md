@@ -9,7 +9,7 @@
 - `catalogs/characters.json`：数据库识别出的 29 名满级上限可玩角色。
 - `catalogs/weapons.json`：按数据库真实基础武器行解析的 174 条武器 ID/哈希清单（每名角色 6 把）。
 - `catalogs/sigils-2.0.json`：2.0 新角色专属因子与 `GEEN_320`–`GEEN_327` 新通用/天星因子数据库行。
-- `presets/characters/fediel-celestial-dual-trait-2.0.json`：暗龙菲迪埃尔的 12 槽天星双词条预设。
+- `presets/characters/fediel-celestial-dual-trait-2.0.json`：实机 UI 确认的暗龙菲迪埃尔（`PL2900`、专属家族 `GEEN_178`）12 槽天星双词条预设。
 - `presets/templates/`：其他角色可复用的 JSON/YAML 配装结构。
 - `scripts/generate_catalogs.py`：从本地数据库重新生成三份清单。
 - `scripts/gbfr_hash.py`：GBFR 自定义 XXHash32 ID 哈希实现。
@@ -44,7 +44,7 @@ python scripts/validate_repository.py
 4. SteamID 位于 PC 存档头部偏移 `0x04` 的 8 字节小端值。修改头部不等于修复内部 payload 哈希。
 5. 修改 payload 时，只更新由 `SAVEDATA_HASHSEED` 选中的活动 XXHash64 段；不要把十个哈希槽全部重写成“有效”。
 
-详细说明见 [docs/SAVE_SAFETY.md](docs/SAVE_SAFETY.md)。
+详细说明见 [docs/SAVE_SAFETY.md](docs/SAVE_SAFETY.md) 和 [docs/SAVE_STRUCTURE.md](docs/SAVE_STRUCTURE.md)。
 
 ## 数据来源与边界
 

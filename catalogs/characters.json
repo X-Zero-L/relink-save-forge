@@ -268,7 +268,7 @@
     {
       "id": "PL2800",
       "hash": "646C3168",
-      "name": "Fediel",
+      "name": null,
       "localization_key": "TXT_PL2800",
       "ui_order": 24,
       "minor_version_flag": 5,
@@ -279,7 +279,7 @@
     {
       "id": "PL2900",
       "hash": "74DD4C79",
-      "name": null,
+      "name": "Fediel",
       "localization_key": "TXT_PL2900",
       "ui_order": 25,
       "minor_version_flag": 5,
