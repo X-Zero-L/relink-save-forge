@@ -212,4 +212,3 @@ def render_values(values: tuple[str, ...] | list[str], context: dict[str, str]) 
         return [value.format_map(context) for value in values]
     except KeyError as exc:
         raise PresetError(f"missing command placeholder value: {exc.args[0]}") from exc
-
