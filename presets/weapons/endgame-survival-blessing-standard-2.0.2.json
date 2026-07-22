@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "endgame-survival-blessing-standard-2.0.2",
+  "name": "Endgame Survival Weapon Blessing 15",
+  "name_zh": "2.0.2 终盘生存武器祝福 15",
+  "game_data_version": "Relink 2.0.2",
+  "description": "Apply one verified three-trait Wrightstone shell and legal level-15 Cascade, Nimble Onslaught, and Greater Aegis to each character's currently equipped weapon.",
+  "outer": {
+    "id": "ITEM_26_0131",
+    "hash": "71173866",
+    "name": "Three-trait Vitality Wrightstone"
+  },
+  "traits": [
+    {
+      "lane": 0,
+      "id": "SKILL_070_00",
+      "hash": "05F2ECDC",
+      "name": "Cascade",
+      "name_zh": "怒涛",
+      "level": 15
+    },
+    {
+      "lane": 1,
+      "id": "SKILL_106_00",
+      "hash": "D2C8E10A",
+      "name": "Nimble Onslaught",
+      "name_zh": "明镜止水",
+      "level": 15
+    },
+    {
+      "lane": 2,
+      "id": "SKILL_166_00",
+      "hash": "48A95B8D",
+      "name": "Greater Aegis",
+      "name_zh": "金刚",
+      "level": 15
+    }
+  ],
+  "source": {
+    "structure": "verified against a natural three-trait equipped Wrightstone and all 768 preallocated runtime lanes",
+    "outer_sample": "weapon unit 40100 / ITEM_26_0131",
+    "runtime_unit_formula": "130000000 + (physical_weapon_unit - 40000) * 100 + lane",
+    "level_policy": "15 is the normal legal per-lane maximum used by the survival/QoL preset"
+  }
+}

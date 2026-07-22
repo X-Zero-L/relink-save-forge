@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": "complete-armory",
+  "name": "Complete Armory + Equip Strongest",
+  "description": "Create any missing official weapons in canonical empty slots, complete all 160 supported endgame runtime forms, preserve unknown/modded instances, and equip each character's strongest verified weapon.",
+  "invariants": {
+    "preserve_header": true,
+    "preserve_payload_size": true,
+    "preserve_record_count": true
+  },
+  "steps": [
+    {
+      "id": "complete-armory",
+      "name": "Create and complete all official weapons",
+      "kind": "transform",
+      "timeout_seconds": 1800,
+      "audit_required": true,
+      "command": [
+        "{python}",
+        "{root}/scripts/ensure_all_weapons.py",
+        "{input}",
+        "{output}",
+        "--characters",
+        "{root}/catalogs/characters.json",
+        "--weapons",
+        "{root}/catalogs/weapons.json",
+        "--rebuild-catalog",
+        "{root}/catalogs/weapon-rebuild-2.0.json",
+        "--identity-catalog",
+        "{root}/catalogs/weapon-runtime-identities-2.0.2.json",
+        "--instance-template",
+        "{root}/catalogs/weapon-instance-template-2.0.2.json",
+        "--equip-policy",
+        "strongest",
+        "--audit",
+        "{audit}",
+        "--editor-root",
+        "{editor_root}"
+      ]
+    }
+  ]
+}

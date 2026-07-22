@@ -31,13 +31,20 @@ WEAPON_MAX_UNIT = 40_255
 WEAPON_SLOT_FIELD = 2802
 WEAPON_BLESSING_FIELD = 2816
 TRAIT_FIELDS = (1701, 1702)
-TRAIT_LEVEL = 99
+ALLOWED_TRAIT_LEVELS = {15, 99}
 EXPECTED_OUTER_ID = "ITEM_26_0131"
-EXPECTED_TRAIT_IDS = (
-    "SKILL_069_00",
-    "SKILL_070_00",
-    "SKILL_044_00",
-)
+ALLOWED_TRAIT_PROFILES = {
+    (
+        "SKILL_069_00",
+        "SKILL_070_00",
+        "SKILL_044_00",
+    ),
+    (
+        "SKILL_070_00",
+        "SKILL_106_00",
+        "SKILL_166_00",
+    ),
+}
 
 
 def weapon_trait_unit(weapon_unit: int, lane: int) -> int:
@@ -81,26 +88,36 @@ def load_preset(path: Path, expected_sha256: str | None) -> dict:
         raise RuntimeError("weapon blessing outer hash differs from its ID")
     if len(traits) != 3:
         raise RuntimeError("weapon blessing preset must contain three traits")
+    trait_levels = {row.get("level") for row in traits if isinstance(row, dict)}
+    if len(trait_levels) != 1 or next(iter(trait_levels), None) not in ALLOWED_TRAIT_LEVELS:
+        raise RuntimeError("weapon blessing traits must all be level 15 or all be level 99")
+    trait_level = int(next(iter(trait_levels)))
+    trait_ids = tuple(str(row.get("id") or "") for row in traits)
+    if trait_ids not in ALLOWED_TRAIT_PROFILES:
+        raise RuntimeError(f"unsupported weapon blessing trait profile: {trait_ids}")
     resolved = []
-    for lane, (row, expected_id) in enumerate(zip(traits, EXPECTED_TRAIT_IDS)):
+    for lane, (row, expected_id) in enumerate(zip(traits, trait_ids)):
         if row.get("lane") != lane or row.get("id") != expected_id:
             raise RuntimeError(f"weapon blessing lane {lane} must be {expected_id}")
         expected_hash = reference_hash(expected_id)
         if str(row.get("hash") or "").upper() != f"{expected_hash:08X}":
             raise RuntimeError(f"weapon blessing lane {lane} hash differs from its ID")
-        if row.get("level") != TRAIT_LEVEL:
-            raise RuntimeError(f"weapon blessing lane {lane} must be level 99")
+        if row.get("level") != trait_level:
+            raise RuntimeError(
+                f"weapon blessing lane {lane} must be level {trait_level}"
+            )
         resolved.append(
             {
                 "lane": lane,
                 "id": expected_id,
                 "hash": expected_hash,
-                "level": TRAIT_LEVEL,
+                "level": trait_level,
                 "name": str(row.get("name") or expected_id),
             }
         )
     payload["resolved_outer_hash"] = int(expected_outer_hash, 16)
     payload["resolved_traits"] = resolved
+    payload["trait_level"] = trait_level
     return payload
 
 
@@ -375,7 +392,7 @@ def main() -> int:
             "id": preset.get("id"),
             "outer_id": EXPECTED_OUTER_ID,
             "outer_hash": f"{preset['resolved_outer_hash']:08X}",
-            "trait_level": TRAIT_LEVEL,
+            "trait_level": preset["trait_level"],
             "traits": preset["resolved_traits"],
         },
         "counts": {

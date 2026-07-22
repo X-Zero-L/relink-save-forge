@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "id": "create-top-four-summons",
+  "name": "Create + Equip Top-Four Summons",
+  "description": "Create missing Rolan, Lilith, Beelzebub, and Lucilius instances in canonical empty slots, unlock their catalog entries, configure their verified level-15/9 lanes, and equip all four.",
+  "invariants": {
+    "preserve_header": true,
+    "preserve_payload_size": true,
+    "preserve_record_count": true
+  },
+  "steps": [
+    {
+      "id": "create-top-four-summons",
+      "name": "Create and equip the verified top four",
+      "kind": "transform",
+      "timeout_seconds": 1800,
+      "audit_required": true,
+      "command": [
+        "{python}",
+        "{root}/scripts/ensure_top_summons.py",
+        "{input}",
+        "{output}",
+        "--catalog",
+        "{root}/catalogs/top-summons-2.0.2.json",
+        "--expected-catalog-sha256",
+        "4DDD6F3310DD6263A1488DC358D56BECBCDA691D1345082FED4C3AA06770A909",
+        "--audit",
+        "{audit}",
+        "--editor-root",
+        "{editor_root}"
+      ]
+    }
+  ]
+}

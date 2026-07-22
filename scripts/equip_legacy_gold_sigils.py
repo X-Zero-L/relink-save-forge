@@ -375,6 +375,8 @@ def equipped_instances(
     characters: list[dict],
     instances: dict,
     slot_to_unit: dict[int, int],
+    *,
+    reserved_units: frozenset[int] = frozenset(),
 ) -> tuple[dict[str, list[int]], dict]:
     selections = {}
     relationship_snapshot = {"loadouts": {}, "instances": {}}
@@ -417,8 +419,12 @@ def equipped_instances(
         relationship_snapshot["loadouts"][character_id] = loadout_values
     if len(selected_units) != EXPECTED_CHARACTER_COUNT * 12:
         raise RuntimeError("equipped sigil units are not globally unique")
-    if selected_units & set(TEMPLATE_UNITS):
-        raise RuntimeError("template sigils must remain outside equipped loadouts")
+    reserved_overlap = selected_units & reserved_units
+    if reserved_overlap:
+        raise RuntimeError(
+            f"reserved sigils must remain outside equipped loadouts: "
+            f"{sorted(reserved_overlap)}"
+        )
     return selections, relationship_snapshot
 
 
@@ -595,6 +601,7 @@ def main() -> int:
         characters,
         instances,
         slot_to_unit,
+        reserved_units=frozenset(TEMPLATE_UNITS),
     )
     template_snapshot = {
         key: value
@@ -682,6 +689,7 @@ def main() -> int:
         output_characters,
         output_instances,
         output_slot_to_unit,
+        reserved_units=frozenset(TEMPLATE_UNITS),
     )
     if output_selections != selections or output_relationships != relationship_snapshot:
         raise RuntimeError("serialized equipment relationships changed")

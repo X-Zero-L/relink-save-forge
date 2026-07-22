@@ -15,7 +15,6 @@ from pathlib import Path
 
 from build_materials_complete import (
     MAIN_STORY_FIELDS,
-    MATERIAL_FIELDS,
     classify_item,
     first_value,
     load_database,

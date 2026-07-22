@@ -1,0 +1,1363 @@
+{
+  "schema_version": 1,
+  "game_data_version": "Relink 2.0.2",
+  "count": 72,
+  "source": {
+    "database_file": "gbfr-live.db",
+    "sha256": "7A721A9B1822C2C7660C71F653B2FA1B3BE2DAFC4049B6FD4178BA78E5E96789",
+    "table": "gem",
+    "selection": "exact rarity-5 database rows referenced by the standard output/QoL presets"
+  },
+  "items": [
+    {
+      "database_key": "1E7796E1",
+      "outer_id": "GEEN_321_24",
+      "outer_hash": "1E7796E1",
+      "canonical_outer_hash": "20492635",
+      "player_requirement": null,
+      "rarity": 5,
+      "can_mix": false,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "A7726190",
+        "hash": "A7726190"
+      },
+      "secondary": {
+        "id": "SKILL_003_00",
+        "hash": "8D78A19B"
+      },
+      "source_rowid": 653
+    },
+    {
+      "database_key": "2A2304E2",
+      "outer_id": "GEEN_325_24",
+      "outer_hash": "2A2304E2",
+      "canonical_outer_hash": "5BF84FD1",
+      "player_requirement": null,
+      "rarity": 5,
+      "can_mix": false,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "D029FE08",
+        "hash": "D029FE08"
+      },
+      "secondary": {
+        "id": "SKILL_020_00",
+        "hash": "DC584F60"
+      },
+      "source_rowid": 673
+    },
+    {
+      "database_key": "40214C38",
+      "outer_id": "GEEN_320_24",
+      "outer_hash": "40214C38",
+      "canonical_outer_hash": "8B8085C0",
+      "player_requirement": null,
+      "rarity": 5,
+      "can_mix": false,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "0DE887A0",
+        "hash": "0DE887A0"
+      },
+      "secondary": {
+        "id": "SKILL_045_00",
+        "hash": "E69A4694"
+      },
+      "source_rowid": 645
+    },
+    {
+      "database_key": "7009517B",
+      "outer_id": "GEEN_326_24",
+      "outer_hash": "7009517B",
+      "canonical_outer_hash": "9300FADB",
+      "player_requirement": null,
+      "rarity": 5,
+      "can_mix": false,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "73220725",
+        "hash": "73220725"
+      },
+      "secondary": {
+        "id": "SKILL_064_00",
+        "hash": "7C2E4D64"
+      },
+      "source_rowid": 676
+    },
+    {
+      "database_key": "748DD213",
+      "outer_id": "GEEN_063_24",
+      "outer_hash": "748DD213",
+      "canonical_outer_hash": "E89224A1",
+      "player_requirement": null,
+      "rarity": 5,
+      "can_mix": false,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_063_00",
+        "hash": "8B3BF60C"
+      },
+      "secondary": {
+        "id": "SKILL_069_00",
+        "hash": "318D12E9"
+      },
+      "source_rowid": 585
+    },
+    {
+      "database_key": "7CE4D81C",
+      "outer_id": "GEEN_322_24",
+      "outer_hash": "7CE4D81C",
+      "canonical_outer_hash": "D29CD8E0",
+      "player_requirement": null,
+      "rarity": 5,
+      "can_mix": false,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "9232DC17",
+        "hash": "9232DC17"
+      },
+      "secondary": {
+        "id": "SKILL_144_00",
+        "hash": "74AA75D6"
+      },
+      "source_rowid": 660
+    },
+    {
+      "database_key": "D7D2F16E",
+      "outer_id": "GEEN_323_24",
+      "outer_hash": "D7D2F16E",
+      "canonical_outer_hash": "74061B0C",
+      "player_requirement": null,
+      "rarity": 5,
+      "can_mix": false,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "36E3848D",
+        "hash": "36E3848D"
+      },
+      "secondary": {
+        "id": "SKILL_000_00",
+        "hash": "50079A1C"
+      },
+      "source_rowid": 663
+    },
+    {
+      "database_key": "F1D8F754",
+      "outer_id": "GEEN_327_24",
+      "outer_hash": "F1D8F754",
+      "canonical_outer_hash": "7B4AAB30",
+      "player_requirement": null,
+      "rarity": 5,
+      "can_mix": false,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "F26BAEA5",
+        "hash": "F26BAEA5"
+      },
+      "secondary": {
+        "id": "SKILL_151_00",
+        "hash": "57AB5B10"
+      },
+      "source_rowid": 682
+    },
+    {
+      "database_key": "FC19BF26",
+      "outer_id": "GEEN_324_24",
+      "outer_hash": "FC19BF26",
+      "canonical_outer_hash": "E14E1598",
+      "player_requirement": null,
+      "rarity": 5,
+      "can_mix": false,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "A898E283",
+        "hash": "A898E283"
+      },
+      "secondary": {
+        "id": "SKILL_072_00",
+        "hash": "B5FF9FD3"
+      },
+      "source_rowid": 668
+    },
+    {
+      "database_key": "GEEN_044_04",
+      "outer_id": "GEEN_044_04",
+      "outer_hash": "CB5F29C1",
+      "canonical_outer_hash": "CB5F29C1",
+      "player_requirement": null,
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_044_00",
+        "hash": "A1A8E39D"
+      },
+      "secondary": null,
+      "source_rowid": 106
+    },
+    {
+      "database_key": "GEEN_114_90",
+      "outer_id": "GEEN_114_90",
+      "outer_hash": "52A6E299",
+      "canonical_outer_hash": "52A6E299",
+      "player_requirement": "PL0000",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": true,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_114_00",
+        "hash": "CD030268"
+      },
+      "secondary": {
+        "id": "SKILL_114_01",
+        "hash": "A38510E2"
+      },
+      "source_rowid": 892
+    },
+    {
+      "database_key": "GEEN_114_91",
+      "outer_id": "GEEN_114_91",
+      "outer_hash": "33F01810",
+      "canonical_outer_hash": "33F01810",
+      "player_requirement": "PL0000",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_114_00",
+        "hash": "CD030268"
+      },
+      "secondary": null,
+      "source_rowid": 920
+    },
+    {
+      "database_key": "GEEN_114_93",
+      "outer_id": "GEEN_114_93",
+      "outer_hash": "0713D928",
+      "canonical_outer_hash": "0713D928",
+      "player_requirement": "PL0000",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_114_02",
+        "hash": "DADE14DC"
+      },
+      "secondary": null,
+      "source_rowid": 922
+    },
+    {
+      "database_key": "GEEN_115_90",
+      "outer_id": "GEEN_115_90",
+      "outer_hash": "9ADA3E00",
+      "canonical_outer_hash": "9ADA3E00",
+      "player_requirement": "PL0200",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": true,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_115_00",
+        "hash": "3BFED918"
+      },
+      "secondary": {
+        "id": "SKILL_115_01",
+        "hash": "F8496336"
+      },
+      "source_rowid": 893
+    },
+    {
+      "database_key": "GEEN_115_93",
+      "outer_id": "GEEN_115_93",
+      "outer_hash": "AC175924",
+      "canonical_outer_hash": "AC175924",
+      "player_requirement": "PL0200",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_115_02",
+        "hash": "9AFDFA9E"
+      },
+      "secondary": null,
+      "source_rowid": 925
+    },
+    {
+      "database_key": "GEEN_116_90",
+      "outer_id": "GEEN_116_90",
+      "outer_hash": "98A6D249",
+      "canonical_outer_hash": "98A6D249",
+      "player_requirement": "PL0300",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": true,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_116_00",
+        "hash": "151E4674"
+      },
+      "secondary": {
+        "id": "SKILL_116_01",
+        "hash": "A374FDF0"
+      },
+      "source_rowid": 894
+    },
+    {
+      "database_key": "GEEN_116_93",
+      "outer_id": "GEEN_116_93",
+      "outer_hash": "BC53CE24",
+      "canonical_outer_hash": "BC53CE24",
+      "player_requirement": "PL0300",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_116_02",
+        "hash": "D76F4D24"
+      },
+      "secondary": null,
+      "source_rowid": 928
+    },
+    {
+      "database_key": "GEEN_117_90",
+      "outer_id": "GEEN_117_90",
+      "outer_hash": "E2B380E5",
+      "canonical_outer_hash": "E2B380E5",
+      "player_requirement": "PL0400",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": true,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_117_00",
+        "hash": "B48EEF48"
+      },
+      "secondary": {
+        "id": "SKILL_117_01",
+        "hash": "11AAE5F5"
+      },
+      "source_rowid": 895
+    },
+    {
+      "database_key": "GEEN_117_93",
+      "outer_id": "GEEN_117_93",
+      "outer_hash": "43F26A91",
+      "canonical_outer_hash": "43F26A91",
+      "player_requirement": "PL0400",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_117_02",
+        "hash": "C00163B3"
+      },
+      "secondary": null,
+      "source_rowid": 931
+    },
+    {
+      "database_key": "GEEN_118_90",
+      "outer_id": "GEEN_118_90",
+      "outer_hash": "1BBE919C",
+      "canonical_outer_hash": "1BBE919C",
+      "player_requirement": "PL0500",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": true,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_118_00",
+        "hash": "AA83F548"
+      },
+      "secondary": {
+        "id": "SKILL_118_01",
+        "hash": "921B6B0C"
+      },
+      "source_rowid": 896
+    },
+    {
+      "database_key": "GEEN_118_93",
+      "outer_id": "GEEN_118_93",
+      "outer_hash": "CAAE3F9C",
+      "canonical_outer_hash": "CAAE3F9C",
+      "player_requirement": "PL0500",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_118_02",
+        "hash": "0E42BE1B"
+      },
+      "secondary": null,
+      "source_rowid": 934
+    },
+    {
+      "database_key": "GEEN_119_90",
+      "outer_id": "GEEN_119_90",
+      "outer_hash": "9BD1CC24",
+      "canonical_outer_hash": "9BD1CC24",
+      "player_requirement": "PL0600",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": true,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_119_00",
+        "hash": "23D0F67F"
+      },
+      "secondary": {
+        "id": "SKILL_119_01",
+        "hash": "C2A4C7A9"
+      },
+      "source_rowid": 897
+    },
+    {
+      "database_key": "GEEN_119_93",
+      "outer_id": "GEEN_119_93",
+      "outer_hash": "515E693C",
+      "canonical_outer_hash": "515E693C",
+      "player_requirement": "PL0600",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_119_02",
+        "hash": "8519AD4A"
+      },
+      "secondary": null,
+      "source_rowid": 937
+    },
+    {
+      "database_key": "GEEN_120_90",
+      "outer_id": "GEEN_120_90",
+      "outer_hash": "B441275D",
+      "canonical_outer_hash": "B441275D",
+      "player_requirement": "PL0700",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": true,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_120_00",
+        "hash": "D908223D"
+      },
+      "secondary": {
+        "id": "SKILL_120_01",
+        "hash": "7351D602"
+      },
+      "source_rowid": 900
+    },
+    {
+      "database_key": "GEEN_120_93",
+      "outer_id": "GEEN_120_93",
+      "outer_hash": "E496D882",
+      "canonical_outer_hash": "E496D882",
+      "player_requirement": "PL0700",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_120_02",
+        "hash": "A339D642"
+      },
+      "secondary": null,
+      "source_rowid": 946
+    },
+    {
+      "database_key": "GEEN_121_90",
+      "outer_id": "GEEN_121_90",
+      "outer_hash": "E19B1965",
+      "canonical_outer_hash": "E19B1965",
+      "player_requirement": "PL0800",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": true,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_121_00",
+        "hash": "8CDF9382"
+      },
+      "secondary": {
+        "id": "SKILL_121_01",
+        "hash": "D1012D8C"
+      },
+      "source_rowid": 902
+    },
+    {
+      "database_key": "GEEN_121_93",
+      "outer_id": "GEEN_121_93",
+      "outer_hash": "8A3819C0",
+      "canonical_outer_hash": "8A3819C0",
+      "player_requirement": "PL0800",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_121_02",
+        "hash": "6316CBEB"
+      },
+      "secondary": null,
+      "source_rowid": 952
+    },
+    {
+      "database_key": "GEEN_122_90",
+      "outer_id": "GEEN_122_90",
+      "outer_hash": "673C5D8F",
+      "canonical_outer_hash": "673C5D8F",
+      "player_requirement": "PL0900",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": true,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_122_00",
+        "hash": "2E65A774"
+      },
+      "secondary": {
+        "id": "SKILL_122_01",
+        "hash": "16EFF868"
+      },
+      "source_rowid": 903
+    },
+    {
+      "database_key": "GEEN_122_93",
+      "outer_id": "GEEN_122_93",
+      "outer_hash": "A490BADF",
+      "canonical_outer_hash": "A490BADF",
+      "player_requirement": "PL0900",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_122_02",
+        "hash": "D8F66C1C"
+      },
+      "secondary": null,
+      "source_rowid": 955
+    },
+    {
+      "database_key": "GEEN_123_90",
+      "outer_id": "GEEN_123_90",
+      "outer_hash": "02472C43",
+      "canonical_outer_hash": "02472C43",
+      "player_requirement": "PL1000",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": true,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_123_00",
+        "hash": "E60A735C"
+      },
+      "secondary": {
+        "id": "SKILL_123_01",
+        "hash": "6FF05223"
+      },
+      "source_rowid": 904
+    },
+    {
+      "database_key": "GEEN_123_93",
+      "outer_id": "GEEN_123_93",
+      "outer_hash": "4CDCE25B",
+      "canonical_outer_hash": "4CDCE25B",
+      "player_requirement": "PL1000",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_123_02",
+        "hash": "BA504607"
+      },
+      "secondary": null,
+      "source_rowid": 958
+    },
+    {
+      "database_key": "GEEN_124_90",
+      "outer_id": "GEEN_124_90",
+      "outer_hash": "AB835493",
+      "canonical_outer_hash": "AB835493",
+      "player_requirement": "PL1100",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": true,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_124_00",
+        "hash": "86CBCDC4"
+      },
+      "secondary": {
+        "id": "SKILL_124_01",
+        "hash": "05FA4599"
+      },
+      "source_rowid": 905
+    },
+    {
+      "database_key": "GEEN_124_93",
+      "outer_id": "GEEN_124_93",
+      "outer_hash": "E21A4170",
+      "canonical_outer_hash": "E21A4170",
+      "player_requirement": "PL1100",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_124_02",
+        "hash": "C7D379F1"
+      },
+      "secondary": null,
+      "source_rowid": 961
+    },
+    {
+      "database_key": "GEEN_125_90",
+      "outer_id": "GEEN_125_90",
+      "outer_hash": "AEEF8343",
+      "canonical_outer_hash": "AEEF8343",
+      "player_requirement": "PL1200",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": true,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_125_00",
+        "hash": "9A9DC170"
+      },
+      "secondary": {
+        "id": "SKILL_125_01",
+        "hash": "522E2388"
+      },
+      "source_rowid": 898
+    },
+    {
+      "database_key": "GEEN_125_93",
+      "outer_id": "GEEN_125_93",
+      "outer_hash": "4C28585A",
+      "canonical_outer_hash": "4C28585A",
+      "player_requirement": "PL1200",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_125_02",
+        "hash": "B85202BC"
+      },
+      "secondary": null,
+      "source_rowid": 940
+    },
+    {
+      "database_key": "GEEN_126_90",
+      "outer_id": "GEEN_126_90",
+      "outer_hash": "119B24A8",
+      "canonical_outer_hash": "119B24A8",
+      "player_requirement": "PL1300",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": true,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_126_00",
+        "hash": "0CD6C625"
+      },
+      "secondary": {
+        "id": "SKILL_126_01",
+        "hash": "A3B49220"
+      },
+      "source_rowid": 907
+    },
+    {
+      "database_key": "GEEN_126_93",
+      "outer_id": "GEEN_126_93",
+      "outer_hash": "76D4716B",
+      "canonical_outer_hash": "76D4716B",
+      "player_requirement": "PL1300",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_126_02",
+        "hash": "DAEFBB27"
+      },
+      "secondary": null,
+      "source_rowid": 967
+    },
+    {
+      "database_key": "GEEN_127_90",
+      "outer_id": "GEEN_127_90",
+      "outer_hash": "1A57AEF1",
+      "canonical_outer_hash": "1A57AEF1",
+      "player_requirement": "PL1400",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": true,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_127_00",
+        "hash": "29B07BEB"
+      },
+      "secondary": {
+        "id": "SKILL_127_01",
+        "hash": "A63B89CD"
+      },
+      "source_rowid": 901
+    },
+    {
+      "database_key": "GEEN_127_93",
+      "outer_id": "GEEN_127_93",
+      "outer_hash": "CEF31894",
+      "canonical_outer_hash": "CEF31894",
+      "player_requirement": "PL1400",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_127_02",
+        "hash": "FDD1AD24"
+      },
+      "secondary": null,
+      "source_rowid": 949
+    },
+    {
+      "database_key": "GEEN_128_90",
+      "outer_id": "GEEN_128_90",
+      "outer_hash": "CE16D68B",
+      "canonical_outer_hash": "CE16D68B",
+      "player_requirement": "PL1500",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": true,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_128_00",
+        "hash": "5463232F"
+      },
+      "secondary": {
+        "id": "SKILL_128_01",
+        "hash": "451D814C"
+      },
+      "source_rowid": 899
+    },
+    {
+      "database_key": "GEEN_128_93",
+      "outer_id": "GEEN_128_93",
+      "outer_hash": "3069C2FE",
+      "canonical_outer_hash": "3069C2FE",
+      "player_requirement": "PL1500",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_128_02",
+        "hash": "0F026CF0"
+      },
+      "secondary": null,
+      "source_rowid": 943
+    },
+    {
+      "database_key": "GEEN_129_90",
+      "outer_id": "GEEN_129_90",
+      "outer_hash": "02B1F8C0",
+      "canonical_outer_hash": "02B1F8C0",
+      "player_requirement": "PL1800",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": true,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_129_00",
+        "hash": "EC3CF174"
+      },
+      "secondary": {
+        "id": "SKILL_129_01",
+        "hash": "AF513A9D"
+      },
+      "source_rowid": 906
+    },
+    {
+      "database_key": "GEEN_129_93",
+      "outer_id": "GEEN_129_93",
+      "outer_hash": "66F1B128",
+      "canonical_outer_hash": "66F1B128",
+      "player_requirement": "PL1800",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_129_02",
+        "hash": "E6B92E34"
+      },
+      "secondary": null,
+      "source_rowid": 964
+    },
+    {
+      "database_key": "GEEN_130_90",
+      "outer_id": "GEEN_130_90",
+      "outer_hash": "AF8E7E7E",
+      "canonical_outer_hash": "AF8E7E7E",
+      "player_requirement": "PL1900",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": true,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_130_00",
+        "hash": "93A2093C"
+      },
+      "secondary": {
+        "id": "SKILL_130_01",
+        "hash": "7AD0C010"
+      },
+      "source_rowid": 910
+    },
+    {
+      "database_key": "GEEN_130_93",
+      "outer_id": "GEEN_130_93",
+      "outer_hash": "98E9E6EF",
+      "canonical_outer_hash": "98E9E6EF",
+      "player_requirement": "PL1900",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_130_02",
+        "hash": "B064A634"
+      },
+      "secondary": null,
+      "source_rowid": 976
+    },
+    {
+      "database_key": "GEEN_131_90",
+      "outer_id": "GEEN_131_90",
+      "outer_hash": "4F01D6CA",
+      "canonical_outer_hash": "4F01D6CA",
+      "player_requirement": "PL1600",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": true,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_131_00",
+        "hash": "6EBFA176"
+      },
+      "secondary": {
+        "id": "SKILL_131_01",
+        "hash": "F1D5DBD0"
+      },
+      "source_rowid": 908
+    },
+    {
+      "database_key": "GEEN_131_93",
+      "outer_id": "GEEN_131_93",
+      "outer_hash": "BFDF838C",
+      "canonical_outer_hash": "BFDF838C",
+      "player_requirement": "PL1600",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_131_02",
+        "hash": "4F135217"
+      },
+      "secondary": null,
+      "source_rowid": 970
+    },
+    {
+      "database_key": "GEEN_132_90",
+      "outer_id": "GEEN_132_90",
+      "outer_hash": "E4F986D9",
+      "canonical_outer_hash": "E4F986D9",
+      "player_requirement": "PL1700",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": true,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_132_00",
+        "hash": "7440E869"
+      },
+      "secondary": {
+        "id": "SKILL_132_01",
+        "hash": "CD124165"
+      },
+      "source_rowid": 909
+    },
+    {
+      "database_key": "GEEN_132_93",
+      "outer_id": "GEEN_132_93",
+      "outer_hash": "B3AB43F3",
+      "canonical_outer_hash": "B3AB43F3",
+      "player_requirement": "PL1700",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_132_02",
+        "hash": "D7F9BB88"
+      },
+      "secondary": null,
+      "source_rowid": 973
+    },
+    {
+      "database_key": "GEEN_159_14",
+      "outer_id": "GEEN_159_24",
+      "outer_hash": "A7F84C3B",
+      "canonical_outer_hash": "0A4651BB",
+      "player_requirement": null,
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_159_00",
+        "hash": "EC1C6779"
+      },
+      "secondary": {
+        "id": "SKILL_001_00",
+        "hash": "F372F096"
+      },
+      "source_rowid": 631
+    },
+    {
+      "database_key": "GEEN_160_04",
+      "outer_id": "GEEN_160_04",
+      "outer_hash": "921D90D8",
+      "canonical_outer_hash": "921D90D8",
+      "player_requirement": null,
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_160_00",
+        "hash": "DBE1D775"
+      },
+      "secondary": {
+        "id": "SKILL_020_00",
+        "hash": "DC584F60"
+      },
+      "source_rowid": 449
+    },
+    {
+      "database_key": "GEEN_161_04",
+      "outer_id": "GEEN_161_04",
+      "outer_hash": "EE337FE3",
+      "canonical_outer_hash": "EE337FE3",
+      "player_requirement": null,
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_161_00",
+        "hash": "8D2ADB6E"
+      },
+      "secondary": {
+        "id": "SKILL_020_00",
+        "hash": "DC584F60"
+      },
+      "source_rowid": 450
+    },
+    {
+      "database_key": "GEEN_162_04",
+      "outer_id": "GEEN_162_04",
+      "outer_hash": "4438676E",
+      "canonical_outer_hash": "4438676E",
+      "player_requirement": null,
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_162_00",
+        "hash": "5C862E13"
+      },
+      "secondary": {
+        "id": "SKILL_020_00",
+        "hash": "DC584F60"
+      },
+      "source_rowid": 451
+    },
+    {
+      "database_key": "GEEN_170_90",
+      "outer_id": "GEEN_170_90",
+      "outer_hash": "6AAE4B8F",
+      "canonical_outer_hash": "6AAE4B8F",
+      "player_requirement": "PL2200",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": true,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_170_00",
+        "hash": "77C809F5"
+      },
+      "secondary": {
+        "id": "SKILL_170_01",
+        "hash": "9230E3F5"
+      },
+      "source_rowid": 911
+    },
+    {
+      "database_key": "GEEN_170_93",
+      "outer_id": "GEEN_170_93",
+      "outer_hash": "9F72BAE0",
+      "canonical_outer_hash": "9F72BAE0",
+      "player_requirement": "PL2200",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_170_02",
+        "hash": "7B4FC47A"
+      },
+      "secondary": null,
+      "source_rowid": 979
+    },
+    {
+      "database_key": "GEEN_171_90",
+      "outer_id": "GEEN_171_90",
+      "outer_hash": "8ECBB0A3",
+      "canonical_outer_hash": "8ECBB0A3",
+      "player_requirement": "PL2300",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": true,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_171_00",
+        "hash": "E85FF8E0"
+      },
+      "secondary": {
+        "id": "SKILL_171_01",
+        "hash": "8572B8AF"
+      },
+      "source_rowid": 912
+    },
+    {
+      "database_key": "GEEN_171_93",
+      "outer_id": "GEEN_171_93",
+      "outer_hash": "AD8CAEFB",
+      "canonical_outer_hash": "AD8CAEFB",
+      "player_requirement": "PL2300",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_171_02",
+        "hash": "81B293D9"
+      },
+      "secondary": null,
+      "source_rowid": 982
+    },
+    {
+      "database_key": "GEEN_172_90",
+      "outer_id": "GEEN_172_90",
+      "outer_hash": "B8C44D5E",
+      "canonical_outer_hash": "B8C44D5E",
+      "player_requirement": "PL2100",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": true,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_172_00",
+        "hash": "D40D1E9B"
+      },
+      "secondary": {
+        "id": "SKILL_172_01",
+        "hash": "15806DFC"
+      },
+      "source_rowid": 913
+    },
+    {
+      "database_key": "GEEN_172_93",
+      "outer_id": "GEEN_172_93",
+      "outer_hash": "5D592FDD",
+      "canonical_outer_hash": "5D592FDD",
+      "player_requirement": "PL2100",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_172_02",
+        "hash": "4E5F6706"
+      },
+      "secondary": null,
+      "source_rowid": 985
+    },
+    {
+      "database_key": "GEEN_173_90",
+      "outer_id": "GEEN_173_90",
+      "outer_hash": "895ABBF6",
+      "canonical_outer_hash": "895ABBF6",
+      "player_requirement": "PL2400",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": true,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "1DE14C65",
+        "hash": "1DE14C65"
+      },
+      "secondary": {
+        "id": "SKILL_173_01",
+        "hash": "26956F25"
+      },
+      "source_rowid": 914
+    },
+    {
+      "database_key": "GEEN_173_93",
+      "outer_id": "GEEN_173_93",
+      "outer_hash": "41AC1082",
+      "canonical_outer_hash": "41AC1082",
+      "player_requirement": "PL2400",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "DBA19768",
+        "hash": "DBA19768"
+      },
+      "secondary": null,
+      "source_rowid": 988
+    },
+    {
+      "database_key": "GEEN_174_90",
+      "outer_id": "GEEN_174_90",
+      "outer_hash": "D8A464F1",
+      "canonical_outer_hash": "D8A464F1",
+      "player_requirement": "PL2500",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": true,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "7B5B081D",
+        "hash": "7B5B081D"
+      },
+      "secondary": {
+        "id": "SKILL_174_01",
+        "hash": "9ACE140B"
+      },
+      "source_rowid": 915
+    },
+    {
+      "database_key": "GEEN_174_93",
+      "outer_id": "GEEN_174_93",
+      "outer_hash": "EB766D87",
+      "canonical_outer_hash": "EB766D87",
+      "player_requirement": "PL2500",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "79266456",
+        "hash": "79266456"
+      },
+      "secondary": null,
+      "source_rowid": 991
+    },
+    {
+      "database_key": "GEEN_175_90",
+      "outer_id": "GEEN_175_90",
+      "outer_hash": "95CC3CB8",
+      "canonical_outer_hash": "95CC3CB8",
+      "player_requirement": "PL2600",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": true,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "D176D262",
+        "hash": "D176D262"
+      },
+      "secondary": {
+        "id": "SKILL_175_01",
+        "hash": "461A8E07"
+      },
+      "source_rowid": 916
+    },
+    {
+      "database_key": "GEEN_175_93",
+      "outer_id": "GEEN_175_93",
+      "outer_hash": "51E98A7C",
+      "canonical_outer_hash": "51E98A7C",
+      "player_requirement": "PL2600",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "B953CC1E",
+        "hash": "B953CC1E"
+      },
+      "secondary": null,
+      "source_rowid": 994
+    },
+    {
+      "database_key": "GEEN_176_90",
+      "outer_id": "GEEN_176_90",
+      "outer_hash": "23953FD4",
+      "canonical_outer_hash": "23953FD4",
+      "player_requirement": "PL2700",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": true,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "7D75D904",
+        "hash": "7D75D904"
+      },
+      "secondary": {
+        "id": "SKILL_176_01",
+        "hash": "BE3404B9"
+      },
+      "source_rowid": 917
+    },
+    {
+      "database_key": "GEEN_176_93",
+      "outer_id": "GEEN_176_93",
+      "outer_hash": "D8C61507",
+      "canonical_outer_hash": "D8C61507",
+      "player_requirement": "PL2700",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "3EB345D7",
+        "hash": "3EB345D7"
+      },
+      "secondary": null,
+      "source_rowid": 997
+    },
+    {
+      "database_key": "GEEN_177_90",
+      "outer_id": "GEEN_177_90",
+      "outer_hash": "5A360EA8",
+      "canonical_outer_hash": "5A360EA8",
+      "player_requirement": "PL2800",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": true,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "47384248",
+        "hash": "47384248"
+      },
+      "secondary": {
+        "id": "SKILL_177_01",
+        "hash": "30773197"
+      },
+      "source_rowid": 918
+    },
+    {
+      "database_key": "GEEN_177_93",
+      "outer_id": "GEEN_177_93",
+      "outer_hash": "2D70C37D",
+      "canonical_outer_hash": "2D70C37D",
+      "player_requirement": "PL2800",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "807B6684",
+        "hash": "807B6684"
+      },
+      "secondary": null,
+      "source_rowid": 1000
+    },
+    {
+      "database_key": "GEEN_178_90",
+      "outer_id": "GEEN_178_90",
+      "outer_hash": "A8A0CBFF",
+      "canonical_outer_hash": "A8A0CBFF",
+      "player_requirement": "PL2900",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": true,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "06719232",
+        "hash": "06719232"
+      },
+      "secondary": {
+        "id": "SKILL_178_01",
+        "hash": "ED8D8AD8"
+      },
+      "source_rowid": 919
+    },
+    {
+      "database_key": "GEEN_178_93",
+      "outer_id": "GEEN_178_93",
+      "outer_hash": "9ABD2DA5",
+      "canonical_outer_hash": "9ABD2DA5",
+      "player_requirement": "PL2900",
+      "rarity": 5,
+      "can_mix": true,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "5559232F",
+        "hash": "5559232F"
+      },
+      "secondary": null,
+      "source_rowid": 1003
+    },
+    {
+      "database_key": "GEEN_222_94",
+      "outer_id": "GEEN_222_94",
+      "outer_hash": "65B73B3F",
+      "canonical_outer_hash": "65B73B3F",
+      "player_requirement": null,
+      "rarity": 5,
+      "can_mix": false,
+      "can_only_hold_one": false,
+      "pairing_source": "gem_database_row",
+      "primary": {
+        "id": "SKILL_073_00",
+        "hash": "24883AF3"
+      },
+      "secondary": {
+        "id": "SKILL_068_00",
+        "hash": "95F3FA86"
+      },
+      "source_rowid": 1033
+    }
+  ]
+}

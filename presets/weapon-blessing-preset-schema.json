@@ -34,7 +34,7 @@
           "hash": { "type": "string", "pattern": "^[0-9A-F]{8}$" },
           "name": { "type": "string" },
           "name_zh": { "type": "string" },
-          "level": { "type": "integer", "const": 99 }
+          "level": { "type": "integer", "enum": [15, 99] }
         },
         "additionalProperties": false
       }

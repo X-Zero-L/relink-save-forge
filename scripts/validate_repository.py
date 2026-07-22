@@ -91,6 +91,39 @@ VERIFIED_WEAPON_PRESET_SHA256 = (
 VERIFIED_SUMMON_PRESET_SHA256 = (
     "41FDBB2CAF0263C0534EC5F13A66DBC4BDBE9DB74AAD84DF1AB7D425AF114C5F"
 )
+VERIFIED_STANDARD_SIGIL_PRESETS = {
+    "standard-endgame-output-2.0.2": {
+        "file": "presets/sigils/standard-endgame-output-2.0.2.json",
+        "file_sha256": "F4CDF09C1DB1A4337194B6B855BC51D77577DA3C8F2FABED674EBB7FF4978790",
+        "build_sha256": "6994C5F95EE5AD6AC188A0138E7BFD66AE80E06B41F912038D5342394813F7D4",
+    },
+    "standard-endgame-qol-2.0.2": {
+        "file": "presets/sigils/standard-endgame-qol-2.0.2.json",
+        "file_sha256": "21C44DD33A62D2EEF830FF702B6B78E87EB67A6D82ED290BED552CAFB3BEAAAA",
+        "build_sha256": "FA2D287AA04C1D0E41744E868DC62706A4C485AFD753EF879AE0E31AC31F18D9",
+    },
+}
+VERIFIED_STANDARD_WEAPON_PRESETS = {
+    "endgame-qol-blessing-standard-2.0.2": {
+        "file": "presets/weapons/endgame-qol-blessing-standard-2.0.2.json",
+        "file_sha256": "3D7ED4731076222C0646B204A78017F80D7AD646E4628BAF701EB29A4EAD763B",
+        "traits": ("SKILL_069_00", "SKILL_070_00", "SKILL_044_00"),
+    },
+    "endgame-survival-blessing-standard-2.0.2": {
+        "file": "presets/weapons/endgame-survival-blessing-standard-2.0.2.json",
+        "file_sha256": "29EC397191280452B5E78EB1880C803313AC775B5FA9965AF4115EABE4BC2DBF",
+        "traits": ("SKILL_070_00", "SKILL_106_00", "SKILL_166_00"),
+    },
+}
+VERIFIED_PAIR_CATALOG_SHA256 = (
+    "C7D2A7F4CCCAD1D1E2B4C2D97CC862670176BA6A5677CC004C3B7535064F01F2"
+)
+VERIFIED_CAP_CATALOG_SHA256 = (
+    "243A8B3A72B2991F80C7623BA8B5276402D834893EE6EFDFF13D854987076648"
+)
+VERIFIED_TOP_SUMMON_CATALOG_SHA256 = (
+    "4DDD6F3310DD6263A1488DC358D56BECBCDA691D1345082FED4C3AA06770A909"
+)
 
 
 def require(condition: object, message: str) -> None:
@@ -638,12 +671,185 @@ def validate_stackable_catalog(catalog: object) -> None:
     )
 
 
+def validate_standard_sigil_presets(
+    presets: list[object],
+    character_ids: set[str],
+) -> None:
+    require(
+        sha256_file(ROOT / "catalogs" / "sigil-legal-pairs-2.0.2.json")
+        == VERIFIED_PAIR_CATALOG_SHA256,
+        "Standard sigil legal-pair catalog SHA differs",
+    )
+    require(
+        sha256_file(ROOT / "catalogs" / "skill-level-caps-2.0.2.json")
+        == VERIFIED_CAP_CATALOG_SHA256,
+        "Standard sigil skill-cap catalog SHA differs",
+    )
+    seen = set()
+    for preset in presets:
+        require(isinstance(preset, dict), "Standard sigil preset must be an object")
+        preset_id = str(preset.get("id") or "")
+        expected = VERIFIED_STANDARD_SIGIL_PRESETS.get(preset_id)
+        require(expected is not None and preset_id not in seen, f"Unexpected standard sigil preset {preset_id}")
+        seen.add(preset_id)
+        require(preset.get("schema_version") == 2, f"{preset_id} schema must be 2")
+        require(
+            preset.get("legality_mode") == "database_rows_only",
+            f"{preset_id} legality mode differs",
+        )
+        require(preset.get("outer_level") == 15, f"{preset_id} outer level differs")
+        require(preset.get("lane_level_max") == 15, f"{preset_id} lane max differs")
+        require(preset.get("build_sha256") == expected["build_sha256"], f"{preset_id} build SHA differs")
+        require(
+            sha256_file(ROOT / expected["file"]) == expected["file_sha256"],
+            f"{preset_id} file SHA differs",
+        )
+        require(
+            preset.get("pair_catalog")
+            == {
+                "file": "catalogs/sigil-legal-pairs-2.0.2.json",
+                "sha256": VERIFIED_PAIR_CATALOG_SHA256,
+            },
+            f"{preset_id} pair-catalog reference differs",
+        )
+        require(
+            preset.get("skill_cap_catalog")
+            == {
+                "file": "catalogs/skill-level-caps-2.0.2.json",
+                "sha256": VERIFIED_CAP_CATALOG_SHA256,
+            },
+            f"{preset_id} cap-catalog reference differs",
+        )
+        order = preset.get("character_order")
+        rows = preset.get("characters")
+        require(isinstance(order, list) and set(order) == character_ids, f"{preset_id} character order differs")
+        require(isinstance(rows, list) and len(rows) == 29, f"{preset_id} must contain 29 character rows")
+        row_by_id = {str(row.get("id") or ""): row for row in rows}
+        require(set(row_by_id) == character_ids, f"{preset_id} character coverage differs")
+        for character_id in order:
+            row = row_by_id[character_id]
+            sigils = row.get("sigils")
+            require(isinstance(sigils, list) and len(sigils) == 12, f"{preset_id}/{character_id} must contain 12 sigils")
+            require(
+                [sigil.get("slot") for sigil in sigils] == list(range(1, 13)),
+                f"{preset_id}/{character_id} slot order differs",
+            )
+            if character_id == "PL0100":
+                require(
+                    row.get("source_character") == "PL0000"
+                    and row.get("captain_avatar_one_only_fallback") is True,
+                    f"{preset_id} Djeeta fallback differs",
+                )
+            for sigil in sigils:
+                primary = sigil.get("primary")
+                secondary = sigil.get("secondary")
+                require(isinstance(primary, dict) and primary.get("level") == 15, f"{preset_id} primary lane is not 15")
+                require(
+                    secondary is None
+                    or (isinstance(secondary, dict) and secondary.get("level") == 15),
+                    f"{preset_id} secondary lane is not null/15",
+                )
+                require(99 not in (primary.get("level"), None if secondary is None else secondary.get("level")), f"{preset_id} contains a level-99 lane")
+    require(seen == set(VERIFIED_STANDARD_SIGIL_PRESETS), "Standard sigil preset coverage differs")
+
+
+def validate_standard_weapon_presets(presets: list[object]) -> None:
+    seen = set()
+    for preset in presets:
+        require(isinstance(preset, dict), "Standard weapon preset must be an object")
+        preset_id = str(preset.get("id") or "")
+        expected = VERIFIED_STANDARD_WEAPON_PRESETS.get(preset_id)
+        require(expected is not None and preset_id not in seen, f"Unexpected standard weapon preset {preset_id}")
+        seen.add(preset_id)
+        require(preset.get("schema_version") == 1, f"{preset_id} schema differs")
+        require(
+            sha256_file(ROOT / expected["file"]) == expected["file_sha256"],
+            f"{preset_id} file SHA differs",
+        )
+        traits = preset.get("traits")
+        require(isinstance(traits, list) and len(traits) == 3, f"{preset_id} traits differ")
+        actual_ids = tuple(str(row.get("id") or "") for row in traits)
+        require(actual_ids == expected["traits"], f"{preset_id} trait profile differs")
+        for lane, row in enumerate(traits):
+            require(row.get("lane") == lane, f"{preset_id} lane order differs")
+            require(row.get("level") == 15, f"{preset_id} lane {lane} must be 15")
+            require(
+                str(row.get("hash") or "").upper() == gbfr_hash_hex(actual_ids[lane]),
+                f"{preset_id} lane {lane} hash differs",
+            )
+    require(seen == set(VERIFIED_STANDARD_WEAPON_PRESETS), "Standard weapon preset coverage differs")
+
+
+def validate_creation_catalogs(
+    top_summons: object,
+    weapon_template: object,
+    weapon_identities: object,
+) -> None:
+    require(
+        sha256_file(ROOT / "catalogs" / "top-summons-2.0.2.json")
+        == VERIFIED_TOP_SUMMON_CATALOG_SHA256,
+        "Top-summon catalog SHA differs",
+    )
+    require(isinstance(top_summons, dict), "Top-summon catalog must be an object")
+    require(top_summons.get("schema_version") == 1, "Top-summon catalog schema differs")
+    rows = top_summons.get("summons")
+    expected_summons = [
+        ("Rolan", "0F986ED9", "B5FF9FD3", "9245DFA4"),
+        ("Lilith", "DFAB70B7", "24883AF3", "A3E537B1"),
+        ("Beelzebub", "A7EFF558", "3D8153A1", "CE70C58A"),
+        ("Lucilius", "6E5968FC", "EE85CD1F", "5A1D2C89"),
+    ]
+    require(isinstance(rows, list) and len(rows) == 4, "Top-summon catalog must contain four rows")
+    for index, (row, expected) in enumerate(zip(rows, expected_summons)):
+        actual = (
+            row.get("name"),
+            row.get("summon_hash"),
+            row.get("trait_hash"),
+            row.get("bonus_hash"),
+        )
+        require(row.get("order") == index and actual == expected, f"Top-summon row {index} differs")
+        require(
+            row.get("trait_level") == 15
+            and row.get("bonus_level") == 9
+            and row.get("state_1460") == 6,
+            f"Top-summon row {index} levels/state differ",
+        )
+
+    require(isinstance(weapon_template, dict), "Weapon instance template must be an object")
+    require(
+        weapon_template.get("id") == "weapon-instance-template-2.0.2"
+        and weapon_template.get("schema_version") == 1,
+        "Weapon instance template metadata differs",
+    )
+    require(
+        weapon_template.get("max_progression")
+        == {"experience": 162540, "uncap": 6, "plus": 99, "transcendence": 7},
+        "Weapon instance max progression differs",
+    )
+    require(isinstance(weapon_identities, dict), "Weapon identity catalog must be an object")
+    require(
+        weapon_identities.get("id") == "weapon-runtime-identities-2.0.2"
+        and weapon_identities.get("official_weapon_count") == 174
+        and weapon_identities.get("identity_count") == 371
+        and len(weapon_identities.get("identities", {})) == 371,
+        "Weapon runtime identity catalog counts differ",
+    )
+
+
 def validate_pack_manifests() -> None:
     expected_ids = {
+        "complete-armory",
+        "create-top-four-summons",
+        "gold-complete",
         "latest-endgame-gold",
         "resources-900",
         "fate-episodes-all",
         "mainline-safe-endgame",
+        "standard-complete-output",
+        "standard-complete-qol",
+        "standard-endgame-output",
+        "standard-endgame-qol",
+        "unlock-all-characters",
     }
     paths = sorted((ROOT / "presets" / "packs").glob("*.json"))
     manifests = [json.loads(path.read_text(encoding="utf-8")) for path in paths]
@@ -683,9 +889,13 @@ def validate_pack_manifests() -> None:
                 require("{input}" in command and "{output}" in command, "Transform step lacks input/output")
             if "--expected-build-sha256" in command:
                 index = command.index("--expected-build-sha256")
+                preset_index = command.index("--preset")
+                preset_token = command[preset_index + 1]
+                preset_path = ROOT / preset_token.removeprefix("{root}/")
+                preset = json.loads(preset_path.read_text(encoding="utf-8"))
                 require(
                     index + 1 < len(command)
-                    and command[index + 1] == VERIFIED_LATEST_BUILD_SHA256,
+                    and command[index + 1] == preset.get("build_sha256"),
                     "Preset expected build digest differs",
                 )
             if "--expected-preset-sha256" in command:
@@ -705,10 +915,90 @@ def validate_pack_manifests() -> None:
                     command[hash_index + 1] == sha256_file(preset_path),
                     f"Preset expected SHA differs for {preset_token}",
                 )
+            if "--expected-catalog-sha256" in command:
+                hash_index = command.index("--expected-catalog-sha256")
+                catalog_index = command.index("--catalog")
+                catalog_token = command[catalog_index + 1]
+                require(
+                    isinstance(catalog_token, str) and catalog_token.startswith("{root}/"),
+                    "Catalog path must be rooted at {root}",
+                )
+                catalog_path = ROOT / catalog_token.removeprefix("{root}/")
+                require(
+                    command[hash_index + 1] == sha256_file(catalog_path),
+                    f"Catalog expected SHA differs for {catalog_token}",
+                )
+
+    by_id = {manifest["id"]: manifest for manifest in manifests}
+    expected_complete_steps = {
+        "standard-complete-output": [
+            "unlock-all-characters",
+            "fate-episodes-all",
+            "ensure-sigil-loadouts",
+            "complete-armory",
+            "create-top-four-summons",
+            "standard-output-sigils",
+            "standard-output-weapon-blessing",
+        ],
+        "standard-complete-qol": [
+            "unlock-all-characters",
+            "fate-episodes-all",
+            "ensure-sigil-loadouts",
+            "complete-armory",
+            "create-top-four-summons",
+            "standard-qol-sigils",
+            "standard-qol-weapon-blessing",
+        ],
+        "gold-complete": [
+            "unlock-all-characters",
+            "fate-episodes-all",
+            "ensure-sigil-loadouts",
+            "complete-armory",
+            "create-top-four-summons",
+            "latest-endgame-gold",
+            "gold99-weapon-blessing",
+        ],
+    }
+    for pack_id, expected_steps in expected_complete_steps.items():
+        actual_steps = [step["id"] for step in by_id[pack_id]["steps"]]
+        require(actual_steps == expected_steps, f"{pack_id} step order differs")
+    existing_inventory_pack_ids = (
+        "standard-endgame-output",
+        "standard-endgame-qol",
+        "latest-endgame-gold",
+        "mainline-safe-endgame",
+    )
+    for pack_id in existing_inventory_pack_ids:
+        scripts = " ".join(
+            token
+            for step in by_id[pack_id]["steps"]
+            for token in step["command"]
+            if isinstance(token, str)
+        )
+        require(
+            "ensure_all_weapons.py" not in scripts
+            and "ensure_top_summons.py" not in scripts
+            and "unlock_all_characters.py" not in scripts
+            and "ensure_sigil_loadouts.py" not in scripts,
+            f"{pack_id} must remain existing-inventory only",
+        )
+    for pack_id in ("standard-endgame-output", "standard-endgame-qol"):
+        scripts = " ".join(
+            token
+            for step in by_id[pack_id]["steps"]
+            for token in step["command"]
+            if isinstance(token, str)
+        )
+        require(
+            "latest-endgame-gold" not in scripts
+            and "endgame-qol-blessing-2.0.2.json" not in scripts,
+            f"{pack_id} references a level-99 surface",
+        )
 
     for schema_name in (
         "pack-schema.json",
         "sigil-preset-schema.json",
+        "sigil-preset-schema-v2.json",
         "weapon-blessing-preset-schema.json",
         "summon-passive-preset-schema.json",
     ):
@@ -730,12 +1020,23 @@ def main() -> int:
     sigils = load("catalogs/sigils-2.0.json")
     fate = load("catalogs/fate-episodes-2.0.json")
     latest_preset = load("presets/sigils/latest-endgame-gold-2.0.2.json")
+    standard_sigils = [
+        load("presets/sigils/standard-endgame-output-2.0.2.json"),
+        load("presets/sigils/standard-endgame-qol-2.0.2.json"),
+    ]
     weapon_blessing_preset = load(
         "presets/weapons/endgame-qol-blessing-2.0.2.json"
     )
+    standard_weapon_presets = [
+        load("presets/weapons/endgame-qol-blessing-standard-2.0.2.json"),
+        load("presets/weapons/endgame-survival-blessing-standard-2.0.2.json"),
+    ]
     summon_passive_preset = load(
         "presets/summons/endgame-qol-passives-2.0.2.json"
     )
+    top_summons = load("catalogs/top-summons-2.0.2.json")
+    weapon_template = load("catalogs/weapon-instance-template-2.0.2.json")
+    weapon_identities = load("catalogs/weapon-runtime-identities-2.0.2.json")
     stackables = load("catalogs/stackable-items-2.0.2.json")
     require(
         characters["count"] == 29 == len(characters["items"]),
@@ -783,6 +1084,9 @@ def main() -> int:
         summon_passive_preset,
         character_traits,
     )
+    validate_standard_sigil_presets(standard_sigils, set(character_by_id))
+    validate_standard_weapon_presets(standard_weapon_presets)
+    validate_creation_catalogs(top_summons, weapon_template, weapon_identities)
     validate_stackable_catalog(stackables)
     validate_pack_manifests()
     runtime_metadata = source_metadata.get("runtime_presets_2_0_2", {})
@@ -998,8 +1302,12 @@ def main() -> int:
         "complete_all_weapon_awakenings.py",
         "complete_character_progression.py",
         "equip_latest_endgame_gold_sigils.py",
+        "equip_standard_sigil_preset.py",
         "equip_verified_summon_traits.py",
         "equip_verified_weapon_blessings.py",
+        "ensure_all_weapons.py",
+        "ensure_sigil_loadouts.py",
+        "ensure_top_summons.py",
         "generate_fate_episode_catalog.py",
         "generate_latest_sigil_preset.py",
         "generate_stackable_catalog.py",
@@ -1008,6 +1316,7 @@ def main() -> int:
         "save_editor_api.py",
         "set_stackable_quantity.py",
         "verify_full_rebuild.py",
+        "unlock_all_characters.py",
     }
     available_scripts = {path.name for path in (ROOT / "scripts").glob("*.py")}
     require(
@@ -1055,7 +1364,8 @@ def main() -> int:
     print(
         "ok: 29 characters, 174 weapons, 162 DB-curve rebuild/runtime rows, "
         "84 Relink 2.0 sigil rows, 319 Fate episodes + 5 REMI, 56 Fate missions, "
-        "29-character 31-effect endgame preset, 329 stackable items, 4 one-click packs"
+        "gold99 plus two database-row Lv15 builds, 329 stackable items, "
+        "12 one-click packs"
     )
     return 0
 

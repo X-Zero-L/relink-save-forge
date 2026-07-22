@@ -15,9 +15,9 @@ os.environ.setdefault("PYTHONDONTWRITEBYTECODE", "1")
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from app.presets import PresetError, PresetPack, load_presets
-from app.locking import SaveLock
-from app.runtime import (
+from app.presets import PresetError, PresetPack, load_presets  # noqa: E402
+from app.locking import SaveLock  # noqa: E402
+from app.runtime import (  # noqa: E402
     SAVE_FILENAME,
     OneClickError,
     SaveValidator,
@@ -25,7 +25,7 @@ from app.runtime import (
     require_game_closed,
     resolve_save_path,
 )
-from app.transaction import (
+from app.transaction import (  # noqa: E402
     PresetTransaction,
     latest_backup,
     restore_backup_directory,

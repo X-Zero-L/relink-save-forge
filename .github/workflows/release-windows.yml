@@ -137,7 +137,7 @@ jobs:
           name: ${{ needs.build.outputs.artifact_name }}
           path: dist
 
-      - name: Create immutable release
+      - name: Create release without replacing existing assets
         shell: pwsh
         env:
           GH_TOKEN: ${{ github.token }}

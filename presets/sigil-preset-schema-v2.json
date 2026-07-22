@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/X-Zero-L/relink-save-forge/raw/main/presets/sigil-preset-schema-v2.json",
+  "title": "Relink Save Forge database-row standard sigil preset",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "name",
+    "game_data_version",
+    "legality_mode",
+    "outer_level",
+    "lane_level_max",
+    "flags",
+    "empty_trait_hash",
+    "pair_catalog",
+    "skill_cap_catalog",
+    "build_sha256",
+    "slot_roles",
+    "character_order",
+    "characters"
+  ],
+  "properties": {
+    "schema_version": { "type": "integer", "const": 2 },
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$" },
+    "name": { "type": "string", "minLength": 1 },
+    "name_zh": { "type": "string" },
+    "description": { "type": "string" },
+    "game_data_version": { "type": "string", "const": "Relink 2.0.2" },
+    "legality_mode": { "type": "string", "const": "database_rows_only" },
+    "outer_level": { "type": "integer", "const": 15 },
+    "lane_level_max": { "type": "integer", "const": 15 },
+    "flags": { "type": "integer", "const": 3 },
+    "empty_trait_hash": { "type": "string", "const": "887AE0B0" },
+    "pair_catalog": { "$ref": "#/$defs/catalogReference" },
+    "skill_cap_catalog": { "$ref": "#/$defs/catalogReference" },
+    "build_sha256": { "type": "string", "pattern": "^[0-9A-F]{64}$" },
+    "slot_roles": {
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 12,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "character_order": {
+      "type": "array",
+      "minItems": 29,
+      "maxItems": 29,
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^PL[0-9]{4}$" }
+    },
+    "characters": {
+      "type": "array",
+      "minItems": 29,
+      "maxItems": 29,
+      "items": { "$ref": "#/$defs/character" }
+    }
+  },
+  "$defs": {
+    "catalogReference": {
+      "type": "object",
+      "required": ["file", "sha256"],
+      "properties": {
+        "file": { "type": "string", "minLength": 1 },
+        "sha256": { "type": "string", "pattern": "^[0-9A-F]{64}$" }
+      },
+      "additionalProperties": false
+    },
+    "lane": {
+      "type": "object",
+      "required": ["id", "hash", "level", "max_total_level"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "hash": { "type": "string", "pattern": "^[0-9A-F]{8}$" },
+        "level": { "type": "integer", "const": 15 },
+        "max_total_level": { "type": "integer", "minimum": 15, "maximum": 99 }
+      },
+      "additionalProperties": false
+    },
+    "sigil": {
+      "type": "object",
+      "required": [
+        "slot",
+        "role",
+        "label",
+        "database_key",
+        "outer_id",
+        "outer_hash",
+        "canonical_outer_hash",
+        "can_only_hold_one",
+        "primary",
+        "secondary"
+      ],
+      "properties": {
+        "slot": { "type": "integer", "minimum": 1, "maximum": 12 },
+        "role": { "type": "string", "minLength": 1 },
+        "label": { "type": "string", "minLength": 1 },
+        "database_key": { "type": "string", "minLength": 1 },
+        "outer_id": { "type": "string", "pattern": "^GEEN_[0-9A-Fa-f_]+$" },
+        "outer_hash": { "type": "string", "pattern": "^[0-9A-F]{8}$" },
+        "canonical_outer_hash": { "type": "string", "pattern": "^[0-9A-F]{8}$" },
+        "can_only_hold_one": { "type": "boolean" },
+        "primary": { "$ref": "#/$defs/lane" },
+        "secondary": {
+          "anyOf": [
+            { "type": "null" },
+            { "$ref": "#/$defs/lane" }
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "character": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "source_character",
+        "captain_avatar_one_only_fallback",
+        "sigils"
+      ],
+      "properties": {
+        "id": { "type": "string", "pattern": "^PL[0-9]{4}$" },
+        "name": { "type": "string" },
+        "source_character": { "type": "string", "pattern": "^PL[0-9]{4}$" },
+        "captain_avatar_one_only_fallback": { "type": "boolean" },
+        "sigils": {
+          "type": "array",
+          "minItems": 12,
+          "maxItems": 12,
+          "items": { "$ref": "#/$defs/sigil" }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

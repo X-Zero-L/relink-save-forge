@@ -48,7 +48,7 @@ sys.path[:0] = [
     str(EDITOR_ROOT / "gbfr_editor" / "data"),
 ]
 
-from gbfr_save import GBFRSaveData, UnitRecord  # noqa: E402
+from gbfr_save import GBFRSaveData, UnitRecord  # noqa: E402, F401
 
 
 def add_editor_argument(parser) -> None:

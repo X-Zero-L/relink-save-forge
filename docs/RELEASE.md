@@ -24,8 +24,8 @@ revision and licensing boundary.
 
 ## Versioning
 
-Use semantic versions. Stable releases use tags such as `v1.0.0`; prereleases
-may use tags such as `v1.1.0-rc.1`. The version passed to the packaging script
+Use semantic versions. Stable releases use tags such as `v1.1.0`; prereleases
+may use tags such as `v1.2.0-rc.1`. The version passed to the packaging script
 does not include the leading `v`.
 
 Do not move or reuse a published tag. If an asset is wrong, fix the source and
@@ -48,7 +48,7 @@ Build a local candidate with:
 
 ```powershell
 ./packaging/build-windows-bundle.ps1 `
-  -Version 1.0.0 `
+  -Version 1.1.0 `
   -OutputDirectory dist
 ```
 
@@ -88,17 +88,39 @@ the preceding build job.
    temporary artifact.
 5. Extract the ZIP into a new directory on a Windows machine that has no local
    editor checkout beside it; confirm that the packaged CPython runtime starts.
-6. Confirm first-run bootstrap behavior, upstream pin verification, preset
-   listing, dry-run output, backup creation, and explicit apply behavior.
+6. Confirm first-run bootstrap behavior, upstream pin verification, all 12
+   preset IDs, dry-run output, backup creation, and explicit apply behavior.
 7. Re-run a dry run against the produced candidate and confirm idempotent output
    where the selected preset promises idempotency.
-8. Verify that no save, Steam ID, local path, raw database, editor checkout,
+8. Exercise at least one existing-only pack and one auto-fill complete pack on
+   offline saves with different inventory progress. Confirm that:
+   - standard output/QoL packs contain only legal Lv15 traits;
+   - Gold Lv99 packs are explicitly labeled and contain the expected 99-level
+     sigil and weapon-blessing lanes;
+   - character activation only ORs field `1305` with the natural mask;
+   - each complete pack runs sigil-link repair after Fate Episodes and before
+     weapon/summon creation, producing 29×12 unique resolvable links from
+     existing nonzero instances without changing sigil contents;
+   - the two standard existing-only packs and `latest-endgame-gold` do not run
+     sigil-link repair and fail safely when their required links are absent;
+   - weapon completion covers 174 official weapons (160 endgame runtime plus 14
+     base-only), preserves unknown instances, and rejects duplicate identities;
+   - existing-only summon transforms preserve `1460`, while the create pack
+     writes the four in-game-normalized values of `6` without treating the
+     field as decoded;
+   - main-story fields `2510/2511/2520/2522` remain byte-for-byte unchanged.
+9. Verify that no save, Steam ID, local path, raw database, editor checkout,
    GBFRDataTools checkout, or GBFRelinkMod checkout is present in the ZIP, and
    that the included Python runtime matches its pin.
-9. Commit the final release metadata, then create and push an immutable signed
-   or annotated tag such as `v1.0.0`.
-10. Wait for the tag workflow to finish, download both Release assets, and
+10. Commit the final release metadata, then create and push a new signed or
+   annotated tag such as `v1.1.0`; never move or reuse a release tag.
+11. Wait for the tag workflow to finish, download both Release assets, and
     independently verify the published ZIP against `SHA256SUMS.txt`.
+
+For server-side enforcement in addition to the workflow's no-replacement
+check, repository administrators should enable immutable releases and protect
+`refs/tags/v*` from updates and deletion when those GitHub settings are
+available.
 
 ## First-run dependency policy
 
@@ -134,12 +156,17 @@ Use concrete compatibility and safety statements. Do not claim support for a
 game version or preset that was not exercised by the release candidate.
 
 ```markdown
-## Relink Save Forge vX.Y.Z
+## Relink Save Forge v1.1.0
 
 ### Included
 
 - Windows one-click launcher
-- Auditable preset manifests
+- 12 auditable preset manifests
+- Legal Lv15 output and survival/QoL presets
+- Explicit Gold Lv99 presets
+- Existing-inventory-only and auto-fill complete variants
+- Complete variants rebuild 29x12 links from existing nonzero sigil instances
+- Standalone character unlock, complete armory, and top-four summon creation
 - Offline backup, dry-run, apply, and verification flow
 
 ### Compatibility
@@ -158,7 +185,13 @@ game version or preset that was not exercised by the release candidate.
 
 The tool works on an offline copy, creates a backup before apply, and stops on
 hash, dependency, or verification failure. Keep the game closed while applying
-a preset.
+a preset. All packs preserve main-story fields 2510/2511/2520/2522. Weapon
+creation uses only canonical empty slots, preserves unknown instances, and
+rejects duplicates. Existing summon transforms preserve field 1460; summon
+creation uses the verified in-game-normalized value 6 for the four catalogued
+targets without claiming that the field's semantics are known. Complete packs
+repair sigil ownership/loadout links using existing instances only; existing-
+inventory packs leave those relationships untouched.
 
 ### Verification
 

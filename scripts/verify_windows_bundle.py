@@ -47,6 +47,22 @@ LOCAL_PATH_PATTERNS = (
 )
 MAX_MEMBER_SIZE = 128 * 1024 * 1024
 MAX_ARCHIVE_SIZE = 512 * 1024 * 1024
+EXPECTED_PRESET_IDS = frozenset(
+    {
+        "complete-armory",
+        "create-top-four-summons",
+        "fate-episodes-all",
+        "gold-complete",
+        "latest-endgame-gold",
+        "mainline-safe-endgame",
+        "resources-900",
+        "standard-complete-output",
+        "standard-complete-qol",
+        "standard-endgame-output",
+        "standard-endgame-qol",
+        "unlock-all-characters",
+    }
+)
 
 
 class BundleVerificationError(RuntimeError):
@@ -234,6 +250,14 @@ def run_checked(command: list[str], *, cwd: Path, timeout: int = 120) -> str:
     return output
 
 
+def require_expected_preset_ids(actual_ids: set[str]) -> None:
+    if actual_ids != EXPECTED_PRESET_IDS:
+        raise BundleVerificationError(
+            f"bundle preset IDs differ; expected={sorted(EXPECTED_PRESET_IDS)}, "
+            f"actual={sorted(actual_ids)}"
+        )
+
+
 def verify_preset_listing(bundle_root: Path, python_executable: Path) -> None:
     pack_dir = bundle_root / "presets" / "packs"
     expected_ids = {
@@ -242,6 +266,7 @@ def verify_preset_listing(bundle_root: Path, python_executable: Path) -> None:
     }
     if not expected_ids:
         raise BundleVerificationError("bundle contains no preset packs")
+    require_expected_preset_ids(expected_ids)
     output = run_checked(
         [str(python_executable), str(bundle_root / "app" / "launcher.py"), "--list-presets"],
         cwd=bundle_root,

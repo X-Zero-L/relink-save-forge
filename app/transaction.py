@@ -22,7 +22,6 @@ from app.runtime import (
     directory_snapshot,
     files_equal,
     require_game_closed,
-    save_metadata,
     sha256_file,
     utc_now,
 )

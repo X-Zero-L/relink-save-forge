@@ -1,0 +1,1004 @@
+{
+  "schema_version": 1,
+  "game_data_version": "Relink 2.0.2",
+  "lane_max_level": 15,
+  "count": 110,
+  "source": {
+    "database_file": "skills-2.0.2.sqlite",
+    "sha256": "85F50D5EEF9281FD5EFE568D29F56B4C4CE04B56C0BD15FB37DB9D502E298791",
+    "table": "skill_status",
+    "selection": "continuous level curves for every skill referenced by the standard presets"
+  },
+  "items": [
+    {
+      "skill_id": "SKILL_124_01",
+      "skill_hash": "05FA4599",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_124_01"
+    },
+    {
+      "skill_id": "06719232",
+      "skill_hash": "06719232",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "06719232"
+    },
+    {
+      "skill_id": "SKILL_126_00",
+      "skill_hash": "0CD6C625",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_126_00"
+    },
+    {
+      "skill_id": "0DE887A0",
+      "skill_hash": "0DE887A0",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "0DE887A0"
+    },
+    {
+      "skill_id": "SKILL_118_02",
+      "skill_hash": "0E42BE1B",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_118_02"
+    },
+    {
+      "skill_id": "SKILL_128_02",
+      "skill_hash": "0F026CF0",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_128_02"
+    },
+    {
+      "skill_id": "SKILL_117_01",
+      "skill_hash": "11AAE5F5",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_117_01"
+    },
+    {
+      "skill_id": "SKILL_116_00",
+      "skill_hash": "151E4674",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_116_00"
+    },
+    {
+      "skill_id": "SKILL_172_01",
+      "skill_hash": "15806DFC",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_172_01"
+    },
+    {
+      "skill_id": "SKILL_122_01",
+      "skill_hash": "16EFF868",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_122_01"
+    },
+    {
+      "skill_id": "1DE14C65",
+      "skill_hash": "1DE14C65",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "1DE14C65"
+    },
+    {
+      "skill_id": "SKILL_119_00",
+      "skill_hash": "23D0F67F",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_119_00"
+    },
+    {
+      "skill_id": "SKILL_073_00",
+      "skill_hash": "24883AF3",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_073_00"
+    },
+    {
+      "skill_id": "SKILL_173_01",
+      "skill_hash": "26956F25",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_173_01"
+    },
+    {
+      "skill_id": "SKILL_127_00",
+      "skill_hash": "29B07BEB",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_127_00"
+    },
+    {
+      "skill_id": "SKILL_122_00",
+      "skill_hash": "2E65A774",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_122_00"
+    },
+    {
+      "skill_id": "SKILL_177_01",
+      "skill_hash": "30773197",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_177_01"
+    },
+    {
+      "skill_id": "SKILL_069_00",
+      "skill_hash": "318D12E9",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 45,
+      "curve_row_count": 45,
+      "status_key": "SKILL_069_00"
+    },
+    {
+      "skill_id": "36E3848D",
+      "skill_hash": "36E3848D",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "36E3848D"
+    },
+    {
+      "skill_id": "SKILL_115_00",
+      "skill_hash": "3BFED918",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_115_00"
+    },
+    {
+      "skill_id": "3EB345D7",
+      "skill_hash": "3EB345D7",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "3EB345D7"
+    },
+    {
+      "skill_id": "SKILL_128_01",
+      "skill_hash": "451D814C",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_128_01"
+    },
+    {
+      "skill_id": "SKILL_175_01",
+      "skill_hash": "461A8E07",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_175_01"
+    },
+    {
+      "skill_id": "47384248",
+      "skill_hash": "47384248",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "47384248"
+    },
+    {
+      "skill_id": "SKILL_172_02",
+      "skill_hash": "4E5F6706",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_172_02"
+    },
+    {
+      "skill_id": "SKILL_131_02",
+      "skill_hash": "4F135217",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_131_02"
+    },
+    {
+      "skill_id": "SKILL_000_00",
+      "skill_hash": "50079A1C",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 50,
+      "curve_row_count": 50,
+      "status_key": "SKILL_000_00"
+    },
+    {
+      "skill_id": "SKILL_125_01",
+      "skill_hash": "522E2388",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_125_01"
+    },
+    {
+      "skill_id": "SKILL_128_00",
+      "skill_hash": "5463232F",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_128_00"
+    },
+    {
+      "skill_id": "5559232F",
+      "skill_hash": "5559232F",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "5559232F"
+    },
+    {
+      "skill_id": "SKILL_151_00",
+      "skill_hash": "57AB5B10",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 45,
+      "curve_row_count": 45,
+      "status_key": "SKILL_151_00"
+    },
+    {
+      "skill_id": "SKILL_162_00",
+      "skill_hash": "5C862E13",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 30,
+      "curve_row_count": 30,
+      "status_key": "SKILL_162_00"
+    },
+    {
+      "skill_id": "SKILL_121_02",
+      "skill_hash": "6316CBEB",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_121_02"
+    },
+    {
+      "skill_id": "SKILL_131_00",
+      "skill_hash": "6EBFA176",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_131_00"
+    },
+    {
+      "skill_id": "SKILL_123_01",
+      "skill_hash": "6FF05223",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_123_01"
+    },
+    {
+      "skill_id": "73220725",
+      "skill_hash": "73220725",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "73220725"
+    },
+    {
+      "skill_id": "SKILL_120_01",
+      "skill_hash": "7351D602",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_120_01"
+    },
+    {
+      "skill_id": "SKILL_132_00",
+      "skill_hash": "7440E869",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_132_00"
+    },
+    {
+      "skill_id": "SKILL_144_00",
+      "skill_hash": "74AA75D6",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 30,
+      "curve_row_count": 30,
+      "status_key": "SKILL_144_00"
+    },
+    {
+      "skill_id": "SKILL_170_00",
+      "skill_hash": "77C809F5",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_170_00"
+    },
+    {
+      "skill_id": "79266456",
+      "skill_hash": "79266456",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "79266456"
+    },
+    {
+      "skill_id": "SKILL_130_01",
+      "skill_hash": "7AD0C010",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_130_01"
+    },
+    {
+      "skill_id": "SKILL_170_02",
+      "skill_hash": "7B4FC47A",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_170_02"
+    },
+    {
+      "skill_id": "7B5B081D",
+      "skill_hash": "7B5B081D",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "7B5B081D"
+    },
+    {
+      "skill_id": "SKILL_064_00",
+      "skill_hash": "7C2E4D64",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 30,
+      "curve_row_count": 30,
+      "status_key": "SKILL_064_00"
+    },
+    {
+      "skill_id": "7D75D904",
+      "skill_hash": "7D75D904",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "7D75D904"
+    },
+    {
+      "skill_id": "807B6684",
+      "skill_hash": "807B6684",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "807B6684"
+    },
+    {
+      "skill_id": "SKILL_171_02",
+      "skill_hash": "81B293D9",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_171_02"
+    },
+    {
+      "skill_id": "SKILL_119_02",
+      "skill_hash": "8519AD4A",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_119_02"
+    },
+    {
+      "skill_id": "SKILL_171_01",
+      "skill_hash": "8572B8AF",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_171_01"
+    },
+    {
+      "skill_id": "SKILL_124_00",
+      "skill_hash": "86CBCDC4",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_124_00"
+    },
+    {
+      "skill_id": "SKILL_063_00",
+      "skill_hash": "8B3BF60C",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_063_00"
+    },
+    {
+      "skill_id": "SKILL_121_00",
+      "skill_hash": "8CDF9382",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_121_00"
+    },
+    {
+      "skill_id": "SKILL_161_00",
+      "skill_hash": "8D2ADB6E",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 30,
+      "curve_row_count": 30,
+      "status_key": "SKILL_161_00"
+    },
+    {
+      "skill_id": "SKILL_003_00",
+      "skill_hash": "8D78A19B",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 45,
+      "curve_row_count": 45,
+      "status_key": "SKILL_003_00"
+    },
+    {
+      "skill_id": "SKILL_118_01",
+      "skill_hash": "921B6B0C",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_118_01"
+    },
+    {
+      "skill_id": "SKILL_170_01",
+      "skill_hash": "9230E3F5",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_170_01"
+    },
+    {
+      "skill_id": "9232DC17",
+      "skill_hash": "9232DC17",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "9232DC17"
+    },
+    {
+      "skill_id": "SKILL_130_00",
+      "skill_hash": "93A2093C",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_130_00"
+    },
+    {
+      "skill_id": "SKILL_068_00",
+      "skill_hash": "95F3FA86",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 20,
+      "curve_row_count": 20,
+      "status_key": "SKILL_068_00"
+    },
+    {
+      "skill_id": "SKILL_125_00",
+      "skill_hash": "9A9DC170",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_125_00"
+    },
+    {
+      "skill_id": "SKILL_174_01",
+      "skill_hash": "9ACE140B",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_174_01"
+    },
+    {
+      "skill_id": "SKILL_115_02",
+      "skill_hash": "9AFDFA9E",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_115_02"
+    },
+    {
+      "skill_id": "SKILL_044_00",
+      "skill_hash": "A1A8E39D",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_044_00"
+    },
+    {
+      "skill_id": "SKILL_120_02",
+      "skill_hash": "A339D642",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_120_02"
+    },
+    {
+      "skill_id": "SKILL_116_01",
+      "skill_hash": "A374FDF0",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_116_01"
+    },
+    {
+      "skill_id": "SKILL_114_01",
+      "skill_hash": "A38510E2",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_114_01"
+    },
+    {
+      "skill_id": "SKILL_126_01",
+      "skill_hash": "A3B49220",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_126_01"
+    },
+    {
+      "skill_id": "SKILL_127_01",
+      "skill_hash": "A63B89CD",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_127_01"
+    },
+    {
+      "skill_id": "A7726190",
+      "skill_hash": "A7726190",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "A7726190"
+    },
+    {
+      "skill_id": "A898E283",
+      "skill_hash": "A898E283",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "A898E283"
+    },
+    {
+      "skill_id": "SKILL_118_00",
+      "skill_hash": "AA83F548",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_118_00"
+    },
+    {
+      "skill_id": "SKILL_129_01",
+      "skill_hash": "AF513A9D",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_129_01"
+    },
+    {
+      "skill_id": "SKILL_130_02",
+      "skill_hash": "B064A634",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_130_02"
+    },
+    {
+      "skill_id": "SKILL_117_00",
+      "skill_hash": "B48EEF48",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_117_00"
+    },
+    {
+      "skill_id": "SKILL_072_00",
+      "skill_hash": "B5FF9FD3",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 45,
+      "curve_row_count": 45,
+      "status_key": "SKILL_072_00"
+    },
+    {
+      "skill_id": "SKILL_125_02",
+      "skill_hash": "B85202BC",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_125_02"
+    },
+    {
+      "skill_id": "B953CC1E",
+      "skill_hash": "B953CC1E",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "B953CC1E"
+    },
+    {
+      "skill_id": "SKILL_123_02",
+      "skill_hash": "BA504607",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_123_02"
+    },
+    {
+      "skill_id": "SKILL_176_01",
+      "skill_hash": "BE3404B9",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_176_01"
+    },
+    {
+      "skill_id": "SKILL_117_02",
+      "skill_hash": "C00163B3",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_117_02"
+    },
+    {
+      "skill_id": "SKILL_119_01",
+      "skill_hash": "C2A4C7A9",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_119_01"
+    },
+    {
+      "skill_id": "SKILL_124_02",
+      "skill_hash": "C7D379F1",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_124_02"
+    },
+    {
+      "skill_id": "SKILL_114_00",
+      "skill_hash": "CD030268",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_114_00"
+    },
+    {
+      "skill_id": "SKILL_132_01",
+      "skill_hash": "CD124165",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_132_01"
+    },
+    {
+      "skill_id": "D029FE08",
+      "skill_hash": "D029FE08",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "D029FE08"
+    },
+    {
+      "skill_id": "SKILL_121_01",
+      "skill_hash": "D1012D8C",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_121_01"
+    },
+    {
+      "skill_id": "D176D262",
+      "skill_hash": "D176D262",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "D176D262"
+    },
+    {
+      "skill_id": "SKILL_172_00",
+      "skill_hash": "D40D1E9B",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_172_00"
+    },
+    {
+      "skill_id": "SKILL_116_02",
+      "skill_hash": "D76F4D24",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_116_02"
+    },
+    {
+      "skill_id": "SKILL_132_02",
+      "skill_hash": "D7F9BB88",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_132_02"
+    },
+    {
+      "skill_id": "SKILL_122_02",
+      "skill_hash": "D8F66C1C",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_122_02"
+    },
+    {
+      "skill_id": "SKILL_120_00",
+      "skill_hash": "D908223D",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_120_00"
+    },
+    {
+      "skill_id": "SKILL_114_02",
+      "skill_hash": "DADE14DC",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_114_02"
+    },
+    {
+      "skill_id": "SKILL_126_02",
+      "skill_hash": "DAEFBB27",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_126_02"
+    },
+    {
+      "skill_id": "DBA19768",
+      "skill_hash": "DBA19768",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "DBA19768"
+    },
+    {
+      "skill_id": "SKILL_160_00",
+      "skill_hash": "DBE1D775",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 30,
+      "curve_row_count": 30,
+      "status_key": "SKILL_160_00"
+    },
+    {
+      "skill_id": "SKILL_020_00",
+      "skill_hash": "DC584F60",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 65,
+      "curve_row_count": 65,
+      "status_key": "SKILL_020_00"
+    },
+    {
+      "skill_id": "SKILL_123_00",
+      "skill_hash": "E60A735C",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_123_00"
+    },
+    {
+      "skill_id": "SKILL_045_00",
+      "skill_hash": "E69A4694",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 20,
+      "curve_row_count": 20,
+      "status_key": "SKILL_045_00"
+    },
+    {
+      "skill_id": "SKILL_129_02",
+      "skill_hash": "E6B92E34",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_129_02"
+    },
+    {
+      "skill_id": "SKILL_171_00",
+      "skill_hash": "E85FF8E0",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_171_00"
+    },
+    {
+      "skill_id": "SKILL_159_00",
+      "skill_hash": "EC1C6779",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_159_00"
+    },
+    {
+      "skill_id": "SKILL_129_00",
+      "skill_hash": "EC3CF174",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_129_00"
+    },
+    {
+      "skill_id": "SKILL_178_01",
+      "skill_hash": "ED8D8AD8",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_178_01"
+    },
+    {
+      "skill_id": "SKILL_131_01",
+      "skill_hash": "F1D5DBD0",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_131_01"
+    },
+    {
+      "skill_id": "F26BAEA5",
+      "skill_hash": "F26BAEA5",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "F26BAEA5"
+    },
+    {
+      "skill_id": "SKILL_001_00",
+      "skill_hash": "F372F096",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 50,
+      "curve_row_count": 50,
+      "status_key": "SKILL_001_00"
+    },
+    {
+      "skill_id": "SKILL_115_01",
+      "skill_hash": "F8496336",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_115_01"
+    },
+    {
+      "skill_id": "SKILL_127_02",
+      "skill_hash": "FDD1AD24",
+      "lane_max_level": 15,
+      "curve_min_level": 1,
+      "max_total_level": 15,
+      "curve_row_count": 15,
+      "status_key": "SKILL_127_02"
+    }
+  ]
+}

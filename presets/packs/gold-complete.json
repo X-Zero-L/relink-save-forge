@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "gold-complete",
+  "name": "Gold Complete Lv99 + Auto-Fill",
+  "description": "Enable all characters, complete Fate Episodes, establish twelve existing sigil links for every character, create and max every official weapon, create and equip the top-four summons, then apply the explicit level-99 modifier loadout and weapon blessing. Main-story fields remain unchanged.",
+  "invariants": {
+    "preserve_header": true,
+    "preserve_payload_size": true,
+    "preserve_record_count": true
+  },
+  "steps": [
+    {
+      "id": "unlock-all-characters",
+      "name": "Enable all playable character rows",
+      "kind": "transform",
+      "command": ["{python}", "{root}/scripts/unlock_all_characters.py", "{input}", "{output}", "--characters", "{root}/catalogs/characters.json", "--audit", "{audit}", "--editor-root", "{editor_root}"]
+    },
+    {
+      "id": "fate-episodes-all",
+      "name": "Complete all Fate Episodes",
+      "kind": "transform",
+      "command": ["{python}", "{root}/scripts/complete_all_fate_episodes.py", "{input}", "{output}", "--catalog", "{root}/catalogs/fate-episodes-2.0.json", "--audit", "{audit}", "--editor-root", "{editor_root}"]
+    },
+    {
+      "id": "ensure-sigil-loadouts",
+      "name": "Establish twelve sigil links for every character",
+      "kind": "transform",
+      "command": ["{python}", "{root}/scripts/ensure_sigil_loadouts.py", "{input}", "{output}", "--characters", "{root}/catalogs/characters.json", "--audit", "{audit}", "--editor-root", "{editor_root}"]
+    },
+    {
+      "id": "complete-armory",
+      "name": "Create and complete all official weapons",
+      "kind": "transform",
+      "command": ["{python}", "{root}/scripts/ensure_all_weapons.py", "{input}", "{output}", "--characters", "{root}/catalogs/characters.json", "--weapons", "{root}/catalogs/weapons.json", "--rebuild-catalog", "{root}/catalogs/weapon-rebuild-2.0.json", "--identity-catalog", "{root}/catalogs/weapon-runtime-identities-2.0.2.json", "--instance-template", "{root}/catalogs/weapon-instance-template-2.0.2.json", "--equip-policy", "strongest", "--audit", "{audit}", "--editor-root", "{editor_root}"]
+    },
+    {
+      "id": "create-top-four-summons",
+      "name": "Create and equip the verified top four",
+      "kind": "transform",
+      "command": ["{python}", "{root}/scripts/ensure_top_summons.py", "{input}", "{output}", "--catalog", "{root}/catalogs/top-summons-2.0.2.json", "--expected-catalog-sha256", "4DDD6F3310DD6263A1488DC358D56BECBCDA691D1345082FED4C3AA06770A909", "--audit", "{audit}", "--editor-root", "{editor_root}"]
+    },
+    {
+      "id": "latest-endgame-gold",
+      "name": "Apply explicit level-99 gold sigils",
+      "kind": "transform",
+      "command": ["{python}", "{root}/scripts/equip_latest_endgame_gold_sigils.py", "{input}", "{output}", "--characters", "{root}/catalogs/characters.json", "--preset", "{root}/presets/sigils/latest-endgame-gold-2.0.2.json", "--audit", "{audit}", "--expected-build-sha256", "A2F975F504A6D3E38A1AFA6269E7F883E5578C7F807BF776D3FB70B7D95E02D6", "--editor-root", "{editor_root}"]
+    },
+    {
+      "id": "gold99-weapon-blessing",
+      "name": "Apply explicit level-99 weapon blessing",
+      "kind": "transform",
+      "command": ["{python}", "{root}/scripts/equip_verified_weapon_blessings.py", "{input}", "{output}", "--characters", "{root}/catalogs/characters.json", "--preset", "{root}/presets/weapons/endgame-qol-blessing-2.0.2.json", "--expected-preset-sha256", "BD522C3F97FECF31275AFA65C31B9FA6ED46104B706C91D816ED2AEDCBE48840", "--audit", "{audit}", "--editor-root", "{editor_root}"]
+    }
+  ]
+}

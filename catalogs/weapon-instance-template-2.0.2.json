@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "weapon-instance-template-2.0.2",
+  "game_data_version": "Relink 2.0.2",
+  "save_header": {
+    "main_version": 2,
+    "sub_version": 2
+  },
+  "layout": {
+    "counter_field": 2801,
+    "counter_unit": 0,
+    "weapon_unit_min": 40000,
+    "weapon_unit_max": 40255,
+    "fields": {
+      "2802": { "kind": "uint", "value_count": 1 },
+      "2803": { "kind": "uint", "value_count": 1 },
+      "2804": { "kind": "uint", "value_count": 1 },
+      "2805": { "kind": "int", "value_count": 1 },
+      "2806": { "kind": "int", "value_count": 1 },
+      "2807": { "kind": "int", "value_count": 1 },
+      "2813": { "kind": "uint", "value_count": 1 },
+      "2814": { "kind": "uint", "value_count": 1 },
+      "2815": { "kind": "uint", "value_count": 1 },
+      "2816": { "kind": "uint", "value_count": 1 },
+      "2817": { "kind": "int", "value_count": 1 },
+      "2818": { "kind": "uint", "value_count": 5 }
+    }
+  },
+  "empty_hash": "887AE0B0",
+  "canonical_empty": {
+    "2802": [0],
+    "2803": [2289754288],
+    "2804": [0],
+    "2805": [0],
+    "2806": [0],
+    "2807": [0],
+    "2813": [0],
+    "2814": [2289754288],
+    "2815": [0],
+    "2816": [2289754288],
+    "2817": [0],
+    "2818": [2289754288, 2289754288, 2289754288, 2289754288, 2289754288]
+  },
+  "max_progression": {
+    "experience": 162540,
+    "uncap": 6,
+    "plus": 99,
+    "transcendence": 7
+  },
+  "flags": {
+    "owned": 1,
+    "old_awakening": 16,
+    "transcendence_unlocked": 64
+  },
+  "source": {
+    "structure": "Relink 2.0.2 preallocated weapon layout and a natural forge transition from one canonical empty unit",
+    "empty_units_verified": 155,
+    "forged_unit_before": 40101,
+    "forged_defaults": {
+      "2813": 0,
+      "2814": "887AE0B0",
+      "2816": "887AE0B0",
+      "2817": 0,
+      "2818": ["887AE0B0", "887AE0B0", "887AE0B0", "887AE0B0", "887AE0B0"]
+    },
+    "flag_policy": "Only structural owned/awakening/transcendence bits are synthesized; transient bit 0x80 from the forge sample is not copied"
+  }
+}

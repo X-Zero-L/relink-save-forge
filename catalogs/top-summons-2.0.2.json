@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "top-summons-2.0.2",
+  "game_data_version": "Relink 2.0.2",
+  "description": "Verified four-summon endgame set with fixed legal passive and base-bonus lanes. Field 1460 uses the value normalized by an in-game save, not a rarity-derived guess.",
+  "summons": [
+    {
+      "order": 0,
+      "name": "Rolan",
+      "summon_hash": "0F986ED9",
+      "trait_id": "SKILL_072_00",
+      "trait_hash": "B5FF9FD3",
+      "trait_name": "Uplift",
+      "trait_level": 15,
+      "bonus_hash": "9245DFA4",
+      "bonus_name": "Normal Attack Damage Cap Up",
+      "bonus_level": 9,
+      "state_1460": 6
+    },
+    {
+      "order": 1,
+      "name": "Lilith",
+      "summon_hash": "DFAB70B7",
+      "trait_id": "SKILL_073_00",
+      "trait_hash": "24883AF3",
+      "trait_name": "Potion Hoarder",
+      "trait_level": 15,
+      "bonus_hash": "A3E537B1",
+      "bonus_name": "Attack Power Up",
+      "bonus_level": 9,
+      "state_1460": 6
+    },
+    {
+      "order": 2,
+      "name": "Beelzebub",
+      "summon_hash": "A7EFF558",
+      "trait_id": "SKILL_234_00",
+      "trait_hash": "3D8153A1",
+      "trait_name": "Spartan Echo",
+      "trait_level": 15,
+      "bonus_hash": "CE70C58A",
+      "bonus_name": "Skill Damage Cap Up",
+      "bonus_level": 9,
+      "state_1460": 6
+    },
+    {
+      "order": 3,
+      "name": "Lucilius",
+      "summon_hash": "6E5968FC",
+      "trait_id": "SKILL_233_00",
+      "trait_hash": "EE85CD1F",
+      "trait_name": "Berserker Echo",
+      "trait_level": 15,
+      "bonus_hash": "5A1D2C89",
+      "bonus_name": "Skybound Art Damage Cap Up",
+      "bonus_level": 9,
+      "state_1460": 6
+    }
+  ],
+  "source": {
+    "database": "Relink 2.0.2 summon, summon_lot, and summon_curve tables",
+    "save_structure": "fields 1451 through 1460 from a natural 2.0.2 save",
+    "state_1460_evidence": "All four instances normalized to 6 after an in-game save",
+    "empty_slot": {
+      "1456": [0],
+      "1457": ["887AE0B0"],
+      "1458": ["887AE0B0", "887AE0B0"],
+      "1459": [-1, -1],
+      "1460": [0]
+    }
+  }
+}

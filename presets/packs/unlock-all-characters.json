@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "unlock-all-characters",
+  "name": "Unlock All 29 Characters",
+  "description": "Enable every verified preallocated playable-character row by OR-ing only its natural field-1305 activation mask. Existing progression, equipment, Fate Episodes, and main-story fields are preserved.",
+  "invariants": {
+    "preserve_header": true,
+    "preserve_payload_size": true,
+    "preserve_record_count": true
+  },
+  "steps": [
+    {
+      "id": "unlock-all-characters",
+      "name": "Enable all playable character rows",
+      "kind": "transform",
+      "timeout_seconds": 1800,
+      "audit_required": true,
+      "command": [
+        "{python}",
+        "{root}/scripts/unlock_all_characters.py",
+        "{input}",
+        "{output}",
+        "--characters",
+        "{root}/catalogs/characters.json",
+        "--audit",
+        "{audit}",
+        "--editor-root",
+        "{editor_root}"
+      ]
+    }
+  ]
+}

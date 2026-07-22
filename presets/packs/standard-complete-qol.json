@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "standard-complete-qol",
+  "name": "Standard Complete Lv15 Survival/QoL",
+  "description": "Enable all characters, complete Fate Episodes, establish twelve existing sigil links for every character, create and max every official weapon, create and equip the top-four summons, then apply the legal level-15 survival/QoL loadout. No level-99 trait is used.",
+  "invariants": {
+    "preserve_header": true,
+    "preserve_payload_size": true,
+    "preserve_record_count": true
+  },
+  "steps": [
+    {
+      "id": "unlock-all-characters",
+      "name": "Enable all playable character rows",
+      "kind": "transform",
+      "command": ["{python}", "{root}/scripts/unlock_all_characters.py", "{input}", "{output}", "--characters", "{root}/catalogs/characters.json", "--audit", "{audit}", "--editor-root", "{editor_root}"]
+    },
+    {
+      "id": "fate-episodes-all",
+      "name": "Complete all Fate Episodes",
+      "kind": "transform",
+      "command": ["{python}", "{root}/scripts/complete_all_fate_episodes.py", "{input}", "{output}", "--catalog", "{root}/catalogs/fate-episodes-2.0.json", "--audit", "{audit}", "--editor-root", "{editor_root}"]
+    },
+    {
+      "id": "ensure-sigil-loadouts",
+      "name": "Establish twelve sigil links for every character",
+      "kind": "transform",
+      "command": ["{python}", "{root}/scripts/ensure_sigil_loadouts.py", "{input}", "{output}", "--characters", "{root}/catalogs/characters.json", "--audit", "{audit}", "--editor-root", "{editor_root}"]
+    },
+    {
+      "id": "complete-armory",
+      "name": "Create and complete all official weapons",
+      "kind": "transform",
+      "command": ["{python}", "{root}/scripts/ensure_all_weapons.py", "{input}", "{output}", "--characters", "{root}/catalogs/characters.json", "--weapons", "{root}/catalogs/weapons.json", "--rebuild-catalog", "{root}/catalogs/weapon-rebuild-2.0.json", "--identity-catalog", "{root}/catalogs/weapon-runtime-identities-2.0.2.json", "--instance-template", "{root}/catalogs/weapon-instance-template-2.0.2.json", "--equip-policy", "strongest", "--audit", "{audit}", "--editor-root", "{editor_root}"]
+    },
+    {
+      "id": "create-top-four-summons",
+      "name": "Create and equip the verified top four",
+      "kind": "transform",
+      "command": ["{python}", "{root}/scripts/ensure_top_summons.py", "{input}", "{output}", "--catalog", "{root}/catalogs/top-summons-2.0.2.json", "--expected-catalog-sha256", "4DDD6F3310DD6263A1488DC358D56BECBCDA691D1345082FED4C3AA06770A909", "--audit", "{audit}", "--editor-root", "{editor_root}"]
+    },
+    {
+      "id": "standard-qol-sigils",
+      "name": "Apply legal level-15 survival/QoL sigils",
+      "kind": "transform",
+      "command": ["{python}", "{root}/scripts/equip_standard_sigil_preset.py", "{input}", "{output}", "--characters", "{root}/catalogs/characters.json", "--preset", "{root}/presets/sigils/standard-endgame-qol-2.0.2.json", "--pair-catalog", "{root}/catalogs/sigil-legal-pairs-2.0.2.json", "--cap-catalog", "{root}/catalogs/skill-level-caps-2.0.2.json", "--expected-preset-sha256", "21C44DD33A62D2EEF830FF702B6B78E87EB67A6D82ED290BED552CAFB3BEAAAA", "--expected-build-sha256", "FA2D287AA04C1D0E41744E868DC62706A4C485AFD753EF879AE0E31AC31F18D9", "--audit", "{audit}", "--editor-root", "{editor_root}"]
+    },
+    {
+      "id": "standard-qol-weapon-blessing",
+      "name": "Apply legal level-15 survival weapon blessing",
+      "kind": "transform",
+      "command": ["{python}", "{root}/scripts/equip_verified_weapon_blessings.py", "{input}", "{output}", "--characters", "{root}/catalogs/characters.json", "--preset", "{root}/presets/weapons/endgame-survival-blessing-standard-2.0.2.json", "--expected-preset-sha256", "29EC397191280452B5E78EB1880C803313AC775B5FA9965AF4115EABE4BC2DBF", "--audit", "{audit}", "--editor-root", "{editor_root}"]
+    }
+  ]
+}

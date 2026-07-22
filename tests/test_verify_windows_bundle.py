@@ -3,7 +3,12 @@ import unittest
 import zipfile
 from pathlib import Path
 
-from scripts.verify_windows_bundle import BundleVerificationError, inspect_archive
+from scripts.verify_windows_bundle import (
+    EXPECTED_PRESET_IDS,
+    BundleVerificationError,
+    inspect_archive,
+    require_expected_preset_ids,
+)
 
 
 class WindowsBundleArchiveTests(unittest.TestCase):
@@ -106,6 +111,25 @@ class WindowsBundleArchiveTests(unittest.TestCase):
                     "editor source leaked|cache or download directory leaked",
                 ):
                     inspect_archive(archive)
+
+    def test_accepts_the_exact_release_preset_set(self) -> None:
+        require_expected_preset_ids(set(EXPECTED_PRESET_IDS))
+
+    def test_rejects_a_missing_required_preset(self) -> None:
+        incomplete = set(EXPECTED_PRESET_IDS)
+        incomplete.remove("gold-complete")
+        with self.assertRaisesRegex(
+            BundleVerificationError,
+            "bundle preset IDs differ",
+        ):
+            require_expected_preset_ids(incomplete)
+
+    def test_rejects_an_extra_preset(self) -> None:
+        with self.assertRaisesRegex(
+            BundleVerificationError,
+            "bundle preset IDs differ",
+        ):
+            require_expected_preset_ids({*EXPECTED_PRESET_IDS, "unexpected-pack"})
 
 
 if __name__ == "__main__":

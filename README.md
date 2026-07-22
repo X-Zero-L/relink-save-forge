@@ -13,10 +13,15 @@
 - `catalogs/weapon-runtime-aliases.json`：162 条数据库运行时武器哈希到正式基础武器的映射。
 - `catalogs/sigils-2.0.json`：2.0 新角色专属因子与 `GEEN_320`–`GEEN_327` 新通用/天星因子数据库行。
 - `catalogs/stackable-items-2.0.2.json`：329 种可安全设置为 900 的普通可叠加物品，含 8 种解锁卷。
+- `catalogs/sigil-legal-pairs-2.0.2.json` 与 `catalogs/skill-level-caps-2.0.2.json`：标准版 Lv15 因子的数据库合法组合与逐技能总等级上限。
+- `catalogs/weapon-runtime-identities-2.0.2.json` 与 `catalogs/weapon-instance-template-2.0.2.json`：174 把正式武器的基础/运行时身份和规范空实例模板。
+- `catalogs/top-summons-2.0.2.json`：四颗终盘召唤石的实机验证创建元组，包含合法 `15/9` lane 与游戏保存后规范化的 `1460=6`。
 - `presets/sigils/latest-endgame-gold-2.0.2.json`：29 名角色各 12 枚、24 个唯一 99 级词条的数据库脱离版终盘老金预设。
+- `presets/sigils/standard-endgame-*-2.0.2.json`：只使用数据库真实因子行、所有非空内部词条均为合法 Lv15 的输出与生存/QoL 预设。
 - `presets/weapons/endgame-qol-blessing-2.0.2.json`：29 把当前装备武器统一使用技能冷却、怒涛、霸体三条 99 级祝福。
+- `presets/weapons/*-standard-2.0.2.json`：正常版输出与生存/QoL 的合法 Lv15 武器祝福。
 - `presets/summons/endgame-qol-passives-2.0.2.json`：现有四颗终盘召唤石的合法满级被动，保留外壳、第二加成槽和未知状态字段。
-- `presets/packs/`：最新终盘老金、资源 900、全命运篇章和主线安全组合包。
+- `presets/packs/`：12 个可独立选择的现有实例、自动补齐、资源、命运篇章、角色、武器和召唤石预设包。
 - `app/` 与 `RelinkSaveForge.cmd`：自动定位、备份、双遍验证、原子部署和恢复入口。
 - `scripts/generate_catalogs.py`：从本地数据库重新生成三份清单。
 - `scripts/generate_fate_episode_catalog.py`：从 2.0 `fate_episode` SQLite 表与原始 `fate_episode.tbl` 生成可复核命运篇章清单。
@@ -28,6 +33,10 @@
 - `scripts/equip_latest_endgame_gold_sigils.py`：应用 α/β/γ、摇曳步、天星、守护、金刚和逐角色觉醒/战气的 99/99 终盘因子预设。
 - `scripts/equip_verified_weapon_blessings.py`：按 `1402 → 2802` 定位 29 把当前装备武器，同步写 `2816` 与 87 个 `130m` 运行时词条槽。
 - `scripts/equip_verified_summon_traits.py`：只重配四颗已装备终盘召唤石的被动槽，完整保留其加成槽、链接和 `1460`。
+- `scripts/unlock_all_characters.py`：只对 29 个预分配角色行的 `1305` 执行自然激活 mask 的按位 OR，不覆盖已有 bit 或进度。
+- `scripts/ensure_sigil_loadouts.py`：只用已有非零因子实例为 29 名角色建立各 12 个唯一、可解析的 `1403 ↔ 2702/2706` 链接，不创建或改写因子内容，并保留非目标配装、尾槽引用与未选中的 owner。
+- `scripts/ensure_all_weapons.py`：只在规范空槽中创建缺少的正式武器，保留未知/模组实例，拒绝重复实例 ID 或重复正式武器。
+- `scripts/ensure_top_summons.py`：创建、解锁并装备缺少的四颗终盘召唤石，使用实机保存确认的完整实例元组。
 - `scripts/set_stackable_quantity.py`：只把 329 种普通堆叠物设为 900，排除主线、钥匙、Fate 特殊物和 `210x` 实例。
 - `scripts/build_all_weapons_verified.py`：基于真实打造探针与数据库清单建立 174 个完整武器实例。
 - `scripts/complete_all_weapon_awakenings.py`：按当前武器对应的五条数据库技能曲线完成全部普通/旧觉醒武器的 2.0 超限 Lv7。
@@ -41,16 +50,18 @@
 
 从 [Releases](https://github.com/X-Zero-L/relink-save-forge/releases/latest) 下载 `RelinkSaveForge-win-x64-v*.zip`，解压后双击 `RelinkSaveForge.cmd`。包内含便携式 CPython，不要求系统安装 Python；首次运行会联网下载固定提交的 `GBFR-Save-Editor` 存档核心并记录来源。
 
-入口提供四个经过仓库验证的预设：
+v1.1.0 菜单提供 12 个经过仓库验证的预设。配装预设明确分为两条边界：
 
-1. `Complete Endgame Gold + QoL`：29 人完整 31 效果终盘配装，包含角色因子、当前装备武器祝福和现有四颗终盘召唤石被动。
-2. `Ordinary Resources x900`：329 种普通堆叠物与 8 种解锁卷设为 900。
-3. `Complete All Fate Episodes`：完成 319 条命运篇章与 56 个有效任务计数。
-4. `Mainline-Safe Essentials`：资源 900 → 命运篇章 → 完整 31 效果终盘配装。
+- **Existing Inventory / 仅配装现有实例**：`standard-endgame-output`、`standard-endgame-qol`、`latest-endgame-gold` 和 `mainline-safe-endgame`。它们不会修复缺失的因子链接，也不创建缺失的武器或召唤石；召唤重配保留现有实例的未知 `1460` 字段。
+- **Complete / Auto-Fill / 自动补齐后配装**：`standard-complete-output`、`standard-complete-qol` 和 `gold-complete`。它们依次启用角色、完成命运篇章、用已有非零因子实例为 29 人建立各 12 个可解析链接、补齐并强化正式武器、创建并装备四颗终盘召唤石，再应用所选配装。
+
+另外五个包可单独运行：`unlock-all-characters`、`complete-armory`、`create-top-four-summons`、`resources-900` 和 `fate-episodes-all`。因此用户可以只解锁角色、只补武器、只补召唤石，也可以选择正常 Lv15 或显式老金 Lv99 的完整组合。
+
+正常版有两种取向：`Output` 使用合法 Lv15 的输出因子与 Quick Cooldown/Cascade/Stout Heart 武器祝福；`Survival/QoL` 使用合法 Lv15 的生存便利因子与 Cascade/Nimble Onslaught/Greater Aegis 武器祝福。两者所有因子外壳和内部 lane 都来自 2.0.2 数据库真实组合，并检查单项总等级不超过对应曲线上限。只有显示名明确标记 `Gold` 和 `Lv99` 的包才会写入 99 级因子或武器祝福。
 
 一键入口会先确认游戏未运行，备份整个 `SaveGames`，在 `%LOCALAPPDATA%` 下的独立运行目录生成候选和 JSON 审计，再完整执行第二遍并要求 SHA-256/字节完全一致。只有用户确认部署时才会原子替换 `SaveData1.dat`；活动档在处理期间发生变化会立即中止。恢复功能只接受来源目录、Steam 封装和清单哈希匹配的备份，不会自动覆盖未知的新存档。
 
-当前组合包不会创建缺失的武器、召唤石或物品实例，也不修改专精。它只重配已经装备的 29 把武器和现有四颗终盘召唤石；武器重建仍依赖特定打造探针，专精脚本仍作为高级工具单独验证。完整说明见 [docs/ONE_CLICK_WINDOWS.md](docs/ONE_CLICK_WINDOWS.md)。
+所有包都保持 Steam 封装、payload 大小、记录数以及主线字段 `2510/2511/2520/2522` 不变。Complete 包的因子链接阶段不生成实例：它只选择已有非零因子，保留实例 ID、外壳、等级、flags 和内部词条，仅规范化前 12 个 `1403` 槽与所选实例的 `2706` owner；非目标 `1403`、目标角色第 13 个及后续尾槽、未选中的 owner 都原样保留并从补位池排除，可安全使用的实例不足 348 个时停止。自动补齐武器只使用 256 个预分配物理槽中的规范空槽：目标为 174 把正式武器，其中 160 把具有完整 2.0 终盘运行时规格，14 把保持基础规格；未知或模组武器原样保留，重复实例 ID、重复正式武器或半空壳会在写盘前拒绝。角色解锁只 OR `1305` 的自然 mask。创建召唤石时，四个目标的 `1460` 使用实机保存后的规范值 `6`；该字段语义仍未知，现有实例重配不会改写它。完整说明见 [docs/ONE_CLICK_WINDOWS.md](docs/ONE_CLICK_WINDOWS.md)。
 
 ## 快速验证
 
@@ -180,7 +191,11 @@ python scripts/verify_full_rebuild.py `
 
 当前正常保存的实机样本包含 171 个可处理实例、159 种当前规格，其中 70 个旧觉醒实例、101 个普通武器实例；唯一缺少的当前规格是 `WEP_PL0000_01`。已有 74 个游戏内满级实例的 370 个技能槽与数据库曲线逐槽完全一致，这也是生成器、完成脚本和验证器采用的硬性证明。详见 [docs/WEAPON_REBUILD_2_0.md](docs/WEAPON_REBUILD_2_0.md)。
 
-## 2.0.2 最新终盘老金预设
+## 2.0.2 标准 Lv15 与显式老金 Lv99
+
+标准预设只发布数据库真实 `gem` 行允许的外壳/主词条/副词条组合。每个非空内部 lane 固定为 Lv15，同时按角色聚合相同技能的总等级并检查不超过该技能的 2.0.2 曲线上限；单词条因子的空副 lane 明确写回空哈希与等级 0。`standard-endgame-output` 偏向输出，`standard-endgame-qol` 偏向生存和操作便利；对应 `standard-complete-*` 会先自动补齐角色状态、命运篇章、因子装备链接、武器与四颗召唤石。标准包不会写任何 99 级 trait。
+
+老金预设的 ID 明确带 `gold`，显示名和说明明确标记 `Gold` 与 `Lv99`，不会伪装成正常配装。
 
 默认完整配装覆盖全部 29 名角色。每人 12 枚因子、24 个不重复的 99 级内部词条，包含三组天星、属性克制转换、α、β、γ、伤害上限、追击、守护、金刚、躲避性能、摇曳步、豪胆、自动复活，以及逐角色觉醒和战气。每把当前装备武器另外获得技能冷却、怒涛和霸体三条 99 级祝福；四颗全局召唤石分别提供激昂、药水携带、斯巴达 Echo 和狂战士 Echo 的合法 15 级满级效果。每个角色最终覆盖 31 种不重复效果。
 
@@ -206,4 +221,4 @@ python scripts/verify_full_rebuild.py `
 
 ## English summary
 
-Relink Save Forge provides reproducible Relink 2.0.2 catalogs, auditable preset packs, a portable Windows launcher, and verified offline rebuild tools. The recommended one-click packs cover resources x900, all Fate Episodes, and a 29-character 31-effect endgame build spanning sigils, equipped-weapon blessings, and existing top-four summon passives while preserving main-story fields. No saves, personal Steam IDs, game databases, or unlicensed third-party editor code are distributed.
+Relink Save Forge v1.1.0 provides 12 auditable one-click packs for Relink 2.0.2. Users can choose legal level-15 output or survival/QoL builds, explicitly labeled level-99 modifier builds, existing-inventory-only transforms, or auto-fill bundles that enable all characters, rebuild 29×12 resolvable links from existing nonzero sigil instances, create missing official weapons, and create/equip the verified top-four summons. Existing-only packs do not repair missing sigil links. Standalone character, armory, summon, resources-x900, and Fate Episode packs are also included. Every pack preserves main-story fields 2510/2511/2520/2522; no saves, personal Steam IDs, game databases, or unlicensed third-party editor code are distributed.
