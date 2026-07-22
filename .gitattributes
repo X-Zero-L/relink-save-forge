@@ -1,0 +1,6 @@
+# Reproducible catalog and preset hashes must not depend on checkout platform.
+*.json text eol=lf
+
+# Keep executable Windows entrypoints in their native line-ending convention.
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
