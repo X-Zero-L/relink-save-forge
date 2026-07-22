@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "id": "resources-900",
+  "name": "Ordinary Resources x900",
+  "description": "Set all 329 catalog-backed ordinary stackable materials and consumables, including eight unlock tickets, to 900 while excluding story/key items.",
+  "invariants": {
+    "preserve_header": true,
+    "preserve_payload_size": true,
+    "preserve_record_count": true
+  },
+  "steps": [
+    {
+      "id": "resources-900",
+      "name": "Refill ordinary stackable resources",
+      "kind": "transform",
+      "timeout_seconds": 1800,
+      "audit_required": true,
+      "command": [
+        "{python}",
+        "{root}/scripts/set_stackable_quantity.py",
+        "{input}",
+        "{output}",
+        "--catalog",
+        "{root}/catalogs/stackable-items-2.0.2.json",
+        "--quantity",
+        "900",
+        "--audit",
+        "{audit}",
+        "--editor-root",
+        "{editor_root}"
+      ]
+    }
+  ]
+}

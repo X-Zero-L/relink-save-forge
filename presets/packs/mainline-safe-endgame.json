@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "id": "mainline-safe-endgame",
+  "name": "Mainline-Safe Essentials",
+  "description": "Recommended essentials bundle: resources x900, all Fate Episodes, and the complete 29-character 31-effect endgame build. It changes only equipped sigils, equipped-weapon blessing snapshots, and the passive lane on the existing top-four summons; it does not add weapon, summon, or inventory instances.",
+  "invariants": {
+    "preserve_header": true,
+    "preserve_payload_size": true,
+    "preserve_record_count": true
+  },
+  "steps": [
+    {
+      "id": "resources-900",
+      "name": "Refill ordinary stackable resources",
+      "kind": "transform",
+      "timeout_seconds": 1800,
+      "audit_required": true,
+      "command": [
+        "{python}",
+        "{root}/scripts/set_stackable_quantity.py",
+        "{input}",
+        "{output}",
+        "--catalog",
+        "{root}/catalogs/stackable-items-2.0.2.json",
+        "--quantity",
+        "900",
+        "--audit",
+        "{audit}",
+        "--editor-root",
+        "{editor_root}"
+      ]
+    },
+    {
+      "id": "fate-episodes-all",
+      "name": "Complete all Fate Episodes",
+      "kind": "transform",
+      "timeout_seconds": 1800,
+      "audit_required": true,
+      "command": [
+        "{python}",
+        "{root}/scripts/complete_all_fate_episodes.py",
+        "{input}",
+        "{output}",
+        "--catalog",
+        "{root}/catalogs/fate-episodes-2.0.json",
+        "--audit",
+        "{audit}",
+        "--editor-root",
+        "{editor_root}"
+      ]
+    },
+    {
+      "id": "latest-endgame-gold",
+      "name": "Apply latest endgame gold sigils",
+      "kind": "transform",
+      "timeout_seconds": 1800,
+      "audit_required": true,
+      "command": [
+        "{python}",
+        "{root}/scripts/equip_latest_endgame_gold_sigils.py",
+        "{input}",
+        "{output}",
+        "--characters",
+        "{root}/catalogs/characters.json",
+        "--preset",
+        "{root}/presets/sigils/latest-endgame-gold-2.0.2.json",
+        "--audit",
+        "{audit}",
+        "--expected-build-sha256",
+        "A2F975F504A6D3E38A1AFA6269E7F883E5578C7F807BF776D3FB70B7D95E02D6",
+        "--editor-root",
+        "{editor_root}"
+      ]
+    },
+    {
+      "id": "endgame-qol-weapon-blessing",
+      "name": "Apply equipped-weapon QoL blessing",
+      "kind": "transform",
+      "timeout_seconds": 1800,
+      "audit_required": true,
+      "command": [
+        "{python}",
+        "{root}/scripts/equip_verified_weapon_blessings.py",
+        "{input}",
+        "{output}",
+        "--characters",
+        "{root}/catalogs/characters.json",
+        "--preset",
+        "{root}/presets/weapons/endgame-qol-blessing-2.0.2.json",
+        "--expected-preset-sha256",
+        "BD522C3F97FECF31275AFA65C31B9FA6ED46104B706C91D816ED2AEDCBE48840",
+        "--audit",
+        "{audit}",
+        "--editor-root",
+        "{editor_root}"
+      ]
+    },
+    {
+      "id": "endgame-qol-summon-passives",
+      "name": "Apply top-four summon passives",
+      "kind": "transform",
+      "timeout_seconds": 1800,
+      "audit_required": true,
+      "command": [
+        "{python}",
+        "{root}/scripts/equip_verified_summon_traits.py",
+        "{input}",
+        "{output}",
+        "--preset",
+        "{root}/presets/summons/endgame-qol-passives-2.0.2.json",
+        "--expected-preset-sha256",
+        "41FDBB2CAF0263C0534EC5F13A66DBC4BDBE9DB74AAD84DF1AB7D425AF114C5F",
+        "--audit",
+        "{audit}",
+        "--editor-root",
+        "{editor_root}"
+      ]
+    }
+  ]
+}

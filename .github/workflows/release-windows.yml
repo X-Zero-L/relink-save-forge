@@ -1,0 +1,163 @@
+name: Windows bundle
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+    tags:
+      - "v*"
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Version to embed in the bundle, without the leading v
+        required: false
+        default: 0.0.0-dev
+        type: string
+
+concurrency:
+  group: windows-bundle-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Validate, test, and package
+    runs-on: windows-latest
+    timeout-minutes: 20
+    outputs:
+      artifact_name: ${{ steps.package.outputs.artifact_name }}
+      version: ${{ steps.version.outputs.version }}
+      zip_name: ${{ steps.package.outputs.zip_name }}
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11.9"
+
+      - name: Resolve release version
+        id: version
+        shell: pwsh
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          REF_NAME: ${{ github.ref_name }}
+          MANUAL_VERSION: ${{ inputs.version }}
+        run: |
+          if ($env:EVENT_NAME -eq "push" -and $env:GITHUB_REF_TYPE -eq "tag") {
+            if (-not $env:REF_NAME.StartsWith("v")) {
+              throw "Release tags must start with v."
+            }
+            $version = $env:REF_NAME.Substring(1)
+          } elseif ($env:EVENT_NAME -eq "workflow_dispatch") {
+            $version = $env:MANUAL_VERSION
+          } else {
+            $version = "0.0.0-ci.$env:GITHUB_RUN_NUMBER"
+          }
+
+          if ($version -notmatch '^\d+\.\d+\.\d+(?:-[0-9A-Za-z.-]+)?(?:\+[0-9A-Za-z.-]+)?$') {
+            throw "Version must be valid SemVer, for example 1.0.0 or 1.0.0-rc.1."
+          }
+
+          "version=$version" >> $env:GITHUB_OUTPUT
+
+      - name: Validate repository
+        shell: pwsh
+        run: python scripts/validate_repository.py
+
+      - name: Run unit tests
+        shell: pwsh
+        run: python -m unittest discover -s tests -p "test_*.py"
+
+      - name: Build Windows bundle
+        id: package
+        shell: pwsh
+        env:
+          RELEASE_VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          & ./packaging/build-windows-bundle.ps1 `
+            -Version $env:RELEASE_VERSION `
+            -OutputDirectory dist
+
+          $archives = @(Get-ChildItem -LiteralPath dist -Filter "*.zip" -File)
+          if ($archives.Count -ne 1) {
+            throw "Packaging must produce exactly one ZIP; found $($archives.Count)."
+          }
+
+          $archive = $archives[0]
+          $checksum = (Get-FileHash -LiteralPath $archive.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
+          "$checksum  $($archive.Name)" |
+            Set-Content -LiteralPath (Join-Path dist "SHA256SUMS.txt") -Encoding ascii
+
+          "artifact_name=Relink-Save-Forge-Windows-$env:RELEASE_VERSION" >> $env:GITHUB_OUTPUT
+          "zip_name=$($archive.Name)" >> $env:GITHUB_OUTPUT
+
+      - name: Smoke test packaged portable runtime
+        shell: pwsh
+        run: |
+          python scripts/verify_windows_bundle.py `
+            "dist/${{ steps.package.outputs.zip_name }}" `
+            --checksums dist/SHA256SUMS.txt
+
+      - name: Upload workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.package.outputs.artifact_name }}
+          path: |
+            dist/${{ steps.package.outputs.zip_name }}
+            dist/SHA256SUMS.txt
+          if-no-files-found: error
+          retention-days: 14
+
+  publish:
+    name: Publish GitHub Release assets
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
+    needs: build
+    runs-on: windows-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
+    steps:
+      - name: Download verified bundle
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{ needs.build.outputs.artifact_name }}
+          path: dist
+
+      - name: Create immutable release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.ref_name }}
+          ZIP_NAME: ${{ needs.build.outputs.zip_name }}
+        run: |
+          $archive = Join-Path dist $env:ZIP_NAME
+          $checksums = Join-Path dist "SHA256SUMS.txt"
+          if (-not (Test-Path -LiteralPath $archive) -or -not (Test-Path -LiteralPath $checksums)) {
+            throw "Downloaded release artifact is incomplete."
+          }
+
+          gh release view $env:RELEASE_TAG --repo $env:GITHUB_REPOSITORY *> $null
+          if ($LASTEXITCODE -eq 0) {
+            throw "Release $env:RELEASE_TAG already exists; publish a new version instead of replacing assets."
+          }
+
+          $releaseArgs = @(
+            "release", "create", $env:RELEASE_TAG, $archive, $checksums,
+            "--repo", $env:GITHUB_REPOSITORY,
+            "--verify-tag",
+            "--title", "Relink Save Forge $env:RELEASE_TAG",
+            "--generate-notes"
+          )
+          if ($env:RELEASE_TAG -match '^v\d+\.\d+\.\d+-') {
+            $releaseArgs += "--prerelease"
+          }
+          & gh @releaseArgs

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "fate-episodes-all",
+  "name": "Complete All Fate Episodes",
+  "description": "Complete the 319 catalog-backed Fate Episodes and their 56 valid mission counters while preserving REMI rows, placeholders, and main-story fields.",
+  "invariants": {
+    "preserve_header": true,
+    "preserve_payload_size": true,
+    "preserve_record_count": true
+  },
+  "steps": [
+    {
+      "id": "fate-episodes-all",
+      "name": "Complete all Fate Episodes",
+      "kind": "transform",
+      "timeout_seconds": 1800,
+      "audit_required": true,
+      "command": [
+        "{python}",
+        "{root}/scripts/complete_all_fate_episodes.py",
+        "{input}",
+        "{output}",
+        "--catalog",
+        "{root}/catalogs/fate-episodes-2.0.json",
+        "--audit",
+        "{audit}",
+        "--editor-root",
+        "{editor_root}"
+      ]
+    }
+  ]
+}

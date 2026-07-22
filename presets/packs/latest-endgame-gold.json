@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "latest-endgame-gold",
+  "name": "Complete Endgame Gold + QoL (29 characters)",
+  "description": "Apply the verified Relink 2.0.2 31-effect build: 24 unique level-99 sigil traits per character, three level-99 equipped-weapon blessing traits, and four legal max-level global summon passives without changing story progress.",
+  "invariants": {
+    "preserve_header": true,
+    "preserve_payload_size": true,
+    "preserve_record_count": true
+  },
+  "steps": [
+    {
+      "id": "latest-endgame-gold",
+      "name": "Apply latest endgame gold sigils",
+      "kind": "transform",
+      "timeout_seconds": 1800,
+      "audit_required": true,
+      "command": [
+        "{python}",
+        "{root}/scripts/equip_latest_endgame_gold_sigils.py",
+        "{input}",
+        "{output}",
+        "--characters",
+        "{root}/catalogs/characters.json",
+        "--preset",
+        "{root}/presets/sigils/latest-endgame-gold-2.0.2.json",
+        "--audit",
+        "{audit}",
+        "--expected-build-sha256",
+        "A2F975F504A6D3E38A1AFA6269E7F883E5578C7F807BF776D3FB70B7D95E02D6",
+        "--editor-root",
+        "{editor_root}"
+      ]
+    },
+    {
+      "id": "endgame-qol-weapon-blessing",
+      "name": "Apply equipped-weapon QoL blessing",
+      "kind": "transform",
+      "timeout_seconds": 1800,
+      "audit_required": true,
+      "command": [
+        "{python}",
+        "{root}/scripts/equip_verified_weapon_blessings.py",
+        "{input}",
+        "{output}",
+        "--characters",
+        "{root}/catalogs/characters.json",
+        "--preset",
+        "{root}/presets/weapons/endgame-qol-blessing-2.0.2.json",
+        "--expected-preset-sha256",
+        "BD522C3F97FECF31275AFA65C31B9FA6ED46104B706C91D816ED2AEDCBE48840",
+        "--audit",
+        "{audit}",
+        "--editor-root",
+        "{editor_root}"
+      ]
+    },
+    {
+      "id": "endgame-qol-summon-passives",
+      "name": "Apply top-four summon passives",
+      "kind": "transform",
+      "timeout_seconds": 1800,
+      "audit_required": true,
+      "command": [
+        "{python}",
+        "{root}/scripts/equip_verified_summon_traits.py",
+        "{input}",
+        "{output}",
+        "--preset",
+        "{root}/presets/summons/endgame-qol-passives-2.0.2.json",
+        "--expected-preset-sha256",
+        "41FDBB2CAF0263C0534EC5F13A66DBC4BDBE9DB74AAD84DF1AB7D425AF114C5F",
+        "--audit",
+        "{audit}",
+        "--editor-root",
+        "{editor_root}"
+      ]
+    }
+  ]
+}
