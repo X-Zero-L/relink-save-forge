@@ -2,9 +2,10 @@
 
 Ported from the public GBFRDataTools implementation. This is not the save-file
 payload integrity hash; see docs/SAVE_SAFETY.md for that distinction.
-"""
 
-from __future__ import annotations
+The upstream implementation uses a ``do/while`` loop for its 16-byte path.
+That detail matters: an input of exactly 16 bytes must process one long block.
+"""
 
 PRIME32_1 = 0x9E3779B1
 PRIME32_2 = 0x85EBCA77
@@ -36,7 +37,9 @@ def gbfr_hash_bytes(data: bytes) -> int:
         v2 = 0x871FB76A
         v3 = 0x0133ECF3
         v4 = 0x62FC7342
-        while length - offset > 16:
+        # GBFRDataTools uses do/while here. A normal pre-checked ``> 16`` loop
+        # silently computes the wrong value for every exactly-16-byte GBID.
+        while True:
             v1 = _round(v1, int.from_bytes(view[offset : offset + 4], "little"))
             offset += 4
             v2 = _round(v2, int.from_bytes(view[offset : offset + 4], "little"))
@@ -45,6 +48,8 @@ def gbfr_hash_bytes(data: bytes) -> int:
             offset += 4
             v4 = _round(v4, int.from_bytes(view[offset : offset + 4], "little"))
             offset += 4
+            if length - offset <= 16:
+                break
         result = _u32(
             _rotl32(v1, 1) + _rotl32(v2, 7) + _rotl32(v3, 12) + _rotl32(v4, 18)
         )
@@ -70,4 +75,3 @@ def gbfr_hash(text: str, encoding: str = "ascii") -> int:
 
 def gbfr_hash_hex(text: str) -> str:
     return f"{gbfr_hash(text):08X}"
-

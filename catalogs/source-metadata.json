@@ -1,6 +1,13 @@
 {
+  "upstream_data_extractor": {
+    "repository": "https://github.com/Nenkai/GBFRDataTools",
+    "commit": "571a1d1ce71c17601684894dad186269c0fed1dc"
+  },
   "game_db_sha256": "7A721A9B1822C2C7660C71F653B2FA1B3BE2DAFC4049B6FD4178BA78E5E96789",
   "items_db_sha256": "4AF30C37143AE15FEF4930A4C7D0FF06B2CC59B8F0EC5F8E17204DB12DFFB59A",
+  "weapon_rebuild_db_sha256": "1D013CD6E99DF8C4D9027C31BD7DCE95177F3F88830F41FA2D2C72B9DC681791",
+  "fate_db_sha256": "350AFCE0FB0A0C784EA3F4EF05B19426F6BA4CBCAFDCC5C18B765AC878B70143",
+  "fate_episode_tbl_sha256": "9B6AAF0748A19B5C51FE298F5C062DDEB987EA158423BF116A7E2B4201AA5EF6",
   "game_table_counts": {
     "chara": 41,
     "chara_gem": 4,
@@ -15,9 +22,112 @@
     "item_important": 36,
     "item_material_list": 1089
   },
+  "weapon_rebuild_table_counts": {
+    "weapon_status_rebuild": 1120,
+    "weapon_skill_level_rebuild": 3016,
+    "weapon_rebuild_effect": 160,
+    "weapon_rebuild_effect_color": 7
+  },
+  "fate_episode_table_counts": {
+    "rows": 324,
+    "fate_episodes": 319,
+    "remi_rows": 5,
+    "characters": 29,
+    "episodes_per_character": 11,
+    "nonzero_mission_references": 58,
+    "unique_mission_quest_ids": 56,
+    "shared_mission_quest_ids": 2
+  },
+  "fate_episode_2_0": {
+    "fate_id_field": 3501,
+    "fate_state_field": 3502,
+    "save_rows": 820,
+    "fate_rows_to_complete": 319,
+    "remi_rows_to_preserve": 5,
+    "placeholder_rows_to_preserve": 496,
+    "placeholder_hash": "887AE0B0",
+    "placeholder_state": 5,
+    "completed_state": 30,
+    "mission_id_field": 2560,
+    "mission_status_field": 2561,
+    "mission_vector_length": 100,
+    "mission_nonzero_entries": 56,
+    "mission_empty_entries": 44,
+    "mission_minimum_clear_count": 1,
+    "protected_main_fields": [
+      2510,
+      2511,
+      2520,
+      2522
+    ],
+    "preserved_unmapped_fields": [
+      5801,
+      5815
+    ]
+  },
+  "weapon_transcendence_2_0": {
+    "database_complete_rows": 162,
+    "current_specs": 160,
+    "alternate_runtime_specs": [
+      "WEP_PL2800_A0",
+      "WEP_PL2900_A0"
+    ],
+    "live_save_instances": 171,
+    "live_save_present_types": 159,
+    "live_save_old_awakening_instances": 70,
+    "live_save_ordinary_instances": 101,
+    "live_save_missing_official_id": "WEP_PL0000_01",
+    "live_save_full_instances_proven": 74,
+    "live_save_full_vector_checks": 370,
+    "vector_derivation": "WeaponSkillLevelRebuildId1..5 -> weapon_skill_level_rebuild.Unk13, selecting Unk12",
+    "selection_policy": "match the corresponding WeaponSkillId when present; otherwise deterministic first/single database row",
+    "disproved_models": [
+      "58-only eligibility",
+      "max_skill_id suffix synthesis",
+      "global final skill"
+    ]
+  },
+  "runtime_presets_2_0_2": {
+    "latest_endgame_gold": {
+      "file": "presets/sigils/latest-endgame-gold-2.0.2.json",
+      "file_sha256": "8F8AB2CBCA8E60F0CF8FAB58F60D265826C68353A660B6ECE4509D36E3602E81",
+      "build_sha256": "A2F975F504A6D3E38A1AFA6269E7F883E5578C7F807BF776D3FB70B7D95E02D6",
+      "characters": 29,
+      "sigils": 348,
+      "trait_lanes": 696,
+      "trait_level": 99,
+      "flight_over_fight_skill_id": "SKILL_159_00"
+    },
+    "equipped_weapon_qol_blessing": {
+      "file": "presets/weapons/endgame-qol-blessing-2.0.2.json",
+      "file_sha256": "BD522C3F97FECF31275AFA65C31B9FA6ED46104B706C91D816ED2AEDCBE48840",
+      "characters": 29,
+      "equipped_weapons": 29,
+      "trait_lanes": 87,
+      "trait_level": 99,
+      "outer_id": "ITEM_26_0131"
+    },
+    "equipped_summon_qol_passives": {
+      "file": "presets/summons/endgame-qol-passives-2.0.2.json",
+      "file_sha256": "41FDBB2CAF0263C0534EC5F13A66DBC4BDBE9DB74AAD84DF1AB7D425AF114C5F",
+      "equipped_summons": 4,
+      "trait_level": 15,
+      "preserved_bonus_lanes": 4,
+      "preserved_field_1460": true
+    },
+    "ordinary_stackables": {
+      "file": "catalogs/stackable-items-2.0.2.json",
+      "file_sha256": "1B01AE7706C89619211DE7ADA764DA37DF2AB42861773DB0788B1F64A31C68B3",
+      "items": 329,
+      "unlock_tickets": 8,
+      "default_quantity": 900
+    }
+  },
   "selection": {
     "characters": "PL*, IsNPC=0, MaxLevelMaybe=100",
     "weapons": "six database-backed base weapons per character; probe WEP_<character>_01..09",
-    "sigils_2_0": "Rarity=5 and family 173..178 or 320..327"
+    "sigils_2_0": "Rarity=5 and family 173..178 or 320..327",
+    "fate_episode_2_0": "all 319 FATE_* rows by hashed Key; preserve 5 REMI_* rows and 496 save placeholders",
+    "weapon_rebuild_2_0": "complete Level 1..7 status rows with all five valid skill rebuild curves"
   }
 }

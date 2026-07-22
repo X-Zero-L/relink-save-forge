@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/X-Zero-L/relink-save-forge/raw/main/presets/weapon-blessing-preset-schema.json",
+  "title": "Relink Save Forge equipped-weapon blessing preset",
+  "type": "object",
+  "required": ["schema_version", "id", "game_data_version", "outer", "traits", "source"],
+  "properties": {
+    "schema_version": { "type": "integer", "const": 1 },
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "name_zh": { "type": "string" },
+    "game_data_version": { "type": "string", "const": "Relink 2.0.2" },
+    "description": { "type": "string" },
+    "outer": {
+      "type": "object",
+      "required": ["id", "hash", "name"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^ITEM_[0-9]{2}_[0-9]{4}$" },
+        "hash": { "type": "string", "pattern": "^[0-9A-F]{8}$" },
+        "name": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "traits": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["lane", "id", "hash", "name", "name_zh", "level"],
+        "properties": {
+          "lane": { "type": "integer", "minimum": 0, "maximum": 2 },
+          "id": { "type": "string", "pattern": "^SKILL_[0-9]{3}_[0-9]{2}$" },
+          "hash": { "type": "string", "pattern": "^[0-9A-F]{8}$" },
+          "name": { "type": "string" },
+          "name_zh": { "type": "string" },
+          "level": { "type": "integer", "const": 99 }
+        },
+        "additionalProperties": false
+      }
+    },
+    "source": { "type": "object" }
+  },
+  "additionalProperties": false
+}

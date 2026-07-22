@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "endgame-qol-blessing-2.0.2",
+  "name": "Endgame QoL Weapon Blessing 99",
+  "name_zh": "2.0.2 终盘体验武器祝福 99",
+  "game_data_version": "Relink 2.0.2",
+  "description": "Apply one verified three-trait Wrightstone shell and level-99 Quick Cooldown, Cascade, and Stout Heart to each character's currently equipped weapon.",
+  "outer": {
+    "id": "ITEM_26_0131",
+    "hash": "71173866",
+    "name": "Three-trait Vitality Wrightstone"
+  },
+  "traits": [
+    {
+      "lane": 0,
+      "id": "SKILL_069_00",
+      "hash": "318D12E9",
+      "name": "Quick Cooldown",
+      "name_zh": "技能冷却",
+      "level": 99
+    },
+    {
+      "lane": 1,
+      "id": "SKILL_070_00",
+      "hash": "05F2ECDC",
+      "name": "Cascade",
+      "name_zh": "怒涛",
+      "level": 99
+    },
+    {
+      "lane": 2,
+      "id": "SKILL_044_00",
+      "hash": "A1A8E39D",
+      "name": "Stout Heart",
+      "name_zh": "霸体",
+      "level": 99
+    }
+  ],
+  "source": {
+    "structure": "verified against a natural three-trait equipped Wrightstone and all 768 preallocated runtime lanes",
+    "outer_sample": "weapon unit 40100 / ITEM_26_0131",
+    "runtime_unit_formula": "130000000 + (physical_weapon_unit - 40000) * 100 + lane",
+    "level_policy": "99 is the maximum accepted runtime value; values above 99 are rejected by the game"
+  }
+}

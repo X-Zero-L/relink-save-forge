@@ -1,0 +1,2656 @@
+{
+  "schema_version": 1,
+  "id": "ordinary-stackables-2.0.2",
+  "game_data_version": "Relink 2.0.2",
+  "description": "Visible non-key materials and consumables safe for the 180x stack layout.",
+  "source": {
+    "database_file": "gbfr-live-items.db",
+    "database_sha256": "4AF30C37143AE15FEF4930A4C7D0FF06B2CC59B8F0EC5F8E17204DB12DFFB59A",
+    "method": "item table filtered by visibility, category, key-item, and curated internal exclusions",
+    "curated_internal_rows": 7
+  },
+  "count": 329,
+  "unlock_ticket_count": 8,
+  "excluded_reason_counts": {
+    "curated_internal_or_reserved_item": 5,
+    "fate_or_story_special_not_ordinary_inventory": 12,
+    "internal_or_reserved_blank_name": 5,
+    "item_important_story_or_key_item": 36,
+    "not_visible": 57,
+    "wallet_shadow_use_1104_1106_1112": 4
+  },
+  "items": [
+    {
+      "key": "0311B2DE",
+      "hash": "0311B2DE",
+      "name_key": "TXT_ITEM_18_0003",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "03A19196",
+      "hash": "03A19196",
+      "name_key": "TXT_ITEM_16_0013",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "05474649",
+      "hash": "05474649",
+      "name_key": "TXT_ITEM_19_0022",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "0E7CBC8E",
+      "hash": "0E7CBC8E",
+      "name_key": "TXT_ITEM_31_0033",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "0EB683CD",
+      "hash": "0EB683CD",
+      "name_key": "TXT_ITEM_15_0010",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "17F349BA",
+      "hash": "17F349BA",
+      "name_key": "TXT_ITEM_31_0003",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "19871BF3",
+      "hash": "19871BF3",
+      "name_key": "TXT_ITEM_31_0023",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "1C195D33",
+      "hash": "1C195D33",
+      "name_key": "TXT_ITEM_14_0066",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "1F4BAE8C",
+      "hash": "1F4BAE8C",
+      "name_key": "TXT_ITEM_14_0064",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "1FCE9159",
+      "hash": "1FCE9159",
+      "name_key": "TXT_ITEM_31_0077",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "20C742DE",
+      "hash": "20C742DE",
+      "name_key": "TXT_ITEM_14_0001",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "22ACC7BF",
+      "hash": "22ACC7BF",
+      "name_key": "TXT_ITEM_26_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "25165316",
+      "hash": "25165316",
+      "name_key": "TXT_ITEM_16_0902",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "25289584",
+      "hash": "25289584",
+      "name_key": "TXT_ITEM_31_0043",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "2A5548A9",
+      "hash": "2A5548A9",
+      "name_key": "TXT_ITEM_31_0086",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "31291925",
+      "hash": "31291925",
+      "name_key": "TXT_ITEM_26_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "35F709E3",
+      "hash": "35F709E3",
+      "name_key": "TXT_ITEM_06_0003",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "381526A4",
+      "hash": "381526A4",
+      "name_key": "TXT_ITEM_31_0095",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "3CB3EB94",
+      "hash": "3CB3EB94",
+      "name_key": "TXT_ITEM_25_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "456D2BB3",
+      "hash": "456D2BB3",
+      "name_key": "TXT_ITEM_09_0003",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "4A41482C",
+      "hash": "4A41482C",
+      "name_key": "TXT_ITEM_03_0003",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "4C21DC42",
+      "hash": "4C21DC42",
+      "name_key": "TXT_ITEM_09_0023",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "537CB6D9",
+      "hash": "537CB6D9",
+      "name_key": "TXT_ITEM_14_0061",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "5392DEE6",
+      "hash": "5392DEE6",
+      "name_key": "TXT_ITEM_16_0005",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "53A9D491",
+      "hash": "53A9D491",
+      "name_key": "TXT_ITEM_16_0904",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "54732298",
+      "hash": "54732298",
+      "name_key": "TXT_ITEM_14_0065",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "58FC9B99",
+      "hash": "58FC9B99",
+      "name_key": "TXT_ITEM_21_0001",
+      "category_id": 4,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "64A63FBC",
+      "hash": "64A63FBC",
+      "name_key": "TXT_ITEM_15_0012",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "65063E17",
+      "hash": "65063E17",
+      "name_key": "TXT_ITEM_14_0076",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "654FA095",
+      "hash": "654FA095",
+      "name_key": "TXT_ITEM_14_0063",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "6837EFC6",
+      "hash": "6837EFC6",
+      "name_key": "TXT_ITEM_31_0013",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "686F12AD",
+      "hash": "686F12AD",
+      "name_key": "TXT_ITEM_16_0903",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "68BAFC37",
+      "hash": "68BAFC37",
+      "name_key": "TXT_ITEM_16_0105",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "695EA716",
+      "hash": "695EA716",
+      "name_key": "TXT_ITEM_31_0063",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "6E13E372",
+      "hash": "6E13E372",
+      "name_key": "TXT_ITEM_09_0013",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "6E81C3AC",
+      "hash": "6E81C3AC",
+      "name_key": "TXT_ITEM_28_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "6F38AFE1",
+      "hash": "6F38AFE1",
+      "name_key": "TXT_ITEM_19_0010",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "7500C5D9",
+      "hash": "7500C5D9",
+      "name_key": "TXT_ITEM_31_0053",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "831F31FF",
+      "hash": "831F31FF",
+      "name_key": "TXT_ITEM_16_0007",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "833AFC6D",
+      "hash": "833AFC6D",
+      "name_key": "TXT_ITEM_26_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "85F40D79",
+      "hash": "85F40D79",
+      "name_key": "TXT_ITEM_19_0012",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "86FB2EE1",
+      "hash": "86FB2EE1",
+      "name_key": "TXT_ITEM_14_0062",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "882F94A7",
+      "hash": "882F94A7",
+      "name_key": "TXT_ITEM_22_0062",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "89406DB0",
+      "hash": "89406DB0",
+      "name_key": "TXT_ITEM_22_0042",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "8A08F64E",
+      "hash": "8A08F64E",
+      "name_key": "TXT_ITEM_19_0013",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "8C4FC319",
+      "hash": "8C4FC319",
+      "name_key": "TXT_ITEM_14_0074",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "8CF738AB",
+      "hash": "8CF738AB",
+      "name_key": "TXT_ITEM_27_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "8D888638",
+      "hash": "8D888638",
+      "name_key": "TXT_ITEM_09_0030",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "98CDB46F",
+      "hash": "98CDB46F",
+      "name_key": "TXT_ITEM_15_0011",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "9A3DC719",
+      "hash": "9A3DC719",
+      "name_key": "TXT_ITEM_09_0050",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "A1EAD2C2",
+      "hash": "A1EAD2C2",
+      "name_key": "TXT_ITEM_22_0052",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "A2452B7C",
+      "hash": "A2452B7C",
+      "name_key": "TXT_ITEM_22_0032",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ADFFE24E",
+      "hash": "ADFFE24E",
+      "name_key": "TXT_ITEM_32_0046",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "B0782428",
+      "hash": "B0782428",
+      "name_key": "TXT_ITEM_04_0003",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "B359B5B2",
+      "hash": "B359B5B2",
+      "name_key": "TXT_ITEM_27_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "B3B624BA",
+      "hash": "B3B624BA",
+      "name_key": "TXT_ITEM_27_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "C043BAC9",
+      "hash": "C043BAC9",
+      "name_key": "TXT_ITEM_14_0023",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "C1563862",
+      "hash": "C1563862",
+      "name_key": "TXT_ITEM_16_0106",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "C83F9E36",
+      "hash": "C83F9E36",
+      "name_key": "TXT_ITEM_22_0072",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "D0F04D9F",
+      "hash": "D0F04D9F",
+      "name_key": "TXT_ITEM_22_0022",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "D147A1BA",
+      "hash": "D147A1BA",
+      "name_key": "TXT_ITEM_19_0020",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "D3A6A16A",
+      "hash": "D3A6A16A",
+      "name_key": "TXT_ITEM_25_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "D4EE7FC3",
+      "hash": "D4EE7FC3",
+      "name_key": "TXT_ITEM_31_0085",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "DF713FA9",
+      "hash": "DF713FA9",
+      "name_key": "TXT_ITEM_16_0009",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "EC480443",
+      "hash": "EC480443",
+      "name_key": "TXT_ITEM_25_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "EF56C64B",
+      "hash": "EF56C64B",
+      "name_key": "TXT_ITEM_28_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "F6E684FA",
+      "hash": "F6E684FA",
+      "name_key": "TXT_ITEM_28_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "F74A6A4D",
+      "hash": "F74A6A4D",
+      "name_key": "TXT_ITEM_32_1000",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "F7DC6ED9",
+      "hash": "F7DC6ED9",
+      "name_key": "TXT_ITEM_19_0023",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "F7F9A658",
+      "hash": "F7F9A658",
+      "name_key": "TXT_ITEM_31_0078",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "FAF93BCC",
+      "hash": "FAF93BCC",
+      "name_key": "TXT_ITEM_22_0121",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "FD1DC09A",
+      "hash": "FD1DC09A",
+      "name_key": "TXT_ITEM_16_0901",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_01_0000",
+      "hash": "DB1D4F35",
+      "name_key": "TXT_ITEM_01_0000",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_01_0001",
+      "hash": "D5E89BC8",
+      "name_key": "TXT_ITEM_01_0001",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_01_0002",
+      "hash": "DEED762B",
+      "name_key": "TXT_ITEM_01_0002",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_01_0003",
+      "hash": "B451E459",
+      "name_key": "TXT_ITEM_01_0003",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_01_0010",
+      "hash": "EB0CCD8D",
+      "name_key": "TXT_ITEM_01_0010",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_01_0011",
+      "hash": "1C67E865",
+      "name_key": "TXT_ITEM_01_0011",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_01_0012",
+      "hash": "F430B195",
+      "name_key": "TXT_ITEM_01_0012",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_01_0013",
+      "hash": "C3D96C52",
+      "name_key": "TXT_ITEM_01_0013",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_01_0020",
+      "hash": "E0937C5B",
+      "name_key": "TXT_ITEM_01_0020",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_01_0021",
+      "hash": "2D510205",
+      "name_key": "TXT_ITEM_01_0021",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_01_0022",
+      "hash": "1CF9A666",
+      "name_key": "TXT_ITEM_01_0022",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_01_0023",
+      "hash": "DD3F9978",
+      "name_key": "TXT_ITEM_01_0023",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_01_0030",
+      "hash": "206C6EC1",
+      "name_key": "TXT_ITEM_01_0030",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_01_0031",
+      "hash": "926D4AE9",
+      "name_key": "TXT_ITEM_01_0031",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_01_0032",
+      "hash": "EB0A1DC8",
+      "name_key": "TXT_ITEM_01_0032",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_01_0033",
+      "hash": "050C5228",
+      "name_key": "TXT_ITEM_01_0033",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_01_0040",
+      "hash": "514D7AA0",
+      "name_key": "TXT_ITEM_01_0040",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_01_0041",
+      "hash": "759850CA",
+      "name_key": "TXT_ITEM_01_0041",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_01_0042",
+      "hash": "26FA7DA3",
+      "name_key": "TXT_ITEM_01_0042",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_01_0043",
+      "hash": "C263CCDC",
+      "name_key": "TXT_ITEM_01_0043",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_01_0050",
+      "hash": "726575FF",
+      "name_key": "TXT_ITEM_01_0050",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_01_0051",
+      "hash": "C2E4D287",
+      "name_key": "TXT_ITEM_01_0051",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_01_0052",
+      "hash": "79C247F6",
+      "name_key": "TXT_ITEM_01_0052",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_01_0053",
+      "hash": "09C7A73E",
+      "name_key": "TXT_ITEM_01_0053",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_01_0060",
+      "hash": "7992B6F0",
+      "name_key": "TXT_ITEM_01_0060",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_01_0061",
+      "hash": "3031E3E4",
+      "name_key": "TXT_ITEM_01_0061",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_01_0062",
+      "hash": "FEEAFCCF",
+      "name_key": "TXT_ITEM_01_0062",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_01_0063",
+      "hash": "6E49A111",
+      "name_key": "TXT_ITEM_01_0063",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_02_0000",
+      "hash": "9519F56A",
+      "name_key": "TXT_ITEM_02_0000",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_02_0001",
+      "hash": "141EF3A7",
+      "name_key": "TXT_ITEM_02_0001",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_02_0002",
+      "hash": "5CEADFBC",
+      "name_key": "TXT_ITEM_02_0002",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_02_0010",
+      "hash": "9352DED3",
+      "name_key": "TXT_ITEM_02_0010",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_02_0011",
+      "hash": "8B75E58A",
+      "name_key": "TXT_ITEM_02_0011",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_02_0012",
+      "hash": "1AA4382D",
+      "name_key": "TXT_ITEM_02_0012",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_02_0020",
+      "hash": "8E1CB52D",
+      "name_key": "TXT_ITEM_02_0020",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_02_0021",
+      "hash": "9C694865",
+      "name_key": "TXT_ITEM_02_0021",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_02_0022",
+      "hash": "28592CB2",
+      "name_key": "TXT_ITEM_02_0022",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_02_0030",
+      "hash": "B78AC87F",
+      "name_key": "TXT_ITEM_02_0030",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_02_0031",
+      "hash": "92781B4B",
+      "name_key": "TXT_ITEM_02_0031",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_02_0032",
+      "hash": "38D2ECD0",
+      "name_key": "TXT_ITEM_02_0032",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_02_0040",
+      "hash": "ABA63A29",
+      "name_key": "TXT_ITEM_02_0040",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_02_0041",
+      "hash": "208FA9E4",
+      "name_key": "TXT_ITEM_02_0041",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_02_0042",
+      "hash": "F6EE4068",
+      "name_key": "TXT_ITEM_02_0042",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_02_0050",
+      "hash": "FA737B89",
+      "name_key": "TXT_ITEM_02_0050",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_02_0051",
+      "hash": "6BDF6669",
+      "name_key": "TXT_ITEM_02_0051",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_02_0052",
+      "hash": "15C3F606",
+      "name_key": "TXT_ITEM_02_0052",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_03_0000",
+      "hash": "D15091D9",
+      "name_key": "TXT_ITEM_03_0000",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_03_0001",
+      "hash": "4F1E4C13",
+      "name_key": "TXT_ITEM_03_0001",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_03_0002",
+      "hash": "729D7FB0",
+      "name_key": "TXT_ITEM_03_0002",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_04_0000",
+      "hash": "815B2EE4",
+      "name_key": "TXT_ITEM_04_0000",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_04_0001",
+      "hash": "1A114B03",
+      "name_key": "TXT_ITEM_04_0001",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_04_0002",
+      "hash": "173851D4",
+      "name_key": "TXT_ITEM_04_0002",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_05_0000",
+      "hash": "BC413B80",
+      "name_key": "TXT_ITEM_05_0000",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_05_0001",
+      "hash": "13FCF405",
+      "name_key": "TXT_ITEM_05_0001",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_05_0002",
+      "hash": "BA799E24",
+      "name_key": "TXT_ITEM_05_0002",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_06_0000",
+      "hash": "451F7D7A",
+      "name_key": "TXT_ITEM_06_0000",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_06_0001",
+      "hash": "E5481168",
+      "name_key": "TXT_ITEM_06_0001",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_06_0002",
+      "hash": "4C4CAA77",
+      "name_key": "TXT_ITEM_06_0002",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_07_0000",
+      "hash": "434C567F",
+      "name_key": "TXT_ITEM_07_0000",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_07_0001",
+      "hash": "ED3B872D",
+      "name_key": "TXT_ITEM_07_0001",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_07_0002",
+      "hash": "5E2D3D63",
+      "name_key": "TXT_ITEM_07_0002",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_08_0000",
+      "hash": "43915122",
+      "name_key": "TXT_ITEM_08_0000",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_09_0000",
+      "hash": "C05CA6A1",
+      "name_key": "TXT_ITEM_09_0000",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_09_0001",
+      "hash": "6B4E2182",
+      "name_key": "TXT_ITEM_09_0001",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_09_0002",
+      "hash": "E35076B2",
+      "name_key": "TXT_ITEM_09_0002",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_09_0010",
+      "hash": "C783F39D",
+      "name_key": "TXT_ITEM_09_0010",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_09_0011",
+      "hash": "99307633",
+      "name_key": "TXT_ITEM_09_0011",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_09_0012",
+      "hash": "0F6B4A1F",
+      "name_key": "TXT_ITEM_09_0012",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_09_0020",
+      "hash": "DF18535C",
+      "name_key": "TXT_ITEM_09_0020",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_09_0021",
+      "hash": "B4693222",
+      "name_key": "TXT_ITEM_09_0021",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_09_0022",
+      "hash": "65C8078D",
+      "name_key": "TXT_ITEM_09_0022",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_10_0000",
+      "hash": "687733C4",
+      "name_key": "TXT_ITEM_10_0000",
+      "category_id": 2,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_10_0001",
+      "hash": "644536DF",
+      "name_key": "TXT_ITEM_10_0001",
+      "category_id": 2,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_10_0002",
+      "hash": "7948DE7D",
+      "name_key": "TXT_ITEM_10_0002",
+      "category_id": 2,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_10_0003",
+      "hash": "24DF54EE",
+      "name_key": "TXT_ITEM_10_0003",
+      "category_id": 2,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_11_0000",
+      "hash": "E379E863",
+      "name_key": "TXT_ITEM_11_0000",
+      "category_id": 3,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_11_0001",
+      "hash": "648CDA74",
+      "name_key": "TXT_ITEM_11_0001",
+      "category_id": 3,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_11_0002",
+      "hash": "AD856C0C",
+      "name_key": "TXT_ITEM_11_0002",
+      "category_id": 3,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_12_0000",
+      "hash": "9B442642",
+      "name_key": "TXT_ITEM_12_0000",
+      "category_id": 3,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_13_0000",
+      "hash": "3916849C",
+      "name_key": "TXT_ITEM_13_0000",
+      "category_id": 5,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_13_0001",
+      "hash": "94132AE1",
+      "name_key": "TXT_ITEM_13_0001",
+      "category_id": 5,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_13_0002",
+      "hash": "A84CA7E9",
+      "name_key": "TXT_ITEM_13_0002",
+      "category_id": 5,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_13_0003",
+      "hash": "E6E075E8",
+      "name_key": "TXT_ITEM_13_0003",
+      "category_id": 5,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_14_0000",
+      "hash": "B2045655",
+      "name_key": "TXT_ITEM_14_0000",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_14_0003",
+      "hash": "90DF952A",
+      "name_key": "TXT_ITEM_14_0003",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_14_0010",
+      "hash": "8816ADC5",
+      "name_key": "TXT_ITEM_14_0010",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_14_0011",
+      "hash": "4325AB79",
+      "name_key": "TXT_ITEM_14_0011",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_14_0012",
+      "hash": "7CFA41FC",
+      "name_key": "TXT_ITEM_14_0012",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_14_0013",
+      "hash": "23F2E797",
+      "name_key": "TXT_ITEM_14_0013",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_14_0020",
+      "hash": "9738C87A",
+      "name_key": "TXT_ITEM_14_0020",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_14_0021",
+      "hash": "6F1FABE6",
+      "name_key": "TXT_ITEM_14_0021",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_14_0022",
+      "hash": "2E94D39A",
+      "name_key": "TXT_ITEM_14_0022",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_14_0031",
+      "hash": "81BF605C",
+      "name_key": "TXT_ITEM_14_0031",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_14_0032",
+      "hash": "5C07839A",
+      "name_key": "TXT_ITEM_14_0032",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_14_0050",
+      "hash": "60CB5EA6",
+      "name_key": "TXT_ITEM_14_0050",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_14_0051",
+      "hash": "659230F4",
+      "name_key": "TXT_ITEM_14_0051",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_15_0000",
+      "hash": "DE302978",
+      "name_key": "TXT_ITEM_15_0000",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_15_0001",
+      "hash": "541D3800",
+      "name_key": "TXT_ITEM_15_0001",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_15_0002",
+      "hash": "99D6247E",
+      "name_key": "TXT_ITEM_15_0002",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_15_0003",
+      "hash": "24725515",
+      "name_key": "TXT_ITEM_15_0003",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_16_0000",
+      "hash": "0F479FA7",
+      "name_key": "TXT_ITEM_16_0000",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_16_0001",
+      "hash": "01EAA064",
+      "name_key": "TXT_ITEM_16_0001",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_16_0002",
+      "hash": "3F8F4EFD",
+      "name_key": "TXT_ITEM_16_0002",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_16_0003",
+      "hash": "41E92F0A",
+      "name_key": "TXT_ITEM_16_0003",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_16_0004",
+      "hash": "181381E5",
+      "name_key": "TXT_ITEM_16_0004",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_16_0010",
+      "hash": "11A0F065",
+      "name_key": "TXT_ITEM_16_0010",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_16_0011",
+      "hash": "29A7EEC9",
+      "name_key": "TXT_ITEM_16_0011",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_16_0012",
+      "hash": "6096C6BF",
+      "name_key": "TXT_ITEM_16_0012",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_17_0000",
+      "hash": "54FC643A",
+      "name_key": "TXT_ITEM_17_0000",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_17_0001",
+      "hash": "7B600740",
+      "name_key": "TXT_ITEM_17_0001",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_17_0010",
+      "hash": "BB579CAF",
+      "name_key": "TXT_ITEM_17_0010",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_17_0011",
+      "hash": "D93D7206",
+      "name_key": "TXT_ITEM_17_0011",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_17_0020",
+      "hash": "9371081E",
+      "name_key": "TXT_ITEM_17_0020",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_17_0021",
+      "hash": "D9D98ED6",
+      "name_key": "TXT_ITEM_17_0021",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_18_0000",
+      "hash": "1E133AAC",
+      "name_key": "TXT_ITEM_18_0000",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_18_0001",
+      "hash": "11722A61",
+      "name_key": "TXT_ITEM_18_0001",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_18_0002",
+      "hash": "A9CBB5AF",
+      "name_key": "TXT_ITEM_18_0002",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_19_0001",
+      "hash": "F42D8C01",
+      "name_key": "TXT_ITEM_19_0001",
+      "category_id": 8,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_19_0002",
+      "hash": "6198F427",
+      "name_key": "TXT_ITEM_19_0001",
+      "category_id": 8,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_19_0003",
+      "hash": "4AC30D94",
+      "name_key": "TXT_ITEM_19_0001",
+      "category_id": 8,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_19_0004",
+      "hash": "76079579",
+      "name_key": "TXT_ITEM_19_0001",
+      "category_id": 8,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_21_0000",
+      "hash": "09370A3A",
+      "name_key": "TXT_ITEM_21_0000",
+      "category_id": 4,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_22_0000",
+      "hash": "BEE8897D",
+      "name_key": "TXT_ITEM_22_0000",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_22_0010",
+      "hash": "8FFE7300",
+      "name_key": "TXT_ITEM_22_0010",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_22_0020",
+      "hash": "05D2CF79",
+      "name_key": "TXT_ITEM_22_0020",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_22_0021",
+      "hash": "94DD261D",
+      "name_key": "TXT_ITEM_22_0021",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_22_0030",
+      "hash": "F90A5398",
+      "name_key": "TXT_ITEM_22_0030",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_22_0031",
+      "hash": "51355C28",
+      "name_key": "TXT_ITEM_22_0031",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_22_0040",
+      "hash": "9D598751",
+      "name_key": "TXT_ITEM_22_0040",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_22_0041",
+      "hash": "CDDE3137",
+      "name_key": "TXT_ITEM_22_0041",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_22_0050",
+      "hash": "E82861B1",
+      "name_key": "TXT_ITEM_22_0050",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_22_0051",
+      "hash": "91CCBC0F",
+      "name_key": "TXT_ITEM_22_0051",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_22_0060",
+      "hash": "64473A6A",
+      "name_key": "TXT_ITEM_22_0060",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_22_0061",
+      "hash": "98E75FCB",
+      "name_key": "TXT_ITEM_22_0061",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_22_0070",
+      "hash": "9F548DB0",
+      "name_key": "TXT_ITEM_22_0070",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_22_0071",
+      "hash": "9E75A958",
+      "name_key": "TXT_ITEM_22_0071",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_23_0000",
+      "hash": "35C7FBA0",
+      "name_key": "TXT_ITEM_23_0000",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": "ITEM_23_0000"
+    },
+    {
+      "key": "ITEM_23_0001",
+      "hash": "8572B2CE",
+      "name_key": "TXT_ITEM_23_0001",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": "ITEM_23_0001"
+    },
+    {
+      "key": "ITEM_23_0002",
+      "hash": "FE52F7CB",
+      "name_key": "TXT_ITEM_23_0002",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": "ITEM_23_0002"
+    },
+    {
+      "key": "ITEM_23_0003",
+      "hash": "5B5B8603",
+      "name_key": "TXT_ITEM_23_0003",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": "ITEM_23_0003"
+    },
+    {
+      "key": "ITEM_23_0004",
+      "hash": "EB707EA7",
+      "name_key": "TXT_ITEM_23_0004",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": "ITEM_23_0004"
+    },
+    {
+      "key": "ITEM_23_0005",
+      "hash": "E8926145",
+      "name_key": "TXT_ITEM_23_0005",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": "ITEM_23_0005"
+    },
+    {
+      "key": "ITEM_23_0006",
+      "hash": "41E4C8CE",
+      "name_key": "TXT_ITEM_23_0006",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": "ITEM_23_0006"
+    },
+    {
+      "key": "ITEM_23_0007",
+      "hash": "06E5185F",
+      "name_key": "TXT_ITEM_23_0007",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": "ITEM_23_0007"
+    },
+    {
+      "key": "ITEM_25_0000",
+      "hash": "BB731907",
+      "name_key": "TXT_ITEM_25_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_25_0001",
+      "hash": "C1481583",
+      "name_key": "TXT_ITEM_25_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_25_0010",
+      "hash": "AAE10C28",
+      "name_key": "TXT_ITEM_25_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_25_0011",
+      "hash": "11A1B6B3",
+      "name_key": "TXT_ITEM_25_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_25_0012",
+      "hash": "4E3989B8",
+      "name_key": "TXT_ITEM_25_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_25_0020",
+      "hash": "AA4626F6",
+      "name_key": "TXT_ITEM_25_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_25_0030",
+      "hash": "2A2EA603",
+      "name_key": "TXT_ITEM_25_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_25_0130",
+      "hash": "BCDBC4B6",
+      "name_key": "TXT_ITEM_25_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_25_0131",
+      "hash": "09E6F629",
+      "name_key": "TXT_ITEM_25_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_25_1000",
+      "hash": "A90975B8",
+      "name_key": "TXT_ITEM_25_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_25_1001",
+      "hash": "E3ADB298",
+      "name_key": "TXT_ITEM_25_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_25_1002",
+      "hash": "8D101B82",
+      "name_key": "TXT_ITEM_25_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_25_1003",
+      "hash": "55D1B23F",
+      "name_key": "TXT_ITEM_25_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_25_9999",
+      "hash": "2C8FA06C",
+      "name_key": "TXT_ITEM_25_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_26_0000",
+      "hash": "552D70ED",
+      "name_key": "TXT_ITEM_26_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_26_0001",
+      "hash": "F53AE497",
+      "name_key": "TXT_ITEM_26_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_26_0010",
+      "hash": "33E663D0",
+      "name_key": "TXT_ITEM_26_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_26_0011",
+      "hash": "95BF2C6F",
+      "name_key": "TXT_ITEM_26_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_26_0012",
+      "hash": "2CDFA192",
+      "name_key": "TXT_ITEM_26_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_26_0020",
+      "hash": "68B1AE43",
+      "name_key": "TXT_ITEM_26_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_26_0030",
+      "hash": "3E0269BD",
+      "name_key": "TXT_ITEM_26_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_26_0130",
+      "hash": "3EF6DEF5",
+      "name_key": "TXT_ITEM_26_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_26_0131",
+      "hash": "71173866",
+      "name_key": "TXT_ITEM_26_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_26_1000",
+      "hash": "A062B3E4",
+      "name_key": "TXT_ITEM_26_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_26_1001",
+      "hash": "B79139FB",
+      "name_key": "TXT_ITEM_26_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_26_1002",
+      "hash": "559E221D",
+      "name_key": "TXT_ITEM_26_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_26_1003",
+      "hash": "4BE41EC1",
+      "name_key": "TXT_ITEM_26_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_26_9999",
+      "hash": "21DAD920",
+      "name_key": "TXT_ITEM_26_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_27_0000",
+      "hash": "CB1E804F",
+      "name_key": "TXT_ITEM_27_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_27_0001",
+      "hash": "EEB19BEC",
+      "name_key": "TXT_ITEM_27_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_27_0010",
+      "hash": "A23F4F46",
+      "name_key": "TXT_ITEM_27_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_27_0011",
+      "hash": "817A2CC1",
+      "name_key": "TXT_ITEM_27_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_27_0012",
+      "hash": "BA78C0B2",
+      "name_key": "TXT_ITEM_27_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_27_0020",
+      "hash": "4D16FCAB",
+      "name_key": "TXT_ITEM_27_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_27_0030",
+      "hash": "60FD93BD",
+      "name_key": "TXT_ITEM_27_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_27_0130",
+      "hash": "BE6124AD",
+      "name_key": "TXT_ITEM_27_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_27_0131",
+      "hash": "667EE1D3",
+      "name_key": "TXT_ITEM_27_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_27_1000",
+      "hash": "AD9737A9",
+      "name_key": "TXT_ITEM_27_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_27_1001",
+      "hash": "1544FB8A",
+      "name_key": "TXT_ITEM_27_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_27_1002",
+      "hash": "2492ECC9",
+      "name_key": "TXT_ITEM_27_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_27_1003",
+      "hash": "EED2F9D3",
+      "name_key": "TXT_ITEM_27_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_27_9999",
+      "hash": "0B8D0865",
+      "name_key": "TXT_ITEM_27_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_28_0000",
+      "hash": "463ABC2D",
+      "name_key": "TXT_ITEM_28_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_28_0001",
+      "hash": "19B187D7",
+      "name_key": "TXT_ITEM_28_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_28_0010",
+      "hash": "035C056D",
+      "name_key": "TXT_ITEM_28_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_28_0011",
+      "hash": "F9D46AD2",
+      "name_key": "TXT_ITEM_28_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_28_0012",
+      "hash": "AAB4C91A",
+      "name_key": "TXT_ITEM_28_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_28_0020",
+      "hash": "7A1CF760",
+      "name_key": "TXT_ITEM_28_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_28_0030",
+      "hash": "8C44F0AB",
+      "name_key": "TXT_ITEM_28_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_28_0130",
+      "hash": "0BD373A4",
+      "name_key": "TXT_ITEM_28_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_28_0131",
+      "hash": "202A0DB9",
+      "name_key": "TXT_ITEM_28_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_28_1000",
+      "hash": "D2C1330F",
+      "name_key": "TXT_ITEM_28_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_28_1001",
+      "hash": "EB9C99E5",
+      "name_key": "TXT_ITEM_28_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_28_1002",
+      "hash": "176436F3",
+      "name_key": "TXT_ITEM_28_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_28_1003",
+      "hash": "F6155395",
+      "name_key": "TXT_ITEM_28_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_28_9999",
+      "hash": "8DB0B117",
+      "name_key": "TXT_ITEM_28_0000",
+      "category_id": 6,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_30_0000",
+      "hash": "41776DFD",
+      "name_key": "TXT_ITEM_30_0000",
+      "category_id": 7,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_31_0000",
+      "hash": "D47F792A",
+      "name_key": "TXT_ITEM_31_0000",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_31_0001",
+      "hash": "ED91FE58",
+      "name_key": "TXT_ITEM_31_0001",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_31_0002",
+      "hash": "E4070E98",
+      "name_key": "TXT_ITEM_31_0002",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_31_0010",
+      "hash": "B83B6B1D",
+      "name_key": "TXT_ITEM_31_0010",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_31_0011",
+      "hash": "0692327C",
+      "name_key": "TXT_ITEM_31_0011",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_31_0012",
+      "hash": "8BEF5254",
+      "name_key": "TXT_ITEM_31_0012",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_31_0020",
+      "hash": "20612B0A",
+      "name_key": "TXT_ITEM_31_0020",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_31_0021",
+      "hash": "9BE7982B",
+      "name_key": "TXT_ITEM_31_0021",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_31_0022",
+      "hash": "68FF3A08",
+      "name_key": "TXT_ITEM_31_0022",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_31_0030",
+      "hash": "CD298CC8",
+      "name_key": "TXT_ITEM_31_0030",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_31_0031",
+      "hash": "7E7999B3",
+      "name_key": "TXT_ITEM_31_0031",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_31_0032",
+      "hash": "65D98A52",
+      "name_key": "TXT_ITEM_31_0032",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_31_0040",
+      "hash": "C96755A7",
+      "name_key": "TXT_ITEM_31_0040",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_31_0041",
+      "hash": "52BB246C",
+      "name_key": "TXT_ITEM_31_0041",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_31_0042",
+      "hash": "21B32140",
+      "name_key": "TXT_ITEM_31_0042",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_31_0050",
+      "hash": "D6CC00D6",
+      "name_key": "TXT_ITEM_31_0050",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_31_0051",
+      "hash": "9282ABBE",
+      "name_key": "TXT_ITEM_31_0051",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_31_0052",
+      "hash": "D943BEE6",
+      "name_key": "TXT_ITEM_31_0052",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_31_0060",
+      "hash": "354D4683",
+      "name_key": "TXT_ITEM_31_0060",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_31_0061",
+      "hash": "F82726D9",
+      "name_key": "TXT_ITEM_31_0061",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_31_0062",
+      "hash": "4C9BE4DE",
+      "name_key": "TXT_ITEM_31_0062",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_31_0070",
+      "hash": "D465046A",
+      "name_key": "TXT_ITEM_31_0070",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_31_0071",
+      "hash": "B763E7AC",
+      "name_key": "TXT_ITEM_31_0071",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_31_0072",
+      "hash": "7EB26854",
+      "name_key": "TXT_ITEM_31_0072",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_31_0073",
+      "hash": "D7DB4607",
+      "name_key": "TXT_ITEM_31_0073",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_31_0074",
+      "hash": "C5406BBA",
+      "name_key": "TXT_ITEM_31_0074",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_31_0075",
+      "hash": "23C59C51",
+      "name_key": "TXT_ITEM_31_0075",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_31_0080",
+      "hash": "D5AF421A",
+      "name_key": "TXT_ITEM_31_0080",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_31_0081",
+      "hash": "99F44080",
+      "name_key": "TXT_ITEM_31_0081",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_31_0082",
+      "hash": "77DF2F30",
+      "name_key": "TXT_ITEM_31_0082",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_31_0090",
+      "hash": "000EB8F5",
+      "name_key": "TXT_ITEM_31_0090",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_31_0091",
+      "hash": "9E0FFA73",
+      "name_key": "TXT_ITEM_31_0091",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_31_0092",
+      "hash": "3048DAA9",
+      "name_key": "TXT_ITEM_31_0092",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_32_0030",
+      "hash": "67E3F274",
+      "name_key": "TXT_ITEM_32_0030",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_32_0031",
+      "hash": "1DA0A639",
+      "name_key": "TXT_ITEM_32_0031",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_32_0040",
+      "hash": "C037D7F0",
+      "name_key": "TXT_ITEM_32_0040",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_32_0041",
+      "hash": "3C3B449F",
+      "name_key": "TXT_ITEM_32_0041",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_32_0042",
+      "hash": "0F34EABC",
+      "name_key": "TXT_ITEM_32_0042",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_32_0043",
+      "hash": "3AE09B39",
+      "name_key": "TXT_ITEM_32_0043",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_32_0050",
+      "hash": "5A5FA153",
+      "name_key": "TXT_ITEM_32_0050",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_32_0051",
+      "hash": "6D876FAB",
+      "name_key": "TXT_ITEM_32_0051",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_32_0052",
+      "hash": "9BA6E51D",
+      "name_key": "TXT_ITEM_32_0052",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_32_0053",
+      "hash": "82C111C8",
+      "name_key": "TXT_ITEM_32_0053",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_32_0054",
+      "hash": "745FD287",
+      "name_key": "TXT_ITEM_32_0054",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_32_0055",
+      "hash": "786407F5",
+      "name_key": "TXT_ITEM_32_0055",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_32_0056",
+      "hash": "09F9339E",
+      "name_key": "TXT_ITEM_32_0056",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_32_0060",
+      "hash": "E68DA071",
+      "name_key": "TXT_ITEM_32_0060",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_32_0070",
+      "hash": "2D007309",
+      "name_key": "TXT_ITEM_32_0070",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_32_0080",
+      "hash": "D1D832C0",
+      "name_key": "TXT_ITEM_32_0080",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_32_0081",
+      "hash": "C1DCB7AE",
+      "name_key": "TXT_ITEM_32_0081",
+      "category_id": 1,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_33_0003",
+      "hash": "82619167",
+      "name_key": "TXT_ITEM_33_0003",
+      "category_id": 9,
+      "activation_state": 4,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_34_1000",
+      "hash": "A7C72F41",
+      "name_key": "TXT_ITEM_34_1000",
+      "category_id": 15,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_34_2000",
+      "hash": "30E31AFE",
+      "name_key": "TXT_ITEM_34_2000",
+      "category_id": 15,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_34_3000",
+      "hash": "147EF70A",
+      "name_key": "TXT_ITEM_34_3000",
+      "category_id": 15,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_34_4000",
+      "hash": "F692F716",
+      "name_key": "TXT_ITEM_34_4000",
+      "category_id": 15,
+      "activation_state": 12,
+      "unlock_ticket": null
+    },
+    {
+      "key": "ITEM_36_0000",
+      "hash": "F8F91F7E",
+      "name_key": "TXT_ITEM_36_0000",
+      "category_id": 13,
+      "activation_state": 4,
+      "unlock_ticket": null
+    }
+  ]
+}

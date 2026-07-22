@@ -1,0 +1,4113 @@
+{
+  "schema_version": 1,
+  "id": "latest-endgame-gold-2.0.2",
+  "name": "Latest Endgame Gold 99",
+  "name_zh": "2.0.2 最新终盘老金（全角色）",
+  "game_data_version": "Relink 2.0.2",
+  "description": "All 29 characters receive 12 equipped sigils and 24 unique level-99 traits, including Alpha, Beta, Gamma, Flight over Fight, Critical Hit Rate, Aegis, Greater Aegis, and Nimble Onslaught. Quick Cooldown, Cascade, Stout Heart, Potion Hoarder, Spartan Echo, and Berserker Echo are supplied by the companion weapon and summon presets.",
+  "outer_level": 15,
+  "trait_level": 99,
+  "flags": 3,
+  "traits_per_character": 24,
+  "flight_over_fight_per_character": 1,
+  "build_sha256": "A2F975F504A6D3E38A1AFA6269E7F883E5578C7F807BF776D3FB70B7D95E02D6",
+  "source": {
+    "database_file": "gbfr-live.db",
+    "database_sha256": "7A721A9B1822C2C7660C71F653B2FA1B3BE2DAFC4049B6FD4178BA78E5E96789",
+    "character_catalog": "characters.json",
+    "method": "generated from the Relink 2.0.2 chara/gem tables"
+  },
+  "character_order": [
+    "PL0000",
+    "PL0100",
+    "PL0200",
+    "PL0300",
+    "PL0400",
+    "PL0500",
+    "PL0600",
+    "PL1200",
+    "PL1500",
+    "PL0700",
+    "PL1400",
+    "PL0800",
+    "PL0900",
+    "PL1000",
+    "PL1100",
+    "PL1800",
+    "PL1300",
+    "PL1600",
+    "PL1700",
+    "PL2600",
+    "PL2700",
+    "PL2200",
+    "PL2300",
+    "PL2100",
+    "PL2800",
+    "PL2900",
+    "PL1900",
+    "PL2400",
+    "PL2500"
+  ],
+  "characters": [
+    {
+      "id": "PL0000",
+      "name": "Gran",
+      "source_character": "PL0000",
+      "captain_avatar_one_only_fallback": false,
+      "sigils": [
+        {
+          "slot": 1,
+          "label": "Celestial Nyx / Celestial Lumen",
+          "outer_id": "GEEN_320_24",
+          "outer_hash": "8B8085C0",
+          "primary_id": "0DE887A0",
+          "primary_hash": "0DE887A0",
+          "secondary_id": "SKILL_321_00",
+          "secondary_hash": "A7726190",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 2,
+          "label": "Celestial Terra / Celestial Incendo",
+          "outer_id": "GEEN_322_24",
+          "outer_hash": "D29CD8E0",
+          "primary_id": "9232DC17",
+          "primary_hash": "9232DC17",
+          "secondary_id": "SKILL_323_00",
+          "secondary_hash": "36E3848D",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 3,
+          "label": "Celestial Aqua / Fatebreaker",
+          "outer_id": "GEEN_324_24",
+          "outer_hash": "E14E1598",
+          "primary_id": "A898E283",
+          "primary_hash": "A898E283",
+          "secondary_id": "SKILL_325_00",
+          "secondary_hash": "D029FE08",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 4,
+          "label": "Critical Hit Rate / Aegis",
+          "outer_id": "GEEN_003_24",
+          "outer_hash": "0BB9C188",
+          "primary_id": "SKILL_003_00",
+          "primary_hash": "8D78A19B",
+          "secondary_id": "SKILL_085_00",
+          "secondary_hash": "E0ABFDFE",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 5,
+          "label": "Greater Aegis / Nimble Onslaught",
+          "outer_id": "GEEN_166_24",
+          "outer_hash": "6F1D0870",
+          "primary_id": "SKILL_166_00",
+          "primary_hash": "48A95B8D",
+          "secondary_id": "SKILL_106_00",
+          "secondary_hash": "D2C8E10A",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 6,
+          "label": "War Elemental / Improved Dodge",
+          "outer_id": "GEEN_146_24",
+          "outer_hash": "00612B10",
+          "primary_id": "SKILL_146_00",
+          "primary_hash": "4C588C27",
+          "secondary_id": "SKILL_063_00",
+          "secondary_hash": "8B3BF60C",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 7,
+          "label": "Alpha / Damage Cap",
+          "outer_id": "GEEN_160_04",
+          "outer_hash": "921D90D8",
+          "primary_id": "SKILL_160_00",
+          "primary_hash": "DBE1D775",
+          "secondary_id": "SKILL_020_00",
+          "secondary_hash": "DC584F60",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 8,
+          "label": "Beta / Supplementary Damage",
+          "outer_id": "GEEN_161_04",
+          "outer_hash": "EE337FE3",
+          "primary_id": "SKILL_161_00",
+          "primary_hash": "8D2ADB6E",
+          "secondary_id": "SKILL_151_00",
+          "secondary_hash": "57AB5B10",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 9,
+          "label": "Gamma / Tyranny",
+          "outer_id": "GEEN_162_04",
+          "outer_hash": "4438676E",
+          "primary_id": "SKILL_162_00",
+          "primary_hash": "5C862E13",
+          "secondary_id": "SKILL_027_00",
+          "secondary_hash": "71F11A9B",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 10,
+          "label": "Flight over Fight / Stamina",
+          "outer_id": "GEEN_159_24",
+          "outer_hash": "0A4651BB",
+          "primary_id": "SKILL_159_00",
+          "primary_hash": "EC1C6779",
+          "secondary_id": "SKILL_006_00",
+          "secondary_hash": "2FC8FBFF",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 11,
+          "label": "Character Awakening / Guts",
+          "outer_id": "GEEN_114_90",
+          "outer_hash": "52A6E299",
+          "primary_id": "SKILL_114_00",
+          "primary_hash": "CD030268",
+          "secondary_id": "SKILL_045_00",
+          "secondary_hash": "E69A4694",
+          "can_only_hold_one": true
+        },
+        {
+          "slot": 12,
+          "label": "Character Warpath / Autorevive",
+          "outer_id": "GEEN_114_93",
+          "outer_hash": "0713D928",
+          "primary_id": "SKILL_114_02",
+          "primary_hash": "DADE14DC",
+          "secondary_id": "SKILL_068_00",
+          "secondary_hash": "95F3FA86",
+          "can_only_hold_one": false
+        }
+      ]
+    },
+    {
+      "id": "PL0100",
+      "name": "Djeeta",
+      "source_character": "PL0000",
+      "captain_avatar_one_only_fallback": true,
+      "sigils": [
+        {
+          "slot": 1,
+          "label": "Celestial Nyx / Celestial Lumen",
+          "outer_id": "GEEN_320_24",
+          "outer_hash": "8B8085C0",
+          "primary_id": "0DE887A0",
+          "primary_hash": "0DE887A0",
+          "secondary_id": "SKILL_321_00",
+          "secondary_hash": "A7726190",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 2,
+          "label": "Celestial Terra / Celestial Incendo",
+          "outer_id": "GEEN_322_24",
+          "outer_hash": "D29CD8E0",
+          "primary_id": "9232DC17",
+          "primary_hash": "9232DC17",
+          "secondary_id": "SKILL_323_00",
+          "secondary_hash": "36E3848D",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 3,
+          "label": "Celestial Aqua / Fatebreaker",
+          "outer_id": "GEEN_324_24",
+          "outer_hash": "E14E1598",
+          "primary_id": "A898E283",
+          "primary_hash": "A898E283",
+          "secondary_id": "SKILL_325_00",
+          "secondary_hash": "D029FE08",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 4,
+          "label": "Critical Hit Rate / Aegis",
+          "outer_id": "GEEN_003_24",
+          "outer_hash": "0BB9C188",
+          "primary_id": "SKILL_003_00",
+          "primary_hash": "8D78A19B",
+          "secondary_id": "SKILL_085_00",
+          "secondary_hash": "E0ABFDFE",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 5,
+          "label": "Greater Aegis / Nimble Onslaught",
+          "outer_id": "GEEN_166_24",
+          "outer_hash": "6F1D0870",
+          "primary_id": "SKILL_166_00",
+          "primary_hash": "48A95B8D",
+          "secondary_id": "SKILL_106_00",
+          "secondary_hash": "D2C8E10A",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 6,
+          "label": "War Elemental / Improved Dodge",
+          "outer_id": "GEEN_146_24",
+          "outer_hash": "00612B10",
+          "primary_id": "SKILL_146_00",
+          "primary_hash": "4C588C27",
+          "secondary_id": "SKILL_063_00",
+          "secondary_hash": "8B3BF60C",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 7,
+          "label": "Alpha / Damage Cap",
+          "outer_id": "GEEN_160_04",
+          "outer_hash": "921D90D8",
+          "primary_id": "SKILL_160_00",
+          "primary_hash": "DBE1D775",
+          "secondary_id": "SKILL_020_00",
+          "secondary_hash": "DC584F60",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 8,
+          "label": "Beta / Supplementary Damage",
+          "outer_id": "GEEN_161_04",
+          "outer_hash": "EE337FE3",
+          "primary_id": "SKILL_161_00",
+          "primary_hash": "8D2ADB6E",
+          "secondary_id": "SKILL_151_00",
+          "secondary_hash": "57AB5B10",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 9,
+          "label": "Gamma / Tyranny",
+          "outer_id": "GEEN_162_04",
+          "outer_hash": "4438676E",
+          "primary_id": "SKILL_162_00",
+          "primary_hash": "5C862E13",
+          "secondary_id": "SKILL_027_00",
+          "secondary_hash": "71F11A9B",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 10,
+          "label": "Flight over Fight / Stamina",
+          "outer_id": "GEEN_159_24",
+          "outer_hash": "0A4651BB",
+          "primary_id": "SKILL_159_00",
+          "primary_hash": "EC1C6779",
+          "secondary_id": "SKILL_006_00",
+          "secondary_hash": "2FC8FBFF",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 11,
+          "label": "Character Awakening / Guts",
+          "outer_id": "GEEN_114_91",
+          "outer_hash": "33F01810",
+          "primary_id": "SKILL_114_00",
+          "primary_hash": "CD030268",
+          "secondary_id": "SKILL_045_00",
+          "secondary_hash": "E69A4694",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 12,
+          "label": "Character Warpath / Autorevive",
+          "outer_id": "GEEN_114_93",
+          "outer_hash": "0713D928",
+          "primary_id": "SKILL_114_02",
+          "primary_hash": "DADE14DC",
+          "secondary_id": "SKILL_068_00",
+          "secondary_hash": "95F3FA86",
+          "can_only_hold_one": false
+        }
+      ]
+    },
+    {
+      "id": "PL0200",
+      "name": "Katalina",
+      "source_character": "PL0200",
+      "captain_avatar_one_only_fallback": false,
+      "sigils": [
+        {
+          "slot": 1,
+          "label": "Celestial Nyx / Celestial Lumen",
+          "outer_id": "GEEN_320_24",
+          "outer_hash": "8B8085C0",
+          "primary_id": "0DE887A0",
+          "primary_hash": "0DE887A0",
+          "secondary_id": "SKILL_321_00",
+          "secondary_hash": "A7726190",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 2,
+          "label": "Celestial Terra / Celestial Incendo",
+          "outer_id": "GEEN_322_24",
+          "outer_hash": "D29CD8E0",
+          "primary_id": "9232DC17",
+          "primary_hash": "9232DC17",
+          "secondary_id": "SKILL_323_00",
+          "secondary_hash": "36E3848D",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 3,
+          "label": "Celestial Aqua / Fatebreaker",
+          "outer_id": "GEEN_324_24",
+          "outer_hash": "E14E1598",
+          "primary_id": "A898E283",
+          "primary_hash": "A898E283",
+          "secondary_id": "SKILL_325_00",
+          "secondary_hash": "D029FE08",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 4,
+          "label": "Critical Hit Rate / Aegis",
+          "outer_id": "GEEN_003_24",
+          "outer_hash": "0BB9C188",
+          "primary_id": "SKILL_003_00",
+          "primary_hash": "8D78A19B",
+          "secondary_id": "SKILL_085_00",
+          "secondary_hash": "E0ABFDFE",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 5,
+          "label": "Greater Aegis / Nimble Onslaught",
+          "outer_id": "GEEN_166_24",
+          "outer_hash": "6F1D0870",
+          "primary_id": "SKILL_166_00",
+          "primary_hash": "48A95B8D",
+          "secondary_id": "SKILL_106_00",
+          "secondary_hash": "D2C8E10A",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 6,
+          "label": "War Elemental / Improved Dodge",
+          "outer_id": "GEEN_146_24",
+          "outer_hash": "00612B10",
+          "primary_id": "SKILL_146_00",
+          "primary_hash": "4C588C27",
+          "secondary_id": "SKILL_063_00",
+          "secondary_hash": "8B3BF60C",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 7,
+          "label": "Alpha / Damage Cap",
+          "outer_id": "GEEN_160_04",
+          "outer_hash": "921D90D8",
+          "primary_id": "SKILL_160_00",
+          "primary_hash": "DBE1D775",
+          "secondary_id": "SKILL_020_00",
+          "secondary_hash": "DC584F60",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 8,
+          "label": "Beta / Supplementary Damage",
+          "outer_id": "GEEN_161_04",
+          "outer_hash": "EE337FE3",
+          "primary_id": "SKILL_161_00",
+          "primary_hash": "8D2ADB6E",
+          "secondary_id": "SKILL_151_00",
+          "secondary_hash": "57AB5B10",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 9,
+          "label": "Gamma / Tyranny",
+          "outer_id": "GEEN_162_04",
+          "outer_hash": "4438676E",
+          "primary_id": "SKILL_162_00",
+          "primary_hash": "5C862E13",
+          "secondary_id": "SKILL_027_00",
+          "secondary_hash": "71F11A9B",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 10,
+          "label": "Flight over Fight / Stamina",
+          "outer_id": "GEEN_159_24",
+          "outer_hash": "0A4651BB",
+          "primary_id": "SKILL_159_00",
+          "primary_hash": "EC1C6779",
+          "secondary_id": "SKILL_006_00",
+          "secondary_hash": "2FC8FBFF",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 11,
+          "label": "Character Awakening / Guts",
+          "outer_id": "GEEN_115_90",
+          "outer_hash": "9ADA3E00",
+          "primary_id": "SKILL_115_00",
+          "primary_hash": "3BFED918",
+          "secondary_id": "SKILL_045_00",
+          "secondary_hash": "E69A4694",
+          "can_only_hold_one": true
+        },
+        {
+          "slot": 12,
+          "label": "Character Warpath / Autorevive",
+          "outer_id": "GEEN_115_93",
+          "outer_hash": "AC175924",
+          "primary_id": "SKILL_115_02",
+          "primary_hash": "9AFDFA9E",
+          "secondary_id": "SKILL_068_00",
+          "secondary_hash": "95F3FA86",
+          "can_only_hold_one": false
+        }
+      ]
+    },
+    {
+      "id": "PL0300",
+      "name": "Rackam",
+      "source_character": "PL0300",
+      "captain_avatar_one_only_fallback": false,
+      "sigils": [
+        {
+          "slot": 1,
+          "label": "Celestial Nyx / Celestial Lumen",
+          "outer_id": "GEEN_320_24",
+          "outer_hash": "8B8085C0",
+          "primary_id": "0DE887A0",
+          "primary_hash": "0DE887A0",
+          "secondary_id": "SKILL_321_00",
+          "secondary_hash": "A7726190",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 2,
+          "label": "Celestial Terra / Celestial Incendo",
+          "outer_id": "GEEN_322_24",
+          "outer_hash": "D29CD8E0",
+          "primary_id": "9232DC17",
+          "primary_hash": "9232DC17",
+          "secondary_id": "SKILL_323_00",
+          "secondary_hash": "36E3848D",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 3,
+          "label": "Celestial Aqua / Fatebreaker",
+          "outer_id": "GEEN_324_24",
+          "outer_hash": "E14E1598",
+          "primary_id": "A898E283",
+          "primary_hash": "A898E283",
+          "secondary_id": "SKILL_325_00",
+          "secondary_hash": "D029FE08",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 4,
+          "label": "Critical Hit Rate / Aegis",
+          "outer_id": "GEEN_003_24",
+          "outer_hash": "0BB9C188",
+          "primary_id": "SKILL_003_00",
+          "primary_hash": "8D78A19B",
+          "secondary_id": "SKILL_085_00",
+          "secondary_hash": "E0ABFDFE",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 5,
+          "label": "Greater Aegis / Nimble Onslaught",
+          "outer_id": "GEEN_166_24",
+          "outer_hash": "6F1D0870",
+          "primary_id": "SKILL_166_00",
+          "primary_hash": "48A95B8D",
+          "secondary_id": "SKILL_106_00",
+          "secondary_hash": "D2C8E10A",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 6,
+          "label": "War Elemental / Improved Dodge",
+          "outer_id": "GEEN_146_24",
+          "outer_hash": "00612B10",
+          "primary_id": "SKILL_146_00",
+          "primary_hash": "4C588C27",
+          "secondary_id": "SKILL_063_00",
+          "secondary_hash": "8B3BF60C",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 7,
+          "label": "Alpha / Damage Cap",
+          "outer_id": "GEEN_160_04",
+          "outer_hash": "921D90D8",
+          "primary_id": "SKILL_160_00",
+          "primary_hash": "DBE1D775",
+          "secondary_id": "SKILL_020_00",
+          "secondary_hash": "DC584F60",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 8,
+          "label": "Beta / Supplementary Damage",
+          "outer_id": "GEEN_161_04",
+          "outer_hash": "EE337FE3",
+          "primary_id": "SKILL_161_00",
+          "primary_hash": "8D2ADB6E",
+          "secondary_id": "SKILL_151_00",
+          "secondary_hash": "57AB5B10",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 9,
+          "label": "Gamma / Tyranny",
+          "outer_id": "GEEN_162_04",
+          "outer_hash": "4438676E",
+          "primary_id": "SKILL_162_00",
+          "primary_hash": "5C862E13",
+          "secondary_id": "SKILL_027_00",
+          "secondary_hash": "71F11A9B",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 10,
+          "label": "Flight over Fight / Stamina",
+          "outer_id": "GEEN_159_24",
+          "outer_hash": "0A4651BB",
+          "primary_id": "SKILL_159_00",
+          "primary_hash": "EC1C6779",
+          "secondary_id": "SKILL_006_00",
+          "secondary_hash": "2FC8FBFF",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 11,
+          "label": "Character Awakening / Guts",
+          "outer_id": "GEEN_116_90",
+          "outer_hash": "98A6D249",
+          "primary_id": "SKILL_116_00",
+          "primary_hash": "151E4674",
+          "secondary_id": "SKILL_045_00",
+          "secondary_hash": "E69A4694",
+          "can_only_hold_one": true
+        },
+        {
+          "slot": 12,
+          "label": "Character Warpath / Autorevive",
+          "outer_id": "GEEN_116_93",
+          "outer_hash": "BC53CE24",
+          "primary_id": "SKILL_116_02",
+          "primary_hash": "D76F4D24",
+          "secondary_id": "SKILL_068_00",
+          "secondary_hash": "95F3FA86",
+          "can_only_hold_one": false
+        }
+      ]
+    },
+    {
+      "id": "PL0400",
+      "name": "Io",
+      "source_character": "PL0400",
+      "captain_avatar_one_only_fallback": false,
+      "sigils": [
+        {
+          "slot": 1,
+          "label": "Celestial Nyx / Celestial Lumen",
+          "outer_id": "GEEN_320_24",
+          "outer_hash": "8B8085C0",
+          "primary_id": "0DE887A0",
+          "primary_hash": "0DE887A0",
+          "secondary_id": "SKILL_321_00",
+          "secondary_hash": "A7726190",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 2,
+          "label": "Celestial Terra / Celestial Incendo",
+          "outer_id": "GEEN_322_24",
+          "outer_hash": "D29CD8E0",
+          "primary_id": "9232DC17",
+          "primary_hash": "9232DC17",
+          "secondary_id": "SKILL_323_00",
+          "secondary_hash": "36E3848D",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 3,
+          "label": "Celestial Aqua / Fatebreaker",
+          "outer_id": "GEEN_324_24",
+          "outer_hash": "E14E1598",
+          "primary_id": "A898E283",
+          "primary_hash": "A898E283",
+          "secondary_id": "SKILL_325_00",
+          "secondary_hash": "D029FE08",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 4,
+          "label": "Critical Hit Rate / Aegis",
+          "outer_id": "GEEN_003_24",
+          "outer_hash": "0BB9C188",
+          "primary_id": "SKILL_003_00",
+          "primary_hash": "8D78A19B",
+          "secondary_id": "SKILL_085_00",
+          "secondary_hash": "E0ABFDFE",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 5,
+          "label": "Greater Aegis / Nimble Onslaught",
+          "outer_id": "GEEN_166_24",
+          "outer_hash": "6F1D0870",
+          "primary_id": "SKILL_166_00",
+          "primary_hash": "48A95B8D",
+          "secondary_id": "SKILL_106_00",
+          "secondary_hash": "D2C8E10A",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 6,
+          "label": "War Elemental / Improved Dodge",
+          "outer_id": "GEEN_146_24",
+          "outer_hash": "00612B10",
+          "primary_id": "SKILL_146_00",
+          "primary_hash": "4C588C27",
+          "secondary_id": "SKILL_063_00",
+          "secondary_hash": "8B3BF60C",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 7,
+          "label": "Alpha / Damage Cap",
+          "outer_id": "GEEN_160_04",
+          "outer_hash": "921D90D8",
+          "primary_id": "SKILL_160_00",
+          "primary_hash": "DBE1D775",
+          "secondary_id": "SKILL_020_00",
+          "secondary_hash": "DC584F60",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 8,
+          "label": "Beta / Supplementary Damage",
+          "outer_id": "GEEN_161_04",
+          "outer_hash": "EE337FE3",
+          "primary_id": "SKILL_161_00",
+          "primary_hash": "8D2ADB6E",
+          "secondary_id": "SKILL_151_00",
+          "secondary_hash": "57AB5B10",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 9,
+          "label": "Gamma / Tyranny",
+          "outer_id": "GEEN_162_04",
+          "outer_hash": "4438676E",
+          "primary_id": "SKILL_162_00",
+          "primary_hash": "5C862E13",
+          "secondary_id": "SKILL_027_00",
+          "secondary_hash": "71F11A9B",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 10,
+          "label": "Flight over Fight / Stamina",
+          "outer_id": "GEEN_159_24",
+          "outer_hash": "0A4651BB",
+          "primary_id": "SKILL_159_00",
+          "primary_hash": "EC1C6779",
+          "secondary_id": "SKILL_006_00",
+          "secondary_hash": "2FC8FBFF",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 11,
+          "label": "Character Awakening / Guts",
+          "outer_id": "GEEN_117_90",
+          "outer_hash": "E2B380E5",
+          "primary_id": "SKILL_117_00",
+          "primary_hash": "B48EEF48",
+          "secondary_id": "SKILL_045_00",
+          "secondary_hash": "E69A4694",
+          "can_only_hold_one": true
+        },
+        {
+          "slot": 12,
+          "label": "Character Warpath / Autorevive",
+          "outer_id": "GEEN_117_93",
+          "outer_hash": "43F26A91",
+          "primary_id": "SKILL_117_02",
+          "primary_hash": "C00163B3",
+          "secondary_id": "SKILL_068_00",
+          "secondary_hash": "95F3FA86",
+          "can_only_hold_one": false
+        }
+      ]
+    },
+    {
+      "id": "PL0500",
+      "name": "Eugen",
+      "source_character": "PL0500",
+      "captain_avatar_one_only_fallback": false,
+      "sigils": [
+        {
+          "slot": 1,
+          "label": "Celestial Nyx / Celestial Lumen",
+          "outer_id": "GEEN_320_24",
+          "outer_hash": "8B8085C0",
+          "primary_id": "0DE887A0",
+          "primary_hash": "0DE887A0",
+          "secondary_id": "SKILL_321_00",
+          "secondary_hash": "A7726190",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 2,
+          "label": "Celestial Terra / Celestial Incendo",
+          "outer_id": "GEEN_322_24",
+          "outer_hash": "D29CD8E0",
+          "primary_id": "9232DC17",
+          "primary_hash": "9232DC17",
+          "secondary_id": "SKILL_323_00",
+          "secondary_hash": "36E3848D",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 3,
+          "label": "Celestial Aqua / Fatebreaker",
+          "outer_id": "GEEN_324_24",
+          "outer_hash": "E14E1598",
+          "primary_id": "A898E283",
+          "primary_hash": "A898E283",
+          "secondary_id": "SKILL_325_00",
+          "secondary_hash": "D029FE08",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 4,
+          "label": "Critical Hit Rate / Aegis",
+          "outer_id": "GEEN_003_24",
+          "outer_hash": "0BB9C188",
+          "primary_id": "SKILL_003_00",
+          "primary_hash": "8D78A19B",
+          "secondary_id": "SKILL_085_00",
+          "secondary_hash": "E0ABFDFE",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 5,
+          "label": "Greater Aegis / Nimble Onslaught",
+          "outer_id": "GEEN_166_24",
+          "outer_hash": "6F1D0870",
+          "primary_id": "SKILL_166_00",
+          "primary_hash": "48A95B8D",
+          "secondary_id": "SKILL_106_00",
+          "secondary_hash": "D2C8E10A",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 6,
+          "label": "War Elemental / Improved Dodge",
+          "outer_id": "GEEN_146_24",
+          "outer_hash": "00612B10",
+          "primary_id": "SKILL_146_00",
+          "primary_hash": "4C588C27",
+          "secondary_id": "SKILL_063_00",
+          "secondary_hash": "8B3BF60C",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 7,
+          "label": "Alpha / Damage Cap",
+          "outer_id": "GEEN_160_04",
+          "outer_hash": "921D90D8",
+          "primary_id": "SKILL_160_00",
+          "primary_hash": "DBE1D775",
+          "secondary_id": "SKILL_020_00",
+          "secondary_hash": "DC584F60",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 8,
+          "label": "Beta / Supplementary Damage",
+          "outer_id": "GEEN_161_04",
+          "outer_hash": "EE337FE3",
+          "primary_id": "SKILL_161_00",
+          "primary_hash": "8D2ADB6E",
+          "secondary_id": "SKILL_151_00",
+          "secondary_hash": "57AB5B10",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 9,
+          "label": "Gamma / Tyranny",
+          "outer_id": "GEEN_162_04",
+          "outer_hash": "4438676E",
+          "primary_id": "SKILL_162_00",
+          "primary_hash": "5C862E13",
+          "secondary_id": "SKILL_027_00",
+          "secondary_hash": "71F11A9B",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 10,
+          "label": "Flight over Fight / Stamina",
+          "outer_id": "GEEN_159_24",
+          "outer_hash": "0A4651BB",
+          "primary_id": "SKILL_159_00",
+          "primary_hash": "EC1C6779",
+          "secondary_id": "SKILL_006_00",
+          "secondary_hash": "2FC8FBFF",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 11,
+          "label": "Character Awakening / Guts",
+          "outer_id": "GEEN_118_90",
+          "outer_hash": "1BBE919C",
+          "primary_id": "SKILL_118_00",
+          "primary_hash": "AA83F548",
+          "secondary_id": "SKILL_045_00",
+          "secondary_hash": "E69A4694",
+          "can_only_hold_one": true
+        },
+        {
+          "slot": 12,
+          "label": "Character Warpath / Autorevive",
+          "outer_id": "GEEN_118_93",
+          "outer_hash": "CAAE3F9C",
+          "primary_id": "SKILL_118_02",
+          "primary_hash": "0E42BE1B",
+          "secondary_id": "SKILL_068_00",
+          "secondary_hash": "95F3FA86",
+          "can_only_hold_one": false
+        }
+      ]
+    },
+    {
+      "id": "PL0600",
+      "name": "Rosetta",
+      "source_character": "PL0600",
+      "captain_avatar_one_only_fallback": false,
+      "sigils": [
+        {
+          "slot": 1,
+          "label": "Celestial Nyx / Celestial Lumen",
+          "outer_id": "GEEN_320_24",
+          "outer_hash": "8B8085C0",
+          "primary_id": "0DE887A0",
+          "primary_hash": "0DE887A0",
+          "secondary_id": "SKILL_321_00",
+          "secondary_hash": "A7726190",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 2,
+          "label": "Celestial Terra / Celestial Incendo",
+          "outer_id": "GEEN_322_24",
+          "outer_hash": "D29CD8E0",
+          "primary_id": "9232DC17",
+          "primary_hash": "9232DC17",
+          "secondary_id": "SKILL_323_00",
+          "secondary_hash": "36E3848D",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 3,
+          "label": "Celestial Aqua / Fatebreaker",
+          "outer_id": "GEEN_324_24",
+          "outer_hash": "E14E1598",
+          "primary_id": "A898E283",
+          "primary_hash": "A898E283",
+          "secondary_id": "SKILL_325_00",
+          "secondary_hash": "D029FE08",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 4,
+          "label": "Critical Hit Rate / Aegis",
+          "outer_id": "GEEN_003_24",
+          "outer_hash": "0BB9C188",
+          "primary_id": "SKILL_003_00",
+          "primary_hash": "8D78A19B",
+          "secondary_id": "SKILL_085_00",
+          "secondary_hash": "E0ABFDFE",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 5,
+          "label": "Greater Aegis / Nimble Onslaught",
+          "outer_id": "GEEN_166_24",
+          "outer_hash": "6F1D0870",
+          "primary_id": "SKILL_166_00",
+          "primary_hash": "48A95B8D",
+          "secondary_id": "SKILL_106_00",
+          "secondary_hash": "D2C8E10A",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 6,
+          "label": "War Elemental / Improved Dodge",
+          "outer_id": "GEEN_146_24",
+          "outer_hash": "00612B10",
+          "primary_id": "SKILL_146_00",
+          "primary_hash": "4C588C27",
+          "secondary_id": "SKILL_063_00",
+          "secondary_hash": "8B3BF60C",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 7,
+          "label": "Alpha / Damage Cap",
+          "outer_id": "GEEN_160_04",
+          "outer_hash": "921D90D8",
+          "primary_id": "SKILL_160_00",
+          "primary_hash": "DBE1D775",
+          "secondary_id": "SKILL_020_00",
+          "secondary_hash": "DC584F60",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 8,
+          "label": "Beta / Supplementary Damage",
+          "outer_id": "GEEN_161_04",
+          "outer_hash": "EE337FE3",
+          "primary_id": "SKILL_161_00",
+          "primary_hash": "8D2ADB6E",
+          "secondary_id": "SKILL_151_00",
+          "secondary_hash": "57AB5B10",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 9,
+          "label": "Gamma / Tyranny",
+          "outer_id": "GEEN_162_04",
+          "outer_hash": "4438676E",
+          "primary_id": "SKILL_162_00",
+          "primary_hash": "5C862E13",
+          "secondary_id": "SKILL_027_00",
+          "secondary_hash": "71F11A9B",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 10,
+          "label": "Flight over Fight / Stamina",
+          "outer_id": "GEEN_159_24",
+          "outer_hash": "0A4651BB",
+          "primary_id": "SKILL_159_00",
+          "primary_hash": "EC1C6779",
+          "secondary_id": "SKILL_006_00",
+          "secondary_hash": "2FC8FBFF",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 11,
+          "label": "Character Awakening / Guts",
+          "outer_id": "GEEN_119_90",
+          "outer_hash": "9BD1CC24",
+          "primary_id": "SKILL_119_00",
+          "primary_hash": "23D0F67F",
+          "secondary_id": "SKILL_045_00",
+          "secondary_hash": "E69A4694",
+          "can_only_hold_one": true
+        },
+        {
+          "slot": 12,
+          "label": "Character Warpath / Autorevive",
+          "outer_id": "GEEN_119_93",
+          "outer_hash": "515E693C",
+          "primary_id": "SKILL_119_02",
+          "primary_hash": "8519AD4A",
+          "secondary_id": "SKILL_068_00",
+          "secondary_hash": "95F3FA86",
+          "can_only_hold_one": false
+        }
+      ]
+    },
+    {
+      "id": "PL1200",
+      "name": "Charlotta",
+      "source_character": "PL1200",
+      "captain_avatar_one_only_fallback": false,
+      "sigils": [
+        {
+          "slot": 1,
+          "label": "Celestial Nyx / Celestial Lumen",
+          "outer_id": "GEEN_320_24",
+          "outer_hash": "8B8085C0",
+          "primary_id": "0DE887A0",
+          "primary_hash": "0DE887A0",
+          "secondary_id": "SKILL_321_00",
+          "secondary_hash": "A7726190",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 2,
+          "label": "Celestial Terra / Celestial Incendo",
+          "outer_id": "GEEN_322_24",
+          "outer_hash": "D29CD8E0",
+          "primary_id": "9232DC17",
+          "primary_hash": "9232DC17",
+          "secondary_id": "SKILL_323_00",
+          "secondary_hash": "36E3848D",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 3,
+          "label": "Celestial Aqua / Fatebreaker",
+          "outer_id": "GEEN_324_24",
+          "outer_hash": "E14E1598",
+          "primary_id": "A898E283",
+          "primary_hash": "A898E283",
+          "secondary_id": "SKILL_325_00",
+          "secondary_hash": "D029FE08",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 4,
+          "label": "Critical Hit Rate / Aegis",
+          "outer_id": "GEEN_003_24",
+          "outer_hash": "0BB9C188",
+          "primary_id": "SKILL_003_00",
+          "primary_hash": "8D78A19B",
+          "secondary_id": "SKILL_085_00",
+          "secondary_hash": "E0ABFDFE",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 5,
+          "label": "Greater Aegis / Nimble Onslaught",
+          "outer_id": "GEEN_166_24",
+          "outer_hash": "6F1D0870",
+          "primary_id": "SKILL_166_00",
+          "primary_hash": "48A95B8D",
+          "secondary_id": "SKILL_106_00",
+          "secondary_hash": "D2C8E10A",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 6,
+          "label": "War Elemental / Improved Dodge",
+          "outer_id": "GEEN_146_24",
+          "outer_hash": "00612B10",
+          "primary_id": "SKILL_146_00",
+          "primary_hash": "4C588C27",
+          "secondary_id": "SKILL_063_00",
+          "secondary_hash": "8B3BF60C",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 7,
+          "label": "Alpha / Damage Cap",
+          "outer_id": "GEEN_160_04",
+          "outer_hash": "921D90D8",
+          "primary_id": "SKILL_160_00",
+          "primary_hash": "DBE1D775",
+          "secondary_id": "SKILL_020_00",
+          "secondary_hash": "DC584F60",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 8,
+          "label": "Beta / Supplementary Damage",
+          "outer_id": "GEEN_161_04",
+          "outer_hash": "EE337FE3",
+          "primary_id": "SKILL_161_00",
+          "primary_hash": "8D2ADB6E",
+          "secondary_id": "SKILL_151_00",
+          "secondary_hash": "57AB5B10",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 9,
+          "label": "Gamma / Tyranny",
+          "outer_id": "GEEN_162_04",
+          "outer_hash": "4438676E",
+          "primary_id": "SKILL_162_00",
+          "primary_hash": "5C862E13",
+          "secondary_id": "SKILL_027_00",
+          "secondary_hash": "71F11A9B",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 10,
+          "label": "Flight over Fight / Stamina",
+          "outer_id": "GEEN_159_24",
+          "outer_hash": "0A4651BB",
+          "primary_id": "SKILL_159_00",
+          "primary_hash": "EC1C6779",
+          "secondary_id": "SKILL_006_00",
+          "secondary_hash": "2FC8FBFF",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 11,
+          "label": "Character Awakening / Guts",
+          "outer_id": "GEEN_125_90",
+          "outer_hash": "AEEF8343",
+          "primary_id": "SKILL_125_00",
+          "primary_hash": "9A9DC170",
+          "secondary_id": "SKILL_045_00",
+          "secondary_hash": "E69A4694",
+          "can_only_hold_one": true
+        },
+        {
+          "slot": 12,
+          "label": "Character Warpath / Autorevive",
+          "outer_id": "GEEN_125_93",
+          "outer_hash": "4C28585A",
+          "primary_id": "SKILL_125_02",
+          "primary_hash": "B85202BC",
+          "secondary_id": "SKILL_068_00",
+          "secondary_hash": "95F3FA86",
+          "can_only_hold_one": false
+        }
+      ]
+    },
+    {
+      "id": "PL1500",
+      "name": "Ghandagoza",
+      "source_character": "PL1500",
+      "captain_avatar_one_only_fallback": false,
+      "sigils": [
+        {
+          "slot": 1,
+          "label": "Celestial Nyx / Celestial Lumen",
+          "outer_id": "GEEN_320_24",
+          "outer_hash": "8B8085C0",
+          "primary_id": "0DE887A0",
+          "primary_hash": "0DE887A0",
+          "secondary_id": "SKILL_321_00",
+          "secondary_hash": "A7726190",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 2,
+          "label": "Celestial Terra / Celestial Incendo",
+          "outer_id": "GEEN_322_24",
+          "outer_hash": "D29CD8E0",
+          "primary_id": "9232DC17",
+          "primary_hash": "9232DC17",
+          "secondary_id": "SKILL_323_00",
+          "secondary_hash": "36E3848D",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 3,
+          "label": "Celestial Aqua / Fatebreaker",
+          "outer_id": "GEEN_324_24",
+          "outer_hash": "E14E1598",
+          "primary_id": "A898E283",
+          "primary_hash": "A898E283",
+          "secondary_id": "SKILL_325_00",
+          "secondary_hash": "D029FE08",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 4,
+          "label": "Critical Hit Rate / Aegis",
+          "outer_id": "GEEN_003_24",
+          "outer_hash": "0BB9C188",
+          "primary_id": "SKILL_003_00",
+          "primary_hash": "8D78A19B",
+          "secondary_id": "SKILL_085_00",
+          "secondary_hash": "E0ABFDFE",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 5,
+          "label": "Greater Aegis / Nimble Onslaught",
+          "outer_id": "GEEN_166_24",
+          "outer_hash": "6F1D0870",
+          "primary_id": "SKILL_166_00",
+          "primary_hash": "48A95B8D",
+          "secondary_id": "SKILL_106_00",
+          "secondary_hash": "D2C8E10A",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 6,
+          "label": "War Elemental / Improved Dodge",
+          "outer_id": "GEEN_146_24",
+          "outer_hash": "00612B10",
+          "primary_id": "SKILL_146_00",
+          "primary_hash": "4C588C27",
+          "secondary_id": "SKILL_063_00",
+          "secondary_hash": "8B3BF60C",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 7,
+          "label": "Alpha / Damage Cap",
+          "outer_id": "GEEN_160_04",
+          "outer_hash": "921D90D8",
+          "primary_id": "SKILL_160_00",
+          "primary_hash": "DBE1D775",
+          "secondary_id": "SKILL_020_00",
+          "secondary_hash": "DC584F60",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 8,
+          "label": "Beta / Supplementary Damage",
+          "outer_id": "GEEN_161_04",
+          "outer_hash": "EE337FE3",
+          "primary_id": "SKILL_161_00",
+          "primary_hash": "8D2ADB6E",
+          "secondary_id": "SKILL_151_00",
+          "secondary_hash": "57AB5B10",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 9,
+          "label": "Gamma / Tyranny",
+          "outer_id": "GEEN_162_04",
+          "outer_hash": "4438676E",
+          "primary_id": "SKILL_162_00",
+          "primary_hash": "5C862E13",
+          "secondary_id": "SKILL_027_00",
+          "secondary_hash": "71F11A9B",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 10,
+          "label": "Flight over Fight / Stamina",
+          "outer_id": "GEEN_159_24",
+          "outer_hash": "0A4651BB",
+          "primary_id": "SKILL_159_00",
+          "primary_hash": "EC1C6779",
+          "secondary_id": "SKILL_006_00",
+          "secondary_hash": "2FC8FBFF",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 11,
+          "label": "Character Awakening / Guts",
+          "outer_id": "GEEN_128_90",
+          "outer_hash": "CE16D68B",
+          "primary_id": "SKILL_128_00",
+          "primary_hash": "5463232F",
+          "secondary_id": "SKILL_045_00",
+          "secondary_hash": "E69A4694",
+          "can_only_hold_one": true
+        },
+        {
+          "slot": 12,
+          "label": "Character Warpath / Autorevive",
+          "outer_id": "GEEN_128_93",
+          "outer_hash": "3069C2FE",
+          "primary_id": "SKILL_128_02",
+          "primary_hash": "0F026CF0",
+          "secondary_id": "SKILL_068_00",
+          "secondary_hash": "95F3FA86",
+          "can_only_hold_one": false
+        }
+      ]
+    },
+    {
+      "id": "PL0700",
+      "name": "Ferry",
+      "source_character": "PL0700",
+      "captain_avatar_one_only_fallback": false,
+      "sigils": [
+        {
+          "slot": 1,
+          "label": "Celestial Nyx / Celestial Lumen",
+          "outer_id": "GEEN_320_24",
+          "outer_hash": "8B8085C0",
+          "primary_id": "0DE887A0",
+          "primary_hash": "0DE887A0",
+          "secondary_id": "SKILL_321_00",
+          "secondary_hash": "A7726190",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 2,
+          "label": "Celestial Terra / Celestial Incendo",
+          "outer_id": "GEEN_322_24",
+          "outer_hash": "D29CD8E0",
+          "primary_id": "9232DC17",
+          "primary_hash": "9232DC17",
+          "secondary_id": "SKILL_323_00",
+          "secondary_hash": "36E3848D",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 3,
+          "label": "Celestial Aqua / Fatebreaker",
+          "outer_id": "GEEN_324_24",
+          "outer_hash": "E14E1598",
+          "primary_id": "A898E283",
+          "primary_hash": "A898E283",
+          "secondary_id": "SKILL_325_00",
+          "secondary_hash": "D029FE08",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 4,
+          "label": "Critical Hit Rate / Aegis",
+          "outer_id": "GEEN_003_24",
+          "outer_hash": "0BB9C188",
+          "primary_id": "SKILL_003_00",
+          "primary_hash": "8D78A19B",
+          "secondary_id": "SKILL_085_00",
+          "secondary_hash": "E0ABFDFE",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 5,
+          "label": "Greater Aegis / Nimble Onslaught",
+          "outer_id": "GEEN_166_24",
+          "outer_hash": "6F1D0870",
+          "primary_id": "SKILL_166_00",
+          "primary_hash": "48A95B8D",
+          "secondary_id": "SKILL_106_00",
+          "secondary_hash": "D2C8E10A",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 6,
+          "label": "War Elemental / Improved Dodge",
+          "outer_id": "GEEN_146_24",
+          "outer_hash": "00612B10",
+          "primary_id": "SKILL_146_00",
+          "primary_hash": "4C588C27",
+          "secondary_id": "SKILL_063_00",
+          "secondary_hash": "8B3BF60C",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 7,
+          "label": "Alpha / Damage Cap",
+          "outer_id": "GEEN_160_04",
+          "outer_hash": "921D90D8",
+          "primary_id": "SKILL_160_00",
+          "primary_hash": "DBE1D775",
+          "secondary_id": "SKILL_020_00",
+          "secondary_hash": "DC584F60",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 8,
+          "label": "Beta / Supplementary Damage",
+          "outer_id": "GEEN_161_04",
+          "outer_hash": "EE337FE3",
+          "primary_id": "SKILL_161_00",
+          "primary_hash": "8D2ADB6E",
+          "secondary_id": "SKILL_151_00",
+          "secondary_hash": "57AB5B10",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 9,
+          "label": "Gamma / Tyranny",
+          "outer_id": "GEEN_162_04",
+          "outer_hash": "4438676E",
+          "primary_id": "SKILL_162_00",
+          "primary_hash": "5C862E13",
+          "secondary_id": "SKILL_027_00",
+          "secondary_hash": "71F11A9B",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 10,
+          "label": "Flight over Fight / Stamina",
+          "outer_id": "GEEN_159_24",
+          "outer_hash": "0A4651BB",
+          "primary_id": "SKILL_159_00",
+          "primary_hash": "EC1C6779",
+          "secondary_id": "SKILL_006_00",
+          "secondary_hash": "2FC8FBFF",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 11,
+          "label": "Character Awakening / Guts",
+          "outer_id": "GEEN_120_90",
+          "outer_hash": "B441275D",
+          "primary_id": "SKILL_120_00",
+          "primary_hash": "D908223D",
+          "secondary_id": "SKILL_045_00",
+          "secondary_hash": "E69A4694",
+          "can_only_hold_one": true
+        },
+        {
+          "slot": 12,
+          "label": "Character Warpath / Autorevive",
+          "outer_id": "GEEN_120_93",
+          "outer_hash": "E496D882",
+          "primary_id": "SKILL_120_02",
+          "primary_hash": "A339D642",
+          "secondary_id": "SKILL_068_00",
+          "secondary_hash": "95F3FA86",
+          "can_only_hold_one": false
+        }
+      ]
+    },
+    {
+      "id": "PL1400",
+      "name": "Narmaya",
+      "source_character": "PL1400",
+      "captain_avatar_one_only_fallback": false,
+      "sigils": [
+        {
+          "slot": 1,
+          "label": "Celestial Nyx / Celestial Lumen",
+          "outer_id": "GEEN_320_24",
+          "outer_hash": "8B8085C0",
+          "primary_id": "0DE887A0",
+          "primary_hash": "0DE887A0",
+          "secondary_id": "SKILL_321_00",
+          "secondary_hash": "A7726190",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 2,
+          "label": "Celestial Terra / Celestial Incendo",
+          "outer_id": "GEEN_322_24",
+          "outer_hash": "D29CD8E0",
+          "primary_id": "9232DC17",
+          "primary_hash": "9232DC17",
+          "secondary_id": "SKILL_323_00",
+          "secondary_hash": "36E3848D",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 3,
+          "label": "Celestial Aqua / Fatebreaker",
+          "outer_id": "GEEN_324_24",
+          "outer_hash": "E14E1598",
+          "primary_id": "A898E283",
+          "primary_hash": "A898E283",
+          "secondary_id": "SKILL_325_00",
+          "secondary_hash": "D029FE08",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 4,
+          "label": "Critical Hit Rate / Aegis",
+          "outer_id": "GEEN_003_24",
+          "outer_hash": "0BB9C188",
+          "primary_id": "SKILL_003_00",
+          "primary_hash": "8D78A19B",
+          "secondary_id": "SKILL_085_00",
+          "secondary_hash": "E0ABFDFE",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 5,
+          "label": "Greater Aegis / Nimble Onslaught",
+          "outer_id": "GEEN_166_24",
+          "outer_hash": "6F1D0870",
+          "primary_id": "SKILL_166_00",
+          "primary_hash": "48A95B8D",
+          "secondary_id": "SKILL_106_00",
+          "secondary_hash": "D2C8E10A",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 6,
+          "label": "War Elemental / Improved Dodge",
+          "outer_id": "GEEN_146_24",
+          "outer_hash": "00612B10",
+          "primary_id": "SKILL_146_00",
+          "primary_hash": "4C588C27",
+          "secondary_id": "SKILL_063_00",
+          "secondary_hash": "8B3BF60C",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 7,
+          "label": "Alpha / Damage Cap",
+          "outer_id": "GEEN_160_04",
+          "outer_hash": "921D90D8",
+          "primary_id": "SKILL_160_00",
+          "primary_hash": "DBE1D775",
+          "secondary_id": "SKILL_020_00",
+          "secondary_hash": "DC584F60",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 8,
+          "label": "Beta / Supplementary Damage",
+          "outer_id": "GEEN_161_04",
+          "outer_hash": "EE337FE3",
+          "primary_id": "SKILL_161_00",
+          "primary_hash": "8D2ADB6E",
+          "secondary_id": "SKILL_151_00",
+          "secondary_hash": "57AB5B10",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 9,
+          "label": "Gamma / Tyranny",
+          "outer_id": "GEEN_162_04",
+          "outer_hash": "4438676E",
+          "primary_id": "SKILL_162_00",
+          "primary_hash": "5C862E13",
+          "secondary_id": "SKILL_027_00",
+          "secondary_hash": "71F11A9B",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 10,
+          "label": "Flight over Fight / Stamina",
+          "outer_id": "GEEN_159_24",
+          "outer_hash": "0A4651BB",
+          "primary_id": "SKILL_159_00",
+          "primary_hash": "EC1C6779",
+          "secondary_id": "SKILL_006_00",
+          "secondary_hash": "2FC8FBFF",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 11,
+          "label": "Character Awakening / Guts",
+          "outer_id": "GEEN_127_90",
+          "outer_hash": "1A57AEF1",
+          "primary_id": "SKILL_127_00",
+          "primary_hash": "29B07BEB",
+          "secondary_id": "SKILL_045_00",
+          "secondary_hash": "E69A4694",
+          "can_only_hold_one": true
+        },
+        {
+          "slot": 12,
+          "label": "Character Warpath / Autorevive",
+          "outer_id": "GEEN_127_93",
+          "outer_hash": "CEF31894",
+          "primary_id": "SKILL_127_02",
+          "primary_hash": "FDD1AD24",
+          "secondary_id": "SKILL_068_00",
+          "secondary_hash": "95F3FA86",
+          "can_only_hold_one": false
+        }
+      ]
+    },
+    {
+      "id": "PL0800",
+      "name": "Lancelot",
+      "source_character": "PL0800",
+      "captain_avatar_one_only_fallback": false,
+      "sigils": [
+        {
+          "slot": 1,
+          "label": "Celestial Nyx / Celestial Lumen",
+          "outer_id": "GEEN_320_24",
+          "outer_hash": "8B8085C0",
+          "primary_id": "0DE887A0",
+          "primary_hash": "0DE887A0",
+          "secondary_id": "SKILL_321_00",
+          "secondary_hash": "A7726190",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 2,
+          "label": "Celestial Terra / Celestial Incendo",
+          "outer_id": "GEEN_322_24",
+          "outer_hash": "D29CD8E0",
+          "primary_id": "9232DC17",
+          "primary_hash": "9232DC17",
+          "secondary_id": "SKILL_323_00",
+          "secondary_hash": "36E3848D",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 3,
+          "label": "Celestial Aqua / Fatebreaker",
+          "outer_id": "GEEN_324_24",
+          "outer_hash": "E14E1598",
+          "primary_id": "A898E283",
+          "primary_hash": "A898E283",
+          "secondary_id": "SKILL_325_00",
+          "secondary_hash": "D029FE08",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 4,
+          "label": "Critical Hit Rate / Aegis",
+          "outer_id": "GEEN_003_24",
+          "outer_hash": "0BB9C188",
+          "primary_id": "SKILL_003_00",
+          "primary_hash": "8D78A19B",
+          "secondary_id": "SKILL_085_00",
+          "secondary_hash": "E0ABFDFE",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 5,
+          "label": "Greater Aegis / Nimble Onslaught",
+          "outer_id": "GEEN_166_24",
+          "outer_hash": "6F1D0870",
+          "primary_id": "SKILL_166_00",
+          "primary_hash": "48A95B8D",
+          "secondary_id": "SKILL_106_00",
+          "secondary_hash": "D2C8E10A",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 6,
+          "label": "War Elemental / Improved Dodge",
+          "outer_id": "GEEN_146_24",
+          "outer_hash": "00612B10",
+          "primary_id": "SKILL_146_00",
+          "primary_hash": "4C588C27",
+          "secondary_id": "SKILL_063_00",
+          "secondary_hash": "8B3BF60C",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 7,
+          "label": "Alpha / Damage Cap",
+          "outer_id": "GEEN_160_04",
+          "outer_hash": "921D90D8",
+          "primary_id": "SKILL_160_00",
+          "primary_hash": "DBE1D775",
+          "secondary_id": "SKILL_020_00",
+          "secondary_hash": "DC584F60",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 8,
+          "label": "Beta / Supplementary Damage",
+          "outer_id": "GEEN_161_04",
+          "outer_hash": "EE337FE3",
+          "primary_id": "SKILL_161_00",
+          "primary_hash": "8D2ADB6E",
+          "secondary_id": "SKILL_151_00",
+          "secondary_hash": "57AB5B10",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 9,
+          "label": "Gamma / Tyranny",
+          "outer_id": "GEEN_162_04",
+          "outer_hash": "4438676E",
+          "primary_id": "SKILL_162_00",
+          "primary_hash": "5C862E13",
+          "secondary_id": "SKILL_027_00",
+          "secondary_hash": "71F11A9B",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 10,
+          "label": "Flight over Fight / Stamina",
+          "outer_id": "GEEN_159_24",
+          "outer_hash": "0A4651BB",
+          "primary_id": "SKILL_159_00",
+          "primary_hash": "EC1C6779",
+          "secondary_id": "SKILL_006_00",
+          "secondary_hash": "2FC8FBFF",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 11,
+          "label": "Character Awakening / Guts",
+          "outer_id": "GEEN_121_90",
+          "outer_hash": "E19B1965",
+          "primary_id": "SKILL_121_00",
+          "primary_hash": "8CDF9382",
+          "secondary_id": "SKILL_045_00",
+          "secondary_hash": "E69A4694",
+          "can_only_hold_one": true
+        },
+        {
+          "slot": 12,
+          "label": "Character Warpath / Autorevive",
+          "outer_id": "GEEN_121_93",
+          "outer_hash": "8A3819C0",
+          "primary_id": "SKILL_121_02",
+          "primary_hash": "6316CBEB",
+          "secondary_id": "SKILL_068_00",
+          "secondary_hash": "95F3FA86",
+          "can_only_hold_one": false
+        }
+      ]
+    },
+    {
+      "id": "PL0900",
+      "name": "Vane",
+      "source_character": "PL0900",
+      "captain_avatar_one_only_fallback": false,
+      "sigils": [
+        {
+          "slot": 1,
+          "label": "Celestial Nyx / Celestial Lumen",
+          "outer_id": "GEEN_320_24",
+          "outer_hash": "8B8085C0",
+          "primary_id": "0DE887A0",
+          "primary_hash": "0DE887A0",
+          "secondary_id": "SKILL_321_00",
+          "secondary_hash": "A7726190",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 2,
+          "label": "Celestial Terra / Celestial Incendo",
+          "outer_id": "GEEN_322_24",
+          "outer_hash": "D29CD8E0",
+          "primary_id": "9232DC17",
+          "primary_hash": "9232DC17",
+          "secondary_id": "SKILL_323_00",
+          "secondary_hash": "36E3848D",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 3,
+          "label": "Celestial Aqua / Fatebreaker",
+          "outer_id": "GEEN_324_24",
+          "outer_hash": "E14E1598",
+          "primary_id": "A898E283",
+          "primary_hash": "A898E283",
+          "secondary_id": "SKILL_325_00",
+          "secondary_hash": "D029FE08",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 4,
+          "label": "Critical Hit Rate / Aegis",
+          "outer_id": "GEEN_003_24",
+          "outer_hash": "0BB9C188",
+          "primary_id": "SKILL_003_00",
+          "primary_hash": "8D78A19B",
+          "secondary_id": "SKILL_085_00",
+          "secondary_hash": "E0ABFDFE",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 5,
+          "label": "Greater Aegis / Nimble Onslaught",
+          "outer_id": "GEEN_166_24",
+          "outer_hash": "6F1D0870",
+          "primary_id": "SKILL_166_00",
+          "primary_hash": "48A95B8D",
+          "secondary_id": "SKILL_106_00",
+          "secondary_hash": "D2C8E10A",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 6,
+          "label": "War Elemental / Improved Dodge",
+          "outer_id": "GEEN_146_24",
+          "outer_hash": "00612B10",
+          "primary_id": "SKILL_146_00",
+          "primary_hash": "4C588C27",
+          "secondary_id": "SKILL_063_00",
+          "secondary_hash": "8B3BF60C",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 7,
+          "label": "Alpha / Damage Cap",
+          "outer_id": "GEEN_160_04",
+          "outer_hash": "921D90D8",
+          "primary_id": "SKILL_160_00",
+          "primary_hash": "DBE1D775",
+          "secondary_id": "SKILL_020_00",
+          "secondary_hash": "DC584F60",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 8,
+          "label": "Beta / Supplementary Damage",
+          "outer_id": "GEEN_161_04",
+          "outer_hash": "EE337FE3",
+          "primary_id": "SKILL_161_00",
+          "primary_hash": "8D2ADB6E",
+          "secondary_id": "SKILL_151_00",
+          "secondary_hash": "57AB5B10",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 9,
+          "label": "Gamma / Tyranny",
+          "outer_id": "GEEN_162_04",
+          "outer_hash": "4438676E",
+          "primary_id": "SKILL_162_00",
+          "primary_hash": "5C862E13",
+          "secondary_id": "SKILL_027_00",
+          "secondary_hash": "71F11A9B",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 10,
+          "label": "Flight over Fight / Stamina",
+          "outer_id": "GEEN_159_24",
+          "outer_hash": "0A4651BB",
+          "primary_id": "SKILL_159_00",
+          "primary_hash": "EC1C6779",
+          "secondary_id": "SKILL_006_00",
+          "secondary_hash": "2FC8FBFF",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 11,
+          "label": "Character Awakening / Guts",
+          "outer_id": "GEEN_122_90",
+          "outer_hash": "673C5D8F",
+          "primary_id": "SKILL_122_00",
+          "primary_hash": "2E65A774",
+          "secondary_id": "SKILL_045_00",
+          "secondary_hash": "E69A4694",
+          "can_only_hold_one": true
+        },
+        {
+          "slot": 12,
+          "label": "Character Warpath / Autorevive",
+          "outer_id": "GEEN_122_93",
+          "outer_hash": "A490BADF",
+          "primary_id": "SKILL_122_02",
+          "primary_hash": "D8F66C1C",
+          "secondary_id": "SKILL_068_00",
+          "secondary_hash": "95F3FA86",
+          "can_only_hold_one": false
+        }
+      ]
+    },
+    {
+      "id": "PL1000",
+      "name": "Percival",
+      "source_character": "PL1000",
+      "captain_avatar_one_only_fallback": false,
+      "sigils": [
+        {
+          "slot": 1,
+          "label": "Celestial Nyx / Celestial Lumen",
+          "outer_id": "GEEN_320_24",
+          "outer_hash": "8B8085C0",
+          "primary_id": "0DE887A0",
+          "primary_hash": "0DE887A0",
+          "secondary_id": "SKILL_321_00",
+          "secondary_hash": "A7726190",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 2,
+          "label": "Celestial Terra / Celestial Incendo",
+          "outer_id": "GEEN_322_24",
+          "outer_hash": "D29CD8E0",
+          "primary_id": "9232DC17",
+          "primary_hash": "9232DC17",
+          "secondary_id": "SKILL_323_00",
+          "secondary_hash": "36E3848D",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 3,
+          "label": "Celestial Aqua / Fatebreaker",
+          "outer_id": "GEEN_324_24",
+          "outer_hash": "E14E1598",
+          "primary_id": "A898E283",
+          "primary_hash": "A898E283",
+          "secondary_id": "SKILL_325_00",
+          "secondary_hash": "D029FE08",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 4,
+          "label": "Critical Hit Rate / Aegis",
+          "outer_id": "GEEN_003_24",
+          "outer_hash": "0BB9C188",
+          "primary_id": "SKILL_003_00",
+          "primary_hash": "8D78A19B",
+          "secondary_id": "SKILL_085_00",
+          "secondary_hash": "E0ABFDFE",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 5,
+          "label": "Greater Aegis / Nimble Onslaught",
+          "outer_id": "GEEN_166_24",
+          "outer_hash": "6F1D0870",
+          "primary_id": "SKILL_166_00",
+          "primary_hash": "48A95B8D",
+          "secondary_id": "SKILL_106_00",
+          "secondary_hash": "D2C8E10A",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 6,
+          "label": "War Elemental / Improved Dodge",
+          "outer_id": "GEEN_146_24",
+          "outer_hash": "00612B10",
+          "primary_id": "SKILL_146_00",
+          "primary_hash": "4C588C27",
+          "secondary_id": "SKILL_063_00",
+          "secondary_hash": "8B3BF60C",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 7,
+          "label": "Alpha / Damage Cap",
+          "outer_id": "GEEN_160_04",
+          "outer_hash": "921D90D8",
+          "primary_id": "SKILL_160_00",
+          "primary_hash": "DBE1D775",
+          "secondary_id": "SKILL_020_00",
+          "secondary_hash": "DC584F60",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 8,
+          "label": "Beta / Supplementary Damage",
+          "outer_id": "GEEN_161_04",
+          "outer_hash": "EE337FE3",
+          "primary_id": "SKILL_161_00",
+          "primary_hash": "8D2ADB6E",
+          "secondary_id": "SKILL_151_00",
+          "secondary_hash": "57AB5B10",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 9,
+          "label": "Gamma / Tyranny",
+          "outer_id": "GEEN_162_04",
+          "outer_hash": "4438676E",
+          "primary_id": "SKILL_162_00",
+          "primary_hash": "5C862E13",
+          "secondary_id": "SKILL_027_00",
+          "secondary_hash": "71F11A9B",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 10,
+          "label": "Flight over Fight / Stamina",
+          "outer_id": "GEEN_159_24",
+          "outer_hash": "0A4651BB",
+          "primary_id": "SKILL_159_00",
+          "primary_hash": "EC1C6779",
+          "secondary_id": "SKILL_006_00",
+          "secondary_hash": "2FC8FBFF",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 11,
+          "label": "Character Awakening / Guts",
+          "outer_id": "GEEN_123_90",
+          "outer_hash": "02472C43",
+          "primary_id": "SKILL_123_00",
+          "primary_hash": "E60A735C",
+          "secondary_id": "SKILL_045_00",
+          "secondary_hash": "E69A4694",
+          "can_only_hold_one": true
+        },
+        {
+          "slot": 12,
+          "label": "Character Warpath / Autorevive",
+          "outer_id": "GEEN_123_93",
+          "outer_hash": "4CDCE25B",
+          "primary_id": "SKILL_123_02",
+          "primary_hash": "BA504607",
+          "secondary_id": "SKILL_068_00",
+          "secondary_hash": "95F3FA86",
+          "can_only_hold_one": false
+        }
+      ]
+    },
+    {
+      "id": "PL1100",
+      "name": "Siegfried",
+      "source_character": "PL1100",
+      "captain_avatar_one_only_fallback": false,
+      "sigils": [
+        {
+          "slot": 1,
+          "label": "Celestial Nyx / Celestial Lumen",
+          "outer_id": "GEEN_320_24",
+          "outer_hash": "8B8085C0",
+          "primary_id": "0DE887A0",
+          "primary_hash": "0DE887A0",
+          "secondary_id": "SKILL_321_00",
+          "secondary_hash": "A7726190",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 2,
+          "label": "Celestial Terra / Celestial Incendo",
+          "outer_id": "GEEN_322_24",
+          "outer_hash": "D29CD8E0",
+          "primary_id": "9232DC17",
+          "primary_hash": "9232DC17",
+          "secondary_id": "SKILL_323_00",
+          "secondary_hash": "36E3848D",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 3,
+          "label": "Celestial Aqua / Fatebreaker",
+          "outer_id": "GEEN_324_24",
+          "outer_hash": "E14E1598",
+          "primary_id": "A898E283",
+          "primary_hash": "A898E283",
+          "secondary_id": "SKILL_325_00",
+          "secondary_hash": "D029FE08",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 4,
+          "label": "Critical Hit Rate / Aegis",
+          "outer_id": "GEEN_003_24",
+          "outer_hash": "0BB9C188",
+          "primary_id": "SKILL_003_00",
+          "primary_hash": "8D78A19B",
+          "secondary_id": "SKILL_085_00",
+          "secondary_hash": "E0ABFDFE",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 5,
+          "label": "Greater Aegis / Nimble Onslaught",
+          "outer_id": "GEEN_166_24",
+          "outer_hash": "6F1D0870",
+          "primary_id": "SKILL_166_00",
+          "primary_hash": "48A95B8D",
+          "secondary_id": "SKILL_106_00",
+          "secondary_hash": "D2C8E10A",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 6,
+          "label": "War Elemental / Improved Dodge",
+          "outer_id": "GEEN_146_24",
+          "outer_hash": "00612B10",
+          "primary_id": "SKILL_146_00",
+          "primary_hash": "4C588C27",
+          "secondary_id": "SKILL_063_00",
+          "secondary_hash": "8B3BF60C",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 7,
+          "label": "Alpha / Damage Cap",
+          "outer_id": "GEEN_160_04",
+          "outer_hash": "921D90D8",
+          "primary_id": "SKILL_160_00",
+          "primary_hash": "DBE1D775",
+          "secondary_id": "SKILL_020_00",
+          "secondary_hash": "DC584F60",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 8,
+          "label": "Beta / Supplementary Damage",
+          "outer_id": "GEEN_161_04",
+          "outer_hash": "EE337FE3",
+          "primary_id": "SKILL_161_00",
+          "primary_hash": "8D2ADB6E",
+          "secondary_id": "SKILL_151_00",
+          "secondary_hash": "57AB5B10",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 9,
+          "label": "Gamma / Tyranny",
+          "outer_id": "GEEN_162_04",
+          "outer_hash": "4438676E",
+          "primary_id": "SKILL_162_00",
+          "primary_hash": "5C862E13",
+          "secondary_id": "SKILL_027_00",
+          "secondary_hash": "71F11A9B",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 10,
+          "label": "Flight over Fight / Stamina",
+          "outer_id": "GEEN_159_24",
+          "outer_hash": "0A4651BB",
+          "primary_id": "SKILL_159_00",
+          "primary_hash": "EC1C6779",
+          "secondary_id": "SKILL_006_00",
+          "secondary_hash": "2FC8FBFF",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 11,
+          "label": "Character Awakening / Guts",
+          "outer_id": "GEEN_124_90",
+          "outer_hash": "AB835493",
+          "primary_id": "SKILL_124_00",
+          "primary_hash": "86CBCDC4",
+          "secondary_id": "SKILL_045_00",
+          "secondary_hash": "E69A4694",
+          "can_only_hold_one": true
+        },
+        {
+          "slot": 12,
+          "label": "Character Warpath / Autorevive",
+          "outer_id": "GEEN_124_93",
+          "outer_hash": "E21A4170",
+          "primary_id": "SKILL_124_02",
+          "primary_hash": "C7D379F1",
+          "secondary_id": "SKILL_068_00",
+          "secondary_hash": "95F3FA86",
+          "can_only_hold_one": false
+        }
+      ]
+    },
+    {
+      "id": "PL1800",
+      "name": "Cagliostro",
+      "source_character": "PL1800",
+      "captain_avatar_one_only_fallback": false,
+      "sigils": [
+        {
+          "slot": 1,
+          "label": "Celestial Nyx / Celestial Lumen",
+          "outer_id": "GEEN_320_24",
+          "outer_hash": "8B8085C0",
+          "primary_id": "0DE887A0",
+          "primary_hash": "0DE887A0",
+          "secondary_id": "SKILL_321_00",
+          "secondary_hash": "A7726190",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 2,
+          "label": "Celestial Terra / Celestial Incendo",
+          "outer_id": "GEEN_322_24",
+          "outer_hash": "D29CD8E0",
+          "primary_id": "9232DC17",
+          "primary_hash": "9232DC17",
+          "secondary_id": "SKILL_323_00",
+          "secondary_hash": "36E3848D",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 3,
+          "label": "Celestial Aqua / Fatebreaker",
+          "outer_id": "GEEN_324_24",
+          "outer_hash": "E14E1598",
+          "primary_id": "A898E283",
+          "primary_hash": "A898E283",
+          "secondary_id": "SKILL_325_00",
+          "secondary_hash": "D029FE08",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 4,
+          "label": "Critical Hit Rate / Aegis",
+          "outer_id": "GEEN_003_24",
+          "outer_hash": "0BB9C188",
+          "primary_id": "SKILL_003_00",
+          "primary_hash": "8D78A19B",
+          "secondary_id": "SKILL_085_00",
+          "secondary_hash": "E0ABFDFE",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 5,
+          "label": "Greater Aegis / Nimble Onslaught",
+          "outer_id": "GEEN_166_24",
+          "outer_hash": "6F1D0870",
+          "primary_id": "SKILL_166_00",
+          "primary_hash": "48A95B8D",
+          "secondary_id": "SKILL_106_00",
+          "secondary_hash": "D2C8E10A",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 6,
+          "label": "War Elemental / Improved Dodge",
+          "outer_id": "GEEN_146_24",
+          "outer_hash": "00612B10",
+          "primary_id": "SKILL_146_00",
+          "primary_hash": "4C588C27",
+          "secondary_id": "SKILL_063_00",
+          "secondary_hash": "8B3BF60C",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 7,
+          "label": "Alpha / Damage Cap",
+          "outer_id": "GEEN_160_04",
+          "outer_hash": "921D90D8",
+          "primary_id": "SKILL_160_00",
+          "primary_hash": "DBE1D775",
+          "secondary_id": "SKILL_020_00",
+          "secondary_hash": "DC584F60",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 8,
+          "label": "Beta / Supplementary Damage",
+          "outer_id": "GEEN_161_04",
+          "outer_hash": "EE337FE3",
+          "primary_id": "SKILL_161_00",
+          "primary_hash": "8D2ADB6E",
+          "secondary_id": "SKILL_151_00",
+          "secondary_hash": "57AB5B10",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 9,
+          "label": "Gamma / Tyranny",
+          "outer_id": "GEEN_162_04",
+          "outer_hash": "4438676E",
+          "primary_id": "SKILL_162_00",
+          "primary_hash": "5C862E13",
+          "secondary_id": "SKILL_027_00",
+          "secondary_hash": "71F11A9B",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 10,
+          "label": "Flight over Fight / Stamina",
+          "outer_id": "GEEN_159_24",
+          "outer_hash": "0A4651BB",
+          "primary_id": "SKILL_159_00",
+          "primary_hash": "EC1C6779",
+          "secondary_id": "SKILL_006_00",
+          "secondary_hash": "2FC8FBFF",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 11,
+          "label": "Character Awakening / Guts",
+          "outer_id": "GEEN_129_90",
+          "outer_hash": "02B1F8C0",
+          "primary_id": "SKILL_129_00",
+          "primary_hash": "EC3CF174",
+          "secondary_id": "SKILL_045_00",
+          "secondary_hash": "E69A4694",
+          "can_only_hold_one": true
+        },
+        {
+          "slot": 12,
+          "label": "Character Warpath / Autorevive",
+          "outer_id": "GEEN_129_93",
+          "outer_hash": "66F1B128",
+          "primary_id": "SKILL_129_02",
+          "primary_hash": "E6B92E34",
+          "secondary_id": "SKILL_068_00",
+          "secondary_hash": "95F3FA86",
+          "can_only_hold_one": false
+        }
+      ]
+    },
+    {
+      "id": "PL1300",
+      "name": "Yodarha",
+      "source_character": "PL1300",
+      "captain_avatar_one_only_fallback": false,
+      "sigils": [
+        {
+          "slot": 1,
+          "label": "Celestial Nyx / Celestial Lumen",
+          "outer_id": "GEEN_320_24",
+          "outer_hash": "8B8085C0",
+          "primary_id": "0DE887A0",
+          "primary_hash": "0DE887A0",
+          "secondary_id": "SKILL_321_00",
+          "secondary_hash": "A7726190",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 2,
+          "label": "Celestial Terra / Celestial Incendo",
+          "outer_id": "GEEN_322_24",
+          "outer_hash": "D29CD8E0",
+          "primary_id": "9232DC17",
+          "primary_hash": "9232DC17",
+          "secondary_id": "SKILL_323_00",
+          "secondary_hash": "36E3848D",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 3,
+          "label": "Celestial Aqua / Fatebreaker",
+          "outer_id": "GEEN_324_24",
+          "outer_hash": "E14E1598",
+          "primary_id": "A898E283",
+          "primary_hash": "A898E283",
+          "secondary_id": "SKILL_325_00",
+          "secondary_hash": "D029FE08",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 4,
+          "label": "Critical Hit Rate / Aegis",
+          "outer_id": "GEEN_003_24",
+          "outer_hash": "0BB9C188",
+          "primary_id": "SKILL_003_00",
+          "primary_hash": "8D78A19B",
+          "secondary_id": "SKILL_085_00",
+          "secondary_hash": "E0ABFDFE",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 5,
+          "label": "Greater Aegis / Nimble Onslaught",
+          "outer_id": "GEEN_166_24",
+          "outer_hash": "6F1D0870",
+          "primary_id": "SKILL_166_00",
+          "primary_hash": "48A95B8D",
+          "secondary_id": "SKILL_106_00",
+          "secondary_hash": "D2C8E10A",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 6,
+          "label": "War Elemental / Improved Dodge",
+          "outer_id": "GEEN_146_24",
+          "outer_hash": "00612B10",
+          "primary_id": "SKILL_146_00",
+          "primary_hash": "4C588C27",
+          "secondary_id": "SKILL_063_00",
+          "secondary_hash": "8B3BF60C",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 7,
+          "label": "Alpha / Damage Cap",
+          "outer_id": "GEEN_160_04",
+          "outer_hash": "921D90D8",
+          "primary_id": "SKILL_160_00",
+          "primary_hash": "DBE1D775",
+          "secondary_id": "SKILL_020_00",
+          "secondary_hash": "DC584F60",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 8,
+          "label": "Beta / Supplementary Damage",
+          "outer_id": "GEEN_161_04",
+          "outer_hash": "EE337FE3",
+          "primary_id": "SKILL_161_00",
+          "primary_hash": "8D2ADB6E",
+          "secondary_id": "SKILL_151_00",
+          "secondary_hash": "57AB5B10",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 9,
+          "label": "Gamma / Tyranny",
+          "outer_id": "GEEN_162_04",
+          "outer_hash": "4438676E",
+          "primary_id": "SKILL_162_00",
+          "primary_hash": "5C862E13",
+          "secondary_id": "SKILL_027_00",
+          "secondary_hash": "71F11A9B",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 10,
+          "label": "Flight over Fight / Stamina",
+          "outer_id": "GEEN_159_24",
+          "outer_hash": "0A4651BB",
+          "primary_id": "SKILL_159_00",
+          "primary_hash": "EC1C6779",
+          "secondary_id": "SKILL_006_00",
+          "secondary_hash": "2FC8FBFF",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 11,
+          "label": "Character Awakening / Guts",
+          "outer_id": "GEEN_126_90",
+          "outer_hash": "119B24A8",
+          "primary_id": "SKILL_126_00",
+          "primary_hash": "0CD6C625",
+          "secondary_id": "SKILL_045_00",
+          "secondary_hash": "E69A4694",
+          "can_only_hold_one": true
+        },
+        {
+          "slot": 12,
+          "label": "Character Warpath / Autorevive",
+          "outer_id": "GEEN_126_93",
+          "outer_hash": "76D4716B",
+          "primary_id": "SKILL_126_02",
+          "primary_hash": "DAEFBB27",
+          "secondary_id": "SKILL_068_00",
+          "secondary_hash": "95F3FA86",
+          "can_only_hold_one": false
+        }
+      ]
+    },
+    {
+      "id": "PL1600",
+      "name": "Zeta",
+      "source_character": "PL1600",
+      "captain_avatar_one_only_fallback": false,
+      "sigils": [
+        {
+          "slot": 1,
+          "label": "Celestial Nyx / Celestial Lumen",
+          "outer_id": "GEEN_320_24",
+          "outer_hash": "8B8085C0",
+          "primary_id": "0DE887A0",
+          "primary_hash": "0DE887A0",
+          "secondary_id": "SKILL_321_00",
+          "secondary_hash": "A7726190",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 2,
+          "label": "Celestial Terra / Celestial Incendo",
+          "outer_id": "GEEN_322_24",
+          "outer_hash": "D29CD8E0",
+          "primary_id": "9232DC17",
+          "primary_hash": "9232DC17",
+          "secondary_id": "SKILL_323_00",
+          "secondary_hash": "36E3848D",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 3,
+          "label": "Celestial Aqua / Fatebreaker",
+          "outer_id": "GEEN_324_24",
+          "outer_hash": "E14E1598",
+          "primary_id": "A898E283",
+          "primary_hash": "A898E283",
+          "secondary_id": "SKILL_325_00",
+          "secondary_hash": "D029FE08",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 4,
+          "label": "Critical Hit Rate / Aegis",
+          "outer_id": "GEEN_003_24",
+          "outer_hash": "0BB9C188",
+          "primary_id": "SKILL_003_00",
+          "primary_hash": "8D78A19B",
+          "secondary_id": "SKILL_085_00",
+          "secondary_hash": "E0ABFDFE",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 5,
+          "label": "Greater Aegis / Nimble Onslaught",
+          "outer_id": "GEEN_166_24",
+          "outer_hash": "6F1D0870",
+          "primary_id": "SKILL_166_00",
+          "primary_hash": "48A95B8D",
+          "secondary_id": "SKILL_106_00",
+          "secondary_hash": "D2C8E10A",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 6,
+          "label": "War Elemental / Improved Dodge",
+          "outer_id": "GEEN_146_24",
+          "outer_hash": "00612B10",
+          "primary_id": "SKILL_146_00",
+          "primary_hash": "4C588C27",
+          "secondary_id": "SKILL_063_00",
+          "secondary_hash": "8B3BF60C",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 7,
+          "label": "Alpha / Damage Cap",
+          "outer_id": "GEEN_160_04",
+          "outer_hash": "921D90D8",
+          "primary_id": "SKILL_160_00",
+          "primary_hash": "DBE1D775",
+          "secondary_id": "SKILL_020_00",
+          "secondary_hash": "DC584F60",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 8,
+          "label": "Beta / Supplementary Damage",
+          "outer_id": "GEEN_161_04",
+          "outer_hash": "EE337FE3",
+          "primary_id": "SKILL_161_00",
+          "primary_hash": "8D2ADB6E",
+          "secondary_id": "SKILL_151_00",
+          "secondary_hash": "57AB5B10",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 9,
+          "label": "Gamma / Tyranny",
+          "outer_id": "GEEN_162_04",
+          "outer_hash": "4438676E",
+          "primary_id": "SKILL_162_00",
+          "primary_hash": "5C862E13",
+          "secondary_id": "SKILL_027_00",
+          "secondary_hash": "71F11A9B",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 10,
+          "label": "Flight over Fight / Stamina",
+          "outer_id": "GEEN_159_24",
+          "outer_hash": "0A4651BB",
+          "primary_id": "SKILL_159_00",
+          "primary_hash": "EC1C6779",
+          "secondary_id": "SKILL_006_00",
+          "secondary_hash": "2FC8FBFF",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 11,
+          "label": "Character Awakening / Guts",
+          "outer_id": "GEEN_131_90",
+          "outer_hash": "4F01D6CA",
+          "primary_id": "SKILL_131_00",
+          "primary_hash": "6EBFA176",
+          "secondary_id": "SKILL_045_00",
+          "secondary_hash": "E69A4694",
+          "can_only_hold_one": true
+        },
+        {
+          "slot": 12,
+          "label": "Character Warpath / Autorevive",
+          "outer_id": "GEEN_131_93",
+          "outer_hash": "BFDF838C",
+          "primary_id": "SKILL_131_02",
+          "primary_hash": "4F135217",
+          "secondary_id": "SKILL_068_00",
+          "secondary_hash": "95F3FA86",
+          "can_only_hold_one": false
+        }
+      ]
+    },
+    {
+      "id": "PL1700",
+      "name": "Vaseraga",
+      "source_character": "PL1700",
+      "captain_avatar_one_only_fallback": false,
+      "sigils": [
+        {
+          "slot": 1,
+          "label": "Celestial Nyx / Celestial Lumen",
+          "outer_id": "GEEN_320_24",
+          "outer_hash": "8B8085C0",
+          "primary_id": "0DE887A0",
+          "primary_hash": "0DE887A0",
+          "secondary_id": "SKILL_321_00",
+          "secondary_hash": "A7726190",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 2,
+          "label": "Celestial Terra / Celestial Incendo",
+          "outer_id": "GEEN_322_24",
+          "outer_hash": "D29CD8E0",
+          "primary_id": "9232DC17",
+          "primary_hash": "9232DC17",
+          "secondary_id": "SKILL_323_00",
+          "secondary_hash": "36E3848D",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 3,
+          "label": "Celestial Aqua / Fatebreaker",
+          "outer_id": "GEEN_324_24",
+          "outer_hash": "E14E1598",
+          "primary_id": "A898E283",
+          "primary_hash": "A898E283",
+          "secondary_id": "SKILL_325_00",
+          "secondary_hash": "D029FE08",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 4,
+          "label": "Critical Hit Rate / Aegis",
+          "outer_id": "GEEN_003_24",
+          "outer_hash": "0BB9C188",
+          "primary_id": "SKILL_003_00",
+          "primary_hash": "8D78A19B",
+          "secondary_id": "SKILL_085_00",
+          "secondary_hash": "E0ABFDFE",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 5,
+          "label": "Greater Aegis / Nimble Onslaught",
+          "outer_id": "GEEN_166_24",
+          "outer_hash": "6F1D0870",
+          "primary_id": "SKILL_166_00",
+          "primary_hash": "48A95B8D",
+          "secondary_id": "SKILL_106_00",
+          "secondary_hash": "D2C8E10A",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 6,
+          "label": "War Elemental / Improved Dodge",
+          "outer_id": "GEEN_146_24",
+          "outer_hash": "00612B10",
+          "primary_id": "SKILL_146_00",
+          "primary_hash": "4C588C27",
+          "secondary_id": "SKILL_063_00",
+          "secondary_hash": "8B3BF60C",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 7,
+          "label": "Alpha / Damage Cap",
+          "outer_id": "GEEN_160_04",
+          "outer_hash": "921D90D8",
+          "primary_id": "SKILL_160_00",
+          "primary_hash": "DBE1D775",
+          "secondary_id": "SKILL_020_00",
+          "secondary_hash": "DC584F60",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 8,
+          "label": "Beta / Supplementary Damage",
+          "outer_id": "GEEN_161_04",
+          "outer_hash": "EE337FE3",
+          "primary_id": "SKILL_161_00",
+          "primary_hash": "8D2ADB6E",
+          "secondary_id": "SKILL_151_00",
+          "secondary_hash": "57AB5B10",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 9,
+          "label": "Gamma / Tyranny",
+          "outer_id": "GEEN_162_04",
+          "outer_hash": "4438676E",
+          "primary_id": "SKILL_162_00",
+          "primary_hash": "5C862E13",
+          "secondary_id": "SKILL_027_00",
+          "secondary_hash": "71F11A9B",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 10,
+          "label": "Flight over Fight / Stamina",
+          "outer_id": "GEEN_159_24",
+          "outer_hash": "0A4651BB",
+          "primary_id": "SKILL_159_00",
+          "primary_hash": "EC1C6779",
+          "secondary_id": "SKILL_006_00",
+          "secondary_hash": "2FC8FBFF",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 11,
+          "label": "Character Awakening / Guts",
+          "outer_id": "GEEN_132_90",
+          "outer_hash": "E4F986D9",
+          "primary_id": "SKILL_132_00",
+          "primary_hash": "7440E869",
+          "secondary_id": "SKILL_045_00",
+          "secondary_hash": "E69A4694",
+          "can_only_hold_one": true
+        },
+        {
+          "slot": 12,
+          "label": "Character Warpath / Autorevive",
+          "outer_id": "GEEN_132_93",
+          "outer_hash": "B3AB43F3",
+          "primary_id": "SKILL_132_02",
+          "primary_hash": "D7F9BB88",
+          "secondary_id": "SKILL_068_00",
+          "secondary_hash": "95F3FA86",
+          "can_only_hold_one": false
+        }
+      ]
+    },
+    {
+      "id": "PL2600",
+      "name": "",
+      "source_character": "PL2600",
+      "captain_avatar_one_only_fallback": false,
+      "sigils": [
+        {
+          "slot": 1,
+          "label": "Celestial Nyx / Celestial Lumen",
+          "outer_id": "GEEN_320_24",
+          "outer_hash": "8B8085C0",
+          "primary_id": "0DE887A0",
+          "primary_hash": "0DE887A0",
+          "secondary_id": "SKILL_321_00",
+          "secondary_hash": "A7726190",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 2,
+          "label": "Celestial Terra / Celestial Incendo",
+          "outer_id": "GEEN_322_24",
+          "outer_hash": "D29CD8E0",
+          "primary_id": "9232DC17",
+          "primary_hash": "9232DC17",
+          "secondary_id": "SKILL_323_00",
+          "secondary_hash": "36E3848D",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 3,
+          "label": "Celestial Aqua / Fatebreaker",
+          "outer_id": "GEEN_324_24",
+          "outer_hash": "E14E1598",
+          "primary_id": "A898E283",
+          "primary_hash": "A898E283",
+          "secondary_id": "SKILL_325_00",
+          "secondary_hash": "D029FE08",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 4,
+          "label": "Critical Hit Rate / Aegis",
+          "outer_id": "GEEN_003_24",
+          "outer_hash": "0BB9C188",
+          "primary_id": "SKILL_003_00",
+          "primary_hash": "8D78A19B",
+          "secondary_id": "SKILL_085_00",
+          "secondary_hash": "E0ABFDFE",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 5,
+          "label": "Greater Aegis / Nimble Onslaught",
+          "outer_id": "GEEN_166_24",
+          "outer_hash": "6F1D0870",
+          "primary_id": "SKILL_166_00",
+          "primary_hash": "48A95B8D",
+          "secondary_id": "SKILL_106_00",
+          "secondary_hash": "D2C8E10A",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 6,
+          "label": "War Elemental / Improved Dodge",
+          "outer_id": "GEEN_146_24",
+          "outer_hash": "00612B10",
+          "primary_id": "SKILL_146_00",
+          "primary_hash": "4C588C27",
+          "secondary_id": "SKILL_063_00",
+          "secondary_hash": "8B3BF60C",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 7,
+          "label": "Alpha / Damage Cap",
+          "outer_id": "GEEN_160_04",
+          "outer_hash": "921D90D8",
+          "primary_id": "SKILL_160_00",
+          "primary_hash": "DBE1D775",
+          "secondary_id": "SKILL_020_00",
+          "secondary_hash": "DC584F60",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 8,
+          "label": "Beta / Supplementary Damage",
+          "outer_id": "GEEN_161_04",
+          "outer_hash": "EE337FE3",
+          "primary_id": "SKILL_161_00",
+          "primary_hash": "8D2ADB6E",
+          "secondary_id": "SKILL_151_00",
+          "secondary_hash": "57AB5B10",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 9,
+          "label": "Gamma / Tyranny",
+          "outer_id": "GEEN_162_04",
+          "outer_hash": "4438676E",
+          "primary_id": "SKILL_162_00",
+          "primary_hash": "5C862E13",
+          "secondary_id": "SKILL_027_00",
+          "secondary_hash": "71F11A9B",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 10,
+          "label": "Flight over Fight / Stamina",
+          "outer_id": "GEEN_159_24",
+          "outer_hash": "0A4651BB",
+          "primary_id": "SKILL_159_00",
+          "primary_hash": "EC1C6779",
+          "secondary_id": "SKILL_006_00",
+          "secondary_hash": "2FC8FBFF",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 11,
+          "label": "Character Awakening / Guts",
+          "outer_id": "GEEN_175_90",
+          "outer_hash": "95CC3CB8",
+          "primary_id": "D176D262",
+          "primary_hash": "D176D262",
+          "secondary_id": "SKILL_045_00",
+          "secondary_hash": "E69A4694",
+          "can_only_hold_one": true
+        },
+        {
+          "slot": 12,
+          "label": "Character Warpath / Autorevive",
+          "outer_id": "GEEN_175_93",
+          "outer_hash": "51E98A7C",
+          "primary_id": "B953CC1E",
+          "primary_hash": "B953CC1E",
+          "secondary_id": "SKILL_068_00",
+          "secondary_hash": "95F3FA86",
+          "can_only_hold_one": false
+        }
+      ]
+    },
+    {
+      "id": "PL2700",
+      "name": "",
+      "source_character": "PL2700",
+      "captain_avatar_one_only_fallback": false,
+      "sigils": [
+        {
+          "slot": 1,
+          "label": "Celestial Nyx / Celestial Lumen",
+          "outer_id": "GEEN_320_24",
+          "outer_hash": "8B8085C0",
+          "primary_id": "0DE887A0",
+          "primary_hash": "0DE887A0",
+          "secondary_id": "SKILL_321_00",
+          "secondary_hash": "A7726190",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 2,
+          "label": "Celestial Terra / Celestial Incendo",
+          "outer_id": "GEEN_322_24",
+          "outer_hash": "D29CD8E0",
+          "primary_id": "9232DC17",
+          "primary_hash": "9232DC17",
+          "secondary_id": "SKILL_323_00",
+          "secondary_hash": "36E3848D",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 3,
+          "label": "Celestial Aqua / Fatebreaker",
+          "outer_id": "GEEN_324_24",
+          "outer_hash": "E14E1598",
+          "primary_id": "A898E283",
+          "primary_hash": "A898E283",
+          "secondary_id": "SKILL_325_00",
+          "secondary_hash": "D029FE08",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 4,
+          "label": "Critical Hit Rate / Aegis",
+          "outer_id": "GEEN_003_24",
+          "outer_hash": "0BB9C188",
+          "primary_id": "SKILL_003_00",
+          "primary_hash": "8D78A19B",
+          "secondary_id": "SKILL_085_00",
+          "secondary_hash": "E0ABFDFE",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 5,
+          "label": "Greater Aegis / Nimble Onslaught",
+          "outer_id": "GEEN_166_24",
+          "outer_hash": "6F1D0870",
+          "primary_id": "SKILL_166_00",
+          "primary_hash": "48A95B8D",
+          "secondary_id": "SKILL_106_00",
+          "secondary_hash": "D2C8E10A",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 6,
+          "label": "War Elemental / Improved Dodge",
+          "outer_id": "GEEN_146_24",
+          "outer_hash": "00612B10",
+          "primary_id": "SKILL_146_00",
+          "primary_hash": "4C588C27",
+          "secondary_id": "SKILL_063_00",
+          "secondary_hash": "8B3BF60C",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 7,
+          "label": "Alpha / Damage Cap",
+          "outer_id": "GEEN_160_04",
+          "outer_hash": "921D90D8",
+          "primary_id": "SKILL_160_00",
+          "primary_hash": "DBE1D775",
+          "secondary_id": "SKILL_020_00",
+          "secondary_hash": "DC584F60",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 8,
+          "label": "Beta / Supplementary Damage",
+          "outer_id": "GEEN_161_04",
+          "outer_hash": "EE337FE3",
+          "primary_id": "SKILL_161_00",
+          "primary_hash": "8D2ADB6E",
+          "secondary_id": "SKILL_151_00",
+          "secondary_hash": "57AB5B10",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 9,
+          "label": "Gamma / Tyranny",
+          "outer_id": "GEEN_162_04",
+          "outer_hash": "4438676E",
+          "primary_id": "SKILL_162_00",
+          "primary_hash": "5C862E13",
+          "secondary_id": "SKILL_027_00",
+          "secondary_hash": "71F11A9B",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 10,
+          "label": "Flight over Fight / Stamina",
+          "outer_id": "GEEN_159_24",
+          "outer_hash": "0A4651BB",
+          "primary_id": "SKILL_159_00",
+          "primary_hash": "EC1C6779",
+          "secondary_id": "SKILL_006_00",
+          "secondary_hash": "2FC8FBFF",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 11,
+          "label": "Character Awakening / Guts",
+          "outer_id": "GEEN_176_90",
+          "outer_hash": "23953FD4",
+          "primary_id": "7D75D904",
+          "primary_hash": "7D75D904",
+          "secondary_id": "SKILL_045_00",
+          "secondary_hash": "E69A4694",
+          "can_only_hold_one": true
+        },
+        {
+          "slot": 12,
+          "label": "Character Warpath / Autorevive",
+          "outer_id": "GEEN_176_93",
+          "outer_hash": "D8C61507",
+          "primary_id": "3EB345D7",
+          "primary_hash": "3EB345D7",
+          "secondary_id": "SKILL_068_00",
+          "secondary_hash": "95F3FA86",
+          "can_only_hold_one": false
+        }
+      ]
+    },
+    {
+      "id": "PL2200",
+      "name": "Seofon",
+      "source_character": "PL2200",
+      "captain_avatar_one_only_fallback": false,
+      "sigils": [
+        {
+          "slot": 1,
+          "label": "Celestial Nyx / Celestial Lumen",
+          "outer_id": "GEEN_320_24",
+          "outer_hash": "8B8085C0",
+          "primary_id": "0DE887A0",
+          "primary_hash": "0DE887A0",
+          "secondary_id": "SKILL_321_00",
+          "secondary_hash": "A7726190",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 2,
+          "label": "Celestial Terra / Celestial Incendo",
+          "outer_id": "GEEN_322_24",
+          "outer_hash": "D29CD8E0",
+          "primary_id": "9232DC17",
+          "primary_hash": "9232DC17",
+          "secondary_id": "SKILL_323_00",
+          "secondary_hash": "36E3848D",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 3,
+          "label": "Celestial Aqua / Fatebreaker",
+          "outer_id": "GEEN_324_24",
+          "outer_hash": "E14E1598",
+          "primary_id": "A898E283",
+          "primary_hash": "A898E283",
+          "secondary_id": "SKILL_325_00",
+          "secondary_hash": "D029FE08",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 4,
+          "label": "Critical Hit Rate / Aegis",
+          "outer_id": "GEEN_003_24",
+          "outer_hash": "0BB9C188",
+          "primary_id": "SKILL_003_00",
+          "primary_hash": "8D78A19B",
+          "secondary_id": "SKILL_085_00",
+          "secondary_hash": "E0ABFDFE",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 5,
+          "label": "Greater Aegis / Nimble Onslaught",
+          "outer_id": "GEEN_166_24",
+          "outer_hash": "6F1D0870",
+          "primary_id": "SKILL_166_00",
+          "primary_hash": "48A95B8D",
+          "secondary_id": "SKILL_106_00",
+          "secondary_hash": "D2C8E10A",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 6,
+          "label": "War Elemental / Improved Dodge",
+          "outer_id": "GEEN_146_24",
+          "outer_hash": "00612B10",
+          "primary_id": "SKILL_146_00",
+          "primary_hash": "4C588C27",
+          "secondary_id": "SKILL_063_00",
+          "secondary_hash": "8B3BF60C",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 7,
+          "label": "Alpha / Damage Cap",
+          "outer_id": "GEEN_160_04",
+          "outer_hash": "921D90D8",
+          "primary_id": "SKILL_160_00",
+          "primary_hash": "DBE1D775",
+          "secondary_id": "SKILL_020_00",
+          "secondary_hash": "DC584F60",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 8,
+          "label": "Beta / Supplementary Damage",
+          "outer_id": "GEEN_161_04",
+          "outer_hash": "EE337FE3",
+          "primary_id": "SKILL_161_00",
+          "primary_hash": "8D2ADB6E",
+          "secondary_id": "SKILL_151_00",
+          "secondary_hash": "57AB5B10",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 9,
+          "label": "Gamma / Tyranny",
+          "outer_id": "GEEN_162_04",
+          "outer_hash": "4438676E",
+          "primary_id": "SKILL_162_00",
+          "primary_hash": "5C862E13",
+          "secondary_id": "SKILL_027_00",
+          "secondary_hash": "71F11A9B",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 10,
+          "label": "Flight over Fight / Stamina",
+          "outer_id": "GEEN_159_24",
+          "outer_hash": "0A4651BB",
+          "primary_id": "SKILL_159_00",
+          "primary_hash": "EC1C6779",
+          "secondary_id": "SKILL_006_00",
+          "secondary_hash": "2FC8FBFF",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 11,
+          "label": "Character Awakening / Guts",
+          "outer_id": "GEEN_170_90",
+          "outer_hash": "6AAE4B8F",
+          "primary_id": "SKILL_170_00",
+          "primary_hash": "77C809F5",
+          "secondary_id": "SKILL_045_00",
+          "secondary_hash": "E69A4694",
+          "can_only_hold_one": true
+        },
+        {
+          "slot": 12,
+          "label": "Character Warpath / Autorevive",
+          "outer_id": "GEEN_170_93",
+          "outer_hash": "9F72BAE0",
+          "primary_id": "SKILL_170_02",
+          "primary_hash": "7B4FC47A",
+          "secondary_id": "SKILL_068_00",
+          "secondary_hash": "95F3FA86",
+          "can_only_hold_one": false
+        }
+      ]
+    },
+    {
+      "id": "PL2300",
+      "name": "Tweyen",
+      "source_character": "PL2300",
+      "captain_avatar_one_only_fallback": false,
+      "sigils": [
+        {
+          "slot": 1,
+          "label": "Celestial Nyx / Celestial Lumen",
+          "outer_id": "GEEN_320_24",
+          "outer_hash": "8B8085C0",
+          "primary_id": "0DE887A0",
+          "primary_hash": "0DE887A0",
+          "secondary_id": "SKILL_321_00",
+          "secondary_hash": "A7726190",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 2,
+          "label": "Celestial Terra / Celestial Incendo",
+          "outer_id": "GEEN_322_24",
+          "outer_hash": "D29CD8E0",
+          "primary_id": "9232DC17",
+          "primary_hash": "9232DC17",
+          "secondary_id": "SKILL_323_00",
+          "secondary_hash": "36E3848D",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 3,
+          "label": "Celestial Aqua / Fatebreaker",
+          "outer_id": "GEEN_324_24",
+          "outer_hash": "E14E1598",
+          "primary_id": "A898E283",
+          "primary_hash": "A898E283",
+          "secondary_id": "SKILL_325_00",
+          "secondary_hash": "D029FE08",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 4,
+          "label": "Critical Hit Rate / Aegis",
+          "outer_id": "GEEN_003_24",
+          "outer_hash": "0BB9C188",
+          "primary_id": "SKILL_003_00",
+          "primary_hash": "8D78A19B",
+          "secondary_id": "SKILL_085_00",
+          "secondary_hash": "E0ABFDFE",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 5,
+          "label": "Greater Aegis / Nimble Onslaught",
+          "outer_id": "GEEN_166_24",
+          "outer_hash": "6F1D0870",
+          "primary_id": "SKILL_166_00",
+          "primary_hash": "48A95B8D",
+          "secondary_id": "SKILL_106_00",
+          "secondary_hash": "D2C8E10A",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 6,
+          "label": "War Elemental / Improved Dodge",
+          "outer_id": "GEEN_146_24",
+          "outer_hash": "00612B10",
+          "primary_id": "SKILL_146_00",
+          "primary_hash": "4C588C27",
+          "secondary_id": "SKILL_063_00",
+          "secondary_hash": "8B3BF60C",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 7,
+          "label": "Alpha / Damage Cap",
+          "outer_id": "GEEN_160_04",
+          "outer_hash": "921D90D8",
+          "primary_id": "SKILL_160_00",
+          "primary_hash": "DBE1D775",
+          "secondary_id": "SKILL_020_00",
+          "secondary_hash": "DC584F60",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 8,
+          "label": "Beta / Supplementary Damage",
+          "outer_id": "GEEN_161_04",
+          "outer_hash": "EE337FE3",
+          "primary_id": "SKILL_161_00",
+          "primary_hash": "8D2ADB6E",
+          "secondary_id": "SKILL_151_00",
+          "secondary_hash": "57AB5B10",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 9,
+          "label": "Gamma / Tyranny",
+          "outer_id": "GEEN_162_04",
+          "outer_hash": "4438676E",
+          "primary_id": "SKILL_162_00",
+          "primary_hash": "5C862E13",
+          "secondary_id": "SKILL_027_00",
+          "secondary_hash": "71F11A9B",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 10,
+          "label": "Flight over Fight / Stamina",
+          "outer_id": "GEEN_159_24",
+          "outer_hash": "0A4651BB",
+          "primary_id": "SKILL_159_00",
+          "primary_hash": "EC1C6779",
+          "secondary_id": "SKILL_006_00",
+          "secondary_hash": "2FC8FBFF",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 11,
+          "label": "Character Awakening / Guts",
+          "outer_id": "GEEN_171_90",
+          "outer_hash": "8ECBB0A3",
+          "primary_id": "SKILL_171_00",
+          "primary_hash": "E85FF8E0",
+          "secondary_id": "SKILL_045_00",
+          "secondary_hash": "E69A4694",
+          "can_only_hold_one": true
+        },
+        {
+          "slot": 12,
+          "label": "Character Warpath / Autorevive",
+          "outer_id": "GEEN_171_93",
+          "outer_hash": "AD8CAEFB",
+          "primary_id": "SKILL_171_02",
+          "primary_hash": "81B293D9",
+          "secondary_id": "SKILL_068_00",
+          "secondary_hash": "95F3FA86",
+          "can_only_hold_one": false
+        }
+      ]
+    },
+    {
+      "id": "PL2100",
+      "name": "Sandalphon",
+      "source_character": "PL2100",
+      "captain_avatar_one_only_fallback": false,
+      "sigils": [
+        {
+          "slot": 1,
+          "label": "Celestial Nyx / Celestial Lumen",
+          "outer_id": "GEEN_320_24",
+          "outer_hash": "8B8085C0",
+          "primary_id": "0DE887A0",
+          "primary_hash": "0DE887A0",
+          "secondary_id": "SKILL_321_00",
+          "secondary_hash": "A7726190",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 2,
+          "label": "Celestial Terra / Celestial Incendo",
+          "outer_id": "GEEN_322_24",
+          "outer_hash": "D29CD8E0",
+          "primary_id": "9232DC17",
+          "primary_hash": "9232DC17",
+          "secondary_id": "SKILL_323_00",
+          "secondary_hash": "36E3848D",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 3,
+          "label": "Celestial Aqua / Fatebreaker",
+          "outer_id": "GEEN_324_24",
+          "outer_hash": "E14E1598",
+          "primary_id": "A898E283",
+          "primary_hash": "A898E283",
+          "secondary_id": "SKILL_325_00",
+          "secondary_hash": "D029FE08",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 4,
+          "label": "Critical Hit Rate / Aegis",
+          "outer_id": "GEEN_003_24",
+          "outer_hash": "0BB9C188",
+          "primary_id": "SKILL_003_00",
+          "primary_hash": "8D78A19B",
+          "secondary_id": "SKILL_085_00",
+          "secondary_hash": "E0ABFDFE",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 5,
+          "label": "Greater Aegis / Nimble Onslaught",
+          "outer_id": "GEEN_166_24",
+          "outer_hash": "6F1D0870",
+          "primary_id": "SKILL_166_00",
+          "primary_hash": "48A95B8D",
+          "secondary_id": "SKILL_106_00",
+          "secondary_hash": "D2C8E10A",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 6,
+          "label": "War Elemental / Improved Dodge",
+          "outer_id": "GEEN_146_24",
+          "outer_hash": "00612B10",
+          "primary_id": "SKILL_146_00",
+          "primary_hash": "4C588C27",
+          "secondary_id": "SKILL_063_00",
+          "secondary_hash": "8B3BF60C",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 7,
+          "label": "Alpha / Damage Cap",
+          "outer_id": "GEEN_160_04",
+          "outer_hash": "921D90D8",
+          "primary_id": "SKILL_160_00",
+          "primary_hash": "DBE1D775",
+          "secondary_id": "SKILL_020_00",
+          "secondary_hash": "DC584F60",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 8,
+          "label": "Beta / Supplementary Damage",
+          "outer_id": "GEEN_161_04",
+          "outer_hash": "EE337FE3",
+          "primary_id": "SKILL_161_00",
+          "primary_hash": "8D2ADB6E",
+          "secondary_id": "SKILL_151_00",
+          "secondary_hash": "57AB5B10",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 9,
+          "label": "Gamma / Tyranny",
+          "outer_id": "GEEN_162_04",
+          "outer_hash": "4438676E",
+          "primary_id": "SKILL_162_00",
+          "primary_hash": "5C862E13",
+          "secondary_id": "SKILL_027_00",
+          "secondary_hash": "71F11A9B",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 10,
+          "label": "Flight over Fight / Stamina",
+          "outer_id": "GEEN_159_24",
+          "outer_hash": "0A4651BB",
+          "primary_id": "SKILL_159_00",
+          "primary_hash": "EC1C6779",
+          "secondary_id": "SKILL_006_00",
+          "secondary_hash": "2FC8FBFF",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 11,
+          "label": "Character Awakening / Guts",
+          "outer_id": "GEEN_172_90",
+          "outer_hash": "B8C44D5E",
+          "primary_id": "SKILL_172_00",
+          "primary_hash": "D40D1E9B",
+          "secondary_id": "SKILL_045_00",
+          "secondary_hash": "E69A4694",
+          "can_only_hold_one": true
+        },
+        {
+          "slot": 12,
+          "label": "Character Warpath / Autorevive",
+          "outer_id": "GEEN_172_93",
+          "outer_hash": "5D592FDD",
+          "primary_id": "SKILL_172_02",
+          "primary_hash": "4E5F6706",
+          "secondary_id": "SKILL_068_00",
+          "secondary_hash": "95F3FA86",
+          "can_only_hold_one": false
+        }
+      ]
+    },
+    {
+      "id": "PL2800",
+      "name": "",
+      "source_character": "PL2800",
+      "captain_avatar_one_only_fallback": false,
+      "sigils": [
+        {
+          "slot": 1,
+          "label": "Celestial Nyx / Celestial Lumen",
+          "outer_id": "GEEN_320_24",
+          "outer_hash": "8B8085C0",
+          "primary_id": "0DE887A0",
+          "primary_hash": "0DE887A0",
+          "secondary_id": "SKILL_321_00",
+          "secondary_hash": "A7726190",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 2,
+          "label": "Celestial Terra / Celestial Incendo",
+          "outer_id": "GEEN_322_24",
+          "outer_hash": "D29CD8E0",
+          "primary_id": "9232DC17",
+          "primary_hash": "9232DC17",
+          "secondary_id": "SKILL_323_00",
+          "secondary_hash": "36E3848D",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 3,
+          "label": "Celestial Aqua / Fatebreaker",
+          "outer_id": "GEEN_324_24",
+          "outer_hash": "E14E1598",
+          "primary_id": "A898E283",
+          "primary_hash": "A898E283",
+          "secondary_id": "SKILL_325_00",
+          "secondary_hash": "D029FE08",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 4,
+          "label": "Critical Hit Rate / Aegis",
+          "outer_id": "GEEN_003_24",
+          "outer_hash": "0BB9C188",
+          "primary_id": "SKILL_003_00",
+          "primary_hash": "8D78A19B",
+          "secondary_id": "SKILL_085_00",
+          "secondary_hash": "E0ABFDFE",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 5,
+          "label": "Greater Aegis / Nimble Onslaught",
+          "outer_id": "GEEN_166_24",
+          "outer_hash": "6F1D0870",
+          "primary_id": "SKILL_166_00",
+          "primary_hash": "48A95B8D",
+          "secondary_id": "SKILL_106_00",
+          "secondary_hash": "D2C8E10A",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 6,
+          "label": "War Elemental / Improved Dodge",
+          "outer_id": "GEEN_146_24",
+          "outer_hash": "00612B10",
+          "primary_id": "SKILL_146_00",
+          "primary_hash": "4C588C27",
+          "secondary_id": "SKILL_063_00",
+          "secondary_hash": "8B3BF60C",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 7,
+          "label": "Alpha / Damage Cap",
+          "outer_id": "GEEN_160_04",
+          "outer_hash": "921D90D8",
+          "primary_id": "SKILL_160_00",
+          "primary_hash": "DBE1D775",
+          "secondary_id": "SKILL_020_00",
+          "secondary_hash": "DC584F60",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 8,
+          "label": "Beta / Supplementary Damage",
+          "outer_id": "GEEN_161_04",
+          "outer_hash": "EE337FE3",
+          "primary_id": "SKILL_161_00",
+          "primary_hash": "8D2ADB6E",
+          "secondary_id": "SKILL_151_00",
+          "secondary_hash": "57AB5B10",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 9,
+          "label": "Gamma / Tyranny",
+          "outer_id": "GEEN_162_04",
+          "outer_hash": "4438676E",
+          "primary_id": "SKILL_162_00",
+          "primary_hash": "5C862E13",
+          "secondary_id": "SKILL_027_00",
+          "secondary_hash": "71F11A9B",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 10,
+          "label": "Flight over Fight / Stamina",
+          "outer_id": "GEEN_159_24",
+          "outer_hash": "0A4651BB",
+          "primary_id": "SKILL_159_00",
+          "primary_hash": "EC1C6779",
+          "secondary_id": "SKILL_006_00",
+          "secondary_hash": "2FC8FBFF",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 11,
+          "label": "Character Awakening / Guts",
+          "outer_id": "GEEN_177_90",
+          "outer_hash": "5A360EA8",
+          "primary_id": "47384248",
+          "primary_hash": "47384248",
+          "secondary_id": "SKILL_045_00",
+          "secondary_hash": "E69A4694",
+          "can_only_hold_one": true
+        },
+        {
+          "slot": 12,
+          "label": "Character Warpath / Autorevive",
+          "outer_id": "GEEN_177_93",
+          "outer_hash": "2D70C37D",
+          "primary_id": "807B6684",
+          "primary_hash": "807B6684",
+          "secondary_id": "SKILL_068_00",
+          "secondary_hash": "95F3FA86",
+          "can_only_hold_one": false
+        }
+      ]
+    },
+    {
+      "id": "PL2900",
+      "name": "Fediel",
+      "source_character": "PL2900",
+      "captain_avatar_one_only_fallback": false,
+      "sigils": [
+        {
+          "slot": 1,
+          "label": "Celestial Nyx / Celestial Lumen",
+          "outer_id": "GEEN_320_24",
+          "outer_hash": "8B8085C0",
+          "primary_id": "0DE887A0",
+          "primary_hash": "0DE887A0",
+          "secondary_id": "SKILL_321_00",
+          "secondary_hash": "A7726190",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 2,
+          "label": "Celestial Terra / Celestial Incendo",
+          "outer_id": "GEEN_322_24",
+          "outer_hash": "D29CD8E0",
+          "primary_id": "9232DC17",
+          "primary_hash": "9232DC17",
+          "secondary_id": "SKILL_323_00",
+          "secondary_hash": "36E3848D",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 3,
+          "label": "Celestial Aqua / Fatebreaker",
+          "outer_id": "GEEN_324_24",
+          "outer_hash": "E14E1598",
+          "primary_id": "A898E283",
+          "primary_hash": "A898E283",
+          "secondary_id": "SKILL_325_00",
+          "secondary_hash": "D029FE08",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 4,
+          "label": "Critical Hit Rate / Aegis",
+          "outer_id": "GEEN_003_24",
+          "outer_hash": "0BB9C188",
+          "primary_id": "SKILL_003_00",
+          "primary_hash": "8D78A19B",
+          "secondary_id": "SKILL_085_00",
+          "secondary_hash": "E0ABFDFE",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 5,
+          "label": "Greater Aegis / Nimble Onslaught",
+          "outer_id": "GEEN_166_24",
+          "outer_hash": "6F1D0870",
+          "primary_id": "SKILL_166_00",
+          "primary_hash": "48A95B8D",
+          "secondary_id": "SKILL_106_00",
+          "secondary_hash": "D2C8E10A",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 6,
+          "label": "War Elemental / Improved Dodge",
+          "outer_id": "GEEN_146_24",
+          "outer_hash": "00612B10",
+          "primary_id": "SKILL_146_00",
+          "primary_hash": "4C588C27",
+          "secondary_id": "SKILL_063_00",
+          "secondary_hash": "8B3BF60C",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 7,
+          "label": "Alpha / Damage Cap",
+          "outer_id": "GEEN_160_04",
+          "outer_hash": "921D90D8",
+          "primary_id": "SKILL_160_00",
+          "primary_hash": "DBE1D775",
+          "secondary_id": "SKILL_020_00",
+          "secondary_hash": "DC584F60",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 8,
+          "label": "Beta / Supplementary Damage",
+          "outer_id": "GEEN_161_04",
+          "outer_hash": "EE337FE3",
+          "primary_id": "SKILL_161_00",
+          "primary_hash": "8D2ADB6E",
+          "secondary_id": "SKILL_151_00",
+          "secondary_hash": "57AB5B10",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 9,
+          "label": "Gamma / Tyranny",
+          "outer_id": "GEEN_162_04",
+          "outer_hash": "4438676E",
+          "primary_id": "SKILL_162_00",
+          "primary_hash": "5C862E13",
+          "secondary_id": "SKILL_027_00",
+          "secondary_hash": "71F11A9B",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 10,
+          "label": "Flight over Fight / Stamina",
+          "outer_id": "GEEN_159_24",
+          "outer_hash": "0A4651BB",
+          "primary_id": "SKILL_159_00",
+          "primary_hash": "EC1C6779",
+          "secondary_id": "SKILL_006_00",
+          "secondary_hash": "2FC8FBFF",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 11,
+          "label": "Character Awakening / Guts",
+          "outer_id": "GEEN_178_90",
+          "outer_hash": "A8A0CBFF",
+          "primary_id": "06719232",
+          "primary_hash": "06719232",
+          "secondary_id": "SKILL_045_00",
+          "secondary_hash": "E69A4694",
+          "can_only_hold_one": true
+        },
+        {
+          "slot": 12,
+          "label": "Character Warpath / Autorevive",
+          "outer_id": "GEEN_178_93",
+          "outer_hash": "9ABD2DA5",
+          "primary_id": "5559232F",
+          "primary_hash": "5559232F",
+          "secondary_id": "SKILL_068_00",
+          "secondary_hash": "95F3FA86",
+          "can_only_hold_one": false
+        }
+      ]
+    },
+    {
+      "id": "PL1900",
+      "name": "Id",
+      "source_character": "PL1900",
+      "captain_avatar_one_only_fallback": false,
+      "sigils": [
+        {
+          "slot": 1,
+          "label": "Celestial Nyx / Celestial Lumen",
+          "outer_id": "GEEN_320_24",
+          "outer_hash": "8B8085C0",
+          "primary_id": "0DE887A0",
+          "primary_hash": "0DE887A0",
+          "secondary_id": "SKILL_321_00",
+          "secondary_hash": "A7726190",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 2,
+          "label": "Celestial Terra / Celestial Incendo",
+          "outer_id": "GEEN_322_24",
+          "outer_hash": "D29CD8E0",
+          "primary_id": "9232DC17",
+          "primary_hash": "9232DC17",
+          "secondary_id": "SKILL_323_00",
+          "secondary_hash": "36E3848D",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 3,
+          "label": "Celestial Aqua / Fatebreaker",
+          "outer_id": "GEEN_324_24",
+          "outer_hash": "E14E1598",
+          "primary_id": "A898E283",
+          "primary_hash": "A898E283",
+          "secondary_id": "SKILL_325_00",
+          "secondary_hash": "D029FE08",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 4,
+          "label": "Critical Hit Rate / Aegis",
+          "outer_id": "GEEN_003_24",
+          "outer_hash": "0BB9C188",
+          "primary_id": "SKILL_003_00",
+          "primary_hash": "8D78A19B",
+          "secondary_id": "SKILL_085_00",
+          "secondary_hash": "E0ABFDFE",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 5,
+          "label": "Greater Aegis / Nimble Onslaught",
+          "outer_id": "GEEN_166_24",
+          "outer_hash": "6F1D0870",
+          "primary_id": "SKILL_166_00",
+          "primary_hash": "48A95B8D",
+          "secondary_id": "SKILL_106_00",
+          "secondary_hash": "D2C8E10A",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 6,
+          "label": "War Elemental / Improved Dodge",
+          "outer_id": "GEEN_146_24",
+          "outer_hash": "00612B10",
+          "primary_id": "SKILL_146_00",
+          "primary_hash": "4C588C27",
+          "secondary_id": "SKILL_063_00",
+          "secondary_hash": "8B3BF60C",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 7,
+          "label": "Alpha / Damage Cap",
+          "outer_id": "GEEN_160_04",
+          "outer_hash": "921D90D8",
+          "primary_id": "SKILL_160_00",
+          "primary_hash": "DBE1D775",
+          "secondary_id": "SKILL_020_00",
+          "secondary_hash": "DC584F60",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 8,
+          "label": "Beta / Supplementary Damage",
+          "outer_id": "GEEN_161_04",
+          "outer_hash": "EE337FE3",
+          "primary_id": "SKILL_161_00",
+          "primary_hash": "8D2ADB6E",
+          "secondary_id": "SKILL_151_00",
+          "secondary_hash": "57AB5B10",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 9,
+          "label": "Gamma / Tyranny",
+          "outer_id": "GEEN_162_04",
+          "outer_hash": "4438676E",
+          "primary_id": "SKILL_162_00",
+          "primary_hash": "5C862E13",
+          "secondary_id": "SKILL_027_00",
+          "secondary_hash": "71F11A9B",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 10,
+          "label": "Flight over Fight / Stamina",
+          "outer_id": "GEEN_159_24",
+          "outer_hash": "0A4651BB",
+          "primary_id": "SKILL_159_00",
+          "primary_hash": "EC1C6779",
+          "secondary_id": "SKILL_006_00",
+          "secondary_hash": "2FC8FBFF",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 11,
+          "label": "Character Awakening / Guts",
+          "outer_id": "GEEN_130_90",
+          "outer_hash": "AF8E7E7E",
+          "primary_id": "SKILL_130_00",
+          "primary_hash": "93A2093C",
+          "secondary_id": "SKILL_045_00",
+          "secondary_hash": "E69A4694",
+          "can_only_hold_one": true
+        },
+        {
+          "slot": 12,
+          "label": "Character Warpath / Autorevive",
+          "outer_id": "GEEN_130_93",
+          "outer_hash": "98E9E6EF",
+          "primary_id": "SKILL_130_02",
+          "primary_hash": "B064A634",
+          "secondary_id": "SKILL_068_00",
+          "secondary_hash": "95F3FA86",
+          "can_only_hold_one": false
+        }
+      ]
+    },
+    {
+      "id": "PL2400",
+      "name": "",
+      "source_character": "PL2400",
+      "captain_avatar_one_only_fallback": false,
+      "sigils": [
+        {
+          "slot": 1,
+          "label": "Celestial Nyx / Celestial Lumen",
+          "outer_id": "GEEN_320_24",
+          "outer_hash": "8B8085C0",
+          "primary_id": "0DE887A0",
+          "primary_hash": "0DE887A0",
+          "secondary_id": "SKILL_321_00",
+          "secondary_hash": "A7726190",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 2,
+          "label": "Celestial Terra / Celestial Incendo",
+          "outer_id": "GEEN_322_24",
+          "outer_hash": "D29CD8E0",
+          "primary_id": "9232DC17",
+          "primary_hash": "9232DC17",
+          "secondary_id": "SKILL_323_00",
+          "secondary_hash": "36E3848D",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 3,
+          "label": "Celestial Aqua / Fatebreaker",
+          "outer_id": "GEEN_324_24",
+          "outer_hash": "E14E1598",
+          "primary_id": "A898E283",
+          "primary_hash": "A898E283",
+          "secondary_id": "SKILL_325_00",
+          "secondary_hash": "D029FE08",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 4,
+          "label": "Critical Hit Rate / Aegis",
+          "outer_id": "GEEN_003_24",
+          "outer_hash": "0BB9C188",
+          "primary_id": "SKILL_003_00",
+          "primary_hash": "8D78A19B",
+          "secondary_id": "SKILL_085_00",
+          "secondary_hash": "E0ABFDFE",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 5,
+          "label": "Greater Aegis / Nimble Onslaught",
+          "outer_id": "GEEN_166_24",
+          "outer_hash": "6F1D0870",
+          "primary_id": "SKILL_166_00",
+          "primary_hash": "48A95B8D",
+          "secondary_id": "SKILL_106_00",
+          "secondary_hash": "D2C8E10A",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 6,
+          "label": "War Elemental / Improved Dodge",
+          "outer_id": "GEEN_146_24",
+          "outer_hash": "00612B10",
+          "primary_id": "SKILL_146_00",
+          "primary_hash": "4C588C27",
+          "secondary_id": "SKILL_063_00",
+          "secondary_hash": "8B3BF60C",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 7,
+          "label": "Alpha / Damage Cap",
+          "outer_id": "GEEN_160_04",
+          "outer_hash": "921D90D8",
+          "primary_id": "SKILL_160_00",
+          "primary_hash": "DBE1D775",
+          "secondary_id": "SKILL_020_00",
+          "secondary_hash": "DC584F60",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 8,
+          "label": "Beta / Supplementary Damage",
+          "outer_id": "GEEN_161_04",
+          "outer_hash": "EE337FE3",
+          "primary_id": "SKILL_161_00",
+          "primary_hash": "8D2ADB6E",
+          "secondary_id": "SKILL_151_00",
+          "secondary_hash": "57AB5B10",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 9,
+          "label": "Gamma / Tyranny",
+          "outer_id": "GEEN_162_04",
+          "outer_hash": "4438676E",
+          "primary_id": "SKILL_162_00",
+          "primary_hash": "5C862E13",
+          "secondary_id": "SKILL_027_00",
+          "secondary_hash": "71F11A9B",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 10,
+          "label": "Flight over Fight / Stamina",
+          "outer_id": "GEEN_159_24",
+          "outer_hash": "0A4651BB",
+          "primary_id": "SKILL_159_00",
+          "primary_hash": "EC1C6779",
+          "secondary_id": "SKILL_006_00",
+          "secondary_hash": "2FC8FBFF",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 11,
+          "label": "Character Awakening / Guts",
+          "outer_id": "GEEN_173_90",
+          "outer_hash": "895ABBF6",
+          "primary_id": "1DE14C65",
+          "primary_hash": "1DE14C65",
+          "secondary_id": "SKILL_045_00",
+          "secondary_hash": "E69A4694",
+          "can_only_hold_one": true
+        },
+        {
+          "slot": 12,
+          "label": "Character Warpath / Autorevive",
+          "outer_id": "GEEN_173_93",
+          "outer_hash": "41AC1082",
+          "primary_id": "DBA19768",
+          "primary_hash": "DBA19768",
+          "secondary_id": "SKILL_068_00",
+          "secondary_hash": "95F3FA86",
+          "can_only_hold_one": false
+        }
+      ]
+    },
+    {
+      "id": "PL2500",
+      "name": "",
+      "source_character": "PL2500",
+      "captain_avatar_one_only_fallback": false,
+      "sigils": [
+        {
+          "slot": 1,
+          "label": "Celestial Nyx / Celestial Lumen",
+          "outer_id": "GEEN_320_24",
+          "outer_hash": "8B8085C0",
+          "primary_id": "0DE887A0",
+          "primary_hash": "0DE887A0",
+          "secondary_id": "SKILL_321_00",
+          "secondary_hash": "A7726190",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 2,
+          "label": "Celestial Terra / Celestial Incendo",
+          "outer_id": "GEEN_322_24",
+          "outer_hash": "D29CD8E0",
+          "primary_id": "9232DC17",
+          "primary_hash": "9232DC17",
+          "secondary_id": "SKILL_323_00",
+          "secondary_hash": "36E3848D",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 3,
+          "label": "Celestial Aqua / Fatebreaker",
+          "outer_id": "GEEN_324_24",
+          "outer_hash": "E14E1598",
+          "primary_id": "A898E283",
+          "primary_hash": "A898E283",
+          "secondary_id": "SKILL_325_00",
+          "secondary_hash": "D029FE08",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 4,
+          "label": "Critical Hit Rate / Aegis",
+          "outer_id": "GEEN_003_24",
+          "outer_hash": "0BB9C188",
+          "primary_id": "SKILL_003_00",
+          "primary_hash": "8D78A19B",
+          "secondary_id": "SKILL_085_00",
+          "secondary_hash": "E0ABFDFE",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 5,
+          "label": "Greater Aegis / Nimble Onslaught",
+          "outer_id": "GEEN_166_24",
+          "outer_hash": "6F1D0870",
+          "primary_id": "SKILL_166_00",
+          "primary_hash": "48A95B8D",
+          "secondary_id": "SKILL_106_00",
+          "secondary_hash": "D2C8E10A",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 6,
+          "label": "War Elemental / Improved Dodge",
+          "outer_id": "GEEN_146_24",
+          "outer_hash": "00612B10",
+          "primary_id": "SKILL_146_00",
+          "primary_hash": "4C588C27",
+          "secondary_id": "SKILL_063_00",
+          "secondary_hash": "8B3BF60C",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 7,
+          "label": "Alpha / Damage Cap",
+          "outer_id": "GEEN_160_04",
+          "outer_hash": "921D90D8",
+          "primary_id": "SKILL_160_00",
+          "primary_hash": "DBE1D775",
+          "secondary_id": "SKILL_020_00",
+          "secondary_hash": "DC584F60",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 8,
+          "label": "Beta / Supplementary Damage",
+          "outer_id": "GEEN_161_04",
+          "outer_hash": "EE337FE3",
+          "primary_id": "SKILL_161_00",
+          "primary_hash": "8D2ADB6E",
+          "secondary_id": "SKILL_151_00",
+          "secondary_hash": "57AB5B10",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 9,
+          "label": "Gamma / Tyranny",
+          "outer_id": "GEEN_162_04",
+          "outer_hash": "4438676E",
+          "primary_id": "SKILL_162_00",
+          "primary_hash": "5C862E13",
+          "secondary_id": "SKILL_027_00",
+          "secondary_hash": "71F11A9B",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 10,
+          "label": "Flight over Fight / Stamina",
+          "outer_id": "GEEN_159_24",
+          "outer_hash": "0A4651BB",
+          "primary_id": "SKILL_159_00",
+          "primary_hash": "EC1C6779",
+          "secondary_id": "SKILL_006_00",
+          "secondary_hash": "2FC8FBFF",
+          "can_only_hold_one": false
+        },
+        {
+          "slot": 11,
+          "label": "Character Awakening / Guts",
+          "outer_id": "GEEN_174_90",
+          "outer_hash": "D8A464F1",
+          "primary_id": "7B5B081D",
+          "primary_hash": "7B5B081D",
+          "secondary_id": "SKILL_045_00",
+          "secondary_hash": "E69A4694",
+          "can_only_hold_one": true
+        },
+        {
+          "slot": 12,
+          "label": "Character Warpath / Autorevive",
+          "outer_id": "GEEN_174_93",
+          "outer_hash": "EB766D87",
+          "primary_id": "79266456",
+          "primary_hash": "79266456",
+          "secondary_id": "SKILL_068_00",
+          "secondary_hash": "95F3FA86",
+          "can_only_hold_one": false
+        }
+      ]
+    }
+  ]
+}

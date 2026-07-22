@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "endgame-qol-passives-2.0.2",
+  "name": "Endgame QoL Summon Passives",
+  "name_zh": "2.0.2 终盘体验召唤石被动",
+  "game_data_version": "Relink 2.0.2",
+  "description": "Use the equipped top-four summons for Uplift, Potion Hoarder, Spartan Echo, and Berserker Echo while preserving their shells, bonus lanes, links, and unknown state field 1460.",
+  "summons": [
+    {
+      "name": "Rolan",
+      "summon_hash": "0F986ED9",
+      "skill_lot": "26428274",
+      "summon_curve": "8E4A0E03",
+      "trait_id": "SKILL_072_00",
+      "trait_hash": "B5FF9FD3",
+      "trait_name": "Uplift",
+      "trait_name_zh": "激昂",
+      "trait_level": 15,
+      "preserve_bonus": true
+    },
+    {
+      "name": "Lilith",
+      "summon_hash": "DFAB70B7",
+      "skill_lot": "05205336",
+      "summon_curve": "8E4A0E03",
+      "trait_id": "SKILL_073_00",
+      "trait_hash": "24883AF3",
+      "trait_name": "Potion Hoarder",
+      "trait_name_zh": "药水携带数",
+      "trait_level": 15,
+      "preserve_bonus": true
+    },
+    {
+      "name": "Beelzebub",
+      "summon_hash": "A7EFF558",
+      "skill_lot": "BD452CC9",
+      "summon_curve": "63E658AB",
+      "trait_id": "SKILL_234_00",
+      "trait_hash": "3D8153A1",
+      "trait_name": "Spartan Echo",
+      "trait_name_zh": "斯巴达回响",
+      "trait_level": 15,
+      "preserve_bonus": true
+    },
+    {
+      "name": "Lucilius",
+      "summon_hash": "6E5968FC",
+      "skill_lot": "CC0B0EF1",
+      "summon_curve": "63E658AB",
+      "trait_id": "SKILL_233_00",
+      "trait_hash": "EE85CD1F",
+      "trait_name": "Berserker Echo",
+      "trait_name_zh": "狂战士回响",
+      "trait_level": 15,
+      "preserve_bonus": true
+    }
+  ],
+  "source": {
+    "database": "Relink 2.0.2 summon/summon_lot/summon_curve tables",
+    "field_policy": "modify only index 0 of fields 1458 and 1459 on the four equipped instances",
+    "preserved_fields": [1451, 1456, 1457, 1460],
+    "bonus_lane": "index 1 of fields 1458 and 1459 remains unchanged"
+  }
+}

@@ -174,7 +174,26 @@ def generate(game_db: Path, items_db: Path, output: Path) -> None:
         name: items.execute(f'SELECT COUNT(*) FROM "{name}"').fetchone()[0]
         for name in ("item", "item_consume", "item_important", "item_material_list")
     }
+    source_path = output / "source-metadata.json"
+    existing_source = (
+        json.loads(source_path.read_text(encoding="utf-8"))
+        if source_path.is_file()
+        else {}
+    )
+    generated_selection = {
+        "characters": "PL*, IsNPC=0, MaxLevelMaybe=100",
+        "weapons": "six database-backed base weapons per character; probe WEP_<character>_01..09",
+        "sigils_2_0": "Rarity=5 and family 173..178 or 320..327",
+    }
     source = {
+        **existing_source,
+        "upstream_data_extractor": existing_source.get(
+            "upstream_data_extractor",
+            {
+                "repository": "https://github.com/Nenkai/GBFRDataTools",
+                "commit": "571a1d1ce71c17601684894dad186269c0fed1dc",
+            },
+        ),
         "game_db_sha256": file_sha256(game_db),
         "items_db_sha256": file_sha256(items_db),
         "game_table_counts": {
@@ -183,16 +202,15 @@ def generate(game_db: Path, items_db: Path, output: Path) -> None:
         },
         "items_table_counts": table_counts,
         "selection": {
-            "characters": "PL*, IsNPC=0, MaxLevelMaybe=100",
-            "weapons": "six database-backed base weapons per character; probe WEP_<character>_01..09",
-            "sigils_2_0": "Rarity=5 and family 173..178 or 320..327",
+            **existing_source.get("selection", {}),
+            **generated_selection,
         },
     }
 
     write_json(output / "characters.json", {"count": len(characters), "items": characters})
     write_json(output / "weapons.json", {"count": len(weapons), "items": weapons})
     write_json(output / "sigils-2.0.json", {"count": len(sigils), "items": sigils})
-    write_json(output / "source-metadata.json", source)
+    write_json(source_path, source)
     game.close()
     items.close()
 

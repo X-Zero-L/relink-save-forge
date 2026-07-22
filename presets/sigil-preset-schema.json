@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/X-Zero-L/relink-save-forge/raw/main/presets/sigil-preset-schema.json",
+  "title": "Relink Save Forge all-character sigil preset",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "game_data_version",
+    "outer_level",
+    "trait_level",
+    "flags",
+    "build_sha256",
+    "character_order",
+    "characters"
+  ],
+  "properties": {
+    "schema_version": { "type": "integer", "const": 1 },
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "name_zh": { "type": "string" },
+    "game_data_version": { "type": "string" },
+    "description": { "type": "string" },
+    "outer_level": { "type": "integer", "const": 15 },
+    "trait_level": { "type": "integer", "const": 99 },
+    "flags": { "type": "integer", "const": 3 },
+    "traits_per_character": { "type": "integer", "const": 24 },
+    "flight_over_fight_per_character": { "type": "integer", "const": 1 },
+    "build_sha256": { "type": "string", "pattern": "^[0-9A-F]{64}$" },
+    "source": { "type": "object" },
+    "character_order": {
+      "type": "array",
+      "minItems": 29,
+      "maxItems": 29,
+      "items": { "type": "string", "pattern": "^PL[0-9]{4}$" }
+    },
+    "characters": {
+      "type": "array",
+      "minItems": 29,
+      "maxItems": 29,
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "source_character", "captain_avatar_one_only_fallback", "sigils"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^PL[0-9]{4}$" },
+          "name": { "type": "string" },
+          "source_character": { "type": "string", "pattern": "^PL[0-9]{4}$" },
+          "captain_avatar_one_only_fallback": { "type": "boolean" },
+          "sigils": {
+            "type": "array",
+            "minItems": 12,
+            "maxItems": 12,
+            "items": {
+              "type": "object",
+              "required": [
+                "slot",
+                "label",
+                "outer_id",
+                "outer_hash",
+                "primary_id",
+                "primary_hash",
+                "secondary_id",
+                "secondary_hash",
+                "can_only_hold_one"
+              ],
+              "properties": {
+                "slot": { "type": "integer", "minimum": 1, "maximum": 12 },
+                "label": { "type": "string" },
+                "outer_id": { "type": "string" },
+                "outer_hash": { "type": "string", "pattern": "^[0-9A-F]{8}$" },
+                "primary_id": { "type": "string" },
+                "primary_hash": { "type": "string", "pattern": "^[0-9A-F]{8}$" },
+                "secondary_id": { "type": "string" },
+                "secondary_hash": { "type": "string", "pattern": "^[0-9A-F]{8}$" },
+                "can_only_hold_one": { "type": "boolean" }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

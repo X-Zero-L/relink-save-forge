@@ -1,0 +1,1141 @@
+{
+  "schema_version": 3,
+  "source": "Relink 2.0 complete database-curve weapon rows",
+  "count": 162,
+  "items": [
+    {
+      "database_key": "1EA819A4",
+      "runtime_hash": "1EA819A4",
+      "official_id": "WEP_PL2200_06",
+      "base_hash": "74D764B7",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "219EE448",
+      "runtime_hash": "219EE448",
+      "official_id": "WEP_PL2900_03",
+      "base_hash": "1EB2B398",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "3897A020",
+      "runtime_hash": "3897A020",
+      "official_id": "WEP_PL2700_05",
+      "base_hash": "3897A020",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "40204755",
+      "runtime_hash": "40204755",
+      "official_id": "WEP_PL2300_06",
+      "base_hash": "1064441E",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "4FEE9341",
+      "runtime_hash": "4FEE9341",
+      "official_id": "WEP_PL2700_03",
+      "base_hash": "14B3AE92",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "5DE1B311",
+      "runtime_hash": "5DE1B311",
+      "official_id": "WEP_PL2400_06",
+      "base_hash": "10180036",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "64705E7B",
+      "runtime_hash": "64705E7B",
+      "official_id": "WEP_PL2800_03",
+      "base_hash": "6EC326D3",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "78544A75",
+      "runtime_hash": "78544A75",
+      "official_id": "WEP_PL2600_03",
+      "base_hash": "969CF8C7",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "78B64E9B",
+      "runtime_hash": "78B64E9B",
+      "official_id": "WEP_PL2600_05",
+      "base_hash": "78B64E9B",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "802B09DA",
+      "runtime_hash": "802B09DA",
+      "official_id": "WEP_PL2500_03",
+      "base_hash": "1CC90CAE",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "860AC3BF",
+      "runtime_hash": "860AC3BF",
+      "official_id": "WEP_PL2500_06",
+      "base_hash": "90F5B18F",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "A716D1F2",
+      "runtime_hash": "A716D1F2",
+      "official_id": "WEP_PL2600_06",
+      "base_hash": "6CFF175C",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "AD99E05E",
+      "runtime_hash": "AD99E05E",
+      "official_id": "WEP_PL2800_06",
+      "base_hash": "D5EB1DEE",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "D016FEB3",
+      "runtime_hash": "D016FEB3",
+      "official_id": "WEP_PL2100_06",
+      "base_hash": "DFBB5727",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "DED16FCF",
+      "runtime_hash": "DED16FCF",
+      "official_id": "WEP_PL2700_06",
+      "base_hash": "6EEA0D21",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "F0B8CF77",
+      "runtime_hash": "F0B8CF77",
+      "official_id": "WEP_PL2900_06",
+      "base_hash": "CDB13688",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0000_01_01",
+      "runtime_hash": "AC65075C",
+      "official_id": "WEP_PL0000_01",
+      "base_hash": "F0B50DAE",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0000_02",
+      "runtime_hash": "11E6966A",
+      "official_id": "WEP_PL0000_02",
+      "base_hash": "11E6966A",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0000_03_03",
+      "runtime_hash": "77AB0809",
+      "official_id": "WEP_PL0000_03",
+      "base_hash": "D7CEE3B8",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0000_04",
+      "runtime_hash": "57E95993",
+      "official_id": "WEP_PL0000_04",
+      "base_hash": "57E95993",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0000_05",
+      "runtime_hash": "CF9C4808",
+      "official_id": "WEP_PL0000_05",
+      "base_hash": "CF9C4808",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0000_06_03",
+      "runtime_hash": "0D7B7A95",
+      "official_id": "WEP_PL0000_06",
+      "base_hash": "E6518D5A",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0100_01_01",
+      "runtime_hash": "C2D446F7",
+      "official_id": "WEP_PL0100_01",
+      "base_hash": "D4CED80E",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0100_02",
+      "runtime_hash": "5CECD788",
+      "official_id": "WEP_PL0100_02",
+      "base_hash": "5CECD788",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0100_03_03",
+      "runtime_hash": "1E90ADB4",
+      "official_id": "WEP_PL0100_03",
+      "base_hash": "0E0287DC",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0100_04",
+      "runtime_hash": "4E2093BA",
+      "official_id": "WEP_PL0100_04",
+      "base_hash": "4E2093BA",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0100_05",
+      "runtime_hash": "32EE4D8A",
+      "official_id": "WEP_PL0100_05",
+      "base_hash": "32EE4D8A",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0100_06_03",
+      "runtime_hash": "CE12662A",
+      "official_id": "WEP_PL0100_06",
+      "base_hash": "C9FCCCC6",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0200_01",
+      "runtime_hash": "3B2082B6",
+      "official_id": "WEP_PL0200_01",
+      "base_hash": "3B2082B6",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0200_02",
+      "runtime_hash": "3D596697",
+      "official_id": "WEP_PL0200_02",
+      "base_hash": "3D596697",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0200_03_03",
+      "runtime_hash": "288D5590",
+      "official_id": "WEP_PL0200_03",
+      "base_hash": "8B8FCB4E",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0200_04",
+      "runtime_hash": "2D9BE4CC",
+      "official_id": "WEP_PL0200_04",
+      "base_hash": "2D9BE4CC",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0200_05",
+      "runtime_hash": "E1B27A1C",
+      "official_id": "WEP_PL0200_05",
+      "base_hash": "E1B27A1C",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0200_06_03",
+      "runtime_hash": "A44B08BF",
+      "official_id": "WEP_PL0200_06",
+      "base_hash": "E04031CF",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0300_01",
+      "runtime_hash": "BA30BD26",
+      "official_id": "WEP_PL0300_01",
+      "base_hash": "BA30BD26",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0300_02",
+      "runtime_hash": "44B508FA",
+      "official_id": "WEP_PL0300_02",
+      "base_hash": "44B508FA",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0300_03_03",
+      "runtime_hash": "D5E0BF7F",
+      "official_id": "WEP_PL0300_03",
+      "base_hash": "4E1AB7BB",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0300_04",
+      "runtime_hash": "E7C972E6",
+      "official_id": "WEP_PL0300_04",
+      "base_hash": "E7C972E6",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0300_05",
+      "runtime_hash": "6DE3C01C",
+      "official_id": "WEP_PL0300_05",
+      "base_hash": "6DE3C01C",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0300_06_03",
+      "runtime_hash": "7B5D7822",
+      "official_id": "WEP_PL0300_06",
+      "base_hash": "F1845E70",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0400_01",
+      "runtime_hash": "C54B8FE6",
+      "official_id": "WEP_PL0400_01",
+      "base_hash": "C54B8FE6",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0400_02",
+      "runtime_hash": "C88BE9EE",
+      "official_id": "WEP_PL0400_02",
+      "base_hash": "C88BE9EE",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0400_03_03",
+      "runtime_hash": "56676778",
+      "official_id": "WEP_PL0400_03",
+      "base_hash": "22E79816",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0400_04",
+      "runtime_hash": "BE1BA9E3",
+      "official_id": "WEP_PL0400_04",
+      "base_hash": "BE1BA9E3",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0400_05",
+      "runtime_hash": "F0748132",
+      "official_id": "WEP_PL0400_05",
+      "base_hash": "F0748132",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0400_06_03",
+      "runtime_hash": "1779CD60",
+      "official_id": "WEP_PL0400_06",
+      "base_hash": "FEBAC81A",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0500_01",
+      "runtime_hash": "BFDD3AE2",
+      "official_id": "WEP_PL0500_01",
+      "base_hash": "BFDD3AE2",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0500_02",
+      "runtime_hash": "55A28F62",
+      "official_id": "WEP_PL0500_02",
+      "base_hash": "55A28F62",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0500_03_03",
+      "runtime_hash": "B5341662",
+      "official_id": "WEP_PL0500_03",
+      "base_hash": "9249B9CA",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0500_04",
+      "runtime_hash": "EE6CD89E",
+      "official_id": "WEP_PL0500_04",
+      "base_hash": "EE6CD89E",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0500_05",
+      "runtime_hash": "FD9E2000",
+      "official_id": "WEP_PL0500_05",
+      "base_hash": "FD9E2000",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0500_06_03",
+      "runtime_hash": "B3003C9B",
+      "official_id": "WEP_PL0500_06",
+      "base_hash": "3F39B5EB",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0600_01",
+      "runtime_hash": "071C082E",
+      "official_id": "WEP_PL0600_01",
+      "base_hash": "071C082E",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0600_02",
+      "runtime_hash": "1BCD26BC",
+      "official_id": "WEP_PL0600_02",
+      "base_hash": "1BCD26BC",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0600_03_03",
+      "runtime_hash": "93244909",
+      "official_id": "WEP_PL0600_03",
+      "base_hash": "E92002CA",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0600_04",
+      "runtime_hash": "6C382CFB",
+      "official_id": "WEP_PL0600_04",
+      "base_hash": "6C382CFB",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0600_05",
+      "runtime_hash": "F733DDD2",
+      "official_id": "WEP_PL0600_05",
+      "base_hash": "F733DDD2",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0600_06_03",
+      "runtime_hash": "BCD65F7D",
+      "official_id": "WEP_PL0600_06",
+      "base_hash": "07BB324C",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0700_01",
+      "runtime_hash": "B29038DB",
+      "official_id": "WEP_PL0700_01",
+      "base_hash": "B29038DB",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0700_02",
+      "runtime_hash": "73263FE6",
+      "official_id": "WEP_PL0700_02",
+      "base_hash": "73263FE6",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0700_03_03",
+      "runtime_hash": "33D018E0",
+      "official_id": "WEP_PL0700_03",
+      "base_hash": "0FAE326F",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0700_04",
+      "runtime_hash": "6BB5E5FD",
+      "official_id": "WEP_PL0700_04",
+      "base_hash": "6BB5E5FD",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0700_05",
+      "runtime_hash": "3E331E1E",
+      "official_id": "WEP_PL0700_05",
+      "base_hash": "3E331E1E",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0700_06_03",
+      "runtime_hash": "45ADDF75",
+      "official_id": "WEP_PL0700_06",
+      "base_hash": "2A924378",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0800_01",
+      "runtime_hash": "3EC1D082",
+      "official_id": "WEP_PL0800_01",
+      "base_hash": "3EC1D082",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0800_02",
+      "runtime_hash": "0EC52EA3",
+      "official_id": "WEP_PL0800_02",
+      "base_hash": "0EC52EA3",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0800_03",
+      "runtime_hash": "209AA176",
+      "official_id": "WEP_PL0800_03",
+      "base_hash": "209AA176",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0800_04",
+      "runtime_hash": "1B09A462",
+      "official_id": "WEP_PL0800_04",
+      "base_hash": "1B09A462",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0800_05_03",
+      "runtime_hash": "4CA01DB9",
+      "official_id": "WEP_PL0800_05",
+      "base_hash": "72AAE787",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0800_06_03",
+      "runtime_hash": "9FFA80BB",
+      "official_id": "WEP_PL0800_06",
+      "base_hash": "7027741C",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0900_01",
+      "runtime_hash": "283CC36B",
+      "official_id": "WEP_PL0900_01",
+      "base_hash": "283CC36B",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0900_02",
+      "runtime_hash": "68AAF1A0",
+      "official_id": "WEP_PL0900_02",
+      "base_hash": "68AAF1A0",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0900_03_03",
+      "runtime_hash": "F7C7B5DC",
+      "official_id": "WEP_PL0900_03",
+      "base_hash": "776CA5A8",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0900_04",
+      "runtime_hash": "3869E1C6",
+      "official_id": "WEP_PL0900_04",
+      "base_hash": "3869E1C6",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0900_05",
+      "runtime_hash": "515B69C7",
+      "official_id": "WEP_PL0900_05",
+      "base_hash": "515B69C7",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL0900_06_03",
+      "runtime_hash": "227B690E",
+      "official_id": "WEP_PL0900_06",
+      "base_hash": "C84002E0",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1000_01",
+      "runtime_hash": "159CA5B6",
+      "official_id": "WEP_PL1000_01",
+      "base_hash": "159CA5B6",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1000_02",
+      "runtime_hash": "3679A543",
+      "official_id": "WEP_PL1000_02",
+      "base_hash": "3679A543",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1000_03",
+      "runtime_hash": "9712FDF2",
+      "official_id": "WEP_PL1000_03",
+      "base_hash": "9712FDF2",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1000_04",
+      "runtime_hash": "980058ED",
+      "official_id": "WEP_PL1000_04",
+      "base_hash": "980058ED",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1000_05_03",
+      "runtime_hash": "B3DDAAE1",
+      "official_id": "WEP_PL1000_05",
+      "base_hash": "98F8CA3E",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1000_06_03",
+      "runtime_hash": "9F671440",
+      "official_id": "WEP_PL1000_06",
+      "base_hash": "84BF5DE8",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1100_01",
+      "runtime_hash": "BEFFB034",
+      "official_id": "WEP_PL1100_01",
+      "base_hash": "BEFFB034",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1100_02",
+      "runtime_hash": "5E36B1DD",
+      "official_id": "WEP_PL1100_02",
+      "base_hash": "5E36B1DD",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1100_03_03",
+      "runtime_hash": "361E2D95",
+      "official_id": "WEP_PL1100_03",
+      "base_hash": "4C3A7F95",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1100_04",
+      "runtime_hash": "C1F29178",
+      "official_id": "WEP_PL1100_04",
+      "base_hash": "C1F29178",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1100_05",
+      "runtime_hash": "49D10F32",
+      "official_id": "WEP_PL1100_05",
+      "base_hash": "49D10F32",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1100_06_03",
+      "runtime_hash": "2F639454",
+      "official_id": "WEP_PL1100_06",
+      "base_hash": "E82DF9EC",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1200_01",
+      "runtime_hash": "253333C3",
+      "official_id": "WEP_PL1200_01",
+      "base_hash": "253333C3",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1200_02",
+      "runtime_hash": "DDC86786",
+      "official_id": "WEP_PL1200_02",
+      "base_hash": "DDC86786",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1200_03_03",
+      "runtime_hash": "1D0E9A84",
+      "official_id": "WEP_PL1200_03",
+      "base_hash": "761A3597",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1200_04",
+      "runtime_hash": "33D3457F",
+      "official_id": "WEP_PL1200_04",
+      "base_hash": "33D3457F",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1200_05",
+      "runtime_hash": "F71832EF",
+      "official_id": "WEP_PL1200_05",
+      "base_hash": "F71832EF",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1200_06_03",
+      "runtime_hash": "847BD571",
+      "official_id": "WEP_PL1200_06",
+      "base_hash": "687ECE62",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1300_01",
+      "runtime_hash": "BC7F89FB",
+      "official_id": "WEP_PL1300_01",
+      "base_hash": "BC7F89FB",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1300_02",
+      "runtime_hash": "8BC0176A",
+      "official_id": "WEP_PL1300_02",
+      "base_hash": "8BC0176A",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1300_03_03",
+      "runtime_hash": "51836359",
+      "official_id": "WEP_PL1300_03",
+      "base_hash": "B5C31AB2",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1300_04",
+      "runtime_hash": "64368C4A",
+      "official_id": "WEP_PL1300_04",
+      "base_hash": "64368C4A",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1300_05",
+      "runtime_hash": "8B4A2615",
+      "official_id": "WEP_PL1300_05",
+      "base_hash": "8B4A2615",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1300_06_03",
+      "runtime_hash": "F6FF4CB2",
+      "official_id": "WEP_PL1300_06",
+      "base_hash": "A1F477D6",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1400_01",
+      "runtime_hash": "DB043DD7",
+      "official_id": "WEP_PL1400_01",
+      "base_hash": "DB043DD7",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1400_02",
+      "runtime_hash": "DCC43052",
+      "official_id": "WEP_PL1400_02",
+      "base_hash": "DCC43052",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1400_03_03",
+      "runtime_hash": "AFBD8B45",
+      "official_id": "WEP_PL1400_03",
+      "base_hash": "099C8066",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1400_04",
+      "runtime_hash": "11D39CE1",
+      "official_id": "WEP_PL1400_04",
+      "base_hash": "11D39CE1",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1400_05",
+      "runtime_hash": "4CE111FE",
+      "official_id": "WEP_PL1400_05",
+      "base_hash": "4CE111FE",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1400_06_03",
+      "runtime_hash": "A44EB1B4",
+      "official_id": "WEP_PL1400_06",
+      "base_hash": "FFF2F00F",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1500_01",
+      "runtime_hash": "18B2FC0E",
+      "official_id": "WEP_PL1500_01",
+      "base_hash": "18B2FC0E",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1500_02",
+      "runtime_hash": "630D33D5",
+      "official_id": "WEP_PL1500_02",
+      "base_hash": "630D33D5",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1500_03",
+      "runtime_hash": "B70179F1",
+      "official_id": "WEP_PL1500_03",
+      "base_hash": "B70179F1",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1500_04_03",
+      "runtime_hash": "48110BA3",
+      "official_id": "WEP_PL1500_04",
+      "base_hash": "F4C1DE98",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1500_05",
+      "runtime_hash": "AD5E2984",
+      "official_id": "WEP_PL1500_05",
+      "base_hash": "AD5E2984",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1500_06_03",
+      "runtime_hash": "CD8CA605",
+      "official_id": "WEP_PL1500_06",
+      "base_hash": "AB6678D2",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1600_01",
+      "runtime_hash": "CB5A08CD",
+      "official_id": "WEP_PL1600_01",
+      "base_hash": "CB5A08CD",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1600_02",
+      "runtime_hash": "0A9B7790",
+      "official_id": "WEP_PL1600_02",
+      "base_hash": "0A9B7790",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1600_03_03",
+      "runtime_hash": "292C88E4",
+      "official_id": "WEP_PL1600_03",
+      "base_hash": "02352554",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1600_04",
+      "runtime_hash": "DA6EF17E",
+      "official_id": "WEP_PL1600_04",
+      "base_hash": "DA6EF17E",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1600_05",
+      "runtime_hash": "ABE40E34",
+      "official_id": "WEP_PL1600_05",
+      "base_hash": "ABE40E34",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1600_06_03",
+      "runtime_hash": "80AD3AEB",
+      "official_id": "WEP_PL1600_06",
+      "base_hash": "304E4448",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1700_01",
+      "runtime_hash": "B03EA930",
+      "official_id": "WEP_PL1700_01",
+      "base_hash": "B03EA930",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1700_02",
+      "runtime_hash": "D055A41E",
+      "official_id": "WEP_PL1700_02",
+      "base_hash": "D055A41E",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1700_03_03",
+      "runtime_hash": "DD177582",
+      "official_id": "WEP_PL1700_03",
+      "base_hash": "BDDCD5E3",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1700_04",
+      "runtime_hash": "DFE5C297",
+      "official_id": "WEP_PL1700_04",
+      "base_hash": "DFE5C297",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1700_05",
+      "runtime_hash": "17DAC878",
+      "official_id": "WEP_PL1700_05",
+      "base_hash": "17DAC878",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1700_06_03",
+      "runtime_hash": "419B3CC0",
+      "official_id": "WEP_PL1700_06",
+      "base_hash": "411C89ED",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1800_01",
+      "runtime_hash": "56B2BA37",
+      "official_id": "WEP_PL1800_01",
+      "base_hash": "56B2BA37",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1800_02",
+      "runtime_hash": "F0951249",
+      "official_id": "WEP_PL1800_02",
+      "base_hash": "F0951249",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1800_03_03",
+      "runtime_hash": "6C6D9083",
+      "official_id": "WEP_PL1800_03",
+      "base_hash": "06F51A26",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1800_04",
+      "runtime_hash": "C4112EE6",
+      "official_id": "WEP_PL1800_04",
+      "base_hash": "C4112EE6",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1800_05",
+      "runtime_hash": "480FA83F",
+      "official_id": "WEP_PL1800_05",
+      "base_hash": "480FA83F",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1800_06_03",
+      "runtime_hash": "6A9D3DD0",
+      "official_id": "WEP_PL1800_06",
+      "base_hash": "7BFF8253",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1900_01",
+      "runtime_hash": "7463358A",
+      "official_id": "WEP_PL1900_01",
+      "base_hash": "7463358A",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1900_02",
+      "runtime_hash": "0940D965",
+      "official_id": "WEP_PL1900_02",
+      "base_hash": "0940D965",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1900_03_03",
+      "runtime_hash": "7A0A0E34",
+      "official_id": "WEP_PL1900_03",
+      "base_hash": "95ACAD77",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1900_04",
+      "runtime_hash": "495424B5",
+      "official_id": "WEP_PL1900_04",
+      "base_hash": "495424B5",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1900_05",
+      "runtime_hash": "82A244A3",
+      "official_id": "WEP_PL1900_05",
+      "base_hash": "82A244A3",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL1900_06_03",
+      "runtime_hash": "4D9B69A5",
+      "official_id": "WEP_PL1900_06",
+      "base_hash": "1DE38944",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL2100_01",
+      "runtime_hash": "F7D69475",
+      "official_id": "WEP_PL2100_01",
+      "base_hash": "F7D69475",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL2100_04",
+      "runtime_hash": "A626F67E",
+      "official_id": "WEP_PL2100_04",
+      "base_hash": "A626F67E",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL2100_07_03",
+      "runtime_hash": "1E8011EB",
+      "official_id": "WEP_PL2100_07",
+      "base_hash": "AD915067",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL2200_01",
+      "runtime_hash": "DB8ED674",
+      "official_id": "WEP_PL2200_01",
+      "base_hash": "DB8ED674",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL2200_04",
+      "runtime_hash": "70FD3C94",
+      "official_id": "WEP_PL2200_04",
+      "base_hash": "70FD3C94",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL2200_07_03",
+      "runtime_hash": "02E70DE2",
+      "official_id": "WEP_PL2200_07",
+      "base_hash": "FA5F32D5",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL2300_01",
+      "runtime_hash": "6C8F9232",
+      "official_id": "WEP_PL2300_01",
+      "base_hash": "6C8F9232",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL2300_04",
+      "runtime_hash": "91DDC1F1",
+      "official_id": "WEP_PL2300_04",
+      "base_hash": "91DDC1F1",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL2300_07_03",
+      "runtime_hash": "7DD506A3",
+      "official_id": "WEP_PL2300_07",
+      "base_hash": "4CBA06D8",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL2400_01",
+      "runtime_hash": "121CD3FD",
+      "official_id": "WEP_PL2400_01",
+      "base_hash": "121CD3FD",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL2400_03_03",
+      "runtime_hash": "7F10010D",
+      "official_id": "WEP_PL2400_03",
+      "base_hash": "3C667A36",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL2400_04",
+      "runtime_hash": "60720167",
+      "official_id": "WEP_PL2400_04",
+      "base_hash": "60720167",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL2500_01",
+      "runtime_hash": "F76C20A2",
+      "official_id": "WEP_PL2500_01",
+      "base_hash": "F76C20A2",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL2500_04",
+      "runtime_hash": "EB3724B6",
+      "official_id": "WEP_PL2500_04",
+      "base_hash": "EB3724B6",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL2600_01",
+      "runtime_hash": "5F516E5F",
+      "official_id": "WEP_PL2600_01",
+      "base_hash": "5F516E5F",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL2600_02",
+      "runtime_hash": "785A520A",
+      "official_id": "WEP_PL2600_02",
+      "base_hash": "785A520A",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL2600_04",
+      "runtime_hash": "A1C42ADC",
+      "official_id": "WEP_PL2600_04",
+      "base_hash": "A1C42ADC",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL2700_01",
+      "runtime_hash": "DAA4D559",
+      "official_id": "WEP_PL2700_01",
+      "base_hash": "DAA4D559",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL2700_02",
+      "runtime_hash": "09CC74CF",
+      "official_id": "WEP_PL2700_02",
+      "base_hash": "09CC74CF",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL2700_04",
+      "runtime_hash": "8F6FA5D0",
+      "official_id": "WEP_PL2700_04",
+      "base_hash": "8F6FA5D0",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL2800_01",
+      "runtime_hash": "75EC54D0",
+      "official_id": "WEP_PL2800_01",
+      "base_hash": "75EC54D0",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL2800_04",
+      "runtime_hash": "B927FCA5",
+      "official_id": "WEP_PL2800_04",
+      "base_hash": "B927FCA5",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL2800_A0",
+      "runtime_hash": "CD19623A",
+      "official_id": "WEP_PL2800_01",
+      "base_hash": "75EC54D0",
+      "alternate_runtime_only": true
+    },
+    {
+      "database_key": "WEP_PL2900_01",
+      "runtime_hash": "9240D597",
+      "official_id": "WEP_PL2900_01",
+      "base_hash": "9240D597",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL2900_04",
+      "runtime_hash": "F7128B85",
+      "official_id": "WEP_PL2900_04",
+      "base_hash": "F7128B85",
+      "alternate_runtime_only": false
+    },
+    {
+      "database_key": "WEP_PL2900_A0",
+      "runtime_hash": "E45ED17F",
+      "official_id": "WEP_PL2900_01",
+      "base_hash": "9240D597",
+      "alternate_runtime_only": true
+    }
+  ]
+}
