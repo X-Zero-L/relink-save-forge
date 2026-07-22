@@ -22,6 +22,11 @@ concurrency:
 permissions:
   contents: read
 
+env:
+  PYTHONUTF8: "1"
+  PYTHONIOENCODING: utf-8
+  PYTHONDONTWRITEBYTECODE: "1"
+
 jobs:
   build:
     name: Validate, test, and package

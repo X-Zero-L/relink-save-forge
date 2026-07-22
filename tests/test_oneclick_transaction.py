@@ -298,7 +298,7 @@ class OneClickTransactionTests(unittest.TestCase):
             save_path=self.save_path,
             game_guard=lambda: None,
         )
-        self.assertIn(interrupted, recovered)
+        self.assertIn(interrupted.resolve(), [path.resolve() for path in recovered])
         self.assertEqual(self.save_path.read_bytes(), SOURCE_BYTES)
         state = json.loads((interrupted / "session.json").read_text(encoding="utf-8"))
         self.assertEqual(state["status"], "recovered_after_interruption")
@@ -333,7 +333,7 @@ class OneClickTransactionTests(unittest.TestCase):
             save_path=self.save_path,
             game_guard=lambda: None,
         )
-        self.assertIn(session_dir, recovered)
+        self.assertIn(session_dir.resolve(), [path.resolve() for path in recovered])
         self.assertEqual(self.save_path.read_bytes(), SOURCE_BYTES)
         state = json.loads(session_path.read_text(encoding="utf-8"))
         self.assertEqual(state["recovery_action"], "source_already_present")
@@ -437,7 +437,10 @@ class OneClickTransactionTests(unittest.TestCase):
         transaction = self.make_transaction(apply=False)
         completed = transaction.execute()
 
-        self.assertIn(interrupted, transaction.recovered_runs)
+        self.assertIn(
+            interrupted.resolve(),
+            [path.resolve() for path in transaction.recovered_runs],
+        )
         self.assertEqual(completed.status, "verified_offline")
         self.assertEqual(self.save_path.read_bytes(), SOURCE_BYTES)
         state = json.loads(session_path.read_text(encoding="utf-8"))
@@ -524,7 +527,7 @@ class OneClickTransactionTests(unittest.TestCase):
             target_path = Path(target)
             if (
                 not failed
-                and target_path == live_system
+                and target_path.resolve() == live_system.resolve()
                 and ".relink-restore-" in str(source_path)
                 and "staged" in source_path.parts
             ):
@@ -591,7 +594,7 @@ class OneClickTransactionTests(unittest.TestCase):
             save_dir=self.save_dir,
             validator=SaveValidator(self.editor),
         )
-        self.assertEqual(selected, result.backup_dir)
+        self.assertEqual(selected.resolve(), result.backup_dir.resolve())
 
     def test_active_process_lock_rejects_second_transaction(self) -> None:
         first = self.make_transaction(apply=False)
