@@ -90,7 +90,7 @@
   "runtime_presets_2_0_2": {
     "latest_endgame_gold": {
       "file": "presets/sigils/latest-endgame-gold-2.0.2.json",
-      "file_sha256": "8F8AB2CBCA8E60F0CF8FAB58F60D265826C68353A660B6ECE4509D36E3602E81",
+      "file_sha256": "C5F3502E5C3A98F47905B999CE6ECD11767B62EDB401204256576B5D041C0444",
       "build_sha256": "A2F975F504A6D3E38A1AFA6269E7F883E5578C7F807BF776D3FB70B7D95E02D6",
       "characters": 29,
       "sigils": 348,
@@ -117,7 +117,7 @@
     },
     "ordinary_stackables": {
       "file": "catalogs/stackable-items-2.0.2.json",
-      "file_sha256": "1B01AE7706C89619211DE7ADA764DA37DF2AB42861773DB0788B1F64A31C68B3",
+      "file_sha256": "DBA5CFB2AFEA0A6CAAE8DC7B713FEE49646C1FB12E9C322F3E63AC4AF49D8C87",
       "items": 329,
       "unlock_tickets": 8,
       "default_quantity": 900
