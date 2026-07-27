@@ -83,7 +83,7 @@ FATE_ITEM_FIELDS = {
 FATE_KEY_PATTERN = re.compile(r"^(FATE|REMI)_(PL\d{4})_(\d{2})$")
 HEX_UINT_PATTERN = re.compile(r"^[0-9A-F]{8}$")
 VERIFIED_LATEST_BUILD_SHA256 = (
-    "A2F975F504A6D3E38A1AFA6269E7F883E5578C7F807BF776D3FB70B7D95E02D6"
+    "E4EA6510730639CFF8870B98107009A87A9C4C7AC15F6D79BDD5C10A18D7B118"
 )
 VERIFIED_WEAPON_PRESET_SHA256 = (
     "BD522C3F97FECF31275AFA65C31B9FA6ED46104B706C91D816ED2AEDCBE48840"
@@ -437,6 +437,11 @@ def validate_latest_sigil_preset(
         preset.get("flight_over_fight_per_character") == 1,
         "Latest sigil Flight over Fight count differs",
     )
+    require(preset.get("stun_power_per_character") == 1, "Latest sigil Stun Power count differs")
+    require(
+        preset.get("linked_together_per_character") == 1,
+        "Latest sigil Linked Together count differs",
+    )
     order = preset.get("character_order")
     rows = preset.get("characters")
     require(isinstance(order, list) and len(order) == 29, "Latest sigil order must contain 29 IDs")
@@ -502,6 +507,14 @@ def validate_latest_sigil_preset(
             f"{character_id} must contain one Flight over Fight",
         )
         require(
+            traits.count(gbfr_hash_hex("SKILL_004_00")) == 1,
+            f"{character_id} must contain one Stun Power",
+        )
+        require(
+            traits.count(gbfr_hash_hex("SKILL_009_00")) == 1,
+            f"{character_id} must contain one Linked Together",
+        )
+        require(
             required_primary_ids <= primary_ids,
             f"{character_id} lacks Alpha/Beta/Gamma/Flight over Fight",
         )
@@ -515,7 +528,7 @@ def validate_latest_sigil_preset(
             gbfr_hash_hex("SKILL_003_00"),
             gbfr_hash_hex("SKILL_085_00"),
             gbfr_hash_hex("SKILL_166_00"),
-            gbfr_hash_hex("SKILL_106_00"),
+            gbfr_hash_hex("SKILL_009_00"),
             gbfr_hash_hex("SKILL_146_00"),
             gbfr_hash_hex("SKILL_063_00"),
             gbfr_hash_hex("SKILL_160_00"),
@@ -525,7 +538,7 @@ def validate_latest_sigil_preset(
             gbfr_hash_hex("SKILL_162_00"),
             gbfr_hash_hex("SKILL_027_00"),
             gbfr_hash_hex("SKILL_159_00"),
-            gbfr_hash_hex("SKILL_006_00"),
+            gbfr_hash_hex("SKILL_004_00"),
             gbfr_hash_hex("SKILL_045_00"),
             gbfr_hash_hex("SKILL_068_00"),
         }

@@ -67,7 +67,7 @@
         "--audit",
         "{audit}",
         "--expected-build-sha256",
-        "A2F975F504A6D3E38A1AFA6269E7F883E5578C7F807BF776D3FB70B7D95E02D6",
+        "E4EA6510730639CFF8870B98107009A87A9C4C7AC15F6D79BDD5C10A18D7B118",
         "--editor-root",
         "{editor_root}"
       ]

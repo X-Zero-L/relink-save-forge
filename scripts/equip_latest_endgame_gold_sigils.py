@@ -1,8 +1,9 @@
 """Equip all characters with the Relink 2.0.2 integrated 99/99 gold build.
 
 The twelve-sigil portion keeps the six Celestial traits, War Elemental, Alpha,
-Beta, Gamma, Critical Hit Rate, Aegis, Greater Aegis, the character's Awakening
-and Warpath traits, and exactly one Flight over Fight (Chinese: 摇曳步). Quick
+Beta, Gamma, Critical Hit Rate, Aegis, Greater Aegis, Stun Power, Linked
+Together, the character's Awakening and Warpath traits, and exactly one Flight
+over Fight (Chinese: 摇曳步). Quick
 Cooldown, Cascade, Stout Heart, Potion Hoarder, Spartan Echo, and Berserker Echo
 are intentionally placed on the equipped weapon/summon surfaces by the
 companion verified transforms. Every one of the 24 internal sigil traits
@@ -59,14 +60,16 @@ UNIVERSAL_CORE = (
     ("GEEN_322_24", "SKILL_323_00", "Celestial Terra / Celestial Incendo"),
     ("GEEN_324_24", "SKILL_325_00", "Celestial Aqua / Fatebreaker"),
     ("GEEN_003_24", "SKILL_085_00", "Critical Hit Rate / Aegis"),
-    ("GEEN_166_24", "SKILL_106_00", "Greater Aegis / Nimble Onslaught"),
+    ("GEEN_166_24", "SKILL_009_00", "Greater Aegis / Linked Together"),
     ("GEEN_146_24", "SKILL_063_00", "War Elemental / Improved Dodge"),
     ("GEEN_160_04", "SKILL_020_00", "Alpha / Damage Cap"),
     ("GEEN_161_04", "SKILL_151_00", "Beta / Supplementary Damage"),
     ("GEEN_162_04", "SKILL_027_00", "Gamma / Tyranny"),
-    ("GEEN_159_24", "SKILL_006_00", "Flight over Fight / Stamina"),
+    ("GEEN_159_24", "SKILL_004_00", "Flight over Fight / Stun Power"),
 )
 FLIGHT_OVER_FIGHT_HASH = reference_hash("SKILL_159_00")
+STUN_POWER_HASH = reference_hash("SKILL_004_00")
+LINKED_TOGETHER_HASH = reference_hash("SKILL_009_00")
 AWAKENING_SECONDARY = "SKILL_045_00"
 WARPATH_SECONDARY = "SKILL_068_00"
 
@@ -163,6 +166,14 @@ def build_character_specs(
             raise RuntimeError(
                 f"{character_id} latest build must contain one Flight over Fight"
             )
+        for required_hash, required_name in (
+            (STUN_POWER_HASH, "Stun Power"),
+            (LINKED_TOGETHER_HASH, "Linked Together"),
+        ):
+            if trait_hashes.count(required_hash) != 1:
+                raise RuntimeError(
+                    f"{character_id} latest build must contain one {required_name}"
+                )
         for entry in entries:
             if entry["can_only_hold_one"]:
                 one_only[entry["outer_id"]].append(character_id)
@@ -412,6 +423,14 @@ def verify_builds(
             raise RuntimeError(
                 f"{character_id} does not have exactly one Flight over Fight"
             )
+        for required_hash, required_name in (
+            (STUN_POWER_HASH, "Stun Power"),
+            (LINKED_TOGETHER_HASH, "Linked Together"),
+        ):
+            if trait_hashes.count(required_hash) != 1:
+                raise RuntimeError(
+                    f"{character_id} does not have exactly one {required_name}"
+                )
 
 
 def main() -> int:
@@ -622,6 +641,8 @@ def main() -> int:
             ],
             "traits_per_character": 24,
             "flight_over_fight_per_character": 1,
+            "stun_power_per_character": 1,
+            "linked_together_per_character": 1,
         },
         "counts": {
             "characters": EXPECTED_CHARACTER_COUNT,
@@ -639,6 +660,8 @@ def main() -> int:
             "all_24_traits_unique_per_character": True,
             "all_trait_levels": TRAIT_LEVEL,
             "one_flight_over_fight_per_character": True,
+            "one_stun_power_per_character": True,
+            "one_linked_together_per_character": True,
             "existing_instance_ids_preserved": True,
             "existing_owner_links_preserved": True,
             "existing_1403_loadouts_preserved": True,
@@ -653,6 +676,8 @@ def main() -> int:
             "all_696_trait_lanes_are_level_99": True,
             "all_29_characters_have_24_unique_traits": True,
             "all_29_characters_have_one_flight_over_fight": True,
+            "all_29_characters_have_one_stun_power": True,
+            "all_29_characters_have_one_linked_together": True,
             "can_only_hold_one_shells_unique": True,
             "all_relationships_unchanged": True,
             "main_story_unchanged": True,

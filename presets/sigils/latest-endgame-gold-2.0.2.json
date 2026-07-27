@@ -4,13 +4,15 @@
   "name": "Latest Endgame Gold 99",
   "name_zh": "2.0.2 最新终盘老金（全角色）",
   "game_data_version": "Relink 2.0.2",
-  "description": "All 29 characters receive 12 equipped sigils and 24 unique level-99 traits, including Alpha, Beta, Gamma, Flight over Fight, Critical Hit Rate, Aegis, Greater Aegis, and Nimble Onslaught. Quick Cooldown, Cascade, Stout Heart, Potion Hoarder, Spartan Echo, and Berserker Echo are supplied by the companion weapon and summon presets.",
+  "description": "All 29 characters receive 12 equipped sigils and 24 unique level-99 traits, including Alpha, Beta, Gamma, Flight over Fight, Stun Power, Linked Together, Critical Hit Rate, Aegis, and Greater Aegis. Quick Cooldown, Cascade, Stout Heart, Potion Hoarder, Spartan Echo, and Berserker Echo are supplied by the companion weapon and summon presets.",
   "outer_level": 15,
   "trait_level": 99,
   "flags": 3,
   "traits_per_character": 24,
   "flight_over_fight_per_character": 1,
-  "build_sha256": "A2F975F504A6D3E38A1AFA6269E7F883E5578C7F807BF776D3FB70B7D95E02D6",
+  "stun_power_per_character": 1,
+  "linked_together_per_character": 1,
+  "build_sha256": "E4EA6510730639CFF8870B98107009A87A9C4C7AC15F6D79BDD5C10A18D7B118",
   "source": {
     "database_file": "gbfr-live.db",
     "database_sha256": "7A721A9B1822C2C7660C71F653B2FA1B3BE2DAFC4049B6FD4178BA78E5E96789",
@@ -101,13 +103,13 @@
         },
         {
           "slot": 5,
-          "label": "Greater Aegis / Nimble Onslaught",
+          "label": "Greater Aegis / Linked Together",
           "outer_id": "GEEN_166_24",
           "outer_hash": "6F1D0870",
           "primary_id": "SKILL_166_00",
           "primary_hash": "48A95B8D",
-          "secondary_id": "SKILL_106_00",
-          "secondary_hash": "D2C8E10A",
+          "secondary_id": "SKILL_009_00",
+          "secondary_hash": "3FEC5F80",
           "can_only_hold_one": false
         },
         {
@@ -156,13 +158,13 @@
         },
         {
           "slot": 10,
-          "label": "Flight over Fight / Stamina",
+          "label": "Flight over Fight / Stun Power",
           "outer_id": "GEEN_159_24",
           "outer_hash": "0A4651BB",
           "primary_id": "SKILL_159_00",
           "primary_hash": "EC1C6779",
-          "secondary_id": "SKILL_006_00",
-          "secondary_hash": "2FC8FBFF",
+          "secondary_id": "SKILL_004_00",
+          "secondary_hash": "CEB700EE",
           "can_only_hold_one": false
         },
         {
@@ -241,13 +243,13 @@
         },
         {
           "slot": 5,
-          "label": "Greater Aegis / Nimble Onslaught",
+          "label": "Greater Aegis / Linked Together",
           "outer_id": "GEEN_166_24",
           "outer_hash": "6F1D0870",
           "primary_id": "SKILL_166_00",
           "primary_hash": "48A95B8D",
-          "secondary_id": "SKILL_106_00",
-          "secondary_hash": "D2C8E10A",
+          "secondary_id": "SKILL_009_00",
+          "secondary_hash": "3FEC5F80",
           "can_only_hold_one": false
         },
         {
@@ -296,13 +298,13 @@
         },
         {
           "slot": 10,
-          "label": "Flight over Fight / Stamina",
+          "label": "Flight over Fight / Stun Power",
           "outer_id": "GEEN_159_24",
           "outer_hash": "0A4651BB",
           "primary_id": "SKILL_159_00",
           "primary_hash": "EC1C6779",
-          "secondary_id": "SKILL_006_00",
-          "secondary_hash": "2FC8FBFF",
+          "secondary_id": "SKILL_004_00",
+          "secondary_hash": "CEB700EE",
           "can_only_hold_one": false
         },
         {
@@ -381,13 +383,13 @@
         },
         {
           "slot": 5,
-          "label": "Greater Aegis / Nimble Onslaught",
+          "label": "Greater Aegis / Linked Together",
           "outer_id": "GEEN_166_24",
           "outer_hash": "6F1D0870",
           "primary_id": "SKILL_166_00",
           "primary_hash": "48A95B8D",
-          "secondary_id": "SKILL_106_00",
-          "secondary_hash": "D2C8E10A",
+          "secondary_id": "SKILL_009_00",
+          "secondary_hash": "3FEC5F80",
           "can_only_hold_one": false
         },
         {
@@ -436,13 +438,13 @@
         },
         {
           "slot": 10,
-          "label": "Flight over Fight / Stamina",
+          "label": "Flight over Fight / Stun Power",
           "outer_id": "GEEN_159_24",
           "outer_hash": "0A4651BB",
           "primary_id": "SKILL_159_00",
           "primary_hash": "EC1C6779",
-          "secondary_id": "SKILL_006_00",
-          "secondary_hash": "2FC8FBFF",
+          "secondary_id": "SKILL_004_00",
+          "secondary_hash": "CEB700EE",
           "can_only_hold_one": false
         },
         {
@@ -521,13 +523,13 @@
         },
         {
           "slot": 5,
-          "label": "Greater Aegis / Nimble Onslaught",
+          "label": "Greater Aegis / Linked Together",
           "outer_id": "GEEN_166_24",
           "outer_hash": "6F1D0870",
           "primary_id": "SKILL_166_00",
           "primary_hash": "48A95B8D",
-          "secondary_id": "SKILL_106_00",
-          "secondary_hash": "D2C8E10A",
+          "secondary_id": "SKILL_009_00",
+          "secondary_hash": "3FEC5F80",
           "can_only_hold_one": false
         },
         {
@@ -576,13 +578,13 @@
         },
         {
           "slot": 10,
-          "label": "Flight over Fight / Stamina",
+          "label": "Flight over Fight / Stun Power",
           "outer_id": "GEEN_159_24",
           "outer_hash": "0A4651BB",
           "primary_id": "SKILL_159_00",
           "primary_hash": "EC1C6779",
-          "secondary_id": "SKILL_006_00",
-          "secondary_hash": "2FC8FBFF",
+          "secondary_id": "SKILL_004_00",
+          "secondary_hash": "CEB700EE",
           "can_only_hold_one": false
         },
         {
@@ -661,13 +663,13 @@
         },
         {
           "slot": 5,
-          "label": "Greater Aegis / Nimble Onslaught",
+          "label": "Greater Aegis / Linked Together",
           "outer_id": "GEEN_166_24",
           "outer_hash": "6F1D0870",
           "primary_id": "SKILL_166_00",
           "primary_hash": "48A95B8D",
-          "secondary_id": "SKILL_106_00",
-          "secondary_hash": "D2C8E10A",
+          "secondary_id": "SKILL_009_00",
+          "secondary_hash": "3FEC5F80",
           "can_only_hold_one": false
         },
         {
@@ -716,13 +718,13 @@
         },
         {
           "slot": 10,
-          "label": "Flight over Fight / Stamina",
+          "label": "Flight over Fight / Stun Power",
           "outer_id": "GEEN_159_24",
           "outer_hash": "0A4651BB",
           "primary_id": "SKILL_159_00",
           "primary_hash": "EC1C6779",
-          "secondary_id": "SKILL_006_00",
-          "secondary_hash": "2FC8FBFF",
+          "secondary_id": "SKILL_004_00",
+          "secondary_hash": "CEB700EE",
           "can_only_hold_one": false
         },
         {
@@ -801,13 +803,13 @@
         },
         {
           "slot": 5,
-          "label": "Greater Aegis / Nimble Onslaught",
+          "label": "Greater Aegis / Linked Together",
           "outer_id": "GEEN_166_24",
           "outer_hash": "6F1D0870",
           "primary_id": "SKILL_166_00",
           "primary_hash": "48A95B8D",
-          "secondary_id": "SKILL_106_00",
-          "secondary_hash": "D2C8E10A",
+          "secondary_id": "SKILL_009_00",
+          "secondary_hash": "3FEC5F80",
           "can_only_hold_one": false
         },
         {
@@ -856,13 +858,13 @@
         },
         {
           "slot": 10,
-          "label": "Flight over Fight / Stamina",
+          "label": "Flight over Fight / Stun Power",
           "outer_id": "GEEN_159_24",
           "outer_hash": "0A4651BB",
           "primary_id": "SKILL_159_00",
           "primary_hash": "EC1C6779",
-          "secondary_id": "SKILL_006_00",
-          "secondary_hash": "2FC8FBFF",
+          "secondary_id": "SKILL_004_00",
+          "secondary_hash": "CEB700EE",
           "can_only_hold_one": false
         },
         {
@@ -941,13 +943,13 @@
         },
         {
           "slot": 5,
-          "label": "Greater Aegis / Nimble Onslaught",
+          "label": "Greater Aegis / Linked Together",
           "outer_id": "GEEN_166_24",
           "outer_hash": "6F1D0870",
           "primary_id": "SKILL_166_00",
           "primary_hash": "48A95B8D",
-          "secondary_id": "SKILL_106_00",
-          "secondary_hash": "D2C8E10A",
+          "secondary_id": "SKILL_009_00",
+          "secondary_hash": "3FEC5F80",
           "can_only_hold_one": false
         },
         {
@@ -996,13 +998,13 @@
         },
         {
           "slot": 10,
-          "label": "Flight over Fight / Stamina",
+          "label": "Flight over Fight / Stun Power",
           "outer_id": "GEEN_159_24",
           "outer_hash": "0A4651BB",
           "primary_id": "SKILL_159_00",
           "primary_hash": "EC1C6779",
-          "secondary_id": "SKILL_006_00",
-          "secondary_hash": "2FC8FBFF",
+          "secondary_id": "SKILL_004_00",
+          "secondary_hash": "CEB700EE",
           "can_only_hold_one": false
         },
         {
@@ -1081,13 +1083,13 @@
         },
         {
           "slot": 5,
-          "label": "Greater Aegis / Nimble Onslaught",
+          "label": "Greater Aegis / Linked Together",
           "outer_id": "GEEN_166_24",
           "outer_hash": "6F1D0870",
           "primary_id": "SKILL_166_00",
           "primary_hash": "48A95B8D",
-          "secondary_id": "SKILL_106_00",
-          "secondary_hash": "D2C8E10A",
+          "secondary_id": "SKILL_009_00",
+          "secondary_hash": "3FEC5F80",
           "can_only_hold_one": false
         },
         {
@@ -1136,13 +1138,13 @@
         },
         {
           "slot": 10,
-          "label": "Flight over Fight / Stamina",
+          "label": "Flight over Fight / Stun Power",
           "outer_id": "GEEN_159_24",
           "outer_hash": "0A4651BB",
           "primary_id": "SKILL_159_00",
           "primary_hash": "EC1C6779",
-          "secondary_id": "SKILL_006_00",
-          "secondary_hash": "2FC8FBFF",
+          "secondary_id": "SKILL_004_00",
+          "secondary_hash": "CEB700EE",
           "can_only_hold_one": false
         },
         {
@@ -1221,13 +1223,13 @@
         },
         {
           "slot": 5,
-          "label": "Greater Aegis / Nimble Onslaught",
+          "label": "Greater Aegis / Linked Together",
           "outer_id": "GEEN_166_24",
           "outer_hash": "6F1D0870",
           "primary_id": "SKILL_166_00",
           "primary_hash": "48A95B8D",
-          "secondary_id": "SKILL_106_00",
-          "secondary_hash": "D2C8E10A",
+          "secondary_id": "SKILL_009_00",
+          "secondary_hash": "3FEC5F80",
           "can_only_hold_one": false
         },
         {
@@ -1276,13 +1278,13 @@
         },
         {
           "slot": 10,
-          "label": "Flight over Fight / Stamina",
+          "label": "Flight over Fight / Stun Power",
           "outer_id": "GEEN_159_24",
           "outer_hash": "0A4651BB",
           "primary_id": "SKILL_159_00",
           "primary_hash": "EC1C6779",
-          "secondary_id": "SKILL_006_00",
-          "secondary_hash": "2FC8FBFF",
+          "secondary_id": "SKILL_004_00",
+          "secondary_hash": "CEB700EE",
           "can_only_hold_one": false
         },
         {
@@ -1361,13 +1363,13 @@
         },
         {
           "slot": 5,
-          "label": "Greater Aegis / Nimble Onslaught",
+          "label": "Greater Aegis / Linked Together",
           "outer_id": "GEEN_166_24",
           "outer_hash": "6F1D0870",
           "primary_id": "SKILL_166_00",
           "primary_hash": "48A95B8D",
-          "secondary_id": "SKILL_106_00",
-          "secondary_hash": "D2C8E10A",
+          "secondary_id": "SKILL_009_00",
+          "secondary_hash": "3FEC5F80",
           "can_only_hold_one": false
         },
         {
@@ -1416,13 +1418,13 @@
         },
         {
           "slot": 10,
-          "label": "Flight over Fight / Stamina",
+          "label": "Flight over Fight / Stun Power",
           "outer_id": "GEEN_159_24",
           "outer_hash": "0A4651BB",
           "primary_id": "SKILL_159_00",
           "primary_hash": "EC1C6779",
-          "secondary_id": "SKILL_006_00",
-          "secondary_hash": "2FC8FBFF",
+          "secondary_id": "SKILL_004_00",
+          "secondary_hash": "CEB700EE",
           "can_only_hold_one": false
         },
         {
@@ -1501,13 +1503,13 @@
         },
         {
           "slot": 5,
-          "label": "Greater Aegis / Nimble Onslaught",
+          "label": "Greater Aegis / Linked Together",
           "outer_id": "GEEN_166_24",
           "outer_hash": "6F1D0870",
           "primary_id": "SKILL_166_00",
           "primary_hash": "48A95B8D",
-          "secondary_id": "SKILL_106_00",
-          "secondary_hash": "D2C8E10A",
+          "secondary_id": "SKILL_009_00",
+          "secondary_hash": "3FEC5F80",
           "can_only_hold_one": false
         },
         {
@@ -1556,13 +1558,13 @@
         },
         {
           "slot": 10,
-          "label": "Flight over Fight / Stamina",
+          "label": "Flight over Fight / Stun Power",
           "outer_id": "GEEN_159_24",
           "outer_hash": "0A4651BB",
           "primary_id": "SKILL_159_00",
           "primary_hash": "EC1C6779",
-          "secondary_id": "SKILL_006_00",
-          "secondary_hash": "2FC8FBFF",
+          "secondary_id": "SKILL_004_00",
+          "secondary_hash": "CEB700EE",
           "can_only_hold_one": false
         },
         {
@@ -1641,13 +1643,13 @@
         },
         {
           "slot": 5,
-          "label": "Greater Aegis / Nimble Onslaught",
+          "label": "Greater Aegis / Linked Together",
           "outer_id": "GEEN_166_24",
           "outer_hash": "6F1D0870",
           "primary_id": "SKILL_166_00",
           "primary_hash": "48A95B8D",
-          "secondary_id": "SKILL_106_00",
-          "secondary_hash": "D2C8E10A",
+          "secondary_id": "SKILL_009_00",
+          "secondary_hash": "3FEC5F80",
           "can_only_hold_one": false
         },
         {
@@ -1696,13 +1698,13 @@
         },
         {
           "slot": 10,
-          "label": "Flight over Fight / Stamina",
+          "label": "Flight over Fight / Stun Power",
           "outer_id": "GEEN_159_24",
           "outer_hash": "0A4651BB",
           "primary_id": "SKILL_159_00",
           "primary_hash": "EC1C6779",
-          "secondary_id": "SKILL_006_00",
-          "secondary_hash": "2FC8FBFF",
+          "secondary_id": "SKILL_004_00",
+          "secondary_hash": "CEB700EE",
           "can_only_hold_one": false
         },
         {
@@ -1781,13 +1783,13 @@
         },
         {
           "slot": 5,
-          "label": "Greater Aegis / Nimble Onslaught",
+          "label": "Greater Aegis / Linked Together",
           "outer_id": "GEEN_166_24",
           "outer_hash": "6F1D0870",
           "primary_id": "SKILL_166_00",
           "primary_hash": "48A95B8D",
-          "secondary_id": "SKILL_106_00",
-          "secondary_hash": "D2C8E10A",
+          "secondary_id": "SKILL_009_00",
+          "secondary_hash": "3FEC5F80",
           "can_only_hold_one": false
         },
         {
@@ -1836,13 +1838,13 @@
         },
         {
           "slot": 10,
-          "label": "Flight over Fight / Stamina",
+          "label": "Flight over Fight / Stun Power",
           "outer_id": "GEEN_159_24",
           "outer_hash": "0A4651BB",
           "primary_id": "SKILL_159_00",
           "primary_hash": "EC1C6779",
-          "secondary_id": "SKILL_006_00",
-          "secondary_hash": "2FC8FBFF",
+          "secondary_id": "SKILL_004_00",
+          "secondary_hash": "CEB700EE",
           "can_only_hold_one": false
         },
         {
@@ -1921,13 +1923,13 @@
         },
         {
           "slot": 5,
-          "label": "Greater Aegis / Nimble Onslaught",
+          "label": "Greater Aegis / Linked Together",
           "outer_id": "GEEN_166_24",
           "outer_hash": "6F1D0870",
           "primary_id": "SKILL_166_00",
           "primary_hash": "48A95B8D",
-          "secondary_id": "SKILL_106_00",
-          "secondary_hash": "D2C8E10A",
+          "secondary_id": "SKILL_009_00",
+          "secondary_hash": "3FEC5F80",
           "can_only_hold_one": false
         },
         {
@@ -1976,13 +1978,13 @@
         },
         {
           "slot": 10,
-          "label": "Flight over Fight / Stamina",
+          "label": "Flight over Fight / Stun Power",
           "outer_id": "GEEN_159_24",
           "outer_hash": "0A4651BB",
           "primary_id": "SKILL_159_00",
           "primary_hash": "EC1C6779",
-          "secondary_id": "SKILL_006_00",
-          "secondary_hash": "2FC8FBFF",
+          "secondary_id": "SKILL_004_00",
+          "secondary_hash": "CEB700EE",
           "can_only_hold_one": false
         },
         {
@@ -2061,13 +2063,13 @@
         },
         {
           "slot": 5,
-          "label": "Greater Aegis / Nimble Onslaught",
+          "label": "Greater Aegis / Linked Together",
           "outer_id": "GEEN_166_24",
           "outer_hash": "6F1D0870",
           "primary_id": "SKILL_166_00",
           "primary_hash": "48A95B8D",
-          "secondary_id": "SKILL_106_00",
-          "secondary_hash": "D2C8E10A",
+          "secondary_id": "SKILL_009_00",
+          "secondary_hash": "3FEC5F80",
           "can_only_hold_one": false
         },
         {
@@ -2116,13 +2118,13 @@
         },
         {
           "slot": 10,
-          "label": "Flight over Fight / Stamina",
+          "label": "Flight over Fight / Stun Power",
           "outer_id": "GEEN_159_24",
           "outer_hash": "0A4651BB",
           "primary_id": "SKILL_159_00",
           "primary_hash": "EC1C6779",
-          "secondary_id": "SKILL_006_00",
-          "secondary_hash": "2FC8FBFF",
+          "secondary_id": "SKILL_004_00",
+          "secondary_hash": "CEB700EE",
           "can_only_hold_one": false
         },
         {
@@ -2201,13 +2203,13 @@
         },
         {
           "slot": 5,
-          "label": "Greater Aegis / Nimble Onslaught",
+          "label": "Greater Aegis / Linked Together",
           "outer_id": "GEEN_166_24",
           "outer_hash": "6F1D0870",
           "primary_id": "SKILL_166_00",
           "primary_hash": "48A95B8D",
-          "secondary_id": "SKILL_106_00",
-          "secondary_hash": "D2C8E10A",
+          "secondary_id": "SKILL_009_00",
+          "secondary_hash": "3FEC5F80",
           "can_only_hold_one": false
         },
         {
@@ -2256,13 +2258,13 @@
         },
         {
           "slot": 10,
-          "label": "Flight over Fight / Stamina",
+          "label": "Flight over Fight / Stun Power",
           "outer_id": "GEEN_159_24",
           "outer_hash": "0A4651BB",
           "primary_id": "SKILL_159_00",
           "primary_hash": "EC1C6779",
-          "secondary_id": "SKILL_006_00",
-          "secondary_hash": "2FC8FBFF",
+          "secondary_id": "SKILL_004_00",
+          "secondary_hash": "CEB700EE",
           "can_only_hold_one": false
         },
         {
@@ -2341,13 +2343,13 @@
         },
         {
           "slot": 5,
-          "label": "Greater Aegis / Nimble Onslaught",
+          "label": "Greater Aegis / Linked Together",
           "outer_id": "GEEN_166_24",
           "outer_hash": "6F1D0870",
           "primary_id": "SKILL_166_00",
           "primary_hash": "48A95B8D",
-          "secondary_id": "SKILL_106_00",
-          "secondary_hash": "D2C8E10A",
+          "secondary_id": "SKILL_009_00",
+          "secondary_hash": "3FEC5F80",
           "can_only_hold_one": false
         },
         {
@@ -2396,13 +2398,13 @@
         },
         {
           "slot": 10,
-          "label": "Flight over Fight / Stamina",
+          "label": "Flight over Fight / Stun Power",
           "outer_id": "GEEN_159_24",
           "outer_hash": "0A4651BB",
           "primary_id": "SKILL_159_00",
           "primary_hash": "EC1C6779",
-          "secondary_id": "SKILL_006_00",
-          "secondary_hash": "2FC8FBFF",
+          "secondary_id": "SKILL_004_00",
+          "secondary_hash": "CEB700EE",
           "can_only_hold_one": false
         },
         {
@@ -2481,13 +2483,13 @@
         },
         {
           "slot": 5,
-          "label": "Greater Aegis / Nimble Onslaught",
+          "label": "Greater Aegis / Linked Together",
           "outer_id": "GEEN_166_24",
           "outer_hash": "6F1D0870",
           "primary_id": "SKILL_166_00",
           "primary_hash": "48A95B8D",
-          "secondary_id": "SKILL_106_00",
-          "secondary_hash": "D2C8E10A",
+          "secondary_id": "SKILL_009_00",
+          "secondary_hash": "3FEC5F80",
           "can_only_hold_one": false
         },
         {
@@ -2536,13 +2538,13 @@
         },
         {
           "slot": 10,
-          "label": "Flight over Fight / Stamina",
+          "label": "Flight over Fight / Stun Power",
           "outer_id": "GEEN_159_24",
           "outer_hash": "0A4651BB",
           "primary_id": "SKILL_159_00",
           "primary_hash": "EC1C6779",
-          "secondary_id": "SKILL_006_00",
-          "secondary_hash": "2FC8FBFF",
+          "secondary_id": "SKILL_004_00",
+          "secondary_hash": "CEB700EE",
           "can_only_hold_one": false
         },
         {
@@ -2621,13 +2623,13 @@
         },
         {
           "slot": 5,
-          "label": "Greater Aegis / Nimble Onslaught",
+          "label": "Greater Aegis / Linked Together",
           "outer_id": "GEEN_166_24",
           "outer_hash": "6F1D0870",
           "primary_id": "SKILL_166_00",
           "primary_hash": "48A95B8D",
-          "secondary_id": "SKILL_106_00",
-          "secondary_hash": "D2C8E10A",
+          "secondary_id": "SKILL_009_00",
+          "secondary_hash": "3FEC5F80",
           "can_only_hold_one": false
         },
         {
@@ -2676,13 +2678,13 @@
         },
         {
           "slot": 10,
-          "label": "Flight over Fight / Stamina",
+          "label": "Flight over Fight / Stun Power",
           "outer_id": "GEEN_159_24",
           "outer_hash": "0A4651BB",
           "primary_id": "SKILL_159_00",
           "primary_hash": "EC1C6779",
-          "secondary_id": "SKILL_006_00",
-          "secondary_hash": "2FC8FBFF",
+          "secondary_id": "SKILL_004_00",
+          "secondary_hash": "CEB700EE",
           "can_only_hold_one": false
         },
         {
@@ -2761,13 +2763,13 @@
         },
         {
           "slot": 5,
-          "label": "Greater Aegis / Nimble Onslaught",
+          "label": "Greater Aegis / Linked Together",
           "outer_id": "GEEN_166_24",
           "outer_hash": "6F1D0870",
           "primary_id": "SKILL_166_00",
           "primary_hash": "48A95B8D",
-          "secondary_id": "SKILL_106_00",
-          "secondary_hash": "D2C8E10A",
+          "secondary_id": "SKILL_009_00",
+          "secondary_hash": "3FEC5F80",
           "can_only_hold_one": false
         },
         {
@@ -2816,13 +2818,13 @@
         },
         {
           "slot": 10,
-          "label": "Flight over Fight / Stamina",
+          "label": "Flight over Fight / Stun Power",
           "outer_id": "GEEN_159_24",
           "outer_hash": "0A4651BB",
           "primary_id": "SKILL_159_00",
           "primary_hash": "EC1C6779",
-          "secondary_id": "SKILL_006_00",
-          "secondary_hash": "2FC8FBFF",
+          "secondary_id": "SKILL_004_00",
+          "secondary_hash": "CEB700EE",
           "can_only_hold_one": false
         },
         {
@@ -2901,13 +2903,13 @@
         },
         {
           "slot": 5,
-          "label": "Greater Aegis / Nimble Onslaught",
+          "label": "Greater Aegis / Linked Together",
           "outer_id": "GEEN_166_24",
           "outer_hash": "6F1D0870",
           "primary_id": "SKILL_166_00",
           "primary_hash": "48A95B8D",
-          "secondary_id": "SKILL_106_00",
-          "secondary_hash": "D2C8E10A",
+          "secondary_id": "SKILL_009_00",
+          "secondary_hash": "3FEC5F80",
           "can_only_hold_one": false
         },
         {
@@ -2956,13 +2958,13 @@
         },
         {
           "slot": 10,
-          "label": "Flight over Fight / Stamina",
+          "label": "Flight over Fight / Stun Power",
           "outer_id": "GEEN_159_24",
           "outer_hash": "0A4651BB",
           "primary_id": "SKILL_159_00",
           "primary_hash": "EC1C6779",
-          "secondary_id": "SKILL_006_00",
-          "secondary_hash": "2FC8FBFF",
+          "secondary_id": "SKILL_004_00",
+          "secondary_hash": "CEB700EE",
           "can_only_hold_one": false
         },
         {
@@ -3041,13 +3043,13 @@
         },
         {
           "slot": 5,
-          "label": "Greater Aegis / Nimble Onslaught",
+          "label": "Greater Aegis / Linked Together",
           "outer_id": "GEEN_166_24",
           "outer_hash": "6F1D0870",
           "primary_id": "SKILL_166_00",
           "primary_hash": "48A95B8D",
-          "secondary_id": "SKILL_106_00",
-          "secondary_hash": "D2C8E10A",
+          "secondary_id": "SKILL_009_00",
+          "secondary_hash": "3FEC5F80",
           "can_only_hold_one": false
         },
         {
@@ -3096,13 +3098,13 @@
         },
         {
           "slot": 10,
-          "label": "Flight over Fight / Stamina",
+          "label": "Flight over Fight / Stun Power",
           "outer_id": "GEEN_159_24",
           "outer_hash": "0A4651BB",
           "primary_id": "SKILL_159_00",
           "primary_hash": "EC1C6779",
-          "secondary_id": "SKILL_006_00",
-          "secondary_hash": "2FC8FBFF",
+          "secondary_id": "SKILL_004_00",
+          "secondary_hash": "CEB700EE",
           "can_only_hold_one": false
         },
         {
@@ -3181,13 +3183,13 @@
         },
         {
           "slot": 5,
-          "label": "Greater Aegis / Nimble Onslaught",
+          "label": "Greater Aegis / Linked Together",
           "outer_id": "GEEN_166_24",
           "outer_hash": "6F1D0870",
           "primary_id": "SKILL_166_00",
           "primary_hash": "48A95B8D",
-          "secondary_id": "SKILL_106_00",
-          "secondary_hash": "D2C8E10A",
+          "secondary_id": "SKILL_009_00",
+          "secondary_hash": "3FEC5F80",
           "can_only_hold_one": false
         },
         {
@@ -3236,13 +3238,13 @@
         },
         {
           "slot": 10,
-          "label": "Flight over Fight / Stamina",
+          "label": "Flight over Fight / Stun Power",
           "outer_id": "GEEN_159_24",
           "outer_hash": "0A4651BB",
           "primary_id": "SKILL_159_00",
           "primary_hash": "EC1C6779",
-          "secondary_id": "SKILL_006_00",
-          "secondary_hash": "2FC8FBFF",
+          "secondary_id": "SKILL_004_00",
+          "secondary_hash": "CEB700EE",
           "can_only_hold_one": false
         },
         {
@@ -3321,13 +3323,13 @@
         },
         {
           "slot": 5,
-          "label": "Greater Aegis / Nimble Onslaught",
+          "label": "Greater Aegis / Linked Together",
           "outer_id": "GEEN_166_24",
           "outer_hash": "6F1D0870",
           "primary_id": "SKILL_166_00",
           "primary_hash": "48A95B8D",
-          "secondary_id": "SKILL_106_00",
-          "secondary_hash": "D2C8E10A",
+          "secondary_id": "SKILL_009_00",
+          "secondary_hash": "3FEC5F80",
           "can_only_hold_one": false
         },
         {
@@ -3376,13 +3378,13 @@
         },
         {
           "slot": 10,
-          "label": "Flight over Fight / Stamina",
+          "label": "Flight over Fight / Stun Power",
           "outer_id": "GEEN_159_24",
           "outer_hash": "0A4651BB",
           "primary_id": "SKILL_159_00",
           "primary_hash": "EC1C6779",
-          "secondary_id": "SKILL_006_00",
-          "secondary_hash": "2FC8FBFF",
+          "secondary_id": "SKILL_004_00",
+          "secondary_hash": "CEB700EE",
           "can_only_hold_one": false
         },
         {
@@ -3461,13 +3463,13 @@
         },
         {
           "slot": 5,
-          "label": "Greater Aegis / Nimble Onslaught",
+          "label": "Greater Aegis / Linked Together",
           "outer_id": "GEEN_166_24",
           "outer_hash": "6F1D0870",
           "primary_id": "SKILL_166_00",
           "primary_hash": "48A95B8D",
-          "secondary_id": "SKILL_106_00",
-          "secondary_hash": "D2C8E10A",
+          "secondary_id": "SKILL_009_00",
+          "secondary_hash": "3FEC5F80",
           "can_only_hold_one": false
         },
         {
@@ -3516,13 +3518,13 @@
         },
         {
           "slot": 10,
-          "label": "Flight over Fight / Stamina",
+          "label": "Flight over Fight / Stun Power",
           "outer_id": "GEEN_159_24",
           "outer_hash": "0A4651BB",
           "primary_id": "SKILL_159_00",
           "primary_hash": "EC1C6779",
-          "secondary_id": "SKILL_006_00",
-          "secondary_hash": "2FC8FBFF",
+          "secondary_id": "SKILL_004_00",
+          "secondary_hash": "CEB700EE",
           "can_only_hold_one": false
         },
         {
@@ -3601,13 +3603,13 @@
         },
         {
           "slot": 5,
-          "label": "Greater Aegis / Nimble Onslaught",
+          "label": "Greater Aegis / Linked Together",
           "outer_id": "GEEN_166_24",
           "outer_hash": "6F1D0870",
           "primary_id": "SKILL_166_00",
           "primary_hash": "48A95B8D",
-          "secondary_id": "SKILL_106_00",
-          "secondary_hash": "D2C8E10A",
+          "secondary_id": "SKILL_009_00",
+          "secondary_hash": "3FEC5F80",
           "can_only_hold_one": false
         },
         {
@@ -3656,13 +3658,13 @@
         },
         {
           "slot": 10,
-          "label": "Flight over Fight / Stamina",
+          "label": "Flight over Fight / Stun Power",
           "outer_id": "GEEN_159_24",
           "outer_hash": "0A4651BB",
           "primary_id": "SKILL_159_00",
           "primary_hash": "EC1C6779",
-          "secondary_id": "SKILL_006_00",
-          "secondary_hash": "2FC8FBFF",
+          "secondary_id": "SKILL_004_00",
+          "secondary_hash": "CEB700EE",
           "can_only_hold_one": false
         },
         {
@@ -3741,13 +3743,13 @@
         },
         {
           "slot": 5,
-          "label": "Greater Aegis / Nimble Onslaught",
+          "label": "Greater Aegis / Linked Together",
           "outer_id": "GEEN_166_24",
           "outer_hash": "6F1D0870",
           "primary_id": "SKILL_166_00",
           "primary_hash": "48A95B8D",
-          "secondary_id": "SKILL_106_00",
-          "secondary_hash": "D2C8E10A",
+          "secondary_id": "SKILL_009_00",
+          "secondary_hash": "3FEC5F80",
           "can_only_hold_one": false
         },
         {
@@ -3796,13 +3798,13 @@
         },
         {
           "slot": 10,
-          "label": "Flight over Fight / Stamina",
+          "label": "Flight over Fight / Stun Power",
           "outer_id": "GEEN_159_24",
           "outer_hash": "0A4651BB",
           "primary_id": "SKILL_159_00",
           "primary_hash": "EC1C6779",
-          "secondary_id": "SKILL_006_00",
-          "secondary_hash": "2FC8FBFF",
+          "secondary_id": "SKILL_004_00",
+          "secondary_hash": "CEB700EE",
           "can_only_hold_one": false
         },
         {
@@ -3881,13 +3883,13 @@
         },
         {
           "slot": 5,
-          "label": "Greater Aegis / Nimble Onslaught",
+          "label": "Greater Aegis / Linked Together",
           "outer_id": "GEEN_166_24",
           "outer_hash": "6F1D0870",
           "primary_id": "SKILL_166_00",
           "primary_hash": "48A95B8D",
-          "secondary_id": "SKILL_106_00",
-          "secondary_hash": "D2C8E10A",
+          "secondary_id": "SKILL_009_00",
+          "secondary_hash": "3FEC5F80",
           "can_only_hold_one": false
         },
         {
@@ -3936,13 +3938,13 @@
         },
         {
           "slot": 10,
-          "label": "Flight over Fight / Stamina",
+          "label": "Flight over Fight / Stun Power",
           "outer_id": "GEEN_159_24",
           "outer_hash": "0A4651BB",
           "primary_id": "SKILL_159_00",
           "primary_hash": "EC1C6779",
-          "secondary_id": "SKILL_006_00",
-          "secondary_hash": "2FC8FBFF",
+          "secondary_id": "SKILL_004_00",
+          "secondary_hash": "CEB700EE",
           "can_only_hold_one": false
         },
         {
@@ -4021,13 +4023,13 @@
         },
         {
           "slot": 5,
-          "label": "Greater Aegis / Nimble Onslaught",
+          "label": "Greater Aegis / Linked Together",
           "outer_id": "GEEN_166_24",
           "outer_hash": "6F1D0870",
           "primary_id": "SKILL_166_00",
           "primary_hash": "48A95B8D",
-          "secondary_id": "SKILL_106_00",
-          "secondary_hash": "D2C8E10A",
+          "secondary_id": "SKILL_009_00",
+          "secondary_hash": "3FEC5F80",
           "can_only_hold_one": false
         },
         {
@@ -4076,13 +4078,13 @@
         },
         {
           "slot": 10,
-          "label": "Flight over Fight / Stamina",
+          "label": "Flight over Fight / Stun Power",
           "outer_id": "GEEN_159_24",
           "outer_hash": "0A4651BB",
           "primary_id": "SKILL_159_00",
           "primary_hash": "EC1C6779",
-          "secondary_id": "SKILL_006_00",
-          "secondary_hash": "2FC8FBFF",
+          "secondary_id": "SKILL_004_00",
+          "secondary_hash": "CEB700EE",
           "can_only_hold_one": false
         },
         {

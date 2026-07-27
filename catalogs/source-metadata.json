@@ -90,13 +90,15 @@
   "runtime_presets_2_0_2": {
     "latest_endgame_gold": {
       "file": "presets/sigils/latest-endgame-gold-2.0.2.json",
-      "file_sha256": "C5F3502E5C3A98F47905B999CE6ECD11767B62EDB401204256576B5D041C0444",
-      "build_sha256": "A2F975F504A6D3E38A1AFA6269E7F883E5578C7F807BF776D3FB70B7D95E02D6",
+      "file_sha256": "3CBE934AC68BF9EAA491BA81B66E6F08068FE1E3A62B487FC4BFF6AB5669DA07",
+      "build_sha256": "E4EA6510730639CFF8870B98107009A87A9C4C7AC15F6D79BDD5C10A18D7B118",
       "characters": 29,
       "sigils": 348,
       "trait_lanes": 696,
       "trait_level": 99,
-      "flight_over_fight_skill_id": "SKILL_159_00"
+      "flight_over_fight_skill_id": "SKILL_159_00",
+      "stun_power_skill_id": "SKILL_004_00",
+      "linked_together_skill_id": "SKILL_009_00"
     },
     "equipped_weapon_qol_blessing": {
       "file": "presets/weapons/endgame-qol-blessing-2.0.2.json",
