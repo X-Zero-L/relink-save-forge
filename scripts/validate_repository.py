@@ -83,7 +83,10 @@ FATE_ITEM_FIELDS = {
 FATE_KEY_PATTERN = re.compile(r"^(FATE|REMI)_(PL\d{4})_(\d{2})$")
 HEX_UINT_PATTERN = re.compile(r"^[0-9A-F]{8}$")
 VERIFIED_LATEST_BUILD_SHA256 = (
-    "E4EA6510730639CFF8870B98107009A87A9C4C7AC15F6D79BDD5C10A18D7B118"
+    "CD07EA5ECC868137F1B97B2FF95A74974CFC861D769569FEE122BE45CBF866BB"
+)
+VERIFIED_GOLD_SUMMON_PRESET_SHA256 = (
+    "2A0F8BA0D4579FD46608E7CA7F0A1DDF8726E3253EBDFD05C7C377272CE27BEE"
 )
 VERIFIED_WEAPON_PRESET_SHA256 = (
     "BD522C3F97FECF31275AFA65C31B9FA6ED46104B706C91D816ED2AEDCBE48840"
@@ -442,6 +445,7 @@ def validate_latest_sigil_preset(
         preset.get("linked_together_per_character") == 1,
         "Latest sigil Linked Together count differs",
     )
+    require(preset.get("uplift_per_character") == 1, "Latest sigil Uplift count differs")
     order = preset.get("character_order")
     rows = preset.get("characters")
     require(isinstance(order, list) and len(order) == 29, "Latest sigil order must contain 29 IDs")
@@ -515,6 +519,10 @@ def validate_latest_sigil_preset(
             f"{character_id} must contain one Linked Together",
         )
         require(
+            traits.count(gbfr_hash_hex("SKILL_072_00")) == 1,
+            f"{character_id} must contain one Uplift",
+        )
+        require(
             required_primary_ids <= primary_ids,
             f"{character_id} lacks Alpha/Beta/Gamma/Flight over Fight",
         )
@@ -530,7 +538,7 @@ def validate_latest_sigil_preset(
             gbfr_hash_hex("SKILL_166_00"),
             gbfr_hash_hex("SKILL_009_00"),
             gbfr_hash_hex("SKILL_146_00"),
-            gbfr_hash_hex("SKILL_063_00"),
+            gbfr_hash_hex("SKILL_072_00"),
             gbfr_hash_hex("SKILL_160_00"),
             gbfr_hash_hex("SKILL_020_00"),
             gbfr_hash_hex("SKILL_161_00"),
@@ -613,7 +621,7 @@ def validate_endgame_surface_presets(
     require(isinstance(summon, dict), "Summon passive preset must be an object")
     require(summon.get("schema_version") == 1, "Summon passive schema must be 1")
     require(
-        summon.get("id") == "endgame-qol-passives-2.0.2",
+        summon.get("id") == "gold-endgame-qol-passives-2.0.2",
         "Summon passive preset ID differs",
     )
     summon_rows = summon.get("summons")
@@ -622,7 +630,7 @@ def validate_endgame_surface_presets(
         "Summon passive preset must contain four rows",
     )
     expected_summons = {
-        "Rolan": ("0F986ED9", "SKILL_072_00", "26428274", "8E4A0E03"),
+        "Rolan": ("0F986ED9", "SKILL_063_00", "26428274", "8E4A0E03"),
         "Lilith": ("DFAB70B7", "SKILL_073_00", "05205336", "8E4A0E03"),
         "Beelzebub": ("A7EFF558", "SKILL_234_00", "BD452CC9", "63E658AB"),
         "Lucilius": ("6E5968FC", "SKILL_233_00", "CC0B0EF1", "63E658AB"),
@@ -647,8 +655,8 @@ def validate_endgame_surface_presets(
         summon_hashes.append(gbfr_hash_hex(skill_id))
     require(seen == set(expected_summons), "Summon passive coverage differs")
     require(
-        sha256_file(ROOT / "presets" / "summons" / "endgame-qol-passives-2.0.2.json")
-        == VERIFIED_SUMMON_PRESET_SHA256,
+        sha256_file(ROOT / "presets" / "summons" / "gold-endgame-qol-passives-2.0.2.json")
+        == VERIFIED_GOLD_SUMMON_PRESET_SHA256,
         "Summon passive preset file SHA differs",
     )
     require(len(set(weapon_hashes + summon_hashes)) == 7, "Surface traits repeat")
@@ -969,6 +977,7 @@ def validate_pack_manifests() -> None:
             "complete-armory",
             "create-top-four-summons",
             "latest-endgame-gold",
+            "gold99-summon-passives",
             "gold99-weapon-blessing",
         ],
     }
@@ -1045,7 +1054,7 @@ def main() -> int:
         load("presets/weapons/endgame-survival-blessing-standard-2.0.2.json"),
     ]
     summon_passive_preset = load(
-        "presets/summons/endgame-qol-passives-2.0.2.json"
+        "presets/summons/gold-endgame-qol-passives-2.0.2.json"
     )
     top_summons = load("catalogs/top-summons-2.0.2.json")
     weapon_template = load("catalogs/weapon-instance-template-2.0.2.json")

@@ -24,12 +24,13 @@ EXPECTED_SUMMON_HASHES = {
     "Beelzebub": 0xA7EFF558,
     "Lucilius": 0x6E5968FC,
 }
-EXPECTED_TRAITS = {
+STANDARD_TRAITS = {
     "Rolan": "SKILL_072_00",
     "Lilith": "SKILL_073_00",
     "Beelzebub": "SKILL_234_00",
     "Lucilius": "SKILL_233_00",
 }
+GOLD_TRAITS = {**STANDARD_TRAITS, "Rolan": "SKILL_063_00"}
 TRAIT_LEVEL = 15
 
 
@@ -52,6 +53,12 @@ def load_preset(path: Path, expected_sha256: str | None) -> dict:
                 f"summon trait preset SHA-256 {actual} != {expected_sha256}"
             )
     payload = json.loads(path.read_text(encoding="utf-8"))
+    preset_id = str(payload.get("id") or "")
+    expected_traits = (
+        GOLD_TRAITS
+        if preset_id == "gold-endgame-qol-passives-2.0.2"
+        else STANDARD_TRAITS
+    )
     rows = payload.get("summons")
     if payload.get("schema_version") != 1 or not isinstance(rows, list):
         raise RuntimeError("summon trait preset schema is invalid")
@@ -66,8 +73,8 @@ def load_preset(path: Path, expected_sha256: str | None) -> dict:
         if summon_hash != EXPECTED_SUMMON_HASHES[name]:
             raise RuntimeError(f"{name} summon hash differs from the verified shell")
         trait_id = str(row.get("trait_id") or "")
-        if trait_id != EXPECTED_TRAITS[name]:
-            raise RuntimeError(f"{name} trait must be {EXPECTED_TRAITS[name]}")
+        if trait_id != expected_traits[name]:
+            raise RuntimeError(f"{name} trait must be {expected_traits[name]}")
         trait_hash = reference_hash(trait_id)
         if str(row.get("trait_hash") or "").upper() != f"{trait_hash:08X}":
             raise RuntimeError(f"{name} trait hash differs from its ID")

@@ -67,7 +67,7 @@
         "--audit",
         "{audit}",
         "--expected-build-sha256",
-        "E4EA6510730639CFF8870B98107009A87A9C4C7AC15F6D79BDD5C10A18D7B118",
+        "CD07EA5ECC868137F1B97B2FF95A74974CFC861D769569FEE122BE45CBF866BB",
         "--editor-root",
         "{editor_root}"
       ]
@@ -107,9 +107,9 @@
         "{input}",
         "{output}",
         "--preset",
-        "{root}/presets/summons/endgame-qol-passives-2.0.2.json",
+        "{root}/presets/summons/gold-endgame-qol-passives-2.0.2.json",
         "--expected-preset-sha256",
-        "41FDBB2CAF0263C0534EC5F13A66DBC4BDBE9DB74AAD84DF1AB7D425AF114C5F",
+        "2A0F8BA0D4579FD46608E7CA7F0A1DDF8726E3253EBDFD05C7C377272CE27BEE",
         "--audit",
         "{audit}",
         "--editor-root",

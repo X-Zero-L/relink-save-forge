@@ -18,6 +18,7 @@ SIGIL_FLAGS = 3
 FLIGHT_OVER_FIGHT_ID = "SKILL_159_00"
 STUN_POWER_ID = "SKILL_004_00"
 LINKED_TOGETHER_ID = "SKILL_009_00"
+UPLIFT_ID = "SKILL_072_00"
 
 UNIVERSAL_CORE = (
     ("GEEN_320_24", "SKILL_321_00", "Celestial Nyx / Celestial Lumen"),
@@ -25,7 +26,7 @@ UNIVERSAL_CORE = (
     ("GEEN_324_24", "SKILL_325_00", "Celestial Aqua / Fatebreaker"),
     ("GEEN_003_24", "SKILL_085_00", "Critical Hit Rate / Aegis"),
     ("GEEN_166_24", LINKED_TOGETHER_ID, "Greater Aegis / Linked Together"),
-    ("GEEN_146_24", "SKILL_063_00", "War Elemental / Improved Dodge"),
+    ("GEEN_146_24", UPLIFT_ID, "War Elemental / Uplift"),
     ("GEEN_160_04", "SKILL_020_00", "Alpha / Damage Cap"),
     ("GEEN_161_04", "SKILL_151_00", "Beta / Supplementary Damage"),
     ("GEEN_162_04", "SKILL_027_00", "Gamma / Tyranny"),
@@ -207,7 +208,7 @@ def build_character(character_id: str, name: str, by_key, by_name, by_player) ->
         raise RuntimeError(f"{character_id} does not resolve to 12/24 unique traits")
     if trait_hashes.count(reference_hash(FLIGHT_OVER_FIGHT_ID)) != 1:
         raise RuntimeError(f"{character_id} must contain one Flight over Fight")
-    for required_id in (STUN_POWER_ID, LINKED_TOGETHER_ID):
+    for required_id in (STUN_POWER_ID, LINKED_TOGETHER_ID, UPLIFT_ID):
         if trait_hashes.count(reference_hash(required_id)) != 1:
             raise RuntimeError(f"{character_id} must contain one {required_id}")
     return {
@@ -279,9 +280,9 @@ def main() -> int:
         "description": (
             "All 29 characters receive 12 equipped sigils and 24 unique "
             "level-99 traits, including Alpha, Beta, Gamma, Flight over Fight, "
-            "Stun Power, Linked Together, Critical Hit Rate, Aegis, and Greater Aegis. "
-            "Quick Cooldown, Cascade, Stout Heart, Potion Hoarder, Spartan Echo, "
-            "and Berserker Echo are supplied by the companion weapon and summon "
+            "Stun Power, Linked Together, Uplift, Critical Hit Rate, Aegis, and Greater Aegis. "
+            "Quick Cooldown, Cascade, Stout Heart, Improved Dodge, Potion Hoarder, "
+            "Spartan Echo, and Berserker Echo are supplied by the companion weapon and summon "
             "presets."
         ),
         "outer_level": OUTER_LEVEL,
@@ -291,6 +292,7 @@ def main() -> int:
         "flight_over_fight_per_character": 1,
         "stun_power_per_character": 1,
         "linked_together_per_character": 1,
+        "uplift_per_character": 1,
         "build_sha256": build_digest(characters),
         "source": {
             "database_file": database.name,

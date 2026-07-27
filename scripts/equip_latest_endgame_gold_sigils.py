@@ -50,7 +50,7 @@ SIGIL_FLAGS = 3
 
 # One-copy-at-99 sigil portion of the integrated build. The weapon blessing
 # carries Quick Cooldown, Cascade, and Stout Heart. The global summon set
-# carries Uplift, Potion Hoarder, Spartan Echo, and Berserker Echo. Alpha,
+# carries Improved Dodge, Potion Hoarder, Spartan Echo, and Berserker Echo. Alpha,
 # Beta, Gamma, Aegis, and Greater Aegis remain here at level 99. The manual
 # in-game sample proves
 # that Flight over Fight (摇曳步) is SKILL_159_00; SKILL_150_00 is the separate
@@ -61,7 +61,7 @@ UNIVERSAL_CORE = (
     ("GEEN_324_24", "SKILL_325_00", "Celestial Aqua / Fatebreaker"),
     ("GEEN_003_24", "SKILL_085_00", "Critical Hit Rate / Aegis"),
     ("GEEN_166_24", "SKILL_009_00", "Greater Aegis / Linked Together"),
-    ("GEEN_146_24", "SKILL_063_00", "War Elemental / Improved Dodge"),
+    ("GEEN_146_24", "SKILL_072_00", "War Elemental / Uplift"),
     ("GEEN_160_04", "SKILL_020_00", "Alpha / Damage Cap"),
     ("GEEN_161_04", "SKILL_151_00", "Beta / Supplementary Damage"),
     ("GEEN_162_04", "SKILL_027_00", "Gamma / Tyranny"),
@@ -70,6 +70,7 @@ UNIVERSAL_CORE = (
 FLIGHT_OVER_FIGHT_HASH = reference_hash("SKILL_159_00")
 STUN_POWER_HASH = reference_hash("SKILL_004_00")
 LINKED_TOGETHER_HASH = reference_hash("SKILL_009_00")
+UPLIFT_HASH = reference_hash("SKILL_072_00")
 AWAKENING_SECONDARY = "SKILL_045_00"
 WARPATH_SECONDARY = "SKILL_068_00"
 
@@ -169,6 +170,7 @@ def build_character_specs(
         for required_hash, required_name in (
             (STUN_POWER_HASH, "Stun Power"),
             (LINKED_TOGETHER_HASH, "Linked Together"),
+            (UPLIFT_HASH, "Uplift"),
         ):
             if trait_hashes.count(required_hash) != 1:
                 raise RuntimeError(
@@ -426,6 +428,7 @@ def verify_builds(
         for required_hash, required_name in (
             (STUN_POWER_HASH, "Stun Power"),
             (LINKED_TOGETHER_HASH, "Linked Together"),
+            (UPLIFT_HASH, "Uplift"),
         ):
             if trait_hashes.count(required_hash) != 1:
                 raise RuntimeError(
@@ -643,6 +646,7 @@ def main() -> int:
             "flight_over_fight_per_character": 1,
             "stun_power_per_character": 1,
             "linked_together_per_character": 1,
+            "uplift_per_character": 1,
         },
         "counts": {
             "characters": EXPECTED_CHARACTER_COUNT,
@@ -662,6 +666,7 @@ def main() -> int:
             "one_flight_over_fight_per_character": True,
             "one_stun_power_per_character": True,
             "one_linked_together_per_character": True,
+            "one_uplift_per_character": True,
             "existing_instance_ids_preserved": True,
             "existing_owner_links_preserved": True,
             "existing_1403_loadouts_preserved": True,
@@ -678,6 +683,7 @@ def main() -> int:
             "all_29_characters_have_one_flight_over_fight": True,
             "all_29_characters_have_one_stun_power": True,
             "all_29_characters_have_one_linked_together": True,
+            "all_29_characters_have_one_uplift": True,
             "can_only_hold_one_shells_unique": True,
             "all_relationships_unchanged": True,
             "main_story_unchanged": True,
